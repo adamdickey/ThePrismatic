@@ -22,7 +22,7 @@ public class PureCore extends BaseRelic {
     public boolean canSpawn() {
         return AbstractDungeon.player.hasRelic(BurningRing.ID);
     }
-/*
+
     public void onEquip() {
         if (AbstractDungeon.player.hasRelic(BurningRing.ID)) {
             for (int i = 0; i < AbstractDungeon.player.relics.size(); i++) {
@@ -32,12 +32,10 @@ public class PureCore extends BaseRelic {
                 }
             }
         } else {
-            super.obtain();
+            super.onEquip();
         }
         this.cardsReceived = false;
     }
-*/
-
     @Override
     public void update() {
         super.update();
