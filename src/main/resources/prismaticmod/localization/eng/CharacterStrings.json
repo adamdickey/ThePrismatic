@@ -1,0 +1,13 @@
+{
+  "${modID}:Prismatic": {
+    "NAMES": [
+      "The Prismatic",
+      "the Prismatic"
+    ],
+    "TEXT": [
+      "Infused with the prismatic shard, this warrior uses cards from every class.",
+      "NL You prepare for one final strike...",
+      "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~prismatic~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "${modID}:Burning Ring": {
+    "NAME": "Burning Ring",
+    "FLAVOR": "You feel the power of several great warriors emanating from the ring.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, draw #b",
+      " additional card and gain #b",
+      " #yFocus. At the end of combat, heal #b",
+      " HP."
+    ]
+  },
+  "${modID}:Pure Core": {
+    "NAME": "Pure Core",
+    "FLAVOR": "The Pure Core awakened the full power of the Burning Ring, releasing the spirits of the warriors that came before.",
+    "DESCRIPTIONS": [
+      "Replaces Burning Ring. Upon pickup, obtain Burning Blood, Ring of the Serpent, Cracked Core, and Pure Water."
+    ]
+  }
+}

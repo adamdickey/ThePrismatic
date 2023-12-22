@@ -1,0 +1,38 @@
+{
+  "${modID}:0ch0 Form": {
+    "NAME": "0ch0 Form",
+    "DESCRIPTIONS": [
+      "The first cost 0 card you play each turn is played twice.",
+      "The first #b",
+      " cost 0 cards you play each turn are played twice."
+    ]
+  },
+  "${modID}:Lock-on": {
+    "NAME": "Lock-on",
+    "DESCRIPTIONS": [
+      "Receives #b",
+      "% more damage from non-attack sources for #b",
+      " turn.",
+      " turns."
+    ]
+  },
+  "${modID}:Chimera Form": {
+    "NAME": "Chimera Form",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain #b",
+      " Strength, #b",
+      " Dexterity, #b",
+      " Orb slot, and #b",
+      " Orb slots, and #b",
+      " Mantra."
+    ]
+  },
+  "${modID}:Rapid Mastery": {
+    "NAME": "Rapid Mastery",
+    "DESCRIPTIONS": [
+      "When you play an attack, gain #b",
+      " temporary Strength and #b",
+      " temporary Dexterity."
+    ]
+  }
+}
