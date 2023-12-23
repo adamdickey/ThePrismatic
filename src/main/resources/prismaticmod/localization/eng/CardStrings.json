@@ -1,94 +1,94 @@
 {
   "${modID}:Vulnerable Strike": {
     "NAME": "Vulnerable Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Apply !M! Vulnerable.",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
   "${modID}:Weakening Strike": {
     "NAME": "Weakening Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Apply !M! Weak.",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
   "${modID}:Targeting Strike": {
     "NAME": "Targeting Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Apply !M! Lock-on.",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Lock-on.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
   "${modID}:Divine Strike": {
     "NAME": "Divine Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Gain !M! Mantra.",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Mantra.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
   "${modID}:Looting Strike": {
     "NAME": "Looting Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Draw !M! card, then discard !M! card.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Draw !M! cards, then discard !M! cards.",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card, then discard !M! card.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw !M! cards, then discard !M! cards.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
   "${modID}:Retaining Strike": {
     "NAME": "Retaining Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Choose !M! card to Retain this turn.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Choose !M! cards to Retain this turn.",
+    "DESCRIPTION": "Deal !D! damage. NL Choose !M! card to Retain this turn.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Choose !M! cards to Retain this turn.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
   "${modID}:Scrying Strike": {
     "NAME": "Scrying Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Scry !M!.",
+    "DESCRIPTION": "Deal !D! damage. NL Scry !M!.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
   "${modID}:Stormy Strike": {
     "NAME": "Stormy Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Channel !M! Lightning.",
+    "DESCRIPTION": "Deal !D! damage. NL Channel !M! Lightning.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
   "${modID}:Frosty Strike": {
     "NAME": "Frosty Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Channel !M! Frost.",
+    "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
   "${modID}:Exhausting Strike": {
     "NAME": "Exhausting Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Exhaust up to !M! cards from your hand.",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust up to !M! cards from your hand.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
   "${modID}:Insightful Strike": {
     "NAME": "Insightful Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Shuffle an Insight into your draw pile.",
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle an Insight into your draw pile.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
   "${modID}:Scraping Strike": {
     "NAME": "Scraping Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Draw !M! cards. NL Discard all cards drawn this way that do not cost 0.",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards. NL Discard all cards drawn this way that do not cost 0.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
   "${modID}:Empty Strike": {
     "NAME": "Empty Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Exit your Stance.",
+    "DESCRIPTION": "Deal !D! damage. NL Exit your Stance.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
   "${modID}:Cunning Strike": {
     "NAME": "Cunning Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Add 1 Shiv into your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Add 1 Shiv+ into your hand.",
+    "DESCRIPTION": "Deal !D! damage. NL Add 1 Shiv into your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add 1 Shiv+ into your hand.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
   "${modID}:Toxic Strike": {
     "NAME": "Toxic Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Apply !M! Poison to ALL enemies.",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Poison to ALL enemies.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
@@ -186,6 +186,11 @@
   "${modID}:Rapid Mastery": {
     "NAME": "Rapid Mastery",
     "DESCRIPTION": "Whenever you play an attack, gain !M! temporary Strength and !M! temporary Dexterity."
+  },
+  "${modID}:Empowering Stab": {
+    "NAME": "Empowering Stab",
+    "DESCRIPTION": "Deal !D! damage. The next time you play a Power card this combat, add a copy of it into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. The next time you play a Power card this combat, add a copy of it into your hand."
   }
 }
 

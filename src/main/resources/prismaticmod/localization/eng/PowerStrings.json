@@ -34,5 +34,13 @@
       " temporary Strength and #b",
       " temporary Dexterity."
     ]
+  },
+  "${modID}:Empowered": {
+    "NAME": "Empowered",
+    "DESCRIPTIONS": [
+      "The next time you play a Power card this combat, add a copy of it into your hand.",
+      "The next #b",
+      " times you play a Power card this combat, add a copy of it into your hand."
+    ]
   }
 }
