@@ -54,6 +54,12 @@ public class PureCore extends BaseRelic {
             (AbstractDungeon.getCurrRoom()).rewardPopOutTimer = 0.25F;
             cardsReceived = true;
         }
+        for (int i = 1; i < AbstractDungeon.player.relics.size(); i++) {
+            if (((AbstractRelic) AbstractDungeon.player.relics.get(i)).relicId.equals(PureCore.ID)) {
+                AbstractDungeon.player.loseRelic(PureCore.ID);
+                break;
+            }
+        }
     }
     @Override
     public String getUpdatedDescription() {
