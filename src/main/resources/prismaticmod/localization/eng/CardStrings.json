@@ -191,6 +191,18 @@
     "NAME": "Empowering Stab",
     "DESCRIPTION": "Deal !D! damage. The next time you play a Power card this combat, add a copy of it into your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. The next time you play a Power card this combat, add a copy of it into your hand."
+  },
+  "${modID}:Havoc": {
+    "NAME": "Havoc",
+    "DESCRIPTION": "Scry 1. Play the top card of your draw pile and Exhaust it."
+  },
+  "${modID}:Sever Soul": {
+    "NAME": "Sever Soul",
+    "DESCRIPTION": "Exhaust all non-Attack cards in your hand. NL Gain 1 Mantra for each card Exhausted. NL Deal !D! damage."
+  },
+  "${modID}:Neutralize": {
+    "NAME": "Neutralize",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
   }
 }
 
