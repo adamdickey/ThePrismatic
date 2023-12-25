@@ -183,8 +183,8 @@
     "NAME": "Foreign Powers",
     "DESCRIPTION": "For each color, add a random Power card of that color into your hand. They cost 0 this turn. NL Exhaust."
   },
-  "${modID}:Rapid Mastery": {
-    "NAME": "Rapid Mastery",
+  "${modID}:On A Roll": {
+    "NAME": "On A Roll",
     "DESCRIPTION": "Whenever you play an attack, gain !M! temporary Strength and !M! temporary Dexterity."
   },
   "${modID}:Empowering Stab": {
@@ -203,6 +203,24 @@
   "${modID}:Neutralize": {
     "NAME": "Neutralize",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
+  },
+  "${modID}:Bane": {
+    "NAME": "Bane",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Poison, deal !D! damage again."
+  },
+  "${modID}:Barrage": {
+    "NAME": "Barrage",
+    "DESCRIPTION": "Deal !D! damage for each Channeled Orb."
+  },
+  "${modID}:Heatsinks": {
+    "NAME": "Heatsinks",
+    "DESCRIPTION": "Innate. NL Whenever you play a Power card, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a Power card, draw !M! cards."
+  },
+  "${modID}:Hello World": {
+    "NAME": "Hello World",
+    "DESCRIPTION": "At the start of your turn, add a random Common card into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a random Common card into your hand."
   }
 }
 

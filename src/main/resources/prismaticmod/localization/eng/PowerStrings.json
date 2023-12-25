@@ -27,8 +27,8 @@
       " Mantra."
     ]
   },
-  "${modID}:Rapid Mastery": {
-    "NAME": "Rapid Mastery",
+  "${modID}:On A Roll": {
+    "NAME": "On A Roll",
     "DESCRIPTIONS": [
       "When you play an attack, gain #b",
       " temporary Strength and #b",
