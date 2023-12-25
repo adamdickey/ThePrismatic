@@ -245,7 +245,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Glacier());
         tmpPool.add(new GoForTheEyes());
         tmpPool.add(new Heatsinks2());
-        tmpPool.add(new HelloWorld());
+        tmpPool.add(new HelloWorld2());
         tmpPool.add(new Hologram());
         //tmpPool.add(new Hyperbeam());
         tmpPool.add(new Leap());
