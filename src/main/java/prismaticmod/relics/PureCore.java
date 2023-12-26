@@ -17,33 +17,34 @@ public class PureCore extends BaseRelic {
     public PureCore() {
         super(ID, NAME, ThePrismatic.Enums.CARD_COLOR, RARITY, SOUND);
     }
-    private boolean cardsReceived = true;
+
     @Override
     public boolean canSpawn() {
         return AbstractDungeon.player.hasRelic(BurningRing.ID);
     }
 
-    public void onEquip() {
+
+    @Override
+    public void obtain() {
         if (AbstractDungeon.player.hasRelic(BurningRing.ID)) {
             for (int i = 0; i < AbstractDungeon.player.relics.size(); i++) {
-                if (((AbstractRelic)AbstractDungeon.player.relics.get(i)).relicId.equals(BurningRing.ID)) {
+                if ((AbstractDungeon.player.relics.get(i)).relicId.equals(BurningRing.ID)) {
                     instantObtain(AbstractDungeon.player, i, true);
                     break;
                 }
             }
         } else {
-            super.onEquip();
+            super.obtain();
         }
-        this.cardsReceived = false;
     }
-    @Override
-    public void update() {
+    boolean cardsReceived = false;
+    public void update(){
         super.update();
-        if(!cardsReceived){
+        if (!this.cardsReceived && !AbstractDungeon.isScreenUp) {
             AbstractDungeon.combatRewardScreen.open();
             AbstractDungeon.combatRewardScreen.rewards.clear();
             AbstractDungeon.combatRewardScreen.rewards.add(new RewardItem(
-                   RelicLibrary.getRelic(BurningBlood.ID)));
+                    RelicLibrary.getRelic(BurningBlood.ID)));
             AbstractDungeon.combatRewardScreen.rewards.add(new RewardItem(
                     RelicLibrary.getRelic(SnakeRing.ID)));
             AbstractDungeon.combatRewardScreen.rewards.add(new RewardItem(
@@ -51,14 +52,8 @@ public class PureCore extends BaseRelic {
             AbstractDungeon.combatRewardScreen.rewards.add(new RewardItem(
                     RelicLibrary.getRelic(PureWater.ID)));
             AbstractDungeon.combatRewardScreen.positionRewards();
-            (AbstractDungeon.getCurrRoom()).rewardPopOutTimer = 0.25F;
             cardsReceived = true;
-        }
-        for (int i = 1; i < AbstractDungeon.player.relics.size(); i++) {
-            if (((AbstractRelic) AbstractDungeon.player.relics.get(i)).relicId.equals(PureCore.ID)) {
-                AbstractDungeon.player.loseRelic(PureCore.ID);
-                break;
-            }
+            (AbstractDungeon.getCurrRoom()).rewardPopOutTimer = 0.25F;
         }
     }
     @Override
