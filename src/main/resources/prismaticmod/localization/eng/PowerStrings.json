@@ -42,5 +42,21 @@
       "The next #b",
       " times you play a Power card this combat, add a copy of it into your hand."
     ]
+  },
+  "${modID}:Static Discharge": {
+    "NAME": "Static Discharge",
+    "DESCRIPTIONS": [
+      "Whenever you apply a debuff, if no debuffs have been applied this turn, Channel #b",
+      " Lightning."
+    ]
+  },
+  "${modID}:Rushdown": {
+    "NAME": "Rushdown",
+    "DESCRIPTIONS": [
+      "Whenever you change Stances for the first time each turn, draw #b",
+      " cards.",
+      "Whenever you change Stances for the first #b",
+      " times each turn, draw #b"
+    ]
   }
 }

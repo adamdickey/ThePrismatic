@@ -26,7 +26,7 @@ public class TargetingStrike extends BaseCard {
     //These will be used in the constructor. Technically you can just use the values directly,
     //but constants at the top of the file are easy to adjust.
 
-    private static final int DAMAGE = 5;
+    private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 3;
     private static final int lockOnNumber = 2;
     private static final int UPG_LockOn = 1;
