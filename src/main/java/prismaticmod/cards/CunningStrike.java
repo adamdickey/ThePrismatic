@@ -3,14 +3,10 @@ package prismaticmod.cards;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.tempCards.Shiv;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.orbs.Lightning;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -44,6 +40,6 @@ public class CunningStrike extends BaseCard {
         if(this.upgraded){
             shiv.upgrade();
         }
-        addToBot((AbstractGameAction) new MakeTempCardInHandAction((AbstractCard) shiv, this.magicNumber));
+        addToBot(new MakeTempCardInHandAction(shiv, this.magicNumber));
     }
 }

@@ -1,14 +1,9 @@
 package prismaticmod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.watcher.MantraPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -36,7 +31,7 @@ public class ExhaustingDefend extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new GainBlockAction(p, p, block));
+        addToBot(new GainBlockAction(p, p, block));
         addToBot(new ExhaustAction(this.magicNumber, false, true, true));
     }
 }

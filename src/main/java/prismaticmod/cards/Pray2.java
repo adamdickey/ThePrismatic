@@ -19,12 +19,13 @@ public class Pray2 extends BaseCard {
             CardTarget.SELF, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
-    //These will be used in the constructor. Technically you can just use the values directly,
-    //but constants at the top of the file are easy to adjust.
-    private final int baseMagicNumber = 3;
-    private final int UPG_Number = 1;
+
     public Pray2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
+        //These will be used in the constructor. Technically you can just use the values directly,
+        //but constants at the top of the file are easy to adjust.
+        int baseMagicNumber = 3;
+        int UPG_Number = 1;
         setMagic(baseMagicNumber, UPG_Number);
         this.cardsToPreview = new Insight();
     }

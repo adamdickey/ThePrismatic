@@ -1,12 +1,8 @@
 package prismaticmod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DiscardAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.unique.RetainCardsAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
@@ -35,7 +31,7 @@ public class RetainingDefend extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new GainBlockAction(p, p, block));
-        addToBot((AbstractGameAction) new RetainCardsAction((AbstractCreature) p, this.magicNumber));
+        addToBot(new GainBlockAction(p, p, block));
+        addToBot(new RetainCardsAction(p, this.magicNumber));
     }
 }

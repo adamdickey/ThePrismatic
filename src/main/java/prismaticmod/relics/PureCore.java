@@ -1,7 +1,6 @@
 package prismaticmod.relics;
 
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.events.AbstractEvent;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.relics.*;
 import com.megacrit.cardcrawl.rewards.RewardItem;
@@ -13,6 +12,7 @@ public class PureCore extends BaseRelic {
     public static final String ID = makeID(NAME); //This adds the mod's prefix to the relic ID, resulting in modID:MyRelic
     private static final RelicTier RARITY = RelicTier.BOSS; //The relic's rarity.
     private static final LandingSound SOUND = LandingSound.CLINK; //The sound played when the relic is clicked.
+    private boolean cardsReceived = true;
 
     public PureCore() {
         super(ID, NAME, ThePrismatic.Enums.CARD_COLOR, RARITY, SOUND);
@@ -22,6 +22,7 @@ public class PureCore extends BaseRelic {
     public boolean canSpawn() {
         return AbstractDungeon.player.hasRelic(BurningRing.ID);
     }
+
 
 
     @Override
@@ -36,11 +37,11 @@ public class PureCore extends BaseRelic {
         } else {
             super.obtain();
         }
+        this.cardsReceived = false;
     }
-    boolean cardsReceived = false;
     public void update(){
         super.update();
-        if (!this.cardsReceived && !AbstractDungeon.isScreenUp) {
+        if (!this.cardsReceived && !AbstractDungeon.isScreenUp && this.isObtained) {
             AbstractDungeon.combatRewardScreen.open();
             AbstractDungeon.combatRewardScreen.rewards.clear();
             AbstractDungeon.combatRewardScreen.rewards.add(new RewardItem(

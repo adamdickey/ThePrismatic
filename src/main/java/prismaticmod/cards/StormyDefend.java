@@ -1,13 +1,9 @@
 package prismaticmod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
-import com.megacrit.cardcrawl.actions.unique.RetainCardsAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.Lightning;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
@@ -36,8 +32,8 @@ public class StormyDefend extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new GainBlockAction(p, p, block));
+        addToBot(new GainBlockAction(p, p, block));
         for (int i = 0; i < this.magicNumber; i++)
-            addToBot((AbstractGameAction) new ChannelAction((AbstractOrb) new Lightning()));
+            addToBot(new ChannelAction(new Lightning()));
     }
 }

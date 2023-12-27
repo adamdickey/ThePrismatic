@@ -1,14 +1,9 @@
 package prismaticmod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.tempCards.Insight;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
@@ -37,8 +32,8 @@ public class LootingDefend extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new GainBlockAction(p, p, block));
-        addToBot((AbstractGameAction) new DrawCardAction((AbstractCreature) p, this.magicNumber));
-        addToBot((AbstractGameAction) new DiscardAction((AbstractCreature) p, (AbstractCreature) p, this.magicNumber, false));
+        addToBot(new GainBlockAction(p, p, block));
+        addToBot(new DrawCardAction(p, this.magicNumber));
+        addToBot(new DiscardAction(p, p, this.magicNumber, false));
     }
 }

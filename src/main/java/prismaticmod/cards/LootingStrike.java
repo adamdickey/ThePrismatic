@@ -1,16 +1,12 @@
 package prismaticmod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.VulnerablePower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -40,7 +36,7 @@ public class LootingStrike extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot((AbstractGameAction) new DrawCardAction((AbstractCreature) p, this.magicNumber));
-        addToBot((AbstractGameAction) new DiscardAction((AbstractCreature) p, (AbstractCreature) p, this.magicNumber, false));
+        addToBot(new DrawCardAction(p, this.magicNumber));
+        addToBot(new DiscardAction(p, p, this.magicNumber, false));
     }
 }

@@ -1,17 +1,11 @@
 package prismaticmod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.watcher.ChangeStanceAction;
 import com.megacrit.cardcrawl.actions.watcher.NotStanceCheckAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.watcher.MantraPower;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.EmptyStanceEffect;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
@@ -37,8 +31,8 @@ public class EmptyDefend extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new GainBlockAction(p, p, block));
-        addToBot((AbstractGameAction) new NotStanceCheckAction("Neutral", (AbstractGameAction) new VFXAction((AbstractGameEffect) new EmptyStanceEffect(p.hb.cX, p.hb.cY), 0.1F)));
-        addToBot((AbstractGameAction) new ChangeStanceAction("Neutral"));
+        addToBot(new GainBlockAction(p, p, block));
+        addToBot(new NotStanceCheckAction("Neutral", new VFXAction(new EmptyStanceEffect(p.hb.cX, p.hb.cY), 0.1F)));
+        addToBot(new ChangeStanceAction("Neutral"));
         }
 }

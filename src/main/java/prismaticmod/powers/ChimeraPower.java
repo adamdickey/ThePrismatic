@@ -14,7 +14,6 @@ public class ChimeraPower extends BasePower{
 
     public ChimeraPower() {
         super(ID, PowerType.BUFF, false, player, player, 1, true);
-        this.amount = amount;
     }
     public void updateDescription() {
         if (this.amount == 1) {

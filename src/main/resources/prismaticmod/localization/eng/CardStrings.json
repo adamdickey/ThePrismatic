@@ -279,7 +279,7 @@
   },
   "${modID}:Study": {
     "NAME": "Study",
-    "DESCRIPTION": "Gain 1 Focus. At the end of your turn, shuffle an Insight into your draw pile."
+    "DESCRIPTION": "Gain 1 Focus. NL At the end of your turn, shuffle an Insight into your draw pile."
   },
   "${modID}:Deus Ex Machina": {
     "NAME": "Deus Ex Machina",
@@ -297,6 +297,62 @@
   "${modID}:Pray": {
     "NAME": "Pray",
     "DESCRIPTION": "Gain !M! Mantra. NL Channel 1 Frost. NL Shuffle an Insight into your draw pile."
+  },
+  "${modID}:Eruption": {
+    "NAME": "Eruption",
+    "DESCRIPTION": "Deal !D! damage. NL Enter Wrath."
+  },
+  "${modID}:Vigilance": {
+    "NAME": "Vigilance",
+    "DESCRIPTION": "Gain !B! Block. NL Enter Calm."
+  },
+  "${modID}:Blade Dance": {
+    "NAME": "Blade Dance",
+    "DESCRIPTION": "Add !M! Shivs into your hand."
+  },
+  "${modID}:Envenom": {
+    "NAME": "Envenom",
+    "DESCRIPTION": "Whenever an attack deals unblocked damage, apply 1 Poison."
+  },
+  "${modID}:Tools of the Trade": {
+    "NAME": "Tools of the Trade",
+    "DESCRIPTION": "At the start of your turn, draw 1 card and discard 1 card."
+  },
+  "${modID}:Doppelganger": {
+    "NAME": "Doppelganger",
+    "DESCRIPTION": "Next turn, draw X+1 cards and gain X+1 Energy. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Next turn, draw X+2 cards and gain X+2 Energy. NL Exhaust."
+  },
+  "${modID}:Prepared": {
+    "NAME": "Prepared",
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card. NL Discard !M! card.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !M! cards. NL Discard !M! cards."
+  },
+  "${modID}:Sneaky Strike": {
+    "NAME": "Sneaky Strike",
+    "DESCRIPTION": "Deal !D! damage. If you have discarded a card this turn, this costs 0."
+  },
+  "${modID}:A Thousand Cuts": {
+    "NAME": "A Thousand Cuts",
+    "DESCRIPTION": "Whenever you play a card, deal 2 damage to ALL enemies."
+  },
+  "${modID}:Wraith Form": {
+    "NAME": "Wraith Form",
+    "DESCRIPTION": "Ethereal. NL Gain 2 Intangible. NL At the end of your turn, lose 1 Dexterity.",
+    "UPGRADE_DESCRIPTION": "Gain 2 Intangible. NL At the end of your turn, lose 1 Dexterity."
+  },
+  "${modID}:Darkness": {
+    "NAME": "Darkness",
+    "DESCRIPTION": "Channel 1 Dark.",
+    "UPGRADE_DESCRIPTION": "Channel 1 Dark. NL Trigger the passive ability of all Dark orbs."
+  },
+  "${modID}:Master Reality": {
+    "NAME": "Master Reality",
+    "DESCRIPTION": "Innate. NL Whenever a card is created during combat, Upgrade it."
+  },
+  "${modID}:Perseverance": {
+    "NAME": "Perseverance",
+    "DESCRIPTION": "Retain. NL Gain !B! Block. When Retained, increase its Block by !M!."
   }
 }
 

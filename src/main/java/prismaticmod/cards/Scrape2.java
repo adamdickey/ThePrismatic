@@ -5,7 +5,6 @@ import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.defect.ScrapeFollowUpAction;
-import com.megacrit.cardcrawl.actions.unique.BaneAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -39,6 +38,6 @@ public class Scrape2 extends BaseCard {
         if (m != null)
             addToBot(new VFXAction(new ScrapeEffect(m.hb.cX, m.hb.cY), 0.1F));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-        addToBot(new DrawCardAction(this.magicNumber, (AbstractGameAction)new ScrapeFollowUpAction()));
+        addToBot(new DrawCardAction(this.magicNumber, new ScrapeFollowUpAction()));
     }
 }

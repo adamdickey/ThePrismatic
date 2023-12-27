@@ -1,15 +1,10 @@
 package prismaticmod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.watcher.DevotionPower;
-import prismaticmod.powers.ChimeraPower;
 import prismaticmod.util.CardStats;
-import theprismatic.ThePrismatic;
 
 public class Devotion2 extends BaseCard {
     public static final String ID = makeID("Devotion"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
@@ -21,15 +16,15 @@ public class Devotion2 extends BaseCard {
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    //These will be used in the constructor. Technically you can just use the values directly,
-    //but constants at the top of the file are easy to adjust.
-    private final int baseMagicNumber = 3;
     public Devotion2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        //These will be used in the constructor. Technically you can just use the values directly,
+        //but constants at the top of the file are easy to adjust.
+        int baseMagicNumber = 3;
         addToBot(new ApplyPowerAction(p, p, new DevotionPower(p, baseMagicNumber), baseMagicNumber));
     }
 

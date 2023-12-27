@@ -3,15 +3,8 @@ package prismaticmod.cards;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import prismaticmod.powers.ChimeraPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -43,7 +36,7 @@ public class ForeignPowers extends BaseCard {
         }
         c.makeCopy();
         c.setCostForTurn(0);
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, true));
+        addToBot(new MakeTempCardInHandAction(c, true));
 
         //Green Power
         while (c.color != CardColor.GREEN){
@@ -51,7 +44,7 @@ public class ForeignPowers extends BaseCard {
         }
         c.makeCopy();
         c.setCostForTurn(0);
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, true));
+        addToBot(new MakeTempCardInHandAction(c, true));
 
         //Blue Power
         while (c.color != CardColor.BLUE){
@@ -59,7 +52,7 @@ public class ForeignPowers extends BaseCard {
         }
         c.makeCopy();
         c.setCostForTurn(0);
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, true));
+        addToBot(new MakeTempCardInHandAction(c, true));
 
         //Purple Power
         while (c.color != CardColor.PURPLE){
@@ -67,7 +60,7 @@ public class ForeignPowers extends BaseCard {
         }
         c.makeCopy();
         c.setCostForTurn(0);
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, true));
+        addToBot(new MakeTempCardInHandAction(c, true));
     }
 
     public void upgrade() {

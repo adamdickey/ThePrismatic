@@ -1,18 +1,11 @@
 package prismaticmod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.defect.AnimateOrbAction;
 import com.megacrit.cardcrawl.actions.defect.EvokeOrbAction;
 import com.megacrit.cardcrawl.actions.defect.EvokeWithoutRemovingOrbAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.watcher.MantraPower;
 import prismaticmod.util.CardStats;
-import theprismatic.ThePrismatic;
 
 public class Dualcast2 extends BaseCard {
     public static final String ID = makeID("Dualcast"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
@@ -31,10 +24,10 @@ public class Dualcast2 extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new AnimateOrbAction(1));
-        addToBot((AbstractGameAction)new EvokeWithoutRemovingOrbAction(1));
-        addToBot((AbstractGameAction)new AnimateOrbAction(1));
-        addToBot((AbstractGameAction)new EvokeOrbAction(1));
+        addToBot(new AnimateOrbAction(1));
+        addToBot(new EvokeWithoutRemovingOrbAction(1));
+        addToBot(new AnimateOrbAction(1));
+        addToBot(new EvokeOrbAction(1));
     }
     public void upgrade() {
         if (!this.upgraded) {

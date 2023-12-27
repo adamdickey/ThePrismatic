@@ -5,10 +5,7 @@ import com.megacrit.cardcrawl.actions.defect.IncreaseMaxOrbAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
-import com.megacrit.cardcrawl.powers.FocusPower;
-import com.megacrit.cardcrawl.powers.StrengthPower;
 import prismaticmod.util.CardStats;
-import theprismatic.ThePrismatic;
 
 public class Capacitor2 extends BaseCard {
     public static final String ID = makeID("Capacitor"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
@@ -20,12 +17,12 @@ public class Capacitor2 extends BaseCard {
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    //These will be used in the constructor. Technically you can just use the values directly,
-    //but constants at the top of the file are easy to adjust.
-    private final int baseMagicNumber = 2;
-    private final int UPG_Number = 1;
     public Capacitor2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
+        //These will be used in the constructor. Technically you can just use the values directly,
+        //but constants at the top of the file are easy to adjust.
+        int baseMagicNumber = 2;
+        int UPG_Number = 1;
         setMagic(baseMagicNumber, UPG_Number);
     }
 

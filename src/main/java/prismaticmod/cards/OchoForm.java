@@ -1,17 +1,8 @@
 package prismaticmod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.cards.tempCards.Shiv;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.EchoPower;
 import prismaticmod.powers.OchoPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
@@ -33,11 +24,10 @@ public class OchoForm extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if(this.upgraded){
-            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new OchoPower(), 1));
-            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new OchoPower(), 1));
+            addToBot(new ApplyPowerAction(p, p, new OchoPower(2), 2));
         }
         else{
-            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new OchoPower(), 1));
+            addToBot(new ApplyPowerAction(p, p, new OchoPower(1), 1));
         }
     }
 }

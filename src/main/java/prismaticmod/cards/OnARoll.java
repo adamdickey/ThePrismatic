@@ -1,11 +1,8 @@
 package prismaticmod.cards;
 
-import basemod.helpers.dynamicvariables.MagicNumberVariable;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import prismaticmod.powers.OnARollPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;

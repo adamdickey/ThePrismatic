@@ -1,15 +1,8 @@
 package prismaticmod.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
-import com.megacrit.cardcrawl.actions.defect.IncreaseMaxOrbAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.Lightning;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.DexterityPower;
 import prismaticmod.powers.StaticDischarge2Power;
 import prismaticmod.util.CardStats;
 
@@ -23,12 +16,12 @@ public class StaticDischarge2 extends BaseCard {
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    //These will be used in the constructor. Technically you can just use the values directly,
-    //but constants at the top of the file are easy to adjust.
-    private final int baseMagicNumber = 1;
-    private final int UPG_Magic = 1;
     public StaticDischarge2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
+        //These will be used in the constructor. Technically you can just use the values directly,
+        //but constants at the top of the file are easy to adjust.
+        int baseMagicNumber = 1;
+        int UPG_Magic = 1;
         setMagic(baseMagicNumber, UPG_Magic);
     }
 

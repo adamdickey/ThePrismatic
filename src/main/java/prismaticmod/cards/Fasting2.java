@@ -1,21 +1,16 @@
 package prismaticmod.cards;
 
 import com.badlogic.gdx.graphics.Color;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.FocusPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.powers.watcher.EnergyDownPower;
 import com.megacrit.cardcrawl.vfx.combat.FastingEffect;
-import prismaticmod.powers.ChimeraPower;
 import prismaticmod.util.CardStats;
-import theprismatic.ThePrismatic;
 
 public class Fasting2 extends BaseCard {
     public static final String ID = makeID("Fasting"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
@@ -26,13 +21,13 @@ public class Fasting2 extends BaseCard {
             CardTarget.SELF, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             2 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
-    private final int baseMagicNumber = 3;
-    private final int UPG_Number = 1;
 
     //These will be used in the constructor. Technically you can just use the values directly,
     //but constants at the top of the file are easy to adjust.
     public Fasting2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
+        int baseMagicNumber = 3;
+        int UPG_Number = 1;
         setMagic(baseMagicNumber, UPG_Number);
     }
 

@@ -1,12 +1,9 @@
 package prismaticmod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.defect.ScrapeFollowUpAction;
-import com.megacrit.cardcrawl.actions.unique.RetainCardsAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
@@ -35,7 +32,7 @@ public class ScrapingDefend extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new GainBlockAction(p, p, block));
-        addToBot((AbstractGameAction) new DrawCardAction(this.magicNumber, (AbstractGameAction) new ScrapeFollowUpAction()));
+        addToBot(new GainBlockAction(p, p, block));
+        addToBot(new DrawCardAction(this.magicNumber, new ScrapeFollowUpAction()));
     }
 }

@@ -1,13 +1,10 @@
 package prismaticmod.relics;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.FocusPower;
 import theprismatic.ThePrismatic;
 
@@ -28,16 +25,16 @@ public class BurningRing extends BaseRelic {
     @Override
     public void atBattleStart() {
         flash();
-        addToBot(new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, this));
-        addToBot(new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new FocusPower((AbstractCreature)AbstractDungeon.player, 1), 1));
-        addToBot(new RelicAboveCreatureAction((AbstractCreature) AbstractDungeon.player, this));
-        addToBot(new DrawCardAction((AbstractCreature)AbstractDungeon.player, 1));
+        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FocusPower(AbstractDungeon.player, 1), 1));
+        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        addToBot(new DrawCardAction(AbstractDungeon.player, 1));
     }
     @Override
     public void onVictory() {
         flash();
         AbstractPlayer p = AbstractDungeon.player;
-        addToTop((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)p, this));
+        addToTop(new RelicAboveCreatureAction(p, this));
         if (p.currentHealth > 0)
             p.heal(heal);
     }

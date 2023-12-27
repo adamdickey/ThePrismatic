@@ -1,12 +1,9 @@
 package prismaticmod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.Frost;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
@@ -35,8 +32,8 @@ public class FrostyDefend extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new GainBlockAction(p, p, block));
+        addToBot(new GainBlockAction(p, p, block));
         for (int i = 0; i < this.magicNumber; i++)
-            addToBot((AbstractGameAction) new ChannelAction((AbstractOrb) new Frost()));
+            addToBot(new ChannelAction(new Frost()));
     }
 }

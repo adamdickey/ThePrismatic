@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.Lightning;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
@@ -38,6 +37,6 @@ public class StormyStrike extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         for (int i = 0; i < this.magicNumber; i++)
-            addToBot((AbstractGameAction) new ChannelAction((AbstractOrb) new Lightning()));
+            addToBot(new ChannelAction(new Lightning()));
     }
 }
