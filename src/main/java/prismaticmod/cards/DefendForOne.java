@@ -35,18 +35,21 @@ public class DefendForOne extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        ArrayList cards = new ArrayList();
         addToBot(new GainBlockAction(p, p, block));
-        if (!p.discardPile.isEmpty())
+        if (!p.discardPile.isEmpty()){
+            ArrayList cards = new ArrayList();
             for (AbstractCard card : p.discardPile.group) {
                 if (card.cost == 0 || card.freeToPlayOnce){
                     cards.add(card);
                 }
             }
-        Random rand = new Random();
-        for(int i = 0; i < magicNumber; i++){
-            AbstractCard randCard = (AbstractCard) cards.get(rand.nextInt(cards.size()));
-            addToBot(new DiscardToHandAction(randCard));
+            Random rand = new Random();
+            if(!cards.isEmpty()){
+                for(int i = 0; i < magicNumber; i++) {
+                    AbstractCard randCard = (AbstractCard) cards.get(rand.nextInt(cards.size()));
+                    addToBot(new DiscardToHandAction(randCard));
+                }
+            }
         }
     }
 }
