@@ -20,7 +20,7 @@ public class ExhaustingDefend extends BaseCard {
     //but constants at the top of the file are easy to adjust.
 
     private static final int BLOCK = 5;
-    private static final int UPG_BLOCK = 2;
+    private static final int UPG_BLOCK = 3;
     private static final int exhaustNumber = 2;
     private static final int UPG_Exhaust = 3;
 

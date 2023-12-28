@@ -353,6 +353,40 @@
   "${modID}:Perseverance": {
     "NAME": "Perseverance",
     "DESCRIPTION": "Retain. NL Gain !B! Block. When Retained, increase its Block by !M!."
+  },
+  "${modID}:Strike for One": {
+    "NAME": "Strike for One",
+    "DESCRIPTION": "Deal !D! damage. NL Return up to !M! random cost 0 card from your discard pile into your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Return up to !M! random cost 0 cards from your discard pile into your hand."
+  },
+  "${modID}:Defend for One": {
+    "NAME": "Defend for One",
+    "DESCRIPTION": "Gain !B! Block. NL Put !M! random cost 0 card from your discard pile into your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Put !M! random cost 0 cards from your discard pile into your hand."
+  },
+  "${modID}:Combat Training": {
+    "NAME": "Combat Training",
+    "DESCRIPTION": "Gain 1 Strength for every !M! Attacks in your discard pile."
+  },
+  "${modID}:Infernal Blade": {
+    "NAME": "Infernal Blade",
+    "DESCRIPTION": "Choose 1 of 3 random Attack cards to add into your hand. It costs 0 this turn. NL Exhaust."
+  },
+  "${modID}:Distraction": {
+    "NAME": "Distraction",
+    "DESCRIPTION": "Choose 1 of 3 random Skill cards to add into your hand. It costs 0 this turn. NL Exhaust."
+  },
+  "${modID}:White Noise": {
+    "NAME": "White Noise",
+    "DESCRIPTION": "Choose 1 of 3 random Power cards to add into your hand. It costs 0 this turn. NL Exhaust."
+  },
+  "${modID}:Tempest": {
+    "NAME": "Tempest",
+    "DESCRIPTION": "Channel !M! Lightning. NL Enter Wrath."
+  },
+  "${modID}:Blizzard": {
+    "NAME": "Blizzard",
+    "DESCRIPTION": "Channel !M! Frost. NL Enter Calm."
   }
 }
 

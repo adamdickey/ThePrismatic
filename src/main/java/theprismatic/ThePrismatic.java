@@ -103,7 +103,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Hemokinesis());
         tmpPool.add(new Immolate());
         tmpPool.add(new Impervious());
-        tmpPool.add(new InfernalBlade());
+        tmpPool.add(new InfernalBlade2());
         tmpPool.add(new Inflame());
         tmpPool.add(new Intimidate());
         tmpPool.add(new IronWave());
@@ -165,7 +165,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new DeadlyPoison());
         //tmpPool.add(new Deflect());
         tmpPool.add(new DieDieDie());
-        tmpPool.add(new Distraction());
+        tmpPool.add(new Distraction2());
         tmpPool.add(new DodgeAndRoll());
         tmpPool.add(new Doppelganger2());
         tmpPool.add(new EndlessAgony());
@@ -216,7 +216,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Barrage2());
         tmpPool.add(new BeamCell());
         tmpPool.add(new BiasedCognition());
-        tmpPool.add(new Blizzard());
+        tmpPool.add(new Blizzard2());
         tmpPool.add(new BootSequence());
         tmpPool.add(new Buffer());
         tmpPool.add(new Capacitor2());
@@ -275,11 +275,11 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Streamline2());
         tmpPool.add(new Sunder());
         tmpPool.add(new SweepingBeam());
-        tmpPool.add(new Tempest());
+        tmpPool.add(new Tempest2());
         //tmpPool.add(new ThunderStrike());
         tmpPool.add(new Turbo());
         tmpPool.add(new Equilibrium());
-        tmpPool.add(new WhiteNoise());
+        tmpPool.add(new WhiteNoise2());
         tmpPool.add(new Zap());
         //tmpPool.add(new Alpha());
         tmpPool.add(new BattleHymn());
@@ -309,7 +309,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new FlurryOfBlows());
         tmpPool.add(new FlyingSleeves());
         tmpPool.add(new FollowUp());
-        tmpPool.add(new ForeignInfluence());
+        //tmpPool.add(new ForeignInfluence());
         tmpPool.add(new Foresight());
         tmpPool.add(new Halt());
         tmpPool.add(new Indignation());
@@ -428,11 +428,11 @@ public class ThePrismatic extends CustomPlayer {
         //Add a random prismatic card to the starting deck
         ArrayList<String> prismaticCards = new ArrayList<>();
         Collections.addAll(prismaticCards, CunningStrike.ID, DivineStrike.ID, EmptyStrike.ID, ExhaustingStrike.ID,
-                FrostyStrike.ID, InsightfulStrike.ID, StormyStrike.ID, LootingStrike.ID, RetainingStrike.ID,
-                ScrapingStrike.ID, ScryingStrike.ID, TargetingStrike.ID, ToxicStrike.ID, VulnerableStrike.ID,
-                WeakeningStrike.ID, CunningDefend.ID, DivineDefend.ID, EmptyDefend.ID, ExhaustingDefend.ID,
-                FrostyDefend.ID, InsightfulDefend.ID, LootingDefend.ID, RetainingDefend.ID, ScrapingDefend.ID,
-                ScryingDefend.ID, StormyDefend.ID, ToxicDefend.ID);
+                FrostyStrike.ID, InsightfulStrike.ID, LootingStrike.ID, RetainingStrike.ID, ScrapingStrike.ID,
+                ScryingStrike.ID, StormyStrike.ID, StrikeForOne.ID, TargetingStrike.ID, ToxicStrike.ID,
+                VulnerableStrike.ID, WeakeningStrike.ID, CunningDefend.ID, DefendForOne.ID, DivineDefend.ID,
+                EmptyDefend.ID, ExhaustingDefend.ID, FrostyDefend.ID, InsightfulDefend.ID, LootingDefend.ID,
+                RetainingDefend.ID, ScrapingDefend.ID, ScryingDefend.ID, StormyDefend.ID, ToxicDefend.ID);
         Random rand = new Random();
         String randCard = prismaticCards.get(rand.nextInt(prismaticCards.size()));
         retVal.add(randCard);

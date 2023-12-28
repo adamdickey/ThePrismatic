@@ -15,5 +15,41 @@
     "DESCRIPTIONS": [
       "Replaces Burning Ring. Upon pickup, obtain Burning Blood, Ring of the Snake, Cracked Core, and Pure Water."
     ]
+  },
+  "${modID}:Inserter": {
+    "NAME": "Inserter",
+    "FLAVOR": "Push. Pull. Stack. Repeat.",
+    "DESCRIPTIONS": [
+      "Every #b",
+      " turns, gain #b",
+      " Orb slot, #b",
+      " Strength, and #b",
+      " Mantra."
+    ]
+  },
+  "${modID}:Wrist Blade": {
+    "NAME": "Wrist Blade",
+    "FLAVOR": "Handy for assassinations.",
+    "DESCRIPTIONS": [
+      "Attacks that cost 0 deal #b",
+      " additional damage. Whenever an Attack deals unblocked damage, apply #b",
+      " Poison."
+    ]
+  },
+  "${modID}:Ball of Cards": {
+    "NAME": "Ball of Cards",
+    "FLAVOR": "The wealth of spells you've amassed fills your mind with many possibilities.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, draw #b",
+      " additional card for every #b",
+      " cards in your draw pile."
+    ]
+  },
+  "${modID}:Hardwood Barrel": {
+    "NAME": "Hardwood Barrel",
+    "FLAVOR": "A sturdy barrel.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of each turn until you empty your draw pile."
+    ]
   }
 }

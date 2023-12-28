@@ -8,7 +8,6 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.relics.*;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import prismaticmod.cards.BaseCard;
-import prismaticmod.relics.BaseRelic;
 import prismaticmod.util.GeneralUtils;
 import prismaticmod.util.KeywordInfo;
 import prismaticmod.util.TextureLoader;
@@ -26,7 +25,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.scannotation.AnnotationDB;
 import theprismatic.ThePrismatic;
-
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
@@ -239,6 +237,7 @@ public class BasicMod implements
                         UnlockTracker.markRelicAsSeen(relic.relicId);
                     }
                 });
+        /*
         BaseMod.addRelicToCustomPool(new Abacus(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new Akabeko(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new Anchor(), CARD_COLOR);
@@ -261,7 +260,7 @@ public class BasicMod implements
         BaseMod.addRelicToCustomPool(new Calipers(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new CallingBell(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new CaptainsWheel(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new Cauldron(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new Cauldron(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new CentennialPuzzle(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new CeramicFish(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new ChemicalX(), CARD_COLOR);
@@ -275,7 +274,7 @@ public class BasicMod implements
         BaseMod.addRelicToCustomPool(new DollysMirror(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new DreamCatcher(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new DuVuDoll(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new Ectoplasm(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new Ectoplasm(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new EmptyCage(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new Enchiridion(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new EternalFeather(), CARD_COLOR);
@@ -290,13 +289,13 @@ public class BasicMod implements
         BaseMod.addRelicToCustomPool(new GoldenIdol(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new GremlinHorn(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new GremlinMask(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new HandDrill(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new HandDrill(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new HappyFlower(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new HornCleat(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new IceCream(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new IncenseBurner(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new InkBottle(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new JuzuBracelet(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new JuzuBracelet(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new Kunai(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new Lantern(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new LetterOpener(), CARD_COLOR);
@@ -337,7 +336,7 @@ public class BasicMod implements
         BaseMod.addRelicToCustomPool(new PotionBelt(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new PrayerWheel(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new PreservedInsect(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new PrismaticShard(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new PrismaticShard(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new QuestionCard(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new RedMask(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new RegalPillow(), CARD_COLOR);
@@ -360,7 +359,7 @@ public class BasicMod implements
         BaseMod.addRelicToCustomPool(new StrikeDummy(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new Sundial(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new ThreadAndNeedle(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new TinyChest(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new TinyChest(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new TinyHouse(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new Toolbox(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new Torii(), CARD_COLOR);
@@ -377,44 +376,45 @@ public class BasicMod implements
         BaseMod.addRelicToCustomPool(new Whetstone(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new WhiteBeast(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new WingBoots(), CARD_COLOR);
+        */
         BaseMod.addRelicToCustomPool(new HoveringKite(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new NinjaScroll(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new PaperCrane(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new RingOfTheSerpent(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new SnakeRing(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new RingOfTheSerpent(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new SnakeRing(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new SneckoSkull(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new TheSpecimen(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new Tingsha(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new ToughBandages(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new TwistedFunnel(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new WristBlade(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new BlackBlood(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new TwistedFunnel(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new WristBlade(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new BlackBlood(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new Brimstone(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new BurningBlood(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new BurningBlood(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new ChampionsBelt(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new CharonsAshes(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new MagicFlower(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new MagicFlower(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new MarkOfPain(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new PaperFrog(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new RedSkull(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new RunicCube(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new SelfFormingClay(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new CrackedCore(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new CrackedCore(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new DataDisk(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new EmotionChip(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new FrozenCore(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new FrozenCore(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new GoldPlatedCables(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new Inserter(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new NuclearBattery(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new Inserter(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new NuclearBattery(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new RunicCapacitor(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new SymbioticVirus(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new CloakClasp(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new Damaru(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new GoldenEye(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new HolyWater(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new Melange(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new PureWater(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new VioletLotus(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new HolyWater(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new Melange(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new PureWater(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new VioletLotus(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new TeardropLocket(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new Duality(), CARD_COLOR);
     }

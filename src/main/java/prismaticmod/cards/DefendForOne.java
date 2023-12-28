@@ -1,14 +1,18 @@
 package prismaticmod.cards;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.utility.ScryAction;
+import com.megacrit.cardcrawl.actions.utility.DiscardToHandAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
-public class ScryingDefend extends BaseCard {
-    public static final String ID = makeID("Scrying Defend"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
+import java.util.ArrayList;
+import java.util.Random;
+
+public class DefendForOne extends BaseCard {
+    public static final String ID = makeID("Defend for One"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
     private static final CardStats info = new CardStats(
             ThePrismatic.Enums.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.
             CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -21,17 +25,28 @@ public class ScryingDefend extends BaseCard {
 
     private static final int BLOCK = 5;
     private static final int UPG_BLOCK = 3;
-    private static final int scryNumber = 2;
-    private static final int UPG_Scry = 1;
+    private static final int baseMagicNumber = 1;
+    private static final int UPG_Number = 1;
 
-    public ScryingDefend() {
+    public DefendForOne() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
-        setMagic(scryNumber, UPG_Scry);
+        setMagic(baseMagicNumber, UPG_Number);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        ArrayList cards = new ArrayList();
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new ScryAction(this.magicNumber));
+        if (!p.discardPile.isEmpty())
+            for (AbstractCard card : p.discardPile.group) {
+                if (card.cost == 0 || card.freeToPlayOnce){
+                    cards.add(card);
+                }
+            }
+        Random rand = new Random();
+        for(int i = 0; i < magicNumber; i++){
+            AbstractCard randCard = (AbstractCard) cards.get(rand.nextInt(cards.size()));
+            addToBot(new DiscardToHandAction(randCard));
+        }
     }
 }

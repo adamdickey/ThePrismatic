@@ -13,7 +13,7 @@ public class OnARollPower extends BasePower{
     public static final String ID = makeID("On A Roll");
 
     public OnARollPower(int amount) {
-        super(ID, PowerType.BUFF, false, player, player, 1, true);
+        super(ID, PowerType.BUFF, false, player, player, amount, true);
         this.amount = amount;
     }
     public void updateDescription() {
