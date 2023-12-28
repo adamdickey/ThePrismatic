@@ -189,12 +189,12 @@
   },
   "${modID}:Empowering Stab": {
     "NAME": "Empowering Stab",
-    "DESCRIPTION": "Deal !D! damage. The next time you play a Power card this combat, add a copy of it into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. The next time you play a Power card this combat, add a copy of it into your hand."
+    "DESCRIPTION": "Deal !D! damage. NL The next time you play a Power card this combat, add a copy of it into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL The next time you play a Power card this combat, add a copy of it into your hand."
   },
   "${modID}:Havoc": {
     "NAME": "Havoc",
-    "DESCRIPTION": "Scry 1. Play the top card of your draw pile and Exhaust it."
+    "DESCRIPTION": "Scry 1. NL Play the top card of your draw pile and Exhaust it."
   },
   "${modID}:Sever Soul": {
     "NAME": "Sever Soul",
@@ -241,11 +241,11 @@
   },
   "${modID}:Defragment": {
     "NAME": "Defragment",
-    "DESCRIPTION": "Gain !M! Focus. Gain 1 Strength."
+    "DESCRIPTION": "Gain !M! Focus. NL Gain 1 Strength."
   },
   "${modID}:Capacitor": {
     "NAME": "Capacitor",
-    "DESCRIPTION": "Gain !M! Orb slots. Gain 1 Dexterity."
+    "DESCRIPTION": "Gain !M! Orb slots. NL Gain 1 Dexterity."
   },
   "${modID}:Consume": {
     "NAME": "Consume",
@@ -253,7 +253,7 @@
   },
   "${modID}:Go for the Eyes": {
     "NAME": "Go for the Eyes",
-    "DESCRIPTION": "Deal !D! damage. If the enemy intends to attack, apply !M! Weak, otherwise apply !M! Vulnerable."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, apply !M! Weak, otherwise apply !M! Vulnerable."
   },
   "${modID}:Rainbow": {
     "NAME": "Rainbow",
@@ -262,8 +262,8 @@
   },
   "${modID}:Fission": {
     "NAME": "Fission",
-    "DESCRIPTION": "Remove ALL of your Orbs. Gain 1 Energy and draw 1 card for each Orb removed. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Evoke ALL of your Orbs. Gain 1 Energy and draw 1 card for each Orb Evoked. Exhaust."
+    "DESCRIPTION": "Remove ALL of your Orbs. NL Gain 1 Energy and draw 1 card for each Orb removed. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Evoke ALL of your Orbs. NL Gain 1 Energy and draw 1 card for each Orb Evoked. NL Exhaust."
   },
   "${modID}:Static Discharge": {
     "NAME": "Static Discharge",
@@ -330,7 +330,7 @@
   },
   "${modID}:Sneaky Strike": {
     "NAME": "Sneaky Strike",
-    "DESCRIPTION": "Deal !D! damage. If you have discarded a card this turn, this costs 0."
+    "DESCRIPTION": "Deal !D! damage. NL If you have discarded a card this turn, this costs 0."
   },
   "${modID}:A Thousand Cuts": {
     "NAME": "A Thousand Cuts",
@@ -356,8 +356,8 @@
   },
   "${modID}:Strike for One": {
     "NAME": "Strike for One",
-    "DESCRIPTION": "Deal !D! damage. NL Return up to !M! random cost 0 card from your discard pile into your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Return up to !M! random cost 0 cards from your discard pile into your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Return !M! random cost 0 card from your discard pile into your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Return !M! random cost 0 cards from your discard pile into your hand."
   },
   "${modID}:Defend for One": {
     "NAME": "Defend for One",
