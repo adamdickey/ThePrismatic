@@ -3,15 +3,14 @@ package prismaticmod.cards;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.ClawEffect;
+import prismaticmod.powers.Accuracy2Power;
 import prismaticmod.util.CardStats;
-
-import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class Claw2 extends BaseCard {
     public static final String ID = makeID("Claw"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
@@ -41,23 +40,6 @@ public class Claw2 extends BaseCard {
             addToBot(new VFXAction(new ClawEffect(m.hb.cX, m.hb.cY, Color.CYAN, Color.WHITE), 0.1F));
         }
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
-        for (AbstractCard c : player.discardPile.group) {
-            if (c.cost == 0 || c.freeToPlayOnce) {
-                c.baseDamage += magicNumber;
-                c.applyPowers();
-            }
-        }
-        for (AbstractCard c : player.drawPile.group) {
-            if (c.cost == 0 || c.freeToPlayOnce) {
-                c.baseDamage += magicNumber;
-                c.applyPowers();
-            }
-        }
-        for (AbstractCard c : player.hand.group) {
-            if (c.cost == 0 || c.freeToPlayOnce) {
-                c.baseDamage += magicNumber;
-                c.applyPowers();
-            }
-        }
+        addToBot(new ApplyPowerAction(p, p, new Accuracy2Power(magicNumber), magicNumber));
     }
 }

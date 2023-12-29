@@ -287,8 +287,9 @@ public class Accuracy2Power extends BasePower{
             if(c instanceof Clash || c instanceof Unload){
                 return 18;
             }
-            if(c instanceof Predator || c instanceof Streamline ||
-                    c instanceof WheelKick || c instanceof Streamline2){
+            if(c instanceof Hemokinesis || c instanceof Predator ||
+                    c instanceof Streamline || c instanceof WheelKick ||
+                    c instanceof Streamline2){
                 return 20;
             }
             if(c instanceof BloodForBlood || c instanceof SeverSoul ||

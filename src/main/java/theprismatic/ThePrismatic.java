@@ -88,12 +88,12 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Dropkick2());
         tmpPool.add(new DualWield());
         tmpPool.add(new Entrench());
-        tmpPool.add(new Evolve());
+        //tmpPool.add(new Evolve());
         tmpPool.add(new Exhume());
         tmpPool.add(new Feed());
         tmpPool.add(new FeelNoPain());
         tmpPool.add(new FiendFire());
-        tmpPool.add(new FireBreathing());
+        //tmpPool.add(new FireBreathing());
         tmpPool.add(new FlameBarrier());
         tmpPool.add(new Flex());
         tmpPool.add(new GhostlyArmor());
@@ -105,11 +105,11 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Impervious());
         tmpPool.add(new InfernalBlade2());
         tmpPool.add(new Inflame());
-        tmpPool.add(new Intimidate());
+        tmpPool.add(new Intimidate2());
         tmpPool.add(new IronWave());
         tmpPool.add(new Juggernaut());
         tmpPool.add(new LimitBreak());
-        tmpPool.add(new Metallicize());
+        //tmpPool.add(new Metallicize());
         tmpPool.add(new Offering());
         //tmpPool.add(new PerfectedStrike());
         tmpPool.add(new PommelStrike());
@@ -119,7 +119,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Rampage());
         tmpPool.add(new Reaper());
         tmpPool.add(new RecklessCharge());
-        tmpPool.add(new Rupture());
+        //tmpPool.add(new Rupture());
         //tmpPool.add(new SearingBlow());
         tmpPool.add(new SecondWind());
         tmpPool.add(new SeeingRed());
@@ -136,7 +136,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Warcry());
         tmpPool.add(new Whirlwind());
         tmpPool.add(new WildStrike2());
-        tmpPool.add(new Accuracy());
+        tmpPool.add(new Accuracy2());
         tmpPool.add(new Acrobatics());
         tmpPool.add(new Adrenaline());
         tmpPool.add(new AfterImage());
@@ -186,7 +186,7 @@ public class ThePrismatic extends CustomPlayer {
         //tmpPool.add(new MasterfulStab());
         tmpPool.add(new Neutralize2());
         tmpPool.add(new Nightmare());
-        tmpPool.add(new NoxiousFumes());
+        //tmpPool.add(new NoxiousFumes());
         tmpPool.add(new Outmaneuver());
         tmpPool.add(new PhantasmalKiller());
         tmpPool.add(new PiercingWail());

@@ -426,6 +426,18 @@
   "${modID}:Combustive Fumes": {
     "NAME": "Combustive Fumes",
     "DESCRIPTION": "At the start of your turn, lose 1 HP and apply !M! Poison to ALL enemies."
+  },
+  "${modID}:Intimidate": {
+    "NAME": "Intimidate",
+    "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Gain 1 Strength. NL Exhaust."
+  },
+  "${modID}:Evolved Firebreathing": {
+    "NAME": "Evolved Firebreathing",
+    "DESCRIPTION": "Whenever you draw a Status or Curse card, deal !M! damage to ALL enemies and draw 1 card."
+  },
+  "${modID}:Metallic Rupture": {
+    "NAME": "Metallic Rupture",
+    "DESCRIPTION": "At the end of your turn, gain !M! Block. NL Whenever you lose HP from a card, gain !${modID}:S! Strength."
   }
 }
 
