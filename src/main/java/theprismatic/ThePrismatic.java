@@ -85,7 +85,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new DemonForm());
         tmpPool.add(new Disarm());
         tmpPool.add(new DoubleTap());
-        tmpPool.add(new Dropkick());
+        tmpPool.add(new Dropkick2());
         tmpPool.add(new DualWield());
         tmpPool.add(new Entrench());
         tmpPool.add(new Evolve());
@@ -135,7 +135,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Uppercut());
         tmpPool.add(new Warcry());
         tmpPool.add(new Whirlwind());
-        tmpPool.add(new WildStrike());
+        tmpPool.add(new WildStrike2());
         tmpPool.add(new Accuracy());
         tmpPool.add(new Acrobatics());
         tmpPool.add(new Adrenaline());
@@ -152,9 +152,9 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new BulletTime());
         tmpPool.add(new Burst());
         tmpPool.add(new CalculatedGamble());
-        tmpPool.add(new Caltrops());
+        //tmpPool.add(new Caltrops());
         tmpPool.add(new Catalyst());
-        //tmpPool.add(new Choke());
+        tmpPool.add(new Choke2());
         tmpPool.add(new CloakAndDagger());
         tmpPool.add(new Concentrate());
         tmpPool.add(new CorpseExplosion());
@@ -180,7 +180,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new GlassKnife());
         //tmpPool.add(new GrandFinale());
         //tmpPool.add(new HeelHook());
-        tmpPool.add(new InfiniteBlades());
+        tmpPool.add(new InfiniteBlades2());
         tmpPool.add(new LegSweep());
         //tmpPool.add(new Malaise());
         //tmpPool.add(new MasterfulStab());
@@ -196,7 +196,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new QuickSlash());
         tmpPool.add(new Reflex());
         tmpPool.add(new RiddleWithHoles());
-        tmpPool.add(new Setup());
+        tmpPool.add(new Setup2());
         tmpPool.add(new Skewer());
         tmpPool.add(new Slice());
         tmpPool.add(new SneakyStrike2());
@@ -222,7 +222,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Capacitor2());
         //tmpPool.add(new Chaos());
         tmpPool.add(new Chill());
-        tmpPool.add(new Claw());
+        tmpPool.add(new Claw2());
         tmpPool.add(new ColdSnap());
         tmpPool.add(new CompileDriver());
         tmpPool.add(new ConserveBattery());
@@ -365,17 +365,17 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Enlightenment());
         tmpPool.add(new Finesse());
         tmpPool.add(new FlashOfSteel());
-        tmpPool.add(new Forethought());
+        //tmpPool.add(new Forethought());
         tmpPool.add(new GoodInstincts());
         tmpPool.add(new HandOfGreed());
         tmpPool.add(new Impatience());
         tmpPool.add(new JackOfAllTrades());
         tmpPool.add(new Madness());
-        tmpPool.add(new Magnetism());
+        tmpPool.add(new Magnetism2());
         tmpPool.add(new MasterOfStrategy());
         //tmpPool.add(new Mayhem());
         tmpPool.add(new Metamorphosis());
-        tmpPool.add(new MindBlast());
+        tmpPool.add(new MindBlast2());
         tmpPool.add(new Panacea());
         tmpPool.add(new Panache());
         tmpPool.add(new PanicButton());

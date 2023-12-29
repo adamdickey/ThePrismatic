@@ -187,11 +187,6 @@
     "NAME": "On A Roll",
     "DESCRIPTION": "Whenever you play an attack, gain !M! temporary Strength and !M! temporary Dexterity."
   },
-  "${modID}:Empowering Stab": {
-    "NAME": "Empowering Stab",
-    "DESCRIPTION": "Deal !D! damage. NL The next time you play a Power card this combat, add a copy of it into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL The next time you play a Power card this combat, add a copy of it into your hand."
-  },
   "${modID}:Havoc": {
     "NAME": "Havoc",
     "DESCRIPTION": "Scry 1. NL Play the top card of your draw pile and Exhaust it."
@@ -387,6 +382,50 @@
   "${modID}:Blizzard": {
     "NAME": "Blizzard",
     "DESCRIPTION": "Channel !M! Frost. NL Enter Calm."
+  },
+  "${modID}:Setup": {
+    "NAME": "Setup",
+    "DESCRIPTION": "Draw 1 card. NL Put a card from your hand on top of your draw pile. NL It costs 0 until played."
+  },
+  "${modID}:Magnetism": {
+    "NAME": "Magnetism",
+    "DESCRIPTION": "At the start of your turn, add a random Colorless card into your hand."
+  },
+  "${modID}:Mind Blast": {
+    "NAME": "Mind Blast",
+    "DESCRIPTION": "Innate. NL Deal damage equal to the number of cards in your draw pile.",
+    "EXTENDED_DESCRIPTION": [
+    " NL (Deals !D! damage.)"
+]
+  },
+  "${modID}:Accuracy": {
+    "NAME": "Accuracy",
+    "DESCRIPTION": "Cost 0 Attacks deal !M! additional damage."
+  },
+  "${modID}:Claw": {
+    "NAME": "Claw",
+    "DESCRIPTION": "Deal !D! damage. NL Increase the damage of ALL cost 0 Attacks by !M! this combat."
+  },
+  "${modID}:Infinite Blades": {
+    "NAME": "Infinite Blades",
+    "DESCRIPTION": "At the start of your turn, add a Shiv into your hand. NL Whenever you are attacked, deal 3 damage back.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a Shiv into your hand. NL Whenever you are attacked, deal 5 damage back."
+  },
+  "${modID}:Choke": {
+    "NAME": "Choke",
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you play a card this turn, the enemy loses !M! HP."
+  },
+  "${modID}:Wild Strike": {
+    "NAME": "Wild Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Add a Wound into your hand."
+  },
+  "${modID}:Dropkick": {
+    "NAME": "Dropkick",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Vulnerable, draw 1 card."
+  },
+  "${modID}:Combustive Fumes": {
+    "NAME": "Combustive Fumes",
+    "DESCRIPTION": "At the start of your turn, lose 1 HP and apply !M! Poison to ALL enemies."
   }
 }
 

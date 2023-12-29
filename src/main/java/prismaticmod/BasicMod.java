@@ -397,7 +397,7 @@ public class BasicMod implements
         BaseMod.addRelicToCustomPool(new MarkOfPain(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new PaperFrog(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new RedSkull(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new RunicCube(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new RunicCube(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new SelfFormingClay(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new CrackedCore(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new DataDisk(), CARD_COLOR);

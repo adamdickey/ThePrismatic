@@ -35,14 +35,6 @@
       " temporary Dexterity."
     ]
   },
-  "${modID}:Empowered": {
-    "NAME": "Empowered",
-    "DESCRIPTIONS": [
-      "The next time you play a Power card this combat, add a copy of it into your hand.",
-      "The next #b",
-      " times you play a Power card this combat, add a copy of it into your hand."
-    ]
-  },
   "${modID}:Static Discharge": {
     "NAME": "Static Discharge",
     "DESCRIPTIONS": [
@@ -57,6 +49,21 @@
       " cards.",
       "Whenever you change Stances for the first #b",
       " times each turn, draw #b"
+    ]
+  },
+  "${modID}:Accuracy": {
+    "NAME": "Accuracy",
+    "DESCRIPTIONS": [
+      "Cost 0 Attacks deal #b",
+      " additional damage."
+    ]
+  },
+  "${modID}:Combustive Fumes": {
+    "NAME": "Combustive Fumes",
+    "DESCRIPTIONS": [
+      "At the start of your turn, lose #b",
+      " HP and apply #b",
+      " Poison to ALL enemies."
     ]
   }
 }

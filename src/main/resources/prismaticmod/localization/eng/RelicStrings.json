@@ -51,5 +51,13 @@
     "DESCRIPTIONS": [
       "Gain [E] at the start of each turn until you empty your draw pile."
     ]
+  },
+  "${modID}:Runic Cube": {
+    "NAME": "Runic Cube",
+    "FLAVOR": "The runes are indecipherable.",
+    "DESCRIPTIONS": [
+      "Whenever you lose HP, draw #b",
+      " card."
+    ]
   }
 }
