@@ -79,7 +79,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Clash());
         tmpPool.add(new Cleave());
         tmpPool.add(new Clothesline());
-        tmpPool.add(new Combust());
+        //tmpPool.add(new Combust());
         tmpPool.add(new Corruption());
         tmpPool.add(new DarkEmbrace());
         tmpPool.add(new DemonForm());
