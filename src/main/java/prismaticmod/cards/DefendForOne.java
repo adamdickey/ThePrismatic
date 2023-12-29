@@ -46,8 +46,10 @@ public class DefendForOne extends BaseCard {
             Random rand = new Random();
             if(!cards.isEmpty()){
                 for(int i = 0; i < magicNumber; i++) {
-                    AbstractCard randCard = (AbstractCard) cards.get(rand.nextInt(cards.size()));
+                    int index = rand.nextInt(cards.size());
+                    AbstractCard randCard = (AbstractCard) cards.get(index);
                     addToBot(new DiscardToHandAction(randCard));
+                    cards.remove(index);
                 }
             }
         }

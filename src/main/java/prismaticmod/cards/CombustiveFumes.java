@@ -28,6 +28,6 @@ public class CombustiveFumes extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new CombustivePower(magicNumber), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new CombustivePower(magicNumber, 1), magicNumber));
     }
 }
