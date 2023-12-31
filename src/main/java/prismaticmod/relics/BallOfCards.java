@@ -18,12 +18,12 @@ public class BallOfCards extends BaseRelic {
     }
 
     public String getUpdatedDescription() {
-        return this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + 7 + this.DESCRIPTIONS[2];
+        return this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + 8 + this.DESCRIPTIONS[2];
     }
     public void atBattleStart(){
         flash();
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        int cardDraw = (int) Math.floor((double) AbstractDungeon.player.drawPile.size() /7);
+        int cardDraw = (int) Math.floor((double) AbstractDungeon.player.drawPile.size() /8);
         addToBot(new DrawCardAction(AbstractDungeon.player, cardDraw));
     }
 }

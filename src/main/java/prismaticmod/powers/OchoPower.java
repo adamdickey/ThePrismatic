@@ -15,7 +15,7 @@ public class OchoPower extends BasePower{
     private int cardsDoubledThisTurn = 0;
 
     public OchoPower(int amount) {
-        super(ID, PowerType.BUFF, false, player, player, 1, true);
+        super(ID, PowerType.BUFF, false, player, player, amount, true);
         this.amount = amount;
     }
 

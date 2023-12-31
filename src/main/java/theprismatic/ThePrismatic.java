@@ -348,7 +348,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Vigilance2());
         tmpPool.add(new Wallop());
         tmpPool.add(new WaveOfTheHand());
-        tmpPool.add(new Weave());
+        tmpPool.add(new Weave2());
         tmpPool.add(new WheelKick());
         tmpPool.add(new WindmillStrike());
         tmpPool.add(new Wish());

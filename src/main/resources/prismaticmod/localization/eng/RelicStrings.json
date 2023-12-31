@@ -59,5 +59,20 @@
       "Whenever you lose HP, draw #b",
       " card."
     ]
+  },
+  "${modID}:Sadistic Dagger": {
+    "NAME": "Sadistic Dagger",
+    "FLAVOR": "The blade tempts you to act unusually cruel.",
+    "DESCRIPTIONS": [
+      "Whenever you apply a debuff to an enemy, they take #b",
+      " damage."
+    ]
+  },
+  "${modID}:Reality Box": {
+    "NAME": "Reality Box",
+    "FLAVOR": "The reality within the box holds a great power.",
+    "DESCRIPTIONS": [
+      "Whenever a card is created during combat, Upgrade it."
+    ]
   }
 }

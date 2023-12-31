@@ -27,7 +27,6 @@ public class BurningRing extends BaseRelic {
         flash();
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FocusPower(AbstractDungeon.player, 1), 1));
-        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         addToBot(new DrawCardAction(AbstractDungeon.player, 1));
     }
     @Override
