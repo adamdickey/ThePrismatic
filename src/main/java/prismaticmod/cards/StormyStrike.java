@@ -35,7 +35,7 @@ public class StormyStrike extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         for (int i = 0; i < this.magicNumber; i++)
             addToBot(new ChannelAction(new Lightning()));
     }

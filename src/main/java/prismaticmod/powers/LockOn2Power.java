@@ -8,19 +8,20 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static prismaticmod.BasicMod.makeID;
 
-public class LockOnPower2 extends BasePower {
+public class LockOn2Power extends BasePower {
 
     public static final String ID = makeID("Lock-on");
     private static final int MULTI_STR = 50;
 
-    public LockOnPower2(AbstractCreature owner, int amount) {
+    public LockOn2Power(AbstractCreature owner, int amount) {
         super(ID, PowerType.DEBUFF, true, owner, player, amount, true);
     }
     @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType type){
-        float retVal = damage;
-        retVal = (retVal * 1.5F);
-        return retVal;
+        if(type != DamageInfo.DamageType.NORMAL){
+            damage = (damage * 1.5F);
+        }
+        return damage;
     }
     public void atEndOfRound() {
         if (this.amount == 0) {

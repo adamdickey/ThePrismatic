@@ -3,6 +3,7 @@ package prismaticmod.cards;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import prismaticmod.util.CardStats;
@@ -26,19 +27,21 @@ public class CombatTraining extends BaseCard {
     public CombatTraining() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setMagic(baseMagicNumber, UPG_Number);
-
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int attacks = 0;
-        for (AbstractCard card : p.discardPile.group){
-            if(card.type == CardType.ATTACK){
-                attacks++;
-            }
-        }
-        int strength = (int) Math.floor((double) attacks /magicNumber);
+        int strength = strength();
         if(strength > 0){
             addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, strength)));
         }
+    }
+    private int strength() {
+        int attacks = 0;
+        for (AbstractCard card : AbstractDungeon.player.discardPile.group) {
+            if (card.type == CardType.ATTACK) {
+                attacks++;
+            }
+        }
+        return (int) Math.floor((double) attacks / magicNumber);
     }
 }

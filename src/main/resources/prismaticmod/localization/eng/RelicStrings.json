@@ -40,7 +40,7 @@
     "NAME": "Ball of Cards",
     "FLAVOR": "The wealth of spells you've amassed fills your mind with many possibilities.",
     "DESCRIPTIONS": [
-      "At the start of your turn, draw #b",
+      "At the start of each combat, draw #b",
       " additional card for every #b",
       " cards in your draw pile."
     ]

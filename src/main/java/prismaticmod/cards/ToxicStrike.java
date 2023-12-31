@@ -36,7 +36,7 @@ public class ToxicStrike extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             flash();
             for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {

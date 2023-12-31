@@ -162,7 +162,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new DaggerSpray());
         tmpPool.add(new DaggerThrow());
         tmpPool.add(new Dash());
-        tmpPool.add(new DeadlyPoison());
+        tmpPool.add(new DeadlyPoison2());
         //tmpPool.add(new Deflect());
         tmpPool.add(new DieDieDie());
         tmpPool.add(new Distraction2());
@@ -194,7 +194,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Predator());
         tmpPool.add(new Prepared2());
         tmpPool.add(new QuickSlash());
-        tmpPool.add(new Reflex());
+        tmpPool.add(new Reflex2());
         tmpPool.add(new RiddleWithHoles());
         tmpPool.add(new Setup2());
         tmpPool.add(new Skewer());
@@ -202,7 +202,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new SneakyStrike2());
         tmpPool.add(new StormOfSteel());
         tmpPool.add(new SuckerPunch());
-        tmpPool.add(new Tactician());
+        tmpPool.add(new Tactician2());
         tmpPool.add(new Terror());
         tmpPool.add(new ToolsOfTheTrade2());
         tmpPool.add(new Unload());

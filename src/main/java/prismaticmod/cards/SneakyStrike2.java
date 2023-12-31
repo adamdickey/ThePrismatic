@@ -29,13 +29,13 @@ public class SneakyStrike2 extends BaseCard {
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         tags.add(CardTags.STRIKE);
     }
-    public void atTurnStart(){
-        upgradeBaseCost(2);
+    public void atTurnStartPreDraw(){
+        setCostForTurn(2);
     }
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         if (GameActionManager.totalDiscardedThisTurn > 0){
-            upgradeBaseCost(0);
+            setCostForTurn(0);
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         }
     }

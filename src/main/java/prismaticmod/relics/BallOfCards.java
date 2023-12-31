@@ -1,6 +1,7 @@
 package prismaticmod.relics;
 
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import theprismatic.ThePrismatic;
 
@@ -19,7 +20,9 @@ public class BallOfCards extends BaseRelic {
     public String getUpdatedDescription() {
         return this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + 7 + this.DESCRIPTIONS[2];
     }
-    public void atTurnStart(){
+    public void atBattleStart(){
+        flash();
+        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         int cardDraw = (int) Math.floor((double) AbstractDungeon.player.drawPile.size() /7);
         addToBot(new DrawCardAction(AbstractDungeon.player, cardDraw));
     }
