@@ -93,7 +93,7 @@
     ]
   },
   "${modID}:0ch0 Form": {
-    "NAME": "0ch0 Form",
+    "NAME": "0ch0 F0rm",
     "DESCRIPTION": "The first cost 0 card you play each turn is played twice.",
     "UPGRADE_DESCRIPTION": "The first 2 cost 0 cards you play each turn are played twice.",
     "EXTENDED_DESCRIPTION": [
@@ -365,7 +365,8 @@
   },
   "${modID}:Infernal Blade": {
     "NAME": "Infernal Blade",
-    "DESCRIPTION": "Choose 1 of 3 random Attack cards to add into your hand. It costs 0 this turn. NL Exhaust."
+    "DESCRIPTION": "Choose 1 of 3 Attacks of any color to add into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose 1 of 3 Attacks of any color to add into your hand. It costs 0 this turn. NL Exhaust."
   },
   "${modID}:Distraction": {
     "NAME": "Distraction",
@@ -457,6 +458,10 @@
   "${modID}:Weave": {
     "NAME": "Weave",
     "DESCRIPTION": "Deal !D! damage. NL Whenever you Scry or discard a card from your hand, return this from the discard pile to your hand."
+  },
+  "${modID}:Follow-Up": {
+    "NAME": "Follow-Up",
+    "DESCRIPTION": "Deal !D! damage. NL If the last card played this combat was an Attack, this costs 0."
   }
 }
 

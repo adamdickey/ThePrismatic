@@ -308,7 +308,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new FearNoEvil());
         tmpPool.add(new FlurryOfBlows());
         tmpPool.add(new FlyingSleeves());
-        tmpPool.add(new FollowUp());
+        tmpPool.add(new FollowUp2());
         //tmpPool.add(new ForeignInfluence());
         tmpPool.add(new Foresight());
         tmpPool.add(new Halt());
@@ -325,7 +325,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Omniscience());
         tmpPool.add(new Perseverance2());
         tmpPool.add(new Pray2());
-        tmpPool.add(new PressurePoints());
+        //tmpPool.add(new PressurePoints());
         tmpPool.add(new Prostrate());
         //tmpPool.add(new Protect());
         tmpPool.add(new Ragnarok());
@@ -429,10 +429,10 @@ public class ThePrismatic extends CustomPlayer {
         ArrayList<String> prismaticCards = new ArrayList<>();
         Collections.addAll(prismaticCards, CunningStrike.ID, DivineStrike.ID, EmptyStrike.ID, ExhaustingStrike.ID,
                 FrostyStrike.ID, InsightfulStrike.ID, LootingStrike.ID, RetainingStrike.ID, ScrapingStrike.ID,
-                ScryingStrike.ID, StormyStrike.ID, StrikeForOne.ID, TargetingStrike.ID, ToxicStrike.ID,
-                VulnerableStrike.ID, WeakeningStrike.ID, CunningDefend.ID, DefendForOne.ID, DivineDefend.ID,
-                EmptyDefend.ID, ExhaustingDefend.ID, FrostyDefend.ID, InsightfulDefend.ID, LootingDefend.ID,
-                RetainingDefend.ID, ScrapingDefend.ID, ScryingDefend.ID, StormyDefend.ID, ToxicDefend.ID);
+                ScryingStrike.ID, StormyStrike.ID, StrikeForOne.ID, ToxicStrike.ID, CunningDefend.ID, DefendForOne.ID,
+                DivineDefend.ID, EmptyDefend.ID, ExhaustingDefend.ID, FrostyDefend.ID, InsightfulDefend.ID,
+                LootingDefend.ID, RetainingDefend.ID, ScrapingDefend.ID, ScryingDefend.ID, StormyDefend.ID, ToxicDefend.ID);
+                //TargetingStrike.ID, VulnerableStrike.ID, WeakeningStrike.ID,
         Random rand = new Random();
         String randCard = prismaticCards.get(rand.nextInt(prismaticCards.size()));
         retVal.add(randCard);
@@ -445,7 +445,6 @@ public class ThePrismatic extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
         //IDs of starting relics. You can have multiple, but one is recommended.
         retVal.add(BurningRing.ID);
-
         return retVal;
     }
 

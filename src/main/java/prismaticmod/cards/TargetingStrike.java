@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.LockOnPower;
 import prismaticmod.powers.LockOn2Power;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
@@ -37,6 +36,6 @@ public class TargetingStrike extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot(new ApplyPowerAction(m, p, new LockOnPower(m, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(m, p, new LockOn2Power(m, this.magicNumber), this.magicNumber));
     }
 }

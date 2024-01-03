@@ -42,6 +42,10 @@ public class CombatTraining extends BaseCard {
                 attacks++;
             }
         }
-        return (int) Math.floor((double) attacks / magicNumber);
+        if(!upgraded){
+            return (int) Math.floor((double) attacks / 3);
+        } else {
+            return (int) Math.floor((double) attacks / 2);
+        }
     }
 }

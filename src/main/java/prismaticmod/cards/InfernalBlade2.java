@@ -21,7 +21,6 @@ public class InfernalBlade2 extends BaseCard {
     public InfernalBlade2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         this.exhaust = true;
-
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

@@ -65,5 +65,13 @@
       " HP and apply #b",
       " Poison to ALL enemies."
     ]
+  },
+  "${modID}:Retain": {
+    "NAME": "Retain",
+    "DESCRIPTIONS": [
+      "At the end of this turn, you may retain #b",
+      " card.",
+      " cards."
+    ]
   }
 }

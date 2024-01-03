@@ -15,13 +15,11 @@ public class LockOn2Power extends BasePower {
 
     public LockOn2Power(AbstractCreature owner, int amount) {
         super(ID, PowerType.DEBUFF, true, owner, player, amount, true);
+        loadRegion("lockon");
     }
     @Override
-    public float atDamageReceive(float damage, DamageInfo.DamageType type){
-        if(type != DamageInfo.DamageType.NORMAL){
-            damage = (damage * 1.5F);
-        }
-        return damage;
+    public float atDamageReceive(float damage, DamageInfo.DamageType type) {
+            return damage * 1.5f;
     }
     public void atEndOfRound() {
         if (this.amount == 0) {

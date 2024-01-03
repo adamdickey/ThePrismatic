@@ -49,10 +49,12 @@ public class StrikeForOne extends BaseCard {
             Random rand = new Random();
             if(!cards.isEmpty()){
                 for(int i = 0; i < magicNumber; i++) {
-                    int index = rand.nextInt(cards.size());
-                    AbstractCard randCard = (AbstractCard) cards.get(index);
-                    addToBot(new DiscardToHandAction(randCard));
-                    cards.remove(index);
+                    if(!cards.isEmpty()){
+                        int index = rand.nextInt(cards.size());
+                        AbstractCard randCard = (AbstractCard) cards.get(index);
+                        addToBot(new DiscardToHandAction(randCard));
+                        cards.remove(index);
+                    }
                 }
             }
         }
