@@ -26,7 +26,7 @@ public class Streamline2 extends BaseCard {
     public Streamline2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
-        this.retain = true;
+        this.selfRetain = true;
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
