@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 import theprismatic.ThePrismatic;
 
@@ -24,12 +25,17 @@ public class WristBlade2 extends BaseRelic {
     }
     @Override
     public float atDamageModify(float damage, AbstractCard c) {
-        if (c.costForTurn == 0 || (c.freeToPlayOnce && c.cost != -1))
+        if (c.costForTurn == 0 || (c.freeToPlayOnce && c.cost != -1)){
             return damage + 3.0F;
+        }
         return damage;
     }
+    private boolean zeroCost;
+    public void onPlayCard(AbstractCard c, AbstractMonster m) {
+        zeroCost = c.costForTurn == 0 || (c.freeToPlayOnce && c.cost != -1);
+    }
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if (damageAmount > 0 && target != AbstractDungeon.player && info.type == DamageInfo.DamageType.NORMAL) {
+        if (damageAmount > 0 && target != AbstractDungeon.player && info.type == DamageInfo.DamageType.NORMAL && !zeroCost) {
             flash();
             addToTop(new ApplyPowerAction(target, AbstractDungeon.player, new PoisonPower(target, AbstractDungeon.player, 1), 1, true));
         }

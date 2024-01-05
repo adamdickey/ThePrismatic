@@ -68,8 +68,8 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Armaments());
         tmpPool.add(new Barricade());
         tmpPool.add(new BattleTrance());
-        tmpPool.add(new Berserk());
-        //tmpPool.add(new BloodForBlood());
+        tmpPool.add(new Berserk2());
+        tmpPool.add(new BloodForBlood());
         tmpPool.add(new Bloodletting());
         tmpPool.add(new Bludgeon());
         tmpPool.add(new BodySlam());
@@ -163,7 +163,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new DaggerThrow());
         tmpPool.add(new Dash());
         tmpPool.add(new DeadlyPoison2());
-        //tmpPool.add(new Deflect());
+        tmpPool.add(new Deflect());
         tmpPool.add(new DieDieDie());
         tmpPool.add(new Distraction2());
         tmpPool.add(new DodgeAndRoll());
@@ -171,7 +171,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new EndlessAgony());
         tmpPool.add(new Envenom2());
         tmpPool.add(new EscapePlan());
-        //tmpPool.add(new Eviscerate());
+        tmpPool.add(new Eviscerate());
         tmpPool.add(new Expertise());
         tmpPool.add(new Finisher());
         tmpPool.add(new Flechettes());
@@ -182,7 +182,7 @@ public class ThePrismatic extends CustomPlayer {
         //tmpPool.add(new HeelHook());
         tmpPool.add(new InfiniteBlades2());
         tmpPool.add(new LegSweep());
-        //tmpPool.add(new Malaise());
+        tmpPool.add(new Malaise());
         //tmpPool.add(new MasterfulStab());
         tmpPool.add(new Neutralize2());
         tmpPool.add(new Nightmare());
@@ -220,7 +220,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new BootSequence());
         tmpPool.add(new Buffer());
         tmpPool.add(new Capacitor2());
-        //tmpPool.add(new Chaos());
+        tmpPool.add(new Chaos());
         tmpPool.add(new Chill());
         tmpPool.add(new Claw2());
         tmpPool.add(new ColdSnap());
@@ -252,7 +252,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new LockOn());
         tmpPool.add(new Loop());
         tmpPool.add(new MachineLearning());
-        //tmpPool.add(new Melter());
+        tmpPool.add(new Melter());
         tmpPool.add(new MeteorStrike());
         //tmpPool.add(new MultiCast());
         tmpPool.add(new Overclock());
@@ -285,7 +285,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new BattleHymn());
         tmpPool.add(new Blasphemy());
         tmpPool.add(new BowlingBash());
-        //tmpPool.add(new Brilliance());
+        tmpPool.add(new Brilliance());
         tmpPool.add(new CarveReality());
         tmpPool.add(new Collect());
         tmpPool.add(new Conclude());
@@ -327,7 +327,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Pray2());
         //tmpPool.add(new PressurePoints());
         tmpPool.add(new Prostrate());
-        //tmpPool.add(new Protect());
+        tmpPool.add(new Protect());
         tmpPool.add(new Ragnarok());
         tmpPool.add(new ReachHeaven());
         tmpPool.add(new Rushdown2());
@@ -335,7 +335,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new SandsOfTime());
         tmpPool.add(new SashWhip());
         tmpPool.add(new Scrawl());
-        //tmpPool.add(new SignatureMove());
+        tmpPool.add(new SignatureMove());
         tmpPool.add(new SimmeringFury());
         tmpPool.add(new SpiritShield());
         tmpPool.add(new Study2());
@@ -353,7 +353,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new WindmillStrike());
         tmpPool.add(new Wish());
         tmpPool.add(new Worship());
-        //tmpPool.add(new WreathOfFlame());
+        tmpPool.add(new WreathOfFlame());
         tmpPool.add(new Apotheosis());
         tmpPool.add(new BandageUp());
         tmpPool.add(new Blind());
@@ -385,7 +385,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new SecretWeapon());
         tmpPool.add(new SwiftStrike());
         tmpPool.add(new TheBomb());
-        tmpPool.add(new ThinkingAhead());
+        //tmpPool.add(new ThinkingAhead());
         //tmpPool.add(new Transmutation());
         tmpPool.add(new Trip());
         tmpPool.add(new Violence());

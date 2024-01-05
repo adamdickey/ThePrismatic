@@ -32,7 +32,7 @@
     "FLAVOR": "Handy for assassinations.",
     "DESCRIPTIONS": [
       "Attacks that cost 0 deal #b",
-      " additional damage. Whenever an Attack deals unblocked damage, apply #b",
+      " additional damage. Whenever a non-0 cost Attack deals unblocked damage, apply #b",
       " Poison."
     ]
   },

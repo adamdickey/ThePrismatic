@@ -365,16 +365,18 @@
   },
   "${modID}:Infernal Blade": {
     "NAME": "Infernal Blade",
-    "DESCRIPTION": "Choose 1 of 3 Attacks of any color to add into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Choose 1 of 3 Attacks of any color to add into your hand. It costs 0 this turn. NL Exhaust."
+    "DESCRIPTION": "Choose 1 of 3 random Attack cards to add into your hand. NL It costs 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose 1 of 3 random Attack cards to add into your hand. NL It costs 0 this turn."
   },
   "${modID}:Distraction": {
     "NAME": "Distraction",
-    "DESCRIPTION": "Choose 1 of 3 random Skill cards to add into your hand. It costs 0 this turn. NL Exhaust."
+    "DESCRIPTION": "Choose 1 of 3 random Skill cards to add into your hand. NL It costs 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose 1 of 3 random Skill cards to add into your hand. NL It costs 0 this turn."
   },
   "${modID}:White Noise": {
     "NAME": "White Noise",
-    "DESCRIPTION": "Choose 1 of 3 random Power cards to add into your hand. It costs 0 this turn. NL Exhaust."
+    "DESCRIPTION": "Choose 1 of 3 random Power cards to add into your hand. NL It costs 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose 1 of 3 Power Attack cards to add into your hand. NL It costs 0 this turn."
   },
   "${modID}:Tempest": {
     "NAME": "Tempest",
@@ -434,7 +436,8 @@
   },
   "${modID}:Evolved Firebreathing": {
     "NAME": "Evolved Firebreathing",
-    "DESCRIPTION": "Whenever you draw a Status or Curse card, deal !M! damage to ALL enemies and draw 1 card."
+    "DESCRIPTION": "Whenever you draw a Status or Curse card, deal 6 damage to ALL enemies and draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Whenever you draw a Status or Curse card, deal 6 damage to ALL enemies and draw !M! cards."
   },
   "${modID}:Metallic Rupture": {
     "NAME": "Metallic Rupture",
@@ -461,7 +464,12 @@
   },
   "${modID}:Follow-Up": {
     "NAME": "Follow-Up",
-    "DESCRIPTION": "Deal !D! damage. NL If the last card played this combat was an Attack, this costs 0."
+    "DESCRIPTION": "Deal !D! damage. NL If the last card played this combat was an Attack, draw 2 cards."
+  },
+  "${modID}:Berserk": {
+    "NAME": "Berserk",
+    "DESCRIPTION": "Enter Wrath. NL At the start of your turn, gain [E].",
+    "UPGRADE_DESCRIPTION": "Innate. NL Enter Wrath. NL At the start of your turn, gain [E]."
   }
 }
 

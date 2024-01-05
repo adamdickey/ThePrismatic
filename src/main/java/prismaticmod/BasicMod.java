@@ -5,9 +5,11 @@ import basemod.BaseMod;
 import basemod.abstracts.CustomRelic;
 import basemod.interfaces.*;
 import com.badlogic.gdx.graphics.Color;
+import com.megacrit.cardcrawl.potions.*;
 import com.megacrit.cardcrawl.relics.*;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import prismaticmod.cards.BaseCard;
+import prismaticmod.potions.BasePotion;
 import prismaticmod.util.GeneralUtils;
 import prismaticmod.util.KeywordInfo;
 import prismaticmod.util.TextureLoader;
@@ -87,6 +89,7 @@ public class BasicMod implements
         //Set up the mod information displayed in the in-game mods menu.
         //The information used is taken from your pom.xml file.
         BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
+        registerPotions();
     }
 
     /*----------Localization----------*/
@@ -225,6 +228,29 @@ public class BasicMod implements
                 .packageFilter(BaseCard.class) //In the same package as this class
                 .setDefaultSeen(true) //And marks them as seen in the compendium
                 .cards(); //Adds the cards
+    }
+    public static void registerPotions() {
+        new AutoAdd(modID) //Loads files from this mod
+                .packageFilter(BasePotion.class) //In the same package as this class
+                .any(BasePotion.class, (info, potion) -> { //Run this code for any classes that extend this class
+                    //These three null parameters are colors.
+                    //If they're not null, they'll overwrite whatever color is set in the potions themselves.
+                    //This is an old feature added before having potions determine their own color was possible.
+                    BaseMod.addPotion(potion.getClass(), null, null, null, potion.ID, potion.playerClass);
+                    //playerClass will make a potion character-specific. By default, it's null and will do nothing.
+                });
+        BaseMod.addPotion(BloodPotion.class, null, null, null, "BloodPotion");
+        //BaseMod.addPotion(Elixir.class, null, null, null, "ElixirPotion");
+        BaseMod.addPotion(HeartOfIron.class, null, null, null, "HeartOfIron");
+        BaseMod.addPotion(PoisonPotion.class, null, null, null, "Poison Potion");
+        BaseMod.addPotion(CunningPotion.class, null, null, null, "CunningPotion");
+        BaseMod.addPotion(GhostInAJar.class, null, null, null, "GhostInAJar");
+        BaseMod.addPotion(FocusPotion.class, null, null, null, "FocusPotion");
+        BaseMod.addPotion(PotionOfCapacity.class, null, null, null, "PotionOfCapacity");
+        //BaseMod.addPotion(EssenceOfDarkness.class, null, null, null, "EssenceOfDarkness");
+        BaseMod.addPotion(BottledMiracle.class, null, null, null, "BottledMiracle");
+        BaseMod.addPotion(StancePotion.class, null, null, null, "StancePotion");
+        BaseMod.addPotion(Ambrosia.class, null, null, null, "Ambrosia");
     }
     public void receiveEditRelics()
     {

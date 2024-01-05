@@ -2,6 +2,7 @@ package prismaticmod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -23,6 +24,7 @@ public class FollowUp2 extends BaseCard {
 
     private static final int DAMAGE = 7;
     private static final int UPG_DAMAGE = 4;
+    private boolean lastAttack = false;
 
     public FollowUp2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
@@ -31,16 +33,19 @@ public class FollowUp2 extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        if(lastAttack){
+            addToBot(new DrawCardAction(p, 2));
+        }
     }
     public void triggerOnGlowCheck() {
         if (!AbstractDungeon.actionManager.cardsPlayedThisCombat.isEmpty() && (AbstractDungeon.actionManager.cardsPlayedThisCombat
                 .get(AbstractDungeon.actionManager.cardsPlayedThisCombat
                         .size() - 1)).type == AbstractCard.CardType.ATTACK) {
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
-            setCostForTurn(0);
+            lastAttack = true;
         } else {
             this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-            setCostForTurn(1);
+            lastAttack = false;
         }
     }
 }

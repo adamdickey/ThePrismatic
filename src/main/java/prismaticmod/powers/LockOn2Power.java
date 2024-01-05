@@ -19,7 +19,11 @@ public class LockOn2Power extends BasePower {
     }
     @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType type) {
-            return damage * 1.5f;
+        if (type != DamageInfo.DamageType.NORMAL) {
+            return super.atDamageReceive(damage * 1.5f, type);
+        } else {
+            return super.atDamageReceive(damage, type);
+        }
     }
     public void atEndOfRound() {
         if (this.amount == 0) {

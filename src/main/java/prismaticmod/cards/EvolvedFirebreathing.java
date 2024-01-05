@@ -19,8 +19,8 @@ public class EvolvedFirebreathing extends BaseCard {
     );
     //These will be used in the constructor. Technically you can just use the values directly,
     //but constants at the top of the file are easy to adjust.
-    private static final int baseMagicNumber = 6;
-    private static final int UPG_Number = 4;
+    private static final int baseMagicNumber = 1;
+    private static final int UPG_Number = 1;
 
     public EvolvedFirebreathing() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
@@ -29,7 +29,7 @@ public class EvolvedFirebreathing extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new FireBreathingPower(p, magicNumber), magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new EvolvePower(p, 1), 1));
+        addToBot(new ApplyPowerAction(p, p, new FireBreathingPower(p, 6), 6));
+        addToBot(new ApplyPowerAction(p, p, new EvolvePower(p, magicNumber), magicNumber));
     }
 }
