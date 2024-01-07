@@ -73,5 +73,12 @@
       " card.",
       " cards."
     ]
+  },
+  "${modID}:Like Water": {
+    "NAME": "Like Water",
+    "DESCRIPTIONS": [
+      "At the end of your turn, if you are in Calm or have a Frost Channeled, gain #b",
+      " Block."
+    ]
   }
 }

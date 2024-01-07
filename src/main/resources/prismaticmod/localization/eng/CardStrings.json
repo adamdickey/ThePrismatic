@@ -470,6 +470,10 @@
     "NAME": "Berserk",
     "DESCRIPTION": "Enter Wrath. NL At the start of your turn, gain [E].",
     "UPGRADE_DESCRIPTION": "Innate. NL Enter Wrath. NL At the start of your turn, gain [E]."
+  },
+  "${modID}:Like Water": {
+    "NAME": "Like Water",
+    "DESCRIPTION": "At the end of your turn, if you are in Calm or have a Frost Channeled, gain !M! Block."
   }
 }
 

@@ -74,5 +74,20 @@
     "DESCRIPTIONS": [
       "Whenever a card is created during combat, Upgrade it."
     ]
+  },
+  "${modID}:Golden Eye": {
+    "NAME": "Golden Eye",
+    "FLAVOR": "See into the mind of your future self, predicting your fate.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, Scry #b",
+      "."
+    ]
+  },
+  "${modID}:Establishing Seal": {
+    "NAME": "Establishing Seal",
+    "FLAVOR": "Seal your fate and reveal your path into the future.",
+    "DESCRIPTIONS": [
+      "Whenever a card is Retained, reduce its cost by 1 this combat."
+    ]
   }
 }

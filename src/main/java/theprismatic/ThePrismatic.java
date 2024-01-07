@@ -99,7 +99,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new GhostlyArmor());
         tmpPool.add(new Havoc2());
         tmpPool.add(new Headbutt());
-        //tmpPool.add(new HeavyBlade());
+        tmpPool.add(new HeavyBlade());
         tmpPool.add(new Hemokinesis());
         tmpPool.add(new Immolate());
         tmpPool.add(new Impervious());
@@ -317,7 +317,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Judgement());
         tmpPool.add(new JustLucky());
         tmpPool.add(new LessonLearned());
-        //tmpPool.add(new LikeWater());
+        tmpPool.add(new LikeWater2());
         tmpPool.add(new MasterReality2());
         tmpPool.add(new Meditate());
         //tmpPool.add(new MentalFortress());

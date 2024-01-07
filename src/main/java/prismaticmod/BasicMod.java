@@ -295,7 +295,7 @@ public class BasicMod implements
         BaseMod.addRelicToCustomPool(new SymbioticVirus(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new CloakClasp(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new Damaru(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new GoldenEye(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new GoldenEye(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new HolyWater(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new Melange(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new PureWater(), CARD_COLOR);
