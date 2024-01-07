@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.cards.CardQueueItem;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.watcher.FreeAttackPower;
 
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static prismaticmod.BasicMod.makeID;
@@ -31,7 +32,8 @@ public class OchoPower extends BasePower{
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (!card.purgeOnUse && this.amount > 0 && cardsDoubledThisTurn < this.amount && card.cost == 0) {
+        if (!card.purgeOnUse && this.amount > 0 && cardsDoubledThisTurn < this.amount &&
+                ((card.costForTurn == 0 || (card.freeToPlayOnce && card.cost != -1)) || player.hasPower(FreeAttackPower.POWER_ID))) {
             this.cardsDoubledThisTurn++;
             flash();
             AbstractMonster m = null;
