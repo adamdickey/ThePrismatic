@@ -474,6 +474,15 @@
   "${modID}:Like Water": {
     "NAME": "Like Water",
     "DESCRIPTION": "At the end of your turn, if you are in Calm or have a Frost Channeled, gain !M! Block."
+  },
+  "${modID}:Exploit Weakness": {
+    "NAME": "Exploit Weakness",
+    "DESCRIPTION": "Deal !D! damage. NL For each debuff on the enemy, deal !D! damage again."
+  },
+  "${modID}:Storm of Steel": {
+    "NAME": "Storm of Steel",
+    "DESCRIPTION": "Discard your hand. NL Add 1 Shiv into your hand for each card discarded.",
+    "UPGRADE_DESCRIPTION": "Discard your hand. NL Add 1 Shiv+ into your hand for each card discarded."
   }
 }
 
