@@ -89,5 +89,22 @@
     "DESCRIPTIONS": [
       "Whenever a card is Retained, reduce its cost by 1 this combat."
     ]
+  },
+  "${modID}:Viral Disk": {
+    "NAME": "Viral Disk",
+    "FLAVOR": "This disk contains precious data on the virus it holds within.",
+    "DESCRIPTIONS": [
+      "At the Start of each combat, gain #b",
+      " Focus and Channel #b",
+      " Dark."
+    ]
+  },
+  "${modID}:Specimen Funnel": {
+    "NAME": "Specimen Funnel",
+    "FLAVOR": "I wouldn't drink out of it.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, apply #b",
+      " Poison to ALL enemies. Whenever an enemy dies, transfer any Poison it has to a random enemy."
+    ]
   }
 }

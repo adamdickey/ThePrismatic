@@ -268,7 +268,7 @@ public class BasicMod implements
         //BaseMod.addRelicToCustomPool(new RingOfTheSerpent(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new SnakeRing(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new SneckoSkull(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new TheSpecimen(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new TheSpecimen(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new Tingsha(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new ToughBandages(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new TwistedFunnel(), CARD_COLOR);
@@ -285,14 +285,14 @@ public class BasicMod implements
         //BaseMod.addRelicToCustomPool(new RunicCube(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new SelfFormingClay(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new CrackedCore(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new DataDisk(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new DataDisk(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new EmotionChip(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new FrozenCore(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new GoldPlatedCables(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new Inserter(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new NuclearBattery(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new RunicCapacitor(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new SymbioticVirus(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new SymbioticVirus(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new CloakClasp(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new Damaru(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new GoldenEye(), CARD_COLOR);
