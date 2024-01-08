@@ -445,17 +445,17 @@
   },
   "${modID}:Deadly Poison": {
     "NAME": "Deadly Poison",
-    "DESCRIPTION": "Apply !M! Poison. NL If this card is discarded from your hand, apply !M! Poison to a random enemy."
+    "DESCRIPTION": "Apply !M! Poison. NL If this card is discarded from your hand or discarded while Scrying, apply !M! Poison to a random enemy."
   },
   "${modID}:Tactician": {
     "NAME": "Tactician",
-    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand or Exhausted, gain [E].",
-    "UPGRADE_DESCRIPTION": "Unplayable. NL If this card is discarded from your hand or Exhausted, gain [E] [E].",
+    "DESCRIPTION": "Unplayable. NL If this card is discarded or Exhausted, gain [E].",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL If this card is discarded or Exhausted, gain [E] [E].",
     "EXTENDED_DESCRIPTION": ["I can't play this card."]
   },
   "${modID}:Reflex": {
     "NAME": "Reflex",
-    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand or Exhausted, draw !M! cards.",
+    "DESCRIPTION": "Unplayable. NL If this card is discarded or Exhausted, draw !M! cards.",
     "EXTENDED_DESCRIPTION": ["I can't play this card."]
   },
   "${modID}:Weave": {
