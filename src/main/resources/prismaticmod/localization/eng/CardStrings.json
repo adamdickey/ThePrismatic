@@ -445,7 +445,7 @@
   },
   "${modID}:Deadly Poison": {
     "NAME": "Deadly Poison",
-    "DESCRIPTION": "Apply !M! Poison. NL If this card is discarded from your hand or discarded while Scrying, apply !M! Poison to a random enemy."
+    "DESCRIPTION": "Apply !M! Poison. NL If this card is discarded, apply !M! Poison to a random enemy."
   },
   "${modID}:Tactician": {
     "NAME": "Tactician",
