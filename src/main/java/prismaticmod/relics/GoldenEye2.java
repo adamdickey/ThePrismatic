@@ -21,11 +21,23 @@ public class GoldenEye2 extends BaseRelic {
     public String getUpdatedDescription() {
         return this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1];
     }
-    public void atTurnStart() {
-        if (AbstractDungeon.player.drawPile.size() <= 0)
-            addToTop(new EmptyDeckShuffleAction());
+
+    private boolean turn1 = true;
+
+    public void atBattleStartPreDraw(){
         flash();
         addToBot(new ScryAction(1));
         addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        turn1 = true;
+    }
+    public void atTurnStart() {
+        if (!turn1) {
+            if (AbstractDungeon.player.drawPile.size() <= 0)
+                addToTop(new EmptyDeckShuffleAction());
+            flash();
+            addToBot(new ScryAction(1));
+            addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        }
+        turn1 = false;
     }
 }
