@@ -1,23 +1,20 @@
 [
   {
-    "PROPER_NAME": "This is displayed in the tooltip.",
+    "PROPER_NAME": "Lock-On+",
     "NAMES": [
-      "these",
-      "are",
-      "detected",
-      "in",
-      "the",
-      "text"
+      "lock-on+",
+      "Lock-on+"
     ],
-    "DESCRIPTION": "This is displayed in the tooltip. Spaces should not be used be avoided in NAMES, with the exception of multi-word keywords (see next entry)."
+    "DESCRIPTION": "Lock-On+ targets receive #b50% more damage from non-Attack sources."
   },
   {
-    "PROPER_NAME": "Multiword Keyword",
+    "PROPER_NAME": "Discard",
     "NAMES": [
-      "multiword keyword",
-      "multiword_keyword",
-      "multiword_keywords"
+      "Discarded",
+      "discarded",
+      "Discard",
+      "discard"
     ],
-    "DESCRIPTION": "Make sure the first element in NAMES has no underscores. The rest should use _ in the place of spaces. In card text, you'll use the underscore versions."
+    "DESCRIPTION": "A card is discarded if it is discarded from your hand or discarded while Scrying."
   }
-]
+  ]

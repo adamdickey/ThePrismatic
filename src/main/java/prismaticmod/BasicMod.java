@@ -262,15 +262,15 @@ public class BasicMod implements
                     UnlockTracker.markRelicAsSeen(relic.relicId);
                 });
 
-        BaseMod.addRelicToCustomPool(new HoveringKite(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new HoveringKite(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new NinjaScroll(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new PaperCrane(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new RingOfTheSerpent(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new SnakeRing(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new SneckoSkull(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new TheSpecimen(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new Tingsha(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new ToughBandages(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new Tingsha(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new ToughBandages(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new TwistedFunnel(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new WristBlade(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new BlackBlood(), CARD_COLOR);

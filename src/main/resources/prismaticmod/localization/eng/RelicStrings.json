@@ -106,5 +106,28 @@
       "At the start of each combat, apply #b",
       " Poison to ALL enemies. Whenever an enemy dies, transfer any Poison it has to a random enemy."
     ]
+  },
+  "${modID}:Hovering Kite": {
+    "NAME": "Hovering Kite",
+    "FLAVOR": "The Kite floats around you in battle, propelled by a mysterious force.",
+    "DESCRIPTIONS": [
+      "The first time you #y${modID}:Discard a card each turn, gain [E] ."
+    ]
+  },
+  "${modID}:Tough Bandages": {
+    "NAME": "Tough Bandages",
+    "FLAVOR": "Loss gives strength.",
+    "DESCRIPTIONS": [
+      "Whenever you #y${modID}:Discard a card during your turn, gain #b",
+      " #yBlock."
+    ]
+  },
+  "${modID}:Tingsha": {
+    "NAME": "Tingsha",
+    "FLAVOR": "The sound this instrument generates seems to be capable of reverberating to painful levels of volume.",
+    "DESCRIPTIONS": [
+      "Whenever you #y${modID}:Discard a card during your turn, deal #b",
+      " damage to a random enemy."
+    ]
   }
 }

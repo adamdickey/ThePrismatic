@@ -2,9 +2,9 @@ package prismaticmod.relics;
 
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import theprismatic.ThePrismatic;
 
 import static prismaticmod.BasicMod.makeID;
 
@@ -15,7 +15,7 @@ public class RunicCube2 extends BaseRelic {
     private static final LandingSound SOUND = LandingSound.FLAT; //The sound played when the relic is clicked.
 
     public RunicCube2() {
-        super(ID, NAME, AbstractCard.CardColor.RED, RARITY, SOUND);
+        super(ID, NAME, ThePrismatic.Enums.CARD_COLOR, RARITY, SOUND);
     }
 
     public String getUpdatedDescription() {

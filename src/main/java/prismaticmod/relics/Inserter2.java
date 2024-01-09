@@ -3,10 +3,10 @@ package prismaticmod.relics;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.defect.IncreaseMaxOrbAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.powers.watcher.MantraPower;
+import theprismatic.ThePrismatic;
 
 import static prismaticmod.BasicMod.makeID;
 
@@ -17,7 +17,7 @@ public class Inserter2 extends BaseRelic {
     private static final LandingSound SOUND = LandingSound.SOLID; //The sound played when the relic is clicked.
 
     public Inserter2() {
-        super(ID, NAME, AbstractCard.CardColor.BLUE, RARITY, SOUND);
+        super(ID, NAME, ThePrismatic.Enums.CARD_COLOR, RARITY, SOUND);
     }
     @Override
     public void onEquip() {

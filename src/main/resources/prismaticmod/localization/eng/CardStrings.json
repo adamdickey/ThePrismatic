@@ -13,7 +13,7 @@
   },
   "${modID}:Targeting Strike": {
     "NAME": "Targeting Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Lock-on.",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${modID}:Lock-On+.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
@@ -325,7 +325,7 @@
   },
   "${modID}:Sneaky Strike": {
     "NAME": "Sneaky Strike",
-    "DESCRIPTION": "Deal !D! damage. NL If you have discarded a card this turn, this costs 0."
+    "DESCRIPTION": "Deal !D! damage. NL If you have Discarded a card this turn, this costs 0."
   },
   "${modID}:A Thousand Cuts": {
     "NAME": "A Thousand Cuts",
@@ -445,17 +445,17 @@
   },
   "${modID}:Deadly Poison": {
     "NAME": "Deadly Poison",
-    "DESCRIPTION": "Apply !M! Poison. NL If this card is discarded, apply !M! Poison to a random enemy."
+    "DESCRIPTION": "Apply !M! Poison. NL If this card is ${modID}:Discarded, apply !M! Poison to a random enemy."
   },
   "${modID}:Tactician": {
     "NAME": "Tactician",
-    "DESCRIPTION": "Unplayable. NL If this card is discarded or Exhausted, gain [E].",
-    "UPGRADE_DESCRIPTION": "Unplayable. NL If this card is discarded or Exhausted, gain [E] [E].",
+    "DESCRIPTION": "Unplayable. NL If this card is ${modID}:Discarded or Exhausted, NL gain [G].",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL If this card is ${modID}:Discarded or Exhausted, NL gain [G] [G].",
     "EXTENDED_DESCRIPTION": ["I can't play this card."]
   },
   "${modID}:Reflex": {
     "NAME": "Reflex",
-    "DESCRIPTION": "Unplayable. NL If this card is discarded or Exhausted, draw !M! cards.",
+    "DESCRIPTION": "Unplayable. NL If this card is ${modID}:Discarded or Exhausted, draw !M! cards.",
     "EXTENDED_DESCRIPTION": ["I can't play this card."]
   },
   "${modID}:Weave": {
@@ -468,8 +468,8 @@
   },
   "${modID}:Berserk": {
     "NAME": "Berserk",
-    "DESCRIPTION": "Enter Wrath. NL At the start of your turn, gain [E].",
-    "UPGRADE_DESCRIPTION": "Innate. NL Enter Wrath. NL At the start of your turn, gain [E]."
+    "DESCRIPTION": "Enter Wrath. NL At the start of your turn, gain [R].",
+    "UPGRADE_DESCRIPTION": "Innate. NL Enter Wrath. NL At the start of your turn, gain [R]."
   },
   "${modID}:Like Water": {
     "NAME": "Like Water",
@@ -477,12 +477,37 @@
   },
   "${modID}:Exploit Weakness": {
     "NAME": "Exploit Weakness",
-    "DESCRIPTION": "Deal !D! damage. NL For each debuff on the enemy, deal !D! damage again."
+    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each debuff on the enemy."
   },
   "${modID}:Storm of Steel": {
     "NAME": "Storm of Steel",
     "DESCRIPTION": "Discard your hand. NL Add 1 Shiv into your hand for each card discarded.",
     "UPGRADE_DESCRIPTION": "Discard your hand. NL Add 1 Shiv+ into your hand for each card discarded."
+  },
+  "${modID}:Bullseye": {
+    "NAME": "Bullseye",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${modID}:Lock-On+."
+  },
+  "${modID}:Targeting Defend": {
+    "NAME": "Targeting Defend",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Lock-On+ to a random enemy."
+  },
+  "${modID}:Catalyst": {
+    "NAME": "Catalyst",
+    "DESCRIPTION": "Double the enemy's Poison. NL Apply 99 ${modID}:Lock-On+. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Triple the enemy's Poison. NL Apply 99 ${modID}:Lock-On+. NL Exhaust."
+  },
+  "${modID}:Pressure Points": {
+    "NAME": "Pressure Points",
+    "DESCRIPTION": "Apply !M! Mark. NL Apply !${modID}:LockOn! ${modID}:Lock-On+. NL ALL enemies lose HP equal to their Mark."
+  },
+  "${modID}:Eviscerate": {
+    "NAME": "Eviscerate",
+    "DESCRIPTION": "Costs 1 less [G] NL for each card ${modID}:Discarded this turn. NL Deal !D! damage 3 times."
+  },
+  "${modID}:Slice": {
+    "NAME": "Slice",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust 1 card."
   }
 }
 

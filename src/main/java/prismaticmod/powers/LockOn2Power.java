@@ -10,7 +10,7 @@ import static prismaticmod.BasicMod.makeID;
 
 public class LockOn2Power extends BasePower {
 
-    public static final String ID = makeID("Lock-on");
+    public static final String ID = makeID("Lock-On+");
     private static final int MULTI_STR = 50;
 
     public LockOn2Power(AbstractCreature owner, int amount) {
@@ -18,17 +18,17 @@ public class LockOn2Power extends BasePower {
         loadRegion("lockon");
     }
     @Override
-    public float atDamageReceive(float damage, DamageInfo.DamageType damageType) {
-        if(damageType != DamageInfo.DamageType.NORMAL){
-            return damage * 1.5f;
+    public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
+        if(info.type != DamageInfo.DamageType.NORMAL){
+            return (int)(damageAmount * 1.5);
         }
-        return damage;
+        return damageAmount;
     }
     public void atEndOfRound() {
         if (this.amount == 0) {
-            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "ThePrismatic:Lock-on"));
+            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, LockOn2Power.ID));
         } else {
-            addToBot(new ReducePowerAction(this.owner, this.owner, "ThePrismatic:Lock-on", 1));
+            addToBot(new ReducePowerAction(this.owner, this.owner, LockOn2Power.ID, 1));
         }
     }
 
