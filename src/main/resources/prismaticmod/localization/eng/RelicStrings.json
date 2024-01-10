@@ -129,5 +129,61 @@
       "Whenever you #y${modID}:Discard a card during your turn, deal #b",
       " damage to a random enemy."
     ]
+  },
+  "${modID}:Darkstone Doll": {
+    "NAME": "Darkstone Doll",
+    "FLAVOR": "This charm draws power from a mysterious doll, converting it's malicious energy into strength and vitality to the wearer.",
+    "DESCRIPTIONS": [
+      "Whenever you obtain a Curse, increase your Max HP by #b",
+      ".",
+      " For each Curse in your deck, start each combat with #b",
+      " additional Strength."
+    ]
+  },
+  "${modID}:Shovel": {
+    "NAME": "Shovel",
+    "FLAVOR": "The Spire houses all number of relics from past civilizations and powerful adventurers lost to time. Time to go dig them up!",
+    "DESCRIPTIONS": [
+      "You can now #yDig for relics at Rest Sites."
+    ]
+  },
+  "${modID}:Teardrop Locket": {
+    "NAME": "Teardrop Locket",
+    "FLAVOR": "Its owner blind, its contents unseen.",
+    "DESCRIPTIONS": [
+      "Start each combat in #yCalm."
+    ]
+  },
+  "${modID}:Unceasing Top": {
+    "NAME": "Unceasing Top",
+    "FLAVOR": "The top continues to spin effortlessly as if you were in a dream.",
+    "DESCRIPTIONS": [
+      "Whenever you have no cards in hand during your turn, draw a card."
+    ]
+  },
+  "${modID}:Mummified Hand": {
+    "NAME": "Mummified Hand",
+    "FLAVOR": "Frequently twitches, especially when your pulse is high.",
+    "DESCRIPTIONS": [
+      "Whenever you play a Power, a random card in your hand costs 0 for the turn."
+    ]
+  },
+  "${modID}:Blue Candle": {
+    "NAME": "Blue Candle",
+    "FLAVOR": "The flame ignites when shrouded in darkness.",
+    "DESCRIPTIONS": [
+      "#yUnplayable #rCurse cards can now be played. NL Whenever you play a #rCurse, lose #b",
+      " HP and #yExhaust it."
+    ]
+  },
+  "${modID}:Tiny House": {
+    "NAME": "Tiny House",
+    "FLAVOR": "\"A near perfect implementation of miniaturization. My finest work to date, but still not adequate.\" - The Architect",
+    "DESCRIPTIONS": [
+      "Upon pickup, obtain #b1 potion. NL Gain #b",
+      " #yGold. NL Raise your Max HP by #b",
+      ". NL Obtain #b1 relic. NL Obtain #b1 card. NL Upgrade #b1 random card.",
+      "Tiny House!"
+    ]
   }
 }

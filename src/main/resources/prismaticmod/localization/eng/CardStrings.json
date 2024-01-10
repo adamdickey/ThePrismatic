@@ -477,7 +477,7 @@
   },
   "${modID}:Exploit Weakness": {
     "NAME": "Exploit Weakness",
-    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each debuff on the enemy."
+    "DESCRIPTION": "Deal !D! damage. NL Deal !M! additional damage for each debuff on the enemy."
   },
   "${modID}:Storm of Steel": {
     "NAME": "Storm of Steel",
@@ -508,6 +508,10 @@
   "${modID}:Slice": {
     "NAME": "Slice",
     "DESCRIPTION": "Deal !D! damage. NL Exhaust 1 card."
+  },
+  "${modID}:Dark Embrace": {
+    "NAME": "Dark Embrace",
+    "DESCRIPTION": "Whenever a card is Exhausted, NL draw 1 card."
   }
 }
 

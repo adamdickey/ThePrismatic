@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.watcher.MarkPower;
 import com.megacrit.cardcrawl.vfx.combat.PressurePointEffect;
 import prismaticmod.powers.LockOn2Power;
@@ -44,11 +45,20 @@ public class PressurePoints2 extends BaseCard {
             addToBot(new VFXAction(new PressurePointEffect(m.hb.cX, m.hb.cY)));
         }
         for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-            if(mo == m && mo.hasPower(MarkPower.POWER_ID)){
-                addToBot(new DamageAction(mo, new DamageInfo(p, mo.getPower(MarkPower.POWER_ID).amount+magicNumber, DamageInfo.DamageType.HP_LOSS)));
-            } else if(mo == m) {
-                addToBot(new DamageAction(mo, new DamageInfo(p, magicNumber, DamageInfo.DamageType.HP_LOSS)));
-            } else if (mo.hasPower(MarkPower.POWER_ID)) {
+            if(mo == m) {
+                if (mo.hasPower(MarkPower.POWER_ID)) {
+                    if (!mo.hasPower(ArtifactPower.POWER_ID)) {
+                        addToBot(new DamageAction(mo, new DamageInfo(p, mo.getPower(MarkPower.POWER_ID).amount + magicNumber, DamageInfo.DamageType.HP_LOSS)));
+                    } else {
+                        addToBot(new DamageAction(mo, new DamageInfo(p, mo.getPower(MarkPower.POWER_ID).amount, DamageInfo.DamageType.HP_LOSS)));
+                    }
+                } else {
+                    if (!mo.hasPower(ArtifactPower.POWER_ID)) {
+                        addToBot(new DamageAction(mo, new DamageInfo(p, magicNumber, DamageInfo.DamageType.HP_LOSS)));
+                    }
+                }
+            }
+            else{
                 addToBot(new DamageAction(mo, new DamageInfo(p, mo.getPower(MarkPower.POWER_ID).amount, DamageInfo.DamageType.HP_LOSS)));
             }
         }
