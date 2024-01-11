@@ -77,7 +77,14 @@
   "${modID}:Like Water": {
     "NAME": "Like Water",
     "DESCRIPTIONS": [
-      "At the end of your turn, if you are in Calm or have a Frost Channeled, gain #b",
+      "At the end of your turn, if you are in #yCalm or have a #yFrost #yChanneled, gain #b",
+      " Block."
+    ]
+  },
+  "${modID}:Nirvana": {
+    "NAME": "Nirvana",
+    "DESCRIPTIONS": [
+      "Whenever you #yDiscard a card, gain #b",
       " Block."
     ]
   }

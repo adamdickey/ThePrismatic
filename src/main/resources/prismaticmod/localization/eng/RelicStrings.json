@@ -182,7 +182,7 @@
     "DESCRIPTIONS": [
       "Upon pickup, obtain #b1 potion. NL Gain #b",
       " #yGold. NL Raise your Max HP by #b",
-      ". NL Obtain #b1 relic. NL Obtain #b1 card. NL Upgrade #b1 random card.",
+      ". NL Obtain #b1 common relic. NL Obtain #b1 card. NL Upgrade #b1 random card.",
       "Tiny House!"
     ]
   }

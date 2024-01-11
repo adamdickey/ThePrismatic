@@ -28,6 +28,7 @@ public class RemoveRelicsPatch {
         relicsToRemoveOnStart.add(UnceasingTop.ID);
         relicsToRemoveOnStart.add(MummifiedHand.ID);
         relicsToRemoveOnStart.add(TinyHouse.ID);
+        relicsToRemoveOnStart.add(TeardropLocket.ID);
 
         for (String remove : relicsToRemoveOnStart) {
             Iterator<String> s;

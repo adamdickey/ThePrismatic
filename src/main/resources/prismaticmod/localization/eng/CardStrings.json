@@ -325,7 +325,7 @@
   },
   "${modID}:Sneaky Strike": {
     "NAME": "Sneaky Strike",
-    "DESCRIPTION": "Deal !D! damage. NL If you have Discarded a card this turn, this costs 0."
+    "DESCRIPTION": "Deal !D! damage. NL If you have ${modID}:Discarded a card this turn, this costs 0."
   },
   "${modID}:A Thousand Cuts": {
     "NAME": "A Thousand Cuts",
@@ -512,6 +512,14 @@
   "${modID}:Dark Embrace": {
     "NAME": "Dark Embrace",
     "DESCRIPTION": "Whenever a card is Exhausted, NL draw 1 card."
+  },
+  "${modID}:Hit and Run": {
+    "NAME": "Hit and Run",
+    "DESCRIPTION": "Apply !M! Weak. NL Gain !B! Block for each debuff on the enemy."
+  },
+  "${modID}:Nirvana": {
+    "NAME": "Nirvana",
+    "DESCRIPTION": "Whenever you ${modID}:Discard a card, gain !M! Block."
   }
 }
 

@@ -200,7 +200,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Skewer());
         tmpPool.add(new Slice2());
         tmpPool.add(new SneakyStrike2());
-        tmpPool.add(new StormOfSteel());
+        tmpPool.add(new StormOfSteel2());
         tmpPool.add(new SuckerPunch());
         tmpPool.add(new Tactician2());
         tmpPool.add(new Terror());
@@ -321,7 +321,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new MasterReality2());
         tmpPool.add(new Meditate());
         //tmpPool.add(new MentalFortress());
-        tmpPool.add(new Nirvana());
+        tmpPool.add(new Nirvana2());
         tmpPool.add(new Omniscience());
         tmpPool.add(new Perseverance2());
         tmpPool.add(new Pray2());
