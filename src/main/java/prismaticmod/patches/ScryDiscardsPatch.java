@@ -17,6 +17,7 @@ import javassist.CtBehavior;
 import prismaticmod.cards.DeadlyPoison2;
 import prismaticmod.cards.Reflex2;
 import prismaticmod.cards.Tactician2;
+import prismaticmod.cards.Weave2;
 
 @SpirePatch2(clz = ScryAction.class, method = "update")
 public class ScryDiscardsPatch {
@@ -24,7 +25,7 @@ public class ScryDiscardsPatch {
     public static void Insert() {
         for(AbstractCard c : AbstractDungeon.gridSelectScreen.selectedCards){
             GameActionManager.incrementDiscard(false);
-            if(c instanceof DeadlyPoison2 || c instanceof Reflex2 || c instanceof Tactician2){
+            if(c instanceof DeadlyPoison2 || c instanceof Reflex2 || c instanceof Tactician2 || c instanceof Weave2){
                 c.triggerOnManualDiscard();
             }
         }

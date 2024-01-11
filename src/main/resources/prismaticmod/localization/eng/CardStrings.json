@@ -460,7 +460,7 @@
   },
   "${modID}:Weave": {
     "NAME": "Weave",
-    "DESCRIPTION": "Deal !D! damage. NL Whenever you Scry or discard a card from your hand, return this from the discard pile to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you ${modID}:Discard a card, return this from the discard pile to your hand."
   },
   "${modID}:Follow-Up": {
     "NAME": "Follow-Up",

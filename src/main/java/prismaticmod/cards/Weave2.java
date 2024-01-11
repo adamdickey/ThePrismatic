@@ -31,8 +31,7 @@ public class Weave2 extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
-
-    public void triggerOnScry() {
+    public void triggerOnManualDiscard(){
         addToBot(new DiscardToHandAction(this));
     }
     public void didDiscard(){
