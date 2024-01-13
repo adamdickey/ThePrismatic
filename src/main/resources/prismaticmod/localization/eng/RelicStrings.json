@@ -47,7 +47,7 @@
   },
   "${modID}:Hardwood Barrel": {
     "NAME": "Hardwood Barrel",
-    "FLAVOR": "A sturdy barrel.",
+    "FLAVOR": "Nice to have until you're scraping the bottom of it.",
     "DESCRIPTIONS": [
       "Gain [E] at the start of each turn until you empty your draw pile."
     ]
@@ -111,14 +111,14 @@
     "NAME": "Hovering Kite",
     "FLAVOR": "The Kite floats around you in battle, propelled by a mysterious force.",
     "DESCRIPTIONS": [
-      "The first time you #y${modID}:Discard a card each turn, gain [E] ."
+      "The first time you #y${modID}:Mill a card each turn, gain [E] ."
     ]
   },
   "${modID}:Tough Bandages": {
     "NAME": "Tough Bandages",
     "FLAVOR": "Loss gives strength.",
     "DESCRIPTIONS": [
-      "Whenever you #y${modID}:Discard a card during your turn, gain #b",
+      "Whenever you #y${modID}:Mill a card during your turn, gain #b",
       " #yBlock."
     ]
   },
@@ -126,7 +126,7 @@
     "NAME": "Tingsha",
     "FLAVOR": "The sound this instrument generates seems to be capable of reverberating to painful levels of volume.",
     "DESCRIPTIONS": [
-      "Whenever you #y${modID}:Discard a card during your turn, deal #b",
+      "Whenever you #y${modID}:Mill a card during your turn, deal #b",
       " damage to a random enemy."
     ]
   },

@@ -34,7 +34,4 @@ public class Tactician2 extends BaseCard {
     public void triggerOnManualDiscard(){
         addToBot(new GainEnergyAction(this.magicNumber));
     }
-    public void triggerOnExhaust(){
-        addToBot(new GainEnergyAction(this.magicNumber));
-    }
 }

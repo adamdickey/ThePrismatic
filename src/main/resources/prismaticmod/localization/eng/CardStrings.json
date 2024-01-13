@@ -325,7 +325,7 @@
   },
   "${modID}:Sneaky Strike": {
     "NAME": "Sneaky Strike",
-    "DESCRIPTION": "Deal !D! damage. NL If you have ${modID}:Discarded a card this turn, this costs 0."
+    "DESCRIPTION": "Deal !D! damage. NL If you have ${modID}:Milled a card this turn, this costs 0."
   },
   "${modID}:A Thousand Cuts": {
     "NAME": "A Thousand Cuts",
@@ -445,22 +445,22 @@
   },
   "${modID}:Deadly Poison": {
     "NAME": "Deadly Poison",
-    "DESCRIPTION": "Apply !M! Poison. NL If this card is ${modID}:Discarded, apply !M! Poison to a random enemy."
+    "DESCRIPTION": "Apply !M! Poison. NL If this card is ${modID}:Milled, apply !M! Poison to a random enemy."
   },
   "${modID}:Tactician": {
     "NAME": "Tactician",
-    "DESCRIPTION": "Unplayable. NL If this card is ${modID}:Discarded or Exhausted, NL gain [G].",
-    "UPGRADE_DESCRIPTION": "Unplayable. NL If this card is ${modID}:Discarded or Exhausted, NL gain [G] [G].",
+    "DESCRIPTION": "Unplayable. NL If this card is ${modID}:Milled, NL gain [G].",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL If this card is ${modID}:Milled, NL gain [G] [G].",
     "EXTENDED_DESCRIPTION": ["I can't play this card."]
   },
   "${modID}:Reflex": {
     "NAME": "Reflex",
-    "DESCRIPTION": "Unplayable. NL If this card is ${modID}:Discarded or Exhausted, draw !M! cards.",
+    "DESCRIPTION": "Unplayable. NL If this card is ${modID}:Milled, draw !M! cards.",
     "EXTENDED_DESCRIPTION": ["I can't play this card."]
   },
   "${modID}:Weave": {
     "NAME": "Weave",
-    "DESCRIPTION": "Deal !D! damage. NL Whenever you ${modID}:Discard a card, return this from the discard pile to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you ${modID}:Mill a card, return this from the discard pile to your hand."
   },
   "${modID}:Follow-Up": {
     "NAME": "Follow-Up",
@@ -503,7 +503,7 @@
   },
   "${modID}:Eviscerate": {
     "NAME": "Eviscerate",
-    "DESCRIPTION": "Costs 1 less [G] NL for each card ${modID}:Discarded this turn. NL Deal !D! damage 3 times."
+    "DESCRIPTION": "Costs 1 less [G] NL for each card ${modID}:Milled this turn. NL Deal !D! damage 3 times."
   },
   "${modID}:Slice": {
     "NAME": "Slice",
@@ -519,7 +519,7 @@
   },
   "${modID}:Nirvana": {
     "NAME": "Nirvana",
-    "DESCRIPTION": "Whenever you ${modID}:Discard a card, gain !M! Block."
+    "DESCRIPTION": "Whenever you ${modID}:Mill a card, gain !M! Block."
   }
 }
 

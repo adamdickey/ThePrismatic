@@ -8,13 +8,13 @@
     "DESCRIPTION": "Lock-On+ targets receive #b50% more damage from non-Attack sources."
   },
   {
-    "PROPER_NAME": "Discard",
+    "PROPER_NAME": "Mill",
     "NAMES": [
-      "Discarded",
-      "discarded",
-      "Discard",
-      "discard"
+      "Milled",
+      "milled",
+      "Mill",
+      "mill"
     ],
-    "DESCRIPTION": "A card is discarded if it is discarded from your hand or discarded while Scrying."
+    "DESCRIPTION": "A card is milled if it is discarded from your hand or discarded while Scrying."
   }
   ]

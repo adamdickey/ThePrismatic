@@ -34,7 +34,4 @@ public class Reflex2 extends BaseCard {
     public void triggerOnManualDiscard(){
         addToBot(new DrawCardAction(magicNumber));
     }
-    public void triggerOnExhaust(){
-        addToBot(new DrawCardAction(magicNumber));
-    }
 }

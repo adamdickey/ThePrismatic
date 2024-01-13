@@ -84,7 +84,7 @@
   "${modID}:Nirvana": {
     "NAME": "Nirvana",
     "DESCRIPTIONS": [
-      "Whenever you #yDiscard a card, gain #b",
+      "Whenever you #yMill a card, gain #b",
       " Block."
     ]
   }
