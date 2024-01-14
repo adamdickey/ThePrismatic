@@ -30,7 +30,7 @@ import theprismatic.ThePrismatic;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
-import static theprismatic.ThePrismatic.Enums.CARD_COLOR;
+import static theprismatic.ThePrismatic.Enums.*;
 
 @SpireInitializer
 public class BasicMod implements
@@ -52,6 +52,36 @@ public class BasicMod implements
     private static final String BG_SKILL_P = characterPath("cardback/bg_skill_p.png");
     private static final String BG_POWER = characterPath("cardback/bg_power.png");
     private static final String BG_POWER_P = characterPath("cardback/bg_power_p.png");
+    private static final String RED_ATTACK = characterPath("cardback/red_attack.png");
+    private static final String RED_ATTACK_P = characterPath("cardback/red_attack_p.png");
+    private static final String RED_SKILL = characterPath("cardback/red_skill.png");
+    private static final String RED_SKILL_P = characterPath("cardback/red_skill_p.png");
+    private static final String RED_POWER = characterPath("cardback/red_power.png");
+    private static final String RED_POWER_P = characterPath("cardback/red_power_p.png");
+    private static final String GREEN_ATTACK = characterPath("cardback/green_attack.png");
+    private static final String GREEN_ATTACK_P = characterPath("cardback/green_attack_p.png");
+    private static final String GREEN_SKILL = characterPath("cardback/green_skill.png");
+    private static final String GREEN_SKILL_P = characterPath("cardback/green_skill_p.png");
+    private static final String GREEN_POWER = characterPath("cardback/green_power.png");
+    private static final String GREEN_POWER_P = characterPath("cardback/green_power_p.png");
+    private static final String BLUE_ATTACK = characterPath("cardback/blue_attack.png");
+    private static final String BLUE_ATTACK_P = characterPath("cardback/blue_attack_p.png");
+    private static final String BLUE_SKILL = characterPath("cardback/blue_skill.png");
+    private static final String BLUE_SKILL_P = characterPath("cardback/blue_skill_p.png");
+    private static final String BLUE_POWER = characterPath("cardback/blue_power.png");
+    private static final String BLUE_POWER_P = characterPath("cardback/blue_power_p.png");
+    private static final String PURPLE_ATTACK = characterPath("cardback/purple_attack.png");
+    private static final String PURPLE_ATTACK_P = characterPath("cardback/purple_attack_p.png");
+    private static final String PURPLE_SKILL = characterPath("cardback/purple_skill.png");
+    private static final String PURPLE_SKILL_P = characterPath("cardback/purple_skill_p.png");
+    private static final String PURPLE_POWER = characterPath("cardback/purple_power.png");
+    private static final String PURPLE_POWER_P = characterPath("cardback/purple_power_p.png");
+    private static final String COLORLESS_ATTACK = characterPath("cardback/colorless_attack.png");
+    private static final String COLORLESS_ATTACK_P = characterPath("cardback/colorless_attack_p.png");
+    private static final String COLORLESS_SKILL = characterPath("cardback/colorless_skill.png");
+    private static final String COLORLESS_SKILL_P = characterPath("cardback/colorless_skill_p.png");
+    private static final String COLORLESS_POWER = characterPath("cardback/colorless_power.png");
+    private static final String COLORLESS_POWER_P = characterPath("cardback/colorless_power_p.png");
     private static final String ENERGY_ORB = characterPath("cardback/energy_orb.png");
     private static final String ENERGY_ORB_P = characterPath("cardback/energy_orb_p.png");
     private static final String SMALL_ORB = characterPath("cardback/small_orb.png");
@@ -74,7 +104,26 @@ public class BasicMod implements
                 BG_ATTACK, BG_SKILL, BG_POWER, ENERGY_ORB,
                 BG_ATTACK_P, BG_SKILL_P, BG_POWER_P, ENERGY_ORB_P,
                 SMALL_ORB);
-
+        BaseMod.addColor(Red, Color.RED,
+                RED_ATTACK, RED_SKILL, RED_POWER, ENERGY_ORB,
+                RED_ATTACK_P, RED_SKILL_P, RED_POWER_P, ENERGY_ORB_P,
+                SMALL_ORB);
+        BaseMod.addColor(Green, Color.GREEN,
+                GREEN_ATTACK, GREEN_SKILL, GREEN_POWER, ENERGY_ORB,
+                GREEN_ATTACK_P, GREEN_SKILL_P, GREEN_POWER_P, ENERGY_ORB_P,
+                SMALL_ORB);
+        BaseMod.addColor(Blue, Color.BLUE,
+                BLUE_ATTACK, BLUE_SKILL, BLUE_POWER, ENERGY_ORB,
+                BLUE_ATTACK_P, BLUE_SKILL_P, BLUE_POWER_P, ENERGY_ORB_P,
+                SMALL_ORB);
+        BaseMod.addColor(Purple, Color.PURPLE,
+                PURPLE_ATTACK, PURPLE_SKILL, PURPLE_POWER, ENERGY_ORB,
+                PURPLE_ATTACK_P, PURPLE_SKILL_P, PURPLE_POWER_P, ENERGY_ORB_P,
+                SMALL_ORB);
+        BaseMod.addColor(Colorless, Color.GRAY,
+                COLORLESS_ATTACK, COLORLESS_SKILL, COLORLESS_POWER, ENERGY_ORB,
+                COLORLESS_ATTACK_P, COLORLESS_SKILL_P, COLORLESS_POWER_P, ENERGY_ORB_P,
+                SMALL_ORB);
     }
 
     public BasicMod() {
@@ -300,7 +349,7 @@ public class BasicMod implements
         //BaseMod.addRelicToCustomPool(new Melange(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new PureWater(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new VioletLotus(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new TeardropLocket(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new TeardropLocket(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new Duality(), CARD_COLOR);
     }
 }

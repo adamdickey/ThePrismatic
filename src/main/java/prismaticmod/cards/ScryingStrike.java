@@ -31,6 +31,7 @@ public class ScryingStrike extends BaseCard {
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(scryNumber, UPG_Scry);
         tags.add(CardTags.STRIKE);
+        tags.add(CardTags.STARTER_STRIKE);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

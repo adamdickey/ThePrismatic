@@ -32,6 +32,7 @@ public class RetainingStrike extends BaseCard {
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(retainNumber, UPG_Retain);
         tags.add(CardTags.STRIKE);
+        tags.add(CardTags.STARTER_STRIKE);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

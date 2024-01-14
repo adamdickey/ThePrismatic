@@ -31,7 +31,7 @@ import java.util.*;
 import static com.badlogic.gdx.math.MathUtils.random;
 import static prismaticmod.BasicMod.characterPath;
 import static prismaticmod.BasicMod.makeID;
-import static theprismatic.ThePrismatic.Enums.CARD_COLOR;
+import static theprismatic.ThePrismatic.Enums.*;
 
 public class ThePrismatic extends CustomPlayer {
     //Stats
@@ -61,6 +61,27 @@ public class ThePrismatic extends CustomPlayer {
         public static AbstractCard.CardColor CARD_COLOR;
         @SpireEnum(name = "CHARACTER_WHITE_COLOR") @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_COLOR;
+
+        @SpireEnum(name = "Red Cards") // These two MUST match. Change it to something unique for your character.
+        public static AbstractCard.CardColor Red;
+        @SpireEnum(name = "Red Cards") @SuppressWarnings("unused")
+        public static CardLibrary.LibraryType Red_Color;
+        @SpireEnum(name = "Green Cards") // These two MUST match. Change it to something unique for your character.
+        public static AbstractCard.CardColor Green;
+        @SpireEnum(name = "Green Cards") @SuppressWarnings("unused")
+        public static CardLibrary.LibraryType Green_Color;
+        @SpireEnum(name = "Blue Cards") // These two MUST match. Change it to something unique for your character.
+        public static AbstractCard.CardColor Blue;
+        @SpireEnum(name = "Blue Cards") @SuppressWarnings("unused")
+        public static CardLibrary.LibraryType Blue_Color;
+        @SpireEnum(name = "Purple Cards") // These two MUST match. Change it to something unique for your character.
+        public static AbstractCard.CardColor Purple;
+        @SpireEnum(name = "Purple Cards") @SuppressWarnings("unused")
+        public static CardLibrary.LibraryType Purple_Color;
+        @SpireEnum(name = "Colorless Cards") // These two MUST match. Change it to something unique for your character.
+        public static AbstractCard.CardColor Colorless;
+        @SpireEnum(name = "Colorless Cards") @SuppressWarnings("unused")
+        public static CardLibrary.LibraryType Colorless_Color;
     }
     public ArrayList<AbstractCard> getCardPool(ArrayList<AbstractCard> tmpPool) {
         CardLibrary.addCardsIntoPool(tmpPool, CARD_COLOR);
@@ -314,7 +335,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Halt());
         tmpPool.add(new Indignation());
         tmpPool.add(new InnerPeace());
-        tmpPool.add(new Judgement());
+        //tmpPool.add(new Judgement());
         tmpPool.add(new JustLucky());
         tmpPool.add(new LessonLearned());
         tmpPool.add(new LikeWater2());
@@ -354,7 +375,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Wish());
         tmpPool.add(new Worship());
         tmpPool.add(new WreathOfFlame());
-        tmpPool.add(new Apotheosis());
+        tmpPool.add(new Apotheosis2());
         tmpPool.add(new BandageUp());
         tmpPool.add(new Blind());
         tmpPool.add(new Chrysalis());
@@ -428,11 +449,11 @@ public class ThePrismatic extends CustomPlayer {
         //Add a random prismatic card to the starting deck
         ArrayList<String> prismaticCards = new ArrayList<>();
         Collections.addAll(prismaticCards, CunningStrike.ID, DivineStrike.ID, EmptyStrike.ID, ExhaustingStrike.ID,
-                FrostyStrike.ID, InsightfulStrike.ID, LootingStrike.ID, RetainingStrike.ID, ScrapingStrike.ID,
-                ScryingStrike.ID, StormyStrike.ID, StrikeForOne.ID, TargetingStrike.ID, ToxicStrike.ID,
-                CunningDefend.ID, DefendForOne.ID, DivineDefend.ID, EmptyDefend.ID, ExhaustingDefend.ID,
-                FrostyDefend.ID, InsightfulDefend.ID, LootingDefend.ID, RetainingDefend.ID, ScrapingDefend.ID,
-                ScryingDefend.ID, StormyDefend.ID, TargetingDefend.ID, ToxicDefend.ID);
+                FrostyStrike.ID, InsightfulStrike.ID, LootingStrike.ID, RetainingStrike.ID, SadisticStrike.ID,
+                ScrapingStrike.ID, ScryingStrike.ID, StormyStrike.ID, StrikeForOne.ID, TargetingStrike.ID,
+                ToxicStrike.ID, CunningDefend.ID, DefendForOne.ID, DivineDefend.ID, EmptyDefend.ID, ExhaustingDefend.ID,
+                FrostyDefend.ID, InsightfulDefend.ID, LootingDefend.ID, RetainingDefend.ID, SadisticDefend.ID,
+                ScrapingDefend.ID, ScryingDefend.ID, StormyDefend.ID, TargetingDefend.ID, ToxicDefend.ID);
         Random rand = new Random();
         String randCard = prismaticCards.get(rand.nextInt(prismaticCards.size()));
         retVal.add(randCard);
