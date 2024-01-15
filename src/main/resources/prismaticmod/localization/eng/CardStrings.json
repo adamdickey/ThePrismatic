@@ -219,8 +219,7 @@
   },
   "${modID}:Storm": {
     "NAME": "Storm",
-    "DESCRIPTION": "Whenever you play a Power card, Channel 1 Lightning.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a Power card, Channel 1 Lightning."
+    "DESCRIPTION": "Innate. NL Whenever you play a Power card, Channel 1 Lightning."
   },
   "${modID}:Streamline": {
     "NAME": "Streamline",
@@ -257,12 +256,13 @@
   },
   "${modID}:Fission": {
     "NAME": "Fission",
-    "DESCRIPTION": "Remove ALL of your Orbs. NL Gain 1 Energy and draw 1 card for each Orb removed. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Evoke ALL of your Orbs. NL Gain 1 Energy and draw 1 card for each Orb Evoked. NL Exhaust."
+    "DESCRIPTION": "Remove all your Orbs. NL Gain [B] and draw 1 card for each Orb removed. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Evoke all your Orbs. NL Gain [B] and draw 1 card for each Orb Evoked. NL Exhaust."
   },
   "${modID}:Static Discharge": {
     "NAME": "Static Discharge",
-    "DESCRIPTION": "Whenever you apply a debuff, if no debuffs have been applied this turn, Channel !M! Lightning."
+    "DESCRIPTION": "Whenever you apply a debuff for the first time each turn, Channel !M! Lightning.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you apply a debuff for the first time each turn, Channel !M! Lightning."
   },
   "${modID}:Swivel": {
     "NAME": "Swivel",
@@ -471,8 +471,8 @@
     "NAME": "Like Water",
     "DESCRIPTION": "At the end of your turn, if you are in Calm or have a Frost Channeled, gain !M! Block."
   },
-  "${modID}:Exploit Weakness": {
-    "NAME": "Exploit Weakness",
+  "${modID}:Exploit Pain": {
+    "NAME": "Exploit Pain",
     "DESCRIPTION": "Deal !D! damage. NL Repeat for each debuff on the enemy."
   },
   "${modID}:Storm of Steel": {
@@ -509,8 +509,8 @@
     "NAME": "Dark Embrace",
     "DESCRIPTION": "Whenever a card is Exhausted, NL draw 1 card."
   },
-  "${modID}:Hit and Run": {
-    "NAME": "Hit and Run",
+  "${modID}:Exploit Weakness": {
+    "NAME": "Exploit Weakness",
     "DESCRIPTION": "Apply !M! Weak. NL Gain !B! Block for each debuff on the enemy."
   },
   "${modID}:Nirvana": {

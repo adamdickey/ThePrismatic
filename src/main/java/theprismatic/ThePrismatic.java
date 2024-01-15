@@ -473,7 +473,17 @@ public class ThePrismatic extends CustomPlayer {
     public AbstractCard getStartCardForEvent() {
         //This card is used for the Gremlin card matching game.
         //It should be a non-strike non-defend starter card, but it doesn't have to be.
-        return new Bash();
+        ArrayList<AbstractCard> prismaticCards = new ArrayList<>();
+        Collections.addAll(prismaticCards, new CunningStrike(), new DivineStrike(), new EmptyStrike(),
+                new ExhaustingStrike(), new FrostyStrike(), new InsightfulStrike(), new LootingStrike(),
+                new RetainingStrike(), new SadisticStrike(), new ScrapingStrike(), new ScryingStrike(),
+                new StormyStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike(),
+                new CunningDefend(), new DefendForOne(), new DivineDefend(), new EmptyDefend(),
+                new ExhaustingDefend(), new FrostyDefend(), new InsightfulDefend(), new LootingDefend(),
+                new RetainingDefend(), new SadisticDefend(), new ScrapingDefend(), new ScryingDefend(),
+                new StormyDefend(), new TargetingDefend(), new ToxicDefend());
+        Random rand = new Random();
+        return prismaticCards.get(rand.nextInt(prismaticCards.size()));
     }
 
     /*- Below this is methods that you should *probably* adjust, but don't have to. -*/

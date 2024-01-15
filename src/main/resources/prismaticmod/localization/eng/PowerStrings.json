@@ -38,7 +38,7 @@
   "${modID}:Static Discharge": {
     "NAME": "Static Discharge",
     "DESCRIPTIONS": [
-      "Whenever you apply a debuff, if no debuffs have been applied this turn, Channel #b",
+      "Whenever you apply a debuff for the first time each turn, Channel #b",
       " Lightning."
     ]
   },
