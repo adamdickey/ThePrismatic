@@ -20,10 +20,11 @@ public class LockOn2Power extends BasePower {
     @Override
     public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
         if(info.type != DamageInfo.DamageType.NORMAL){
-            return (int)(damageAmount * 1.5);
+            return (int) super.atDamageReceive((float) damageAmount*1.5f, info.type);
         }
-        return damageAmount;
+        return (int) super.atDamageReceive((float) damageAmount, info.type);
     }
+
     public void atEndOfRound() {
         if (this.amount == 0) {
             addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, LockOn2Power.ID));

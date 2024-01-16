@@ -114,7 +114,7 @@
   },
   "${modID}:Empty Defend": {
     "NAME": "Empty Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Exit your stance.",
+    "DESCRIPTION": "Gain !B! Block. NL Exit your Stance.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
@@ -372,7 +372,7 @@
   "${modID}:White Noise": {
     "NAME": "White Noise",
     "DESCRIPTION": "Choose 1 of 3 random Power cards to add into your hand. NL It costs 0 this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Choose 1 of 3 Power Attack cards to add into your hand. NL It costs 0 this turn."
+    "UPGRADE_DESCRIPTION": "Choose 1 of 3 Power cards to add into your hand. NL It costs 0 this turn."
   },
   "${modID}:Tempest": {
     "NAME": "Tempest",

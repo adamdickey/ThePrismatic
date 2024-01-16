@@ -85,7 +85,7 @@ public class BasicMod implements
     private static final String ENERGY_ORB = characterPath("cardback/energy_orb.png");
     private static final String ENERGY_ORB_P = characterPath("cardback/energy_orb_p.png");
     private static final String SMALL_ORB = characterPath("cardback/small_orb.png");
-    private static final Color cardColor = new Color(255f/255f, 255f/255f, 255f/255f, 1f);
+    private static final Color cardColor = new Color(1f, 1f, 1f, 1f);
     //red, green, blue, alpha. alpha is transparency, which should just be 1.
     private static final String CHAR_SELECT_BUTTON = characterPath("select/button.png");
     private static final String CHAR_SELECT_PORTRAIT = characterPath("select/portrait.png");
@@ -104,19 +104,19 @@ public class BasicMod implements
                 BG_ATTACK, BG_SKILL, BG_POWER, ENERGY_ORB,
                 BG_ATTACK_P, BG_SKILL_P, BG_POWER_P, ENERGY_ORB_P,
                 SMALL_ORB);
-        BaseMod.addColor(Red, Color.RED,
+        BaseMod.addColor(Red, Color.SCARLET,
                 RED_ATTACK, RED_SKILL, RED_POWER, ENERGY_ORB,
                 RED_ATTACK_P, RED_SKILL_P, RED_POWER_P, ENERGY_ORB_P,
                 SMALL_ORB);
-        BaseMod.addColor(Green, Color.GREEN,
+        BaseMod.addColor(Green, Color.CHARTREUSE,
                 GREEN_ATTACK, GREEN_SKILL, GREEN_POWER, ENERGY_ORB,
                 GREEN_ATTACK_P, GREEN_SKILL_P, GREEN_POWER_P, ENERGY_ORB_P,
                 SMALL_ORB);
-        BaseMod.addColor(Blue, Color.BLUE,
+        BaseMod.addColor(Blue, Color.SKY,
                 BLUE_ATTACK, BLUE_SKILL, BLUE_POWER, ENERGY_ORB,
                 BLUE_ATTACK_P, BLUE_SKILL_P, BLUE_POWER_P, ENERGY_ORB_P,
                 SMALL_ORB);
-        BaseMod.addColor(Purple, Color.PURPLE,
+        BaseMod.addColor(Purple, Settings.PURPLE_COLOR,
                 PURPLE_ATTACK, PURPLE_SKILL, PURPLE_POWER, ENERGY_ORB,
                 PURPLE_ATTACK_P, PURPLE_SKILL_P, PURPLE_POWER_P, ENERGY_ORB_P,
                 SMALL_ORB);

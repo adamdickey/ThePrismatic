@@ -375,7 +375,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Wish());
         tmpPool.add(new Worship());
         tmpPool.add(new WreathOfFlame());
-        tmpPool.add(new Apotheosis2());
+        //tmpPool.add(new Apotheosis());
         tmpPool.add(new BandageUp());
         tmpPool.add(new Blind());
         tmpPool.add(new Chrysalis());
@@ -475,13 +475,12 @@ public class ThePrismatic extends CustomPlayer {
         //It should be a non-strike non-defend starter card, but it doesn't have to be.
         ArrayList<AbstractCard> prismaticCards = new ArrayList<>();
         Collections.addAll(prismaticCards, new CunningStrike(), new DivineStrike(), new EmptyStrike(),
-                new ExhaustingStrike(), new FrostyStrike(), new InsightfulStrike(), new LootingStrike(),
-                new RetainingStrike(), new SadisticStrike(), new ScrapingStrike(), new ScryingStrike(),
-                new StormyStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike(),
-                new CunningDefend(), new DefendForOne(), new DivineDefend(), new EmptyDefend(),
-                new ExhaustingDefend(), new FrostyDefend(), new InsightfulDefend(), new LootingDefend(),
-                new RetainingDefend(), new SadisticDefend(), new ScrapingDefend(), new ScryingDefend(),
-                new StormyDefend(), new TargetingDefend(), new ToxicDefend());
+            new ExhaustingStrike(), new FrostyStrike(), new InsightfulStrike(), new LootingStrike(),
+            new RetainingStrike(), new SadisticStrike(), new ScrapingStrike(), new ScryingStrike(),
+            new StormyStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike(), new CunningDefend(),
+            new DefendForOne(), new DivineDefend(), new EmptyDefend(), new ExhaustingDefend(), new FrostyDefend(),
+            new InsightfulDefend(), new LootingDefend(), new RetainingDefend(), new SadisticDefend(),
+            new ScrapingDefend(), new ScryingDefend(), new StormyDefend(), new TargetingDefend(), new ToxicDefend());
         Random rand = new Random();
         return prismaticCards.get(rand.nextInt(prismaticCards.size()));
     }
