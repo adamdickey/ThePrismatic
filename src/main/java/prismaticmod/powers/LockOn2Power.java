@@ -1,5 +1,6 @@
 package prismaticmod.powers;
 
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.OnLoseBlockPower;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -8,7 +9,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static prismaticmod.BasicMod.makeID;
 
-public class LockOn2Power extends BasePower {
+public class LockOn2Power extends BasePower implements OnLoseBlockPower{
 
     public static final String ID = makeID("Lock-On+");
     private static final int MULTI_STR = 50;
@@ -18,11 +19,15 @@ public class LockOn2Power extends BasePower {
         loadRegion("lockon");
     }
     @Override
+    public int onLoseBlock(DamageInfo info, int damageAmount){
+        return this.onAttackedToChangeDamage(info, damageAmount);
+    }
+    @Override
     public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
         if(info.type != DamageInfo.DamageType.NORMAL){
-            return (int) super.atDamageReceive((float) damageAmount*1.5f, info.type);
+            return (int)(damageAmount*1.5);
         }
-        return (int) super.atDamageReceive((float) damageAmount, info.type);
+        return damageAmount;
     }
 
     public void atEndOfRound() {
@@ -41,4 +46,6 @@ public class LockOn2Power extends BasePower {
                 this.description = DESCRIPTIONS[0] + MULTI_STR + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[3];
             }
     }
+
+
 }

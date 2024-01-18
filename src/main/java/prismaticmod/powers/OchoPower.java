@@ -12,7 +12,7 @@ import static prismaticmod.BasicMod.makeID;
 
 public class OchoPower extends BasePower{
 
-    public static final String ID = makeID("0ch0 Form");
+    public static final String ID = makeID("0ch0 F0rm");
     private int cardsDoubledThisTurn = 0;
 
     public OchoPower(int amount) {
@@ -32,7 +32,7 @@ public class OchoPower extends BasePower{
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (!card.purgeOnUse && this.amount > 0 && cardsDoubledThisTurn < this.amount &&
+        if (!card.purgeOnUse && this.amount > 0 && this.cardsDoubledThisTurn < this.amount &&
                 ((card.costForTurn == 0 || (card.freeToPlayOnce && card.cost != -1)) || player.hasPower(FreeAttackPower.POWER_ID))) {
             this.cardsDoubledThisTurn++;
             flash();

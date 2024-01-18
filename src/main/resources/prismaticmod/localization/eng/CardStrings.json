@@ -524,10 +524,6 @@
   "${modID}:Sadistic Strike": {
     "NAME": "Sadistic Strike",
     "DESCRIPTION": "Deal !D! damage. NL Deals additional damage equal to the total number of debuffs on enemies."
-  },
-  "${modID}:Apotheosis": {
-    "NAME": "Apotheosis",
-    "DESCRIPTION": "Upgrade ALL your cards for the rest of combat. NL Exhaust."
   }
 }
 

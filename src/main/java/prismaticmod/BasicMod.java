@@ -85,6 +85,21 @@ public class BasicMod implements
     private static final String ENERGY_ORB = characterPath("cardback/energy_orb.png");
     private static final String ENERGY_ORB_P = characterPath("cardback/energy_orb_p.png");
     private static final String SMALL_ORB = characterPath("cardback/small_orb.png");
+    private static final String ENERGY_RED = characterPath("cardback/energy_red.png");
+    private static final String ENERGY_RED_P = characterPath("cardback/energy_red_p.png");
+    private static final String SMALL_RED = characterPath("cardback/small_red.png");
+    private static final String ENERGY_GREEN = characterPath("cardback/energy_green.png");
+    private static final String ENERGY_GREEN_P = characterPath("cardback/energy_green_p.png");
+    private static final String SMALL_GREEN = characterPath("cardback/small_green.png");
+    private static final String ENERGY_BLUE = characterPath("cardback/energy_blue.png");
+    private static final String ENERGY_BLUE_P = characterPath("cardback/energy_blue_p.png");
+    private static final String SMALL_BLUE = characterPath("cardback/small_blue.png");
+    private static final String ENERGY_PURPLE = characterPath("cardback/energy_purple.png");
+    private static final String ENERGY_PURPLE_P = characterPath("cardback/energy_purple_p.png");
+    private static final String SMALL_PURPLE = characterPath("cardback/small_purple.png");
+    private static final String ENERGY_COLORLESS = characterPath("cardback/energy_colorless.png");
+    private static final String ENERGY_COLORLESS_P = characterPath("cardback/energy_colorless_p.png");
+    private static final String SMALL_COLORLESS = characterPath("cardback/small_colorless.png");
     private static final Color cardColor = new Color(1f, 1f, 1f, 1f);
     //red, green, blue, alpha. alpha is transparency, which should just be 1.
     private static final String CHAR_SELECT_BUTTON = characterPath("select/button.png");
@@ -104,26 +119,26 @@ public class BasicMod implements
                 BG_ATTACK, BG_SKILL, BG_POWER, ENERGY_ORB,
                 BG_ATTACK_P, BG_SKILL_P, BG_POWER_P, ENERGY_ORB_P,
                 SMALL_ORB);
-        BaseMod.addColor(Red, Color.SCARLET,
-                RED_ATTACK, RED_SKILL, RED_POWER, ENERGY_ORB,
-                RED_ATTACK_P, RED_SKILL_P, RED_POWER_P, ENERGY_ORB_P,
-                SMALL_ORB);
-        BaseMod.addColor(Green, Color.CHARTREUSE,
-                GREEN_ATTACK, GREEN_SKILL, GREEN_POWER, ENERGY_ORB,
-                GREEN_ATTACK_P, GREEN_SKILL_P, GREEN_POWER_P, ENERGY_ORB_P,
-                SMALL_ORB);
+        BaseMod.addColor(Red, Color.RED,
+                RED_ATTACK, RED_SKILL, RED_POWER, ENERGY_RED,
+                RED_ATTACK_P, RED_SKILL_P, RED_POWER_P, ENERGY_RED_P,
+                SMALL_RED);
+        BaseMod.addColor(Green, Color.GREEN,
+                GREEN_ATTACK, GREEN_SKILL, GREEN_POWER, ENERGY_GREEN,
+                GREEN_ATTACK_P, GREEN_SKILL_P, GREEN_POWER_P, ENERGY_GREEN_P,
+                SMALL_GREEN);
         BaseMod.addColor(Blue, Color.SKY,
-                BLUE_ATTACK, BLUE_SKILL, BLUE_POWER, ENERGY_ORB,
-                BLUE_ATTACK_P, BLUE_SKILL_P, BLUE_POWER_P, ENERGY_ORB_P,
-                SMALL_ORB);
-        BaseMod.addColor(Purple, Settings.PURPLE_COLOR,
-                PURPLE_ATTACK, PURPLE_SKILL, PURPLE_POWER, ENERGY_ORB,
-                PURPLE_ATTACK_P, PURPLE_SKILL_P, PURPLE_POWER_P, ENERGY_ORB_P,
-                SMALL_ORB);
+                BLUE_ATTACK, BLUE_SKILL, BLUE_POWER, ENERGY_BLUE,
+                BLUE_ATTACK_P, BLUE_SKILL_P, BLUE_POWER_P, ENERGY_BLUE_P,
+                SMALL_BLUE);
+        BaseMod.addColor(Purple, Color.PURPLE,
+                PURPLE_ATTACK, PURPLE_SKILL, PURPLE_POWER, ENERGY_PURPLE,
+                PURPLE_ATTACK_P, PURPLE_SKILL_P, PURPLE_POWER_P, ENERGY_PURPLE_P,
+                SMALL_PURPLE);
         BaseMod.addColor(Colorless, Color.GRAY,
-                COLORLESS_ATTACK, COLORLESS_SKILL, COLORLESS_POWER, ENERGY_ORB,
-                COLORLESS_ATTACK_P, COLORLESS_SKILL_P, COLORLESS_POWER_P, ENERGY_ORB_P,
-                SMALL_ORB);
+                COLORLESS_ATTACK, COLORLESS_SKILL, COLORLESS_POWER, ENERGY_COLORLESS,
+                COLORLESS_ATTACK_P, COLORLESS_SKILL_P, COLORLESS_POWER_P, ENERGY_COLORLESS_P,
+                SMALL_COLORLESS);
     }
 
     public BasicMod() {
@@ -323,7 +338,7 @@ public class BasicMod implements
         //BaseMod.addRelicToCustomPool(new TwistedFunnel(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new WristBlade(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new BlackBlood(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new Brimstone(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new Brimstone(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new BurningBlood(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new ChampionsBelt(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new CharonsAshes(), CARD_COLOR);

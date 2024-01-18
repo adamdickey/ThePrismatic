@@ -30,6 +30,7 @@ public class RemoveRelicsPatch {
         relicsToRemoveOnStart.add(TinyHouse.ID);
         relicsToRemoveOnStart.add(JuzuBracelet.ID);
         relicsToRemoveOnStart.add(TinyChest.ID);
+        relicsToRemoveOnStart.add(BustedCrown.ID);
 
         for (String remove : relicsToRemoveOnStart) {
             Iterator<String> s;

@@ -10,13 +10,13 @@ import theprismatic.ThePrismatic;
 
 import static prismaticmod.BasicMod.makeID;
 
-public class ViralDisk extends BaseRelic {
-    private static final String NAME = "Viral Disk"; //The name will be used for determining the image file as well as the ID.
+public class DarkCore extends BaseRelic {
+    private static final String NAME = "Dark Core"; //The name will be used for determining the image file as well as the ID.
     public static final String ID = makeID(NAME); //This adds the mod's prefix to the relic ID, resulting in modID:MyRelic
     private static final RelicTier RARITY = RelicTier.UNCOMMON; //The relic's rarity.
     private static final LandingSound SOUND = LandingSound.FLAT; //The sound played when the relic is clicked.
 
-    public ViralDisk() {
+    public DarkCore() {
         super(ID, NAME, ThePrismatic.Enums.CARD_COLOR, RARITY, SOUND);
     }
 
