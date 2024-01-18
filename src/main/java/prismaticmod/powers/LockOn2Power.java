@@ -20,11 +20,11 @@ public class LockOn2Power extends BasePower implements OnLoseBlockPower{
     }
     @Override
     public int onLoseBlock(DamageInfo info, int damageAmount){
-        info.isModified = true;
         if(info.type != DamageInfo.DamageType.NORMAL){
+            info.isModified = true;
             return this.onAttackedToChangeDamage(info, (int) (damageAmount*1.5));
         }
-        return this.onAttackedToChangeDamage(info, damageAmount);
+        return damageAmount;
     }
     @Override
     public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {

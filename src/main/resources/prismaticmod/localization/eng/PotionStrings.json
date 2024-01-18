@@ -1,9 +1,9 @@
 {
-  "${modID}:Bottled Orb": {
-    "NAME": "Bottled Orb",
+  "${modID}:Targeting Potion": {
+    "NAME": "Targeting Potion",
     "DESCRIPTIONS": [
-      "Permanently gain #b",
-      " Orb slot."
+      "Apply #b",
+      " #yLock-On+."
     ]
   }
 }

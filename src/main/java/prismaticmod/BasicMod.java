@@ -303,18 +303,18 @@ public class BasicMod implements
                     BaseMod.addPotion(potion.getClass(), null, null, null, potion.ID, potion.playerClass);
                     //playerClass will make a potion character-specific. By default, it's null and will do nothing.
                 });
-        BaseMod.addPotion(BloodPotion.class, null, null, null, "BloodPotion");
-        //BaseMod.addPotion(Elixir.class, null, null, null, "ElixirPotion");
-        BaseMod.addPotion(HeartOfIron.class, null, null, null, "HeartOfIron");
-        BaseMod.addPotion(PoisonPotion.class, null, null, null, "Poison Potion");
-        BaseMod.addPotion(CunningPotion.class, null, null, null, "CunningPotion");
-        BaseMod.addPotion(GhostInAJar.class, null, null, null, "GhostInAJar");
-        BaseMod.addPotion(FocusPotion.class, null, null, null, "FocusPotion");
-        BaseMod.addPotion(PotionOfCapacity.class, null, null, null, "PotionOfCapacity");
-        //BaseMod.addPotion(EssenceOfDarkness.class, null, null, null, "EssenceOfDarkness");
-        BaseMod.addPotion(BottledMiracle.class, null, null, null, "BottledMiracle");
-        BaseMod.addPotion(StancePotion.class, null, null, null, "StancePotion");
-        BaseMod.addPotion(Ambrosia.class, null, null, null, "Ambrosia");
+        BaseMod.addPotion(BloodPotion.class, null, null, null, "BloodPotion", Prismatic);
+        //BaseMod.addPotion(Elixir.class, null, null, null, "ElixirPotion", Prismatic);
+        BaseMod.addPotion(HeartOfIron.class, null, null, null, "HeartOfIron", Prismatic);
+        BaseMod.addPotion(PoisonPotion.class, null, null, null, "Poison Potion", Prismatic);
+        BaseMod.addPotion(CunningPotion.class, null, null, null, "CunningPotion", Prismatic);
+        BaseMod.addPotion(GhostInAJar.class, null, null, null, "GhostInAJar", Prismatic);
+        BaseMod.addPotion(FocusPotion.class, null, null, null, "FocusPotion", Prismatic);
+        BaseMod.addPotion(PotionOfCapacity.class, null, null, null, "PotionOfCapacity", Prismatic);
+        //BaseMod.addPotion(EssenceOfDarkness.class, null, null, null, "EssenceOfDarkness", Prismatic);
+        BaseMod.addPotion(BottledMiracle.class, null, null, null, "BottledMiracle", Prismatic);
+        BaseMod.addPotion(StancePotion.class, null, null, null, "StancePotion", Prismatic);
+        BaseMod.addPotion(Ambrosia.class, null, null, null, "Ambrosia", Prismatic);
     }
     public void receiveEditRelics()
     {
@@ -325,7 +325,6 @@ public class BasicMod implements
                     BaseMod.addRelicToCustomPool(relic, CARD_COLOR);
                     UnlockTracker.markRelicAsSeen(relic.relicId);
                 });
-
         //BaseMod.addRelicToCustomPool(new HoveringKite(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new NinjaScroll(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new PaperCrane(), CARD_COLOR);
@@ -350,7 +349,7 @@ public class BasicMod implements
         BaseMod.addRelicToCustomPool(new SelfFormingClay(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new CrackedCore(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new DataDisk(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new EmotionChip(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new EmotionChip(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new FrozenCore(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new GoldPlatedCables(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new Inserter(), CARD_COLOR);

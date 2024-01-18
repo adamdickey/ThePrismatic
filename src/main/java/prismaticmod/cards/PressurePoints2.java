@@ -27,7 +27,7 @@ public class PressurePoints2 extends BaseCard {
     //but constants at the top of the file are easy to adjust.
     private static final int baseMagicNumber = 6;
     private static final int UPG_Number = 2;
-    private static final int baseLockOn = 1;
+    private static final int baseLockOn = 2;
     private static final int UPG_LockOn = 1;
 
     public PressurePoints2() {

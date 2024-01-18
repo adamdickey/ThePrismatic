@@ -1,19 +1,7 @@
 {
-  "${modID}:Vulnerable Strike": {
-    "NAME": "Vulnerable Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable.",
-    "EXTENDED_DESCRIPTION": [
-    ]
-  },
-  "${modID}:Weakening Strike": {
-    "NAME": "Weakening Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak.",
-    "EXTENDED_DESCRIPTION": [
-    ]
-  },
   "${modID}:Targeting Strike": {
     "NAME": "Targeting Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${modID}:Lock-On+.",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Lock-On+ to ALL enemies.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
@@ -486,7 +474,7 @@
   },
   "${modID}:Targeting Defend": {
     "NAME": "Targeting Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Lock-On+ to a random enemy."
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Lock-On+ to ALL enemies."
   },
   "${modID}:Catalyst": {
     "NAME": "Catalyst",
