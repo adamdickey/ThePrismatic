@@ -7,11 +7,11 @@
       " cost 0 cards you play each turn are played twice."
     ]
   },
-  "${modID}:Lock-On+": {
-    "NAME": "Lock-On+",
+  "${modID}:Targeted": {
+    "NAME": "Targeted",
     "DESCRIPTIONS": [
       "Receives #b",
-      "% more damage from non-Attack sources for #b",
+      "% more damage from #ynon-Attack sources for #b",
       " turn.",
       " turns."
     ]

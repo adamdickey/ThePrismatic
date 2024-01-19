@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
-import prismaticmod.powers.LockOn2Power;
+import prismaticmod.powers.TargetedPower;
 
 
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
@@ -27,8 +27,8 @@ public class TargetingPotion extends BasePotion{
     }
     @Override
     public void addAdditionalTips() {
-        this.tips.add(new PowerTip("Lock-On+",
-                "Lock-On+ targets receive #b50% more damage from non-Attack sources."));
+        this.tips.add(new PowerTip("Target",
+                "Targeted creatures take #b50% more damage from non-Attack sources."));
     }
 
     @Override
@@ -38,6 +38,6 @@ public class TargetingPotion extends BasePotion{
 
     @Override
     public void use(AbstractCreature abstractCreature) {
-        addToBot(new ApplyPowerAction(abstractCreature, player, new LockOn2Power(abstractCreature, potency), potency));
+        addToBot(new ApplyPowerAction(abstractCreature, player, new TargetedPower(abstractCreature, potency), potency));
     }
 }

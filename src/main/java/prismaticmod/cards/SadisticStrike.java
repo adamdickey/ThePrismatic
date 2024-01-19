@@ -10,6 +10,9 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class SadisticStrike extends BaseCard {
     public static final String ID = makeID("Sadistic Strike"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
     private static final CardStats info = new CardStats(
@@ -24,10 +27,13 @@ public class SadisticStrike extends BaseCard {
 
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 3;
+    private static final int Magic = 2;
+    private static final int UPG_Magic = 1;
 
     public SadisticStrike() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
+        setCustomVar("Magic", Magic, UPG_Magic);
         tags.add(CardTags.STRIKE);
         tags.add(CardTags.STARTER_STRIKE);
         this.baseMagicNumber = 0;
@@ -55,14 +61,17 @@ public class SadisticStrike extends BaseCard {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
     }
     private int findDebuffs(){
-        int debuffs = 0;
+        ArrayList<Integer> debuffs = new ArrayList<>(5);
+        int monsterDebuffs = 0;
         for(AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters){
-            for(AbstractPower power : m.powers){
-                if(power.type == AbstractPower.PowerType.DEBUFF && !power.ID.equals("Shackled")){
-                    debuffs++;
+            for(AbstractPower p : m.powers){
+                if(p.type == AbstractPower.PowerType.DEBUFF && !p.ID.equals("Shackled")){
+                    monsterDebuffs++;
                 }
             }
+            debuffs.add(monsterDebuffs);
+            monsterDebuffs = 0;
         }
-        return debuffs;
+        return customVar("Magic")*Collections.max(debuffs);
     }
 }

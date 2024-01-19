@@ -1,11 +1,13 @@
 [
   {
-    "PROPER_NAME": "Lock-On+",
+    "PROPER_NAME": "Target",
     "NAMES": [
-      "lock-on+",
-      "Lock-on+"
+      "target",
+      "Target",
+      "Targeted",
+      "targeted"
     ],
-    "DESCRIPTION": "Lock-On+ targets receive #b50% more damage from non-Attack sources."
+    "DESCRIPTION": "Targeted creatures take #b50% more damage from non-Attack sources."
   },
   {
     "PROPER_NAME": "Mill",

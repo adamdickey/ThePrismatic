@@ -31,7 +31,7 @@ public class ForeignPowers extends BaseCard {
         AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.POWER);
 
         //Red Power
-        while (c.color != CardColor.RED){
+        while (c.color != CardColor.RED && c.color != ThePrismatic.Enums.Red){
             c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.POWER);
         }
         c.makeCopy();
@@ -39,7 +39,7 @@ public class ForeignPowers extends BaseCard {
         addToBot(new MakeTempCardInHandAction(c, true));
 
         //Green Power
-        while (c.color != CardColor.GREEN){
+        while (c.color != CardColor.GREEN && c.color != ThePrismatic.Enums.Green){
             c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.POWER);
         }
         c.makeCopy();
@@ -47,7 +47,7 @@ public class ForeignPowers extends BaseCard {
         addToBot(new MakeTempCardInHandAction(c, true));
 
         //Blue Power
-        while (c.color != CardColor.BLUE){
+        while (c.color != CardColor.BLUE && c.color != ThePrismatic.Enums.Blue){
             c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.POWER);
         }
         c.makeCopy();
@@ -55,7 +55,7 @@ public class ForeignPowers extends BaseCard {
         addToBot(new MakeTempCardInHandAction(c, true));
 
         //Purple Power
-        while (c.color != CardColor.PURPLE){
+        while (c.color != CardColor.PURPLE && c.color != ThePrismatic.Enums.Purple){
             c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.POWER);
         }
         c.makeCopy();

@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.actions.unique.DoublePoisonAction;
 import com.megacrit.cardcrawl.actions.unique.TriplePoisonAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import prismaticmod.powers.LockOn2Power;
+import prismaticmod.powers.TargetedPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -33,6 +33,6 @@ public class Catalyst2 extends BaseCard {
         } else {
             addToBot(new TriplePoisonAction(m, p));
         }
-        addToBot(new ApplyPowerAction(m, p, new LockOn2Power(m, 99), 99));
+        addToBot(new ApplyPowerAction(m, p, new TargetedPower(m, 99), 99));
     }
 }

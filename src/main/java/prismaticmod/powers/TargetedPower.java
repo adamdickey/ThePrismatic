@@ -9,12 +9,12 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static prismaticmod.BasicMod.makeID;
 
-public class LockOn2Power extends BasePower implements OnLoseBlockPower{
+public class TargetedPower extends BasePower implements OnLoseBlockPower{
 
-    public static final String ID = makeID("Lock-On+");
+    public static final String ID = makeID("Targeted");
     private static final int MULTI_STR = 50;
 
-    public LockOn2Power(AbstractCreature owner, int amount) {
+    public TargetedPower(AbstractCreature owner, int amount) {
         super(ID, PowerType.DEBUFF, true, owner, player, amount, true);
         loadRegion("lockon");
     }
@@ -36,9 +36,9 @@ public class LockOn2Power extends BasePower implements OnLoseBlockPower{
 
     public void atEndOfRound() {
         if (this.amount == 0) {
-            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, LockOn2Power.ID));
+            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, TargetedPower.ID));
         } else {
-            addToBot(new ReducePowerAction(this.owner, this.owner, LockOn2Power.ID, 1));
+            addToBot(new ReducePowerAction(this.owner, this.owner, TargetedPower.ID, 1));
         }
     }
 

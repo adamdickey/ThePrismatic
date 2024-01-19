@@ -339,7 +339,7 @@ public class BasicMod implements
         //BaseMod.addRelicToCustomPool(new BlackBlood(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new Brimstone(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new BurningBlood(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new ChampionsBelt(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new ChampionsBelt(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new CharonsAshes(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new MagicFlower(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new MarkOfPain(), CARD_COLOR);

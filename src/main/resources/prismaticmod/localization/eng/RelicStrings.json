@@ -11,9 +11,9 @@
   },
   "${modID}:Pure Core": {
     "NAME": "Pure Core",
-    "FLAVOR": "The Pure Core awakened the full power of the Burning Ring, releasing the spirits of the warriors that came before.",
+    "FLAVOR": "The Pure Core awakened the full power of the Burning Ring, releasing the spirits of warriors that came before.",
     "DESCRIPTIONS": [
-      "Replaces Burning Ring. Upon pickup, obtain Burning Blood, Ring of the Snake, Cracked Core, and Pure Water."
+      "Replaces Burning Ring. Upon pickup, obtain #rBurning #rBlood, #gRing #gof #gthe #gSnake, #bCracked #bCore, and #pPure #pWater."
     ]
   },
   "${modID}:Inserter": {
@@ -132,7 +132,7 @@
   },
   "${modID}:Darkstone Doll": {
     "NAME": "Darkstone Doll",
-    "FLAVOR": "This charm draws power from a mysterious doll, converting it's malicious energy into strength and vitality to the wearer.",
+    "FLAVOR": "This charm draws power from a mysterious doll, converting its malicious energy into strength and vitality to the wearer.",
     "DESCRIPTIONS": [
       "Whenever you obtain a Curse, increase your Max HP by #b",
       ".",
@@ -168,14 +168,6 @@
       "Whenever you play a Power, a random card in your hand costs 0 for the turn."
     ]
   },
-  "${modID}:Blue Candle": {
-    "NAME": "Blue Candle",
-    "FLAVOR": "The flame ignites when shrouded in darkness.",
-    "DESCRIPTIONS": [
-      "#yUnplayable #rCurse cards can now be played. NL Whenever you play a #rCurse, lose #b",
-      " HP and #yExhaust it."
-    ]
-  },
   "${modID}:Tiny House": {
     "NAME": "Tiny House",
     "FLAVOR": "\"A near perfect implementation of miniaturization. My finest work to date, but still not adequate.\" - The Architect",
@@ -193,6 +185,13 @@
       "At the start of your turn, gain #b",
       " #yStrength and ALL enemies gain #b",
       " #yStrength."
+    ]
+  },
+  "${modID}:Champion Belt": {
+    "NAME": "Champion Belt",
+    "FLAVOR": "Only the greatest may wear this belt.",
+    "DESCRIPTIONS": [
+      "Whenever you apply #yVulnerable, apply that much #yWeak and that much #y${modID}:Target."
     ]
   }
 }

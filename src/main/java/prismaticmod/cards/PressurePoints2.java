@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.watcher.MarkPower;
 import com.megacrit.cardcrawl.vfx.combat.PressurePointEffect;
-import prismaticmod.powers.LockOn2Power;
+import prismaticmod.powers.TargetedPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -38,7 +38,7 @@ public class PressurePoints2 extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(m, p, new MarkPower(m, magicNumber), magicNumber));
-        addToBot(new ApplyPowerAction(m, p, new LockOn2Power(m, customVar("LockOn")), customVar("LockOn")));
+        addToBot(new ApplyPowerAction(m, p, new TargetedPower(m, customVar("LockOn")), customVar("LockOn")));
         pressurePointsAction(p, m);
     }
     private void pressurePointsAction(AbstractPlayer p, AbstractMonster m){

@@ -23,8 +23,6 @@ public class PureCore extends BaseRelic {
         return AbstractDungeon.player.hasRelic(BurningRing.ID);
     }
 
-
-
     @Override
     public void obtain() {
         if (AbstractDungeon.player.hasRelic(BurningRing.ID)) {

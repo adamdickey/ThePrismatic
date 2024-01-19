@@ -8,6 +8,9 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class SadisticDefend extends BaseCard {
     public static final String ID = makeID("Sadistic Defend"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
     private static final CardStats info = new CardStats(
@@ -22,10 +25,13 @@ public class SadisticDefend extends BaseCard {
 
     private static final int BLOCK = 5;
     private static final int UPG_BLOCK = 3;
+    private static final int Magic = 2;
+    private static final int UPG_Magic = 1;
 
     public SadisticDefend() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
+        setCustomVar("Magic", Magic, UPG_Magic);
         tags.add(CardTags.STARTER_DEFEND);
         this.baseMagicNumber = 0;
         this.magicNumber = this.baseMagicNumber;
@@ -52,14 +58,17 @@ public class SadisticDefend extends BaseCard {
         addToBot(new GainBlockAction(p, p, this.block));
     }
     private int findDebuffs(){
-        int debuffs = 0;
+        ArrayList<Integer> debuffs = new ArrayList<>(5);
+        int monsterDebuffs = 0;
         for(AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters){
-            for(AbstractPower power : m.powers){
-                if(power.type == AbstractPower.PowerType.DEBUFF && !power.ID.equals("Shackled")){
-                    debuffs++;
+            for(AbstractPower p : m.powers){
+                if(p.type == AbstractPower.PowerType.DEBUFF && !p.ID.equals("Shackled")){
+                    monsterDebuffs++;
                 }
             }
+            debuffs.add(monsterDebuffs);
+            monsterDebuffs = 0;
         }
-        return debuffs;
+        return customVar("Magic")* Collections.max(debuffs);
     }
 }

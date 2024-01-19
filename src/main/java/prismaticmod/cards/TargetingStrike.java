@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import prismaticmod.powers.LockOn2Power;
+import prismaticmod.powers.TargetedPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -42,7 +42,7 @@ public class TargetingStrike extends BaseCard {
             flash();
             for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
                 if (!monster.isDead && !monster.isDying) {
-                    addToBot(new ApplyPowerAction(monster, p, new LockOn2Power(monster, this.magicNumber), this.magicNumber));
+                    addToBot(new ApplyPowerAction(monster, p, new TargetedPower(monster, this.magicNumber), this.magicNumber));
                 }
             }
         }

@@ -1,7 +1,7 @@
 {
   "${modID}:Targeting Strike": {
     "NAME": "Targeting Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Lock-On+ to ALL enemies.",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${modID}:Target to ALL enemies.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
@@ -470,20 +470,20 @@
   },
   "${modID}:Bullseye": {
     "NAME": "Bullseye",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${modID}:Lock-On+."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${modID}:Target."
   },
   "${modID}:Targeting Defend": {
     "NAME": "Targeting Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Lock-On+ to ALL enemies."
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! ${modID}:Target to ALL enemies."
   },
   "${modID}:Catalyst": {
     "NAME": "Catalyst",
-    "DESCRIPTION": "Double the enemy's Poison. NL Apply 99 ${modID}:Lock-On+. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Triple the enemy's Poison. NL Apply 99 ${modID}:Lock-On+. NL Exhaust."
+    "DESCRIPTION": "Double the enemy's Poison. NL Apply 99 ${modID}:Target. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Triple the enemy's Poison. NL Apply 99 ${modID}:Target. NL Exhaust."
   },
   "${modID}:Pressure Points": {
     "NAME": "Pressure Points",
-    "DESCRIPTION": "Apply !M! Mark. NL Apply !${modID}:LockOn! ${modID}:Lock-On+. NL ALL enemies lose HP equal to their Mark."
+    "DESCRIPTION": "Apply !M! Mark. NL Apply !${modID}:LockOn! ${modID}:Target. NL ALL enemies lose HP equal to their Mark."
   },
   "${modID}:Eviscerate": {
     "NAME": "Eviscerate",
@@ -507,11 +507,23 @@
   },
   "${modID}:Sadistic Defend": {
     "NAME": "Sadistic Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Gains additional Block equal to the total number of debuffs on enemies."
+    "DESCRIPTION": "Gain !B! Block. NL Gains !${modID}:Magic! additional Block for each debuff on the enemy with the most debuffs."
   },
   "${modID}:Sadistic Strike": {
     "NAME": "Sadistic Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Deals additional damage equal to the total number of debuffs on enemies."
+    "DESCRIPTION": "Deal !D! damage. NL Deals !${modID}:Magic! additional damage for each debuff on the enemy with the most debuffs."
+  },
+  "${modID}:Thunderclap": {
+    "NAME": "Thunderclap",
+    "DESCRIPTION": "Deal !D! damage and apply 1 Vulnerable to ALL enemies. NL Channel 1 Lightning."
+  },
+  "${modID}:Uppercut": {
+    "NAME": "Uppercut",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak. NL Apply !M! Vulnerable. NL Apply !M! ${modID}:Target."
+  },
+  "${modID}:Shockwave": {
+    "NAME": "Shockwave",
+    "DESCRIPTION": "Apply !M! Weak, NL !M! Vulnerable, NL and !M! ${modID}:Target to ALL enemies. NL Exhaust."
   }
 }
 

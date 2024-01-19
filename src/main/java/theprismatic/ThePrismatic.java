@@ -146,14 +146,14 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new SeeingRed());
         tmpPool.add(new Sentinel());
         tmpPool.add(new SeverSoul2());
-        tmpPool.add(new Shockwave());
+        tmpPool.add(new Shockwave2());
         tmpPool.add(new ShrugItOff());
         tmpPool.add(new SpotWeakness());
         tmpPool.add(new SwordBoomerang());
-        tmpPool.add(new ThunderClap());
+        tmpPool.add(new ThunderClap2());
         tmpPool.add(new TrueGrit());
         tmpPool.add(new TwinStrike());
-        tmpPool.add(new Uppercut());
+        tmpPool.add(new Uppercut2());
         tmpPool.add(new Warcry());
         tmpPool.add(new Whirlwind());
         tmpPool.add(new WildStrike2());
