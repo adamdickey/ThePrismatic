@@ -191,7 +191,9 @@
     "NAME": "Champion Belt",
     "FLAVOR": "Only the greatest may wear this belt.",
     "DESCRIPTIONS": [
-      "Whenever you apply #yVulnerable, apply that much #yWeak and that much #y${modID}:Target."
+      "Whenever you apply #yVulnerable, apply #b",
+      " #yWeak and #b",
+      " #y${modID}:Target."
     ]
   }
 }

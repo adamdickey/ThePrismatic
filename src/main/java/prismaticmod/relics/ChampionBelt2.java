@@ -26,7 +26,7 @@ public class ChampionBelt2 extends BaseRelic implements OnApplyPowerRelic {
     }
 
     public String getUpdatedDescription() {
-        return this.DESCRIPTIONS[0];
+        return this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + 1 + this.DESCRIPTIONS[2];
     }
 
     @Override
@@ -38,8 +38,8 @@ public class ChampionBelt2 extends BaseRelic implements OnApplyPowerRelic {
     public int onApplyPowerStacks(AbstractPower power, AbstractCreature target, AbstractCreature source, int stackAmount) {
         if(Objects.equals(power.ID, VulnerablePower.POWER_ID)){
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-            addToBot(new ApplyPowerAction(target, source, new WeakPower(target, stackAmount, false), stackAmount));
-            addToBot(new ApplyPowerAction(target, source, new TargetedPower(target, stackAmount), stackAmount));
+            addToBot(new ApplyPowerAction(target, source, new WeakPower(target, 1, false), 1));
+            addToBot(new ApplyPowerAction(target, source, new TargetedPower(target, 1), 1));
         }
         return OnApplyPowerRelic.super.onApplyPowerStacks(power, target, source, stackAmount);
     }

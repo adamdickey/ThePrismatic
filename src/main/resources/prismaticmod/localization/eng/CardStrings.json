@@ -51,7 +51,7 @@
   },
   "${modID}:Insightful Strike": {
     "NAME": "Insightful Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Shuffle an Insight into your draw pile.",
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle an *Insight into your draw pile.",
     "EXTENDED_DESCRIPTION": [
     ]
   },
@@ -120,7 +120,7 @@
   },
   "${modID}:Insightful Defend": {
     "NAME": "Insightful Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Shuffle an Insight into your draw pile.",
+    "DESCRIPTION": "Gain !B! Block. NL Shuffle an *Insight into your draw pile.",
     "EXTENDED_DESCRIPTION": [
     ]
   },

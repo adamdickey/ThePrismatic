@@ -38,7 +38,7 @@ public class DefendForOne extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
         if (!p.discardPile.isEmpty()){
-            ArrayList cards = new ArrayList();
+            ArrayList<AbstractCard> cards = new ArrayList<>();
             for (AbstractCard card : p.discardPile.group) {
                 if (card.cost == 0 || card.freeToPlayOnce){
                     cards.add(card);
@@ -49,7 +49,7 @@ public class DefendForOne extends BaseCard {
                 for(int i = 0; i < magicNumber; i++) {
                     if (!cards.isEmpty()) {
                         int index = rand.nextInt(cards.size());
-                        AbstractCard randCard = (AbstractCard) cards.get(index);
+                        AbstractCard randCard = cards.get(index);
                         addToBot(new DiscardToHandAction(randCard));
                         cards.remove(index);
                     }

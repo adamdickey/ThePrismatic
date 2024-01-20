@@ -1,15 +1,21 @@
 package prismaticmod.powers;
 
+import com.badlogic.gdx.graphics.Color;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.HealthBarRenderPower;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.OnLoseBlockPower;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.IntangiblePower;
+import com.megacrit.cardcrawl.powers.PoisonPower;
 
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static prismaticmod.BasicMod.makeID;
 
-public class TargetedPower extends BasePower implements OnLoseBlockPower{
+public class TargetedPower extends BasePower implements OnLoseBlockPower, HealthBarRenderPower {
 
     public static final String ID = makeID("Targeted");
     private static final int MULTI_STR = 50;
@@ -50,6 +56,18 @@ public class TargetedPower extends BasePower implements OnLoseBlockPower{
                 this.description = DESCRIPTIONS[0] + MULTI_STR + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[3];
             }
     }
+    @Override
+    public int getHealthBarAmount() {
+        for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            if (m.hasPower(PoisonPower.POWER_ID) && m.hasPower(TargetedPower.ID) && !m.hasPower(IntangiblePower.POWER_ID)) {
+                return (int) (m.getPower(PoisonPower.POWER_ID).amount * 0.5);
+            }
+        }
+        return 0;
+    }
 
-
+    @Override
+    public Color getColor() {
+        return Color.valueOf("78c13c00");
+    }
 }
