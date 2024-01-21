@@ -82,9 +82,9 @@ public class BasicMod implements
     private static final String COLORLESS_SKILL_P = characterPath("cardback/colorless_skill_p.png");
     private static final String COLORLESS_POWER = characterPath("cardback/colorless_power.png");
     private static final String COLORLESS_POWER_P = characterPath("cardback/colorless_power_p.png");
-    private static final String ENERGY_ORB = characterPath("cardback/energy_orb.png");
-    private static final String ENERGY_ORB_P = characterPath("cardback/energy_orb_p.png");
-    private static final String SMALL_ORB = characterPath("cardback/small_orb.png");
+    private static final String ENERGY_ORB = characterPath("cardback/energy_prismatic.png");
+    private static final String ENERGY_ORB_P = characterPath("cardback/energy_prismatic_p.png");
+    private static final String SMALL_ORB = characterPath("cardback/small_prismatic.png");
     private static final String ENERGY_RED = characterPath("cardback/energy_red.png");
     private static final String ENERGY_RED_P = characterPath("cardback/energy_red_p.png");
     private static final String SMALL_RED = characterPath("cardback/small_red.png");

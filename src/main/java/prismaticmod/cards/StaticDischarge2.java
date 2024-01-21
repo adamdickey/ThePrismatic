@@ -22,20 +22,12 @@ public class StaticDischarge2 extends BaseCard {
         //These will be used in the constructor. Technically you can just use the values directly,
         //but constants at the top of the file are easy to adjust.
         int baseMagicNumber = 1;
-        int UPG_Magic = 0;
+        int UPG_Magic = 1;
         setMagic(baseMagicNumber, UPG_Magic);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new StaticDischarge2Power(magicNumber), magicNumber));
-    }
-    public void upgrade() {
-        if (!this.upgraded) {
-            upgradeName();
-            this.isInnate = true;
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
-        }
     }
 }

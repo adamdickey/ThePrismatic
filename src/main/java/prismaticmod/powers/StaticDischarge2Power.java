@@ -15,19 +15,21 @@ public class StaticDischarge2Power extends BasePower{
         this.amount = amount;
     }
     public void updateDescription() {
-            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        if(this.amount == 1){
+            this.description = DESCRIPTIONS[0];
+        } else {
+            this.description = DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2];
+        }
     }
-    public boolean debuffed = false;
+    public int debuffs = 0;
     public void atStartOfTurn() {
-        debuffed = false;
+        debuffs = 0;
     }
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if (power.type == AbstractPower.PowerType.DEBUFF && !power.ID.equals("Shackled") && source == this.owner && target != this.owner &&
-                !target.hasPower("Artifact") && !debuffed) {
-            for(int i = 0; i < this.amount; i++){
+                !target.hasPower("Artifact") && debuffs < this.amount) {
                 addToBot(new ChannelAction(new Lightning()));
-            }
-            debuffed = true;
+                debuffs++;
         }
     }
 }

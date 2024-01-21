@@ -253,7 +253,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new CreativeAI());
         tmpPool.add(new Darkness2());
         tmpPool.add(new Defragment2());
-        tmpPool.add(new DoomAndGloom());
+        tmpPool.add(new DoomWillBloom()); //tmpPool.add(new DoomAndGloom());
         tmpPool.add(new DoubleEnergy());
         tmpPool.add(new Dualcast2());
         tmpPool.add(new EchoForm());
@@ -316,7 +316,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new CrushJoints());
         tmpPool.add(new CutThroughFate());
         tmpPool.add(new DeceiveReality());
-        tmpPool.add(new DeusExMachina2());
+        tmpPool.add(new DeusExMachina());
         tmpPool.add(new DevaForm());
         tmpPool.add(new Devotion2());
         tmpPool.add(new EmptyBody());
@@ -445,20 +445,22 @@ public class ThePrismatic extends CustomPlayer {
         retVal.add(Bash.ID);
         retVal.add(Survivor.ID);
         retVal.add(Zap.ID);
-
-        //Add a random prismatic card to the starting deck
-        ArrayList<String> prismaticCards = new ArrayList<>();
-        Collections.addAll(prismaticCards, CunningStrike.ID, DivineStrike.ID, EmptyStrike.ID, ExhaustingStrike.ID,
-                FrostyStrike.ID, InsightfulStrike.ID, LootingStrike.ID, RetainingStrike.ID, SadisticStrike.ID,
-                ScrapingStrike.ID, ScryingStrike.ID, StormyStrike.ID, StrikeForOne.ID, TargetingStrike.ID,
-                ToxicStrike.ID, CunningDefend.ID, DefendForOne.ID, DivineDefend.ID, EmptyDefend.ID, ExhaustingDefend.ID,
-                FrostyDefend.ID, InsightfulDefend.ID, LootingDefend.ID, RetainingDefend.ID, SadisticDefend.ID,
-                ScrapingDefend.ID, ScryingDefend.ID, StormyDefend.ID, TargetingDefend.ID, ToxicDefend.ID);
-        Random rand = new Random();
-        String randCard = prismaticCards.get(rand.nextInt(prismaticCards.size()));
-        retVal.add(randCard);
-
+        retVal.add(getPrismaticCard().cardID);
         return retVal;
+    }
+    public AbstractCard getPrismaticCard(){
+        ArrayList<AbstractCard> prismaticCards = new ArrayList<>();
+        Collections.addAll(prismaticCards, new CunningStrike(), new DivineStrike(), new EmpoweringStrike(),
+                new EmptyStrike(), new ExhaustingStrike(), new FrostyStrike(), new InsightfulStrike(),
+                new LootingStrike(), new SadisticStrike(), new ScrapingStrike(), new ScryingStrike(),
+                new StormyStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike(),
+                new CunningDefend(), new DefendForOne(), new DivineDefend(), new EmpoweringDefend(),
+                new EmptyDefend(), new ExhaustingDefend(), new FrostyDefend(), new InsightfulDefend(),
+                new LootingDefend(), new SadisticDefend(), new ScrapingDefend(), new ScryingDefend(),
+                new StormyDefend(), new TargetingDefend(), new ToxicDefend());
+        //RetainingStrike.ID, RetainingDefend.ID
+        Random rand = new Random();
+        return prismaticCards.get(rand.nextInt(prismaticCards.size()));
     }
 
     @Override
@@ -471,18 +473,7 @@ public class ThePrismatic extends CustomPlayer {
 
     @Override
     public AbstractCard getStartCardForEvent() {
-        //This card is used for the Gremlin card matching game.
-        //It should be a non-strike non-defend starter card, but it doesn't have to be.
-        ArrayList<AbstractCard> prismaticCards = new ArrayList<>();
-        Collections.addAll(prismaticCards, new CunningStrike(), new DivineStrike(), new EmptyStrike(),
-            new ExhaustingStrike(), new FrostyStrike(), new InsightfulStrike(), new LootingStrike(),
-            new RetainingStrike(), new SadisticStrike(), new ScrapingStrike(), new ScryingStrike(),
-            new StormyStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike(), new CunningDefend(),
-            new DefendForOne(), new DivineDefend(), new EmptyDefend(), new ExhaustingDefend(), new FrostyDefend(),
-            new InsightfulDefend(), new LootingDefend(), new RetainingDefend(), new SadisticDefend(),
-            new ScrapingDefend(), new ScryingDefend(), new StormyDefend(), new TargetingDefend(), new ToxicDefend());
-        Random rand = new Random();
-        return prismaticCards.get(rand.nextInt(prismaticCards.size()));
+        return getPrismaticCard();
     }
 
     /*- Below this is methods that you should *probably* adjust, but don't have to. -*/

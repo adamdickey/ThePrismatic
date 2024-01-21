@@ -219,7 +219,7 @@
   },
   "${modID}:Dualcast": {
     "NAME": "Dualcast",
-    "DESCRIPTION": "Evoke your next orb twice."
+    "DESCRIPTION": "Evoke your next orb twice. NL Draw 1 card."
   },
   "${modID}:Defragment": {
     "NAME": "Defragment",
@@ -231,7 +231,7 @@
   },
   "${modID}:Consume": {
     "NAME": "Consume",
-    "DESCRIPTION": "Gain !M! Focus. NL Gain 2 Strength. NL Lose 1 Orb slot."
+    "DESCRIPTION": "Gain !M! Focus. NL Gain !M! Strength. NL Lose 1 Orb slot."
   },
   "${modID}:Go for the Eyes": {
     "NAME": "Go for the Eyes",
@@ -249,8 +249,8 @@
   },
   "${modID}:Static Discharge": {
     "NAME": "Static Discharge",
-    "DESCRIPTION": "Whenever you apply a debuff for the first time each turn, Channel !M! Lightning.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you apply a debuff for the first time each turn, Channel !M! Lightning."
+    "DESCRIPTION": "Whenever you apply a debuff for the first time each turn, Channel 1 Lightning.",
+    "UPGRADE_DESCRIPTION": "Whenever you apply a debuff for the first !M! times each turn, Channel 1 Lightning."
   },
   "${modID}:Swivel": {
     "NAME": "Swivel",
@@ -418,8 +418,8 @@
     "NAME": "Intimidate",
     "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Gain 1 Strength. NL Exhaust."
   },
-  "${modID}:Evolved Firebreathing": {
-    "NAME": "Evolved Firebreathing",
+  "${modID}:Firebreathing": {
+    "NAME": "Firebreathing",
     "DESCRIPTION": "Whenever you draw a Status or Curse card, deal 6 damage to ALL enemies and draw !M! card.",
     "UPGRADE_DESCRIPTION": "Whenever you draw a Status or Curse card, deal 6 damage to ALL enemies and draw !M! cards."
   },
@@ -524,6 +524,20 @@
   "${modID}:Shockwave": {
     "NAME": "Shockwave",
     "DESCRIPTION": "Apply !M! Weak, NL !M! Vulnerable, NL and !M! ${modID}:Target to ALL enemies. NL Exhaust."
+  },
+  "${modID}:Empowering Defend": {
+    "NAME": "Empowering Defend",
+    "DESCRIPTION": "Gain !B! Block. NL The next Power you play this turn costs 1 less.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL The next 2 Powers you play this turn cost 1 less."
+  },
+  "${modID}:Empowering Strike": {
+    "NAME": "Empowering Strike",
+    "DESCRIPTION": "Deal !D! damage. NL The next Power you play this turn costs 1 less.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL The next 2 Powers you play this turn cost 1 less."
+  },
+  "${modID}:Doom Will Bloom": {
+    "NAME": "Doom Will Bloom",
+    "DESCRIPTION": "Apply !M! Mark. NL ALL enemies lose HP equal to their Mark. NL Channel 1 Dark."
   }
 }
 

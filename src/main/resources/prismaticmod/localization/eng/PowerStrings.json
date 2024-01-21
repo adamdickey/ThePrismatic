@@ -38,8 +38,10 @@
   "${modID}:Static Discharge": {
     "NAME": "Static Discharge",
     "DESCRIPTIONS": [
-      "Whenever you apply a debuff for the first time each turn, Channel #b",
-      " Lightning."
+      "Whenever you apply a debuff for the first time each turn, Channel #b1 Lightning.",
+      "Whenever you apply a debuff for the first #b",
+      " times each turn, Channel #b1 Lightning."
+
     ]
   },
   "${modID}:Rushdown": {
@@ -86,6 +88,14 @@
     "DESCRIPTIONS": [
       "Whenever you #yMill a card, gain #b",
       " Block."
+    ]
+  },
+  "${modID}:Empowered": {
+    "NAME": "Empowered",
+    "DESCRIPTIONS": [
+      "The next Power you play this turn costs #b1 less.",
+      "The next #b",
+      " Powers you play this turn cost #b1 less."
     ]
   }
 }

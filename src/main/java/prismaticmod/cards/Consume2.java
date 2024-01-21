@@ -30,7 +30,7 @@ public class Consume2 extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new FocusPower(p, magicNumber), magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 2),2));
+        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber),magicNumber));
         addToBot(new DecreaseMaxOrbAction(1));
     }
 }

@@ -1,5 +1,6 @@
 package prismaticmod.cards;
 
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.defect.AnimateOrbAction;
 import com.megacrit.cardcrawl.actions.defect.EvokeOrbAction;
 import com.megacrit.cardcrawl.actions.defect.EvokeWithoutRemovingOrbAction;
@@ -29,6 +30,7 @@ public class Dualcast2 extends BaseCard {
         addToBot(new EvokeWithoutRemovingOrbAction(1));
         addToBot(new AnimateOrbAction(1));
         addToBot(new EvokeOrbAction(1));
+        addToBot(new DrawCardAction(p, 1));
     }
     public void upgrade() {
         if (!this.upgraded) {

@@ -6,12 +6,12 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import prismaticmod.powers.RetainCard2Power;
+import prismaticmod.powers.EmpoweringPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
-public class RetainingStrike extends BaseCard {
-    public static final String ID = makeID("Retaining Strike"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
+public class EmpoweringStrike extends BaseCard {
+    public static final String ID = makeID("Empowering Strike"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
     private static final CardStats info = new CardStats(
             ThePrismatic.Enums.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.
             CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -24,19 +24,19 @@ public class RetainingStrike extends BaseCard {
 
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 3;
-    private static final int retainNumber = 1;
-    private static final int UPG_Retain = 1;
+    private static final int baseMagicNumber = 1;
+    private static final int UPG_Number = 1;
 
-    public RetainingStrike() {
+    public EmpoweringStrike() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
-        setMagic(retainNumber, UPG_Retain);
+        setMagic(baseMagicNumber, UPG_Number);
         tags.add(CardTags.STRIKE);
         tags.add(CardTags.STARTER_STRIKE);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot(new ApplyPowerAction(p, p, new RetainCard2Power(magicNumber), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new EmpoweringPower(p, magicNumber), magicNumber));
     }
 }
