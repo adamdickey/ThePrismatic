@@ -195,5 +195,12 @@
       " #yWeak and #b",
       " #y${modID}:Target."
     ]
+  },
+  "${modID}:Orb Slot": {
+    "NAME": "Orb Slot",
+    "FLAVOR": "The bottled Orb slot will prove handy in future battles.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, gain additional Orb slots."
+    ]
   }
 }

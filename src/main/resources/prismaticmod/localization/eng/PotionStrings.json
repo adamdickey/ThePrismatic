@@ -5,5 +5,13 @@
       "Apply #b",
       " #yTarget."
     ]
+  },
+  "${modID}:Bottled Orb": {
+    "NAME": "Bottled Orb",
+    "DESCRIPTIONS": [
+      "Permanently gain #b",
+      " Orb slot.",
+      " Orb slots."
+    ]
   }
 }

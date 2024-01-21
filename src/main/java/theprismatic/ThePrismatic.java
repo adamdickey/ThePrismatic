@@ -415,7 +415,7 @@ public class ThePrismatic extends CustomPlayer {
 
     public ThePrismatic() {
         super(NAMES[0], Enums.Prismatic,
-                new CustomEnergyOrb(null, null, null), //Energy Orb
+                new CustomEnergyOrb(null, null, null), //Energy OrbSlot
                 new SpriterAnimation(characterPath("animation/default.scml"))); //Animation
 
         initializeClass(null,

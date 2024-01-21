@@ -31,7 +31,7 @@ public class SneakyStrike2 extends BaseCard {
         tags.add(CardTags.STRIKE);
     }
     public void atTurnStart(){
-        upgradeBaseCost(2);
+        upgradeBaseCost(this.baseCost);
     }
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();

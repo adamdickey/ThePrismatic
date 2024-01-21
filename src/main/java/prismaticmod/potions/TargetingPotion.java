@@ -3,6 +3,7 @@ package prismaticmod.potions;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
@@ -33,7 +34,11 @@ public class TargetingPotion extends BasePotion{
 
     @Override
     public String getDescription() {
-        return potionStrings.DESCRIPTIONS[0] + potionPotency + potionStrings.DESCRIPTIONS[1];
+        if (AbstractDungeon.player == null || !AbstractDungeon.player.hasRelic("SacredBark")) {
+            return potionStrings.DESCRIPTIONS[0] + potionPotency + potionStrings.DESCRIPTIONS[1];
+        } else {
+            return potionStrings.DESCRIPTIONS[0] + 2*potionPotency + potionStrings.DESCRIPTIONS[1];
+        }
     }
 
     @Override
