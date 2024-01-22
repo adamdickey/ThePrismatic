@@ -310,7 +310,7 @@ public class BasicMod implements
         BaseMod.addPotion(CunningPotion.class, null, null, null, "CunningPotion", Prismatic);
         BaseMod.addPotion(GhostInAJar.class, null, null, null, "GhostInAJar", Prismatic);
         BaseMod.addPotion(FocusPotion.class, null, null, null, "FocusPotion", Prismatic);
-        BaseMod.addPotion(PotionOfCapacity.class, null, null, null, "PotionOfCapacity", Prismatic);
+        //BaseMod.addPotion(PotionOfCapacity.class, null, null, null, "PotionOfCapacity", Prismatic);
         //BaseMod.addPotion(EssenceOfDarkness.class, null, null, null, "EssenceOfDarkness", Prismatic);
         BaseMod.addPotion(BottledMiracle.class, null, null, null, "BottledMiracle", Prismatic);
         BaseMod.addPotion(StancePotion.class, null, null, null, "StancePotion", Prismatic);

@@ -418,13 +418,13 @@
     "NAME": "Intimidate",
     "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Gain 1 Strength. NL Exhaust."
   },
-  "${modID}:Firebreathing": {
-    "NAME": "Firebreathing",
+  "${modID}:Fire Breathing": {
+    "NAME": "Fire Breathing",
     "DESCRIPTION": "Whenever you draw a Status or Curse card, deal 6 damage to ALL enemies and draw !M! card.",
     "UPGRADE_DESCRIPTION": "Whenever you draw a Status or Curse card, deal 6 damage to ALL enemies and draw !M! cards."
   },
-  "${modID}:Metallic Rupture": {
-    "NAME": "Metallic Rupture",
+  "${modID}:Rupture": {
+    "NAME": "Rupture",
     "DESCRIPTION": "At the end of your turn, gain !M! Block. NL Whenever you lose HP from a card, gain !${modID}:S! Strength."
   },
   "${modID}:Deadly Poison": {
@@ -523,7 +523,7 @@
   },
   "${modID}:Shockwave": {
     "NAME": "Shockwave",
-    "DESCRIPTION": "Apply !M! Weak, NL !M! Vulnerable, NL and !M! ${modID}:Target to ALL enemies. NL Exhaust."
+    "DESCRIPTION": "Apply !M! Weak, Vulnerable, and ${modID}:Target to ALL enemies. NL Exhaust."
   },
   "${modID}:Empowering Defend": {
     "NAME": "Empowering Defend",
@@ -538,6 +538,37 @@
   "${modID}:Doom Will Bloom": {
     "NAME": "Doom Will Bloom",
     "DESCRIPTION": "Apply !M! Mark. NL ALL enemies lose HP equal to their Mark. NL Channel 1 Dark."
+  },
+  "${modID}:Entrench": {
+    "NAME": "Entrench",
+    "DESCRIPTION": "Double your Block. NL Block is not removed at the start of your next turn."
+  },
+  "${modID}:Compile Driver": {
+    "NAME": "Compile Driver",
+    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card for each Orb you have."
+  },
+  "${modID}:Double Tap": {
+    "NAME": "Double Tap",
+    "DESCRIPTION": "Retain. NL This turn, your next Attack is played twice.",
+    "UPGRADE_DESCRIPTION": "Retain. NL This turn, your next !M! Attacks are played twice."
+  },
+  "${modID}:Burst": {
+    "NAME": "Burst",
+    "DESCRIPTION": "Retain. NL This turn, your next Skill is played twice.",
+    "UPGRADE_DESCRIPTION": "Retain. NL This turn, your next !M! Skills are played twice."
+  },
+  "${modID}:Amplify": {
+    "NAME": "Amplify",
+    "DESCRIPTION": "Retain. NL This turn, your next Power is played twice.",
+    "UPGRADE_DESCRIPTION": "Retain. NL This turn, your next !M! Powers are played twice."
+  },
+  "${modID}:Clothesline": {
+    "NAME": "Clothesline",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak. NL Apply !M! ${modID}:Target."
+  },
+  "${modID}:Juggernaut": {
+    "NAME": "Juggernaut",
+    "DESCRIPTION": "Whenever you gain Block, deal !M! damage to a random enemy."
   }
 }
 

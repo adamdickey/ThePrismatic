@@ -30,7 +30,9 @@ public class ChimeraPower extends BasePower{
         flash();
         addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount), this.amount));
         addToBot(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, this.amount), this.amount));
-        addToBot(new IncreaseMaxOrbAction(this.amount));
+        if(player.orbs.size() < 10){
+            addToBot(new IncreaseMaxOrbAction(this.amount));
+        }
         addToBot(new ApplyPowerAction(this.owner, this.owner, new MantraPower(this.owner, this.amount), this.amount));
     }
 }

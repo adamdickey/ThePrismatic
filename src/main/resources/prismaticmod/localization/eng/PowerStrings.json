@@ -10,7 +10,7 @@
   "${modID}:Targeted": {
     "NAME": "Targeted",
     "DESCRIPTIONS": [
-      "Receives #b",
+      "Receive #b",
       "% more damage from #ynon-Attack sources for #b",
       " turn.",
       " turns."
