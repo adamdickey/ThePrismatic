@@ -97,5 +97,13 @@
       "The next #b",
       " Powers you play this turn cost #b1 less."
     ]
+  },
+  "${modID}:Echo Form": {
+    "NAME": "Echo Form",
+    "DESCRIPTIONS": [
+      "The first card you play each turn is played twice.",
+      "The first #b",
+      " cards you play each turn are played twice."
+    ]
   }
 }

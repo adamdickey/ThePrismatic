@@ -7,17 +7,16 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.watcher.FreeAttackPower;
 
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static prismaticmod.BasicMod.makeID;
 
-public class OchoPower extends BasePower {
+public class Echo2Power extends BasePower {
 
-    public static final String ID = makeID("0ch0 F0rm");
+    public static final String ID = makeID("Echo Form");
     private int cardsDoubledThisTurn = 0;
 
-    public OchoPower(int amount) {
+    public Echo2Power(int amount) {
         super(ID, PowerType.BUFF, false, player, player, amount, true);
         this.amount = amount;
     }
@@ -35,25 +34,16 @@ public class OchoPower extends BasePower {
 
     @Override
     public void onInitialApplication() {
-        for(AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisTurn){
-            if((c.costForTurn == 0 || (c.freeToPlayOnce && c.cost != -1))){
-                cardsDoubledThisTurn++;
-            }
-        }
+        this.cardsDoubledThisTurn = AbstractDungeon.actionManager.cardsPlayedThisTurn.size();
     }
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        if(power instanceof OchoPower){
-            for(AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisTurn){
-                if((c.costForTurn == 0 || (c.freeToPlayOnce && c.cost != -1))){
-                    cardsDoubledThisTurn++;
-                }
-            }
+        if(power instanceof Echo2Power){
+            this.cardsDoubledThisTurn = AbstractDungeon.actionManager.cardsPlayedThisTurn.size();
         }
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (!card.purgeOnUse && this.amount > 0 && this.cardsDoubledThisTurn < this.amount &&
-                ((card.costForTurn == 0 || (card.freeToPlayOnce && card.cost != -1)) || player.hasPower(FreeAttackPower.POWER_ID))) {
+        if (!card.purgeOnUse && this.amount > 0 && this.cardsDoubledThisTurn < this.amount) {
             this.cardsDoubledThisTurn++;
             flash();
             AbstractMonster m = null;

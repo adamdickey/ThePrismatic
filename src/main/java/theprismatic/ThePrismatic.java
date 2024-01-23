@@ -114,7 +114,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Feed());
         tmpPool.add(new FeelNoPain());
         tmpPool.add(new FiendFire());
-        tmpPool.add(new FireBreathing2());
+        tmpPool.add(new FieryEvolution()); //tmpPool.add(new FireBreathing());
         tmpPool.add(new FlameBarrier());
         tmpPool.add(new Flex());
         tmpPool.add(new GhostlyArmor());
@@ -140,7 +140,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Rampage());
         tmpPool.add(new Reaper());
         tmpPool.add(new RecklessCharge());
-        tmpPool.add(new Rupture2());
+        tmpPool.add(new MetallicRupture());
         //tmpPool.add(new SearingBlow());
         tmpPool.add(new SecondWind());
         tmpPool.add(new SeeingRed());
@@ -256,7 +256,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new DoomWillBloom()); //tmpPool.add(new DoomAndGloom());
         tmpPool.add(new DoubleEnergy());
         tmpPool.add(new Dualcast2());
-        tmpPool.add(new EchoForm());
+        tmpPool.add(new EchoForm2());
         tmpPool.add(new Electrodynamics());
         tmpPool.add(new Fission2());
         tmpPool.add(new ForceField());

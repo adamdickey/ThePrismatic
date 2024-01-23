@@ -418,13 +418,13 @@
     "NAME": "Intimidate",
     "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Gain 1 Strength. NL Exhaust."
   },
-  "${modID}:Fire Breathing": {
-    "NAME": "Fire Breathing",
+  "${modID}:Fiery Evolution": {
+    "NAME": "Fiery Evolution",
     "DESCRIPTION": "Whenever you draw a Status or Curse card, deal 6 damage to ALL enemies and draw !M! card.",
     "UPGRADE_DESCRIPTION": "Whenever you draw a Status or Curse card, deal 6 damage to ALL enemies and draw !M! cards."
   },
-  "${modID}:Rupture": {
-    "NAME": "Rupture",
+  "${modID}:Metallic Rupture": {
+    "NAME": "Metallic Rupture",
     "DESCRIPTION": "At the end of your turn, gain !M! Block. NL Whenever you lose HP from a card, gain !${modID}:S! Strength."
   },
   "${modID}:Deadly Poison": {
@@ -569,6 +569,11 @@
   "${modID}:Juggernaut": {
     "NAME": "Juggernaut",
     "DESCRIPTION": "Whenever you gain Block, deal !M! damage to a random enemy."
+  },
+  "${modID}:Echo Form": {
+    "NAME": "Echo Form",
+    "DESCRIPTION": "Ethereal. NL The first card you play each turn is played twice.",
+    "UPGRADE_DESCRIPTION": "The first card you play each turn is played twice."
   }
 }
 

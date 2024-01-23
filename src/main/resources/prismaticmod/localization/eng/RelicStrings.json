@@ -168,8 +168,8 @@
       "Whenever you play a Power, a random card in your hand costs 0 for the turn."
     ]
   },
-  "${modID}:Tiny House": {
-    "NAME": "Tiny House",
+  "${modID}:Small House": {
+    "NAME": "Small House",
     "FLAVOR": "\"A near perfect implementation of miniaturization. My finest work to date, but still not adequate.\" - The Architect",
     "DESCRIPTIONS": [
       "Upon pickup, obtain #b1 potion. NL Gain #b",
