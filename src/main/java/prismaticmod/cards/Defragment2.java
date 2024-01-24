@@ -30,6 +30,6 @@ public class Defragment2 extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new FocusPower(p, magicNumber), magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 1), 1));
+        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber), magicNumber));
     }
 }

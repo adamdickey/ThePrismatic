@@ -1,166 +1,114 @@
 {
   "${modID}:Targeting Strike": {
     "NAME": "Targeting Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${modID}:Target to ALL enemies.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${modID}:Target to ALL enemies."
   },
   "${modID}:Divine Strike": {
     "NAME": "Divine Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Mantra.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Mantra."
   },
   "${modID}:Looting Strike": {
     "NAME": "Looting Strike",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card, then discard !M! card.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw !M! cards, then discard !M! cards.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw !M! cards, then discard !M! cards."
   },
   "${modID}:Retaining Strike": {
     "NAME": "Retaining Strike",
     "DESCRIPTION": "Deal !D! damage. NL Choose !M! card to Retain this turn.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Choose !M! cards to Retain this turn.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Choose !M! cards to Retain this turn."
   },
   "${modID}:Scrying Strike": {
     "NAME": "Scrying Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Scry !M!.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Deal !D! damage. NL Scry !M!."
   },
   "${modID}:Stormy Strike": {
     "NAME": "Stormy Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Channel !M! Lightning.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Deal !D! damage. NL Channel !M! Lightning."
   },
   "${modID}:Frosty Strike": {
     "NAME": "Frosty Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost."
   },
   "${modID}:Exhausting Strike": {
     "NAME": "Exhausting Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Exhaust up to !M! cards from your hand.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust up to !M! cards from your hand."
   },
   "${modID}:Insightful Strike": {
     "NAME": "Insightful Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Shuffle an *Insight into your draw pile.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle an *Insight into your draw pile."
   },
   "${modID}:Scraping Strike": {
     "NAME": "Scraping Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards. NL Discard all cards drawn this way that do not cost 0.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards. NL Discard all cards drawn this way that do not cost 0."
   },
   "${modID}:Empty Strike": {
     "NAME": "Empty Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Exit your Stance.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Deal !D! damage. NL Exit your Stance."
   },
   "${modID}:Cunning Strike": {
     "NAME": "Cunning Strike",
     "DESCRIPTION": "Deal !D! damage. NL Add 1 Shiv into your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add 1 Shiv+ into your hand.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add 1 Shiv+ into your hand."
   },
   "${modID}:Toxic Strike": {
     "NAME": "Toxic Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Poison to ALL enemies.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Poison to ALL enemies."
   },
   "${modID}:0ch0 Form": {
     "NAME": "0ch0 F0rm",
     "DESCRIPTION": "The first cost 0 card you play each turn is played twice.",
-    "UPGRADE_DESCRIPTION": "The first 2 cost 0 cards you play each turn are played twice.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "UPGRADE_DESCRIPTION": "The first 2 cost 0 cards you play each turn are played twice."
   },
   "${modID}:Cunning Defend": {
     "NAME": "Cunning Defend",
     "DESCRIPTION": "Gain !B! Block. NL Add 1 Shiv into your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add 1 Shiv+ into your hand.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add 1 Shiv+ into your hand."
   },
   "${modID}:Divine Defend": {
     "NAME": "Divine Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Mantra.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Mantra."
   },
   "${modID}:Empty Defend": {
     "NAME": "Empty Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Exit your Stance.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Gain !B! Block. NL Exit your Stance."
   },
   "${modID}:Exhausting Defend": {
     "NAME": "Exhausting Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Exhaust up to !M! cards from your hand.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust up to !M! cards from your hand."
   },
   "${modID}:Frosty Defend": {
     "NAME": "Frosty Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Channel !M! Frost.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Gain !B! Block. NL Channel !M! Frost."
   },
   "${modID}:Insightful Defend": {
     "NAME": "Insightful Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Shuffle an *Insight into your draw pile.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Gain !B! Block. NL Shuffle an *Insight into your draw pile."
   },
   "${modID}:Looting Defend": {
     "NAME": "Looting Defend",
     "DESCRIPTION": "Gain !B! Block. NL Draw !M! card, then discard !M! card.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !M! cards, then discard !M! cards.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !M! cards, then discard !M! cards."
   },
   "${modID}:Retaining Defend": {
     "NAME": "Retaining Defend",
     "DESCRIPTION": "Gain !B! Block. NL Choose !M! card to Retain this turn.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Choose !M! cards to Retain this turn.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Choose !M! cards to Retain this turn."
   },
   "${modID}:Scraping Defend": {
     "NAME": "Scraping Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Draw !M! cards. NL Discard all cards drawn this way that do not cost 0.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! cards. NL Discard all cards drawn this way that do not cost 0."
   },
   "${modID}:Scrying Defend": {
     "NAME": "Scrying Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Scry !M!.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Gain !B! Block. NL Scry !M!."
   },
   "${modID}:Stormy Defend": {
     "NAME": "Stormy Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Channel !M! Lightning.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Gain !B! Block. NL Channel !M! Lightning."
   },
   "${modID}:Toxic Defend": {
     "NAME": "Toxic Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Poison to ALL enemies.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Poison to ALL enemies."
   },
   "${modID}:Chimera Form": {
     "NAME": "Chimera Form",
@@ -173,7 +121,7 @@
   },
   "${modID}:On A Roll": {
     "NAME": "On A Roll",
-    "DESCRIPTION": "Whenever you play an attack, gain !M! temporary Strength and !M! temporary Dexterity."
+    "DESCRIPTION": "Whenever you play an Attack, gain !M! temporary Strength and !M! temporary Dexterity."
   },
   "${modID}:Havoc": {
     "NAME": "Havoc",
@@ -223,11 +171,11 @@
   },
   "${modID}:Defragment": {
     "NAME": "Defragment",
-    "DESCRIPTION": "Gain !M! Focus. NL Gain 1 Strength."
+    "DESCRIPTION": "Gain !M! Focus. NL Gain !M! Strength."
   },
   "${modID}:Capacitor": {
     "NAME": "Capacitor",
-    "DESCRIPTION": "Gain !M! Orb slots. NL Gain 1 Dexterity."
+    "DESCRIPTION": "Gain !M! Orb slots. NL Gain !${modID}:dex! Dexterity."
   },
   "${modID}:Consume": {
     "NAME": "Consume",

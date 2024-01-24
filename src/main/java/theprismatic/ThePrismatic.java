@@ -46,6 +46,18 @@ public class ThePrismatic extends CustomPlayer {
     private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString(ID);
     private static final String[] NAMES = characterStrings.NAMES;
     private static final String[] TEXT = characterStrings.TEXT;
+    private static final String[] orbPath = new String[]{"prismaticmod/images/character/energy orb/layer1.png",
+            "prismaticmod/images/character/energy orb/layer2.png",
+            "prismaticmod/images/character/energy orb/layer3.png",
+            "prismaticmod/images/character/energy orb/layer4.png",
+            "prismaticmod/images/character/energy orb/layer5.png",
+            "prismaticmod/images/character/energy orb/layer6.png",
+            "prismaticmod/images/character/energy orb/layer1d.png",
+            "prismaticmod/images/character/energy orb/layer2d.png",
+            "prismaticmod/images/character/energy orb/layer3d.png",
+            "prismaticmod/images/character/energy orb/layer4d.png",
+            "prismaticmod/images/character/energy orb/layer5d.png"};
+    private static final String orbVfxPath = "prismaticmod/images/character/energy orb/vfx.png";
 
     //Image file paths
     private static final String SHOULDER_1 = characterPath("shoulder.png"); //Shoulder 1 and 2 are used at rest sites.
@@ -415,7 +427,7 @@ public class ThePrismatic extends CustomPlayer {
 
     public ThePrismatic() {
         super(NAMES[0], Enums.Prismatic,
-                new CustomEnergyOrb(null, null, null), //Energy OrbSlot
+                new CustomEnergyOrb(orbPath, orbVfxPath, null), //Energy OrbSlot
                 new SpriterAnimation(characterPath("animation/default.scml"))); //Animation
 
         initializeClass(null,

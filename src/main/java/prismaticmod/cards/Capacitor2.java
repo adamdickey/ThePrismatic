@@ -24,12 +24,15 @@ public class Capacitor2 extends BaseCard {
         //but constants at the top of the file are easy to adjust.
         int baseMagicNumber = 2;
         int UPG_Number = 1;
+        int baseDex = 1;
+        int UPG_Dex = 1;
         setMagic(baseMagicNumber, UPG_Number);
+        setCustomVar("dex", baseDex, UPG_Dex);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new IncreaseMaxOrbAction(magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, 1), 1));
+        addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, customVar("dex")), customVar("dex")));
     }
 }
