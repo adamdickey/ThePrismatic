@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import prismaticmod.powers.TargetedPower;
@@ -36,7 +37,7 @@ public class ChampionBelt2 extends BaseRelic implements OnApplyPowerRelic {
 
     @Override
     public int onApplyPowerStacks(AbstractPower power, AbstractCreature target, AbstractCreature source, int stackAmount) {
-        if(Objects.equals(power.ID, VulnerablePower.POWER_ID)){
+        if(Objects.equals(power.ID, VulnerablePower.POWER_ID) && !target.hasPower(ArtifactPower.POWER_ID)){
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             addToBot(new ApplyPowerAction(target, source, new WeakPower(target, 1, false), 1));
             addToBot(new ApplyPowerAction(target, source, new TargetedPower(target, 1), 1));

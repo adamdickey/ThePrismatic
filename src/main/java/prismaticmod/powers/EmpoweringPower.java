@@ -43,10 +43,6 @@ public class EmpoweringPower extends BasePower {
             }
         }
     }
-    public void atEndOfTurn(boolean isPlayer) {
-        addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, EmpoweringPower.ID));
-        unUpdateExistingPowers();
-    }
     private void updateExistingPowers() {
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c.type == AbstractCard.CardType.POWER && !c.isCostModified && c.costForTurn != 0) {
@@ -76,7 +72,7 @@ public class EmpoweringPower extends BasePower {
 
     public void onDrawOrDiscard() {
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c.type == AbstractCard.CardType.POWER && !c.isCostModified) {
+            if (c.type == AbstractCard.CardType.POWER && !c.isCostModified && c.costForTurn != 0) {
                 c.costForTurn--;
                 c.isCostModified = true;
             }
@@ -85,32 +81,6 @@ public class EmpoweringPower extends BasePower {
     private void unUpdateExistingPowers(AbstractCard powerPlayed) {
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c.type == AbstractCard.CardType.POWER && c.isCostModified && c != powerPlayed) {
-                c.costForTurn++;
-                c.isCostModified = false;
-            }
-        }
-        for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
-            if (c.type == AbstractCard.CardType.POWER && c.isCostModified) {
-                c.costForTurn++;
-                c.isCostModified = false;
-            }
-        }
-        for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
-            if (c.type == AbstractCard.CardType.POWER && c.isCostModified) {
-                c.costForTurn++;
-                c.isCostModified = false;
-            }
-        }
-        for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
-            if (c.type == AbstractCard.CardType.POWER && c.isCostModified) {
-                c.costForTurn++;
-                c.isCostModified = false;
-            }
-        }
-    }
-    private void unUpdateExistingPowers() {
-        for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c.type == AbstractCard.CardType.POWER && c.isCostModified) {
                 c.costForTurn++;
                 c.isCostModified = false;
             }

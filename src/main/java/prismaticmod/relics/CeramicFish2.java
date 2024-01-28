@@ -2,6 +2,7 @@ package prismaticmod.relics;
 
 import com.evacipated.cardcrawl.mod.stslib.relics.OnSkipCardRelic;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.rewards.RewardItem;
 import theprismatic.ThePrismatic;
@@ -51,5 +52,9 @@ public class CeramicFish2 extends BaseRelic implements OnSkipCardRelic {
             flash();
             setCounter(-2);
         }
+    }
+    public boolean canSpawn() {
+        return ((Settings.isEndless || AbstractDungeon.floorNum <= 48) &&
+                !(AbstractDungeon.getCurrRoom() instanceof com.megacrit.cardcrawl.rooms.ShopRoom));
     }
 }

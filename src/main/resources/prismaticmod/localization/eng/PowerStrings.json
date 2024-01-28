@@ -93,9 +93,9 @@
   "${modID}:Empowered": {
     "NAME": "Empowered",
     "DESCRIPTIONS": [
-      "The next Power you play this turn costs #b1 less.",
+      "The next Power you play this combat costs #b1 less.",
       "The next #b",
-      " Powers you play this turn cost #b1 less."
+      " Powers you play this combat cost #b1 less."
     ]
   },
   "${modID}:Echo Form": {
@@ -104,6 +104,28 @@
       "The first card you play each turn is played twice.",
       "The first #b",
       " cards you play each turn are played twice."
+    ]
+  },
+  "${modID}:Evoke Fury": {
+    "NAME": "Evoke Fury",
+    "DESCRIPTIONS": [
+      "Whenever you #yEvoke an Orb, gain #b",
+      " #yStrength."
+    ]
+  },
+  "${modID}:Evoke Serenity": {
+    "NAME": "Evoke Serenity",
+    "DESCRIPTIONS": [
+      "Whenever you #yEvoke an Orb, gain #b",
+      " #yBlock."
+    ]
+  },
+  "${modID}:Evoke Dominance": {
+    "NAME": "Evoke Dominance",
+    "DESCRIPTIONS": [
+      "Whenever you #yEvoke an Orb, #yEvoke it an additional time.",
+      "Whenever you #yEvoke an Orb, #yEvoke it #b",
+      " additional times."
     ]
   }
 }

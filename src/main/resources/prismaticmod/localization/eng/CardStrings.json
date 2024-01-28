@@ -475,13 +475,13 @@
   },
   "${modID}:Empowering Defend": {
     "NAME": "Empowering Defend",
-    "DESCRIPTION": "Gain !B! Block. NL The next Power you play this turn costs 1 less.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL The next 2 Powers you play this turn cost 1 less."
+    "DESCRIPTION": "Gain !B! Block. NL The next Power you play this combat costs 1 less.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL The next 2 Powers you play this combat cost 1 less."
   },
   "${modID}:Empowering Strike": {
     "NAME": "Empowering Strike",
-    "DESCRIPTION": "Deal !D! damage. NL The next Power you play this turn costs 1 less.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL The next 2 Powers you play this turn cost 1 less."
+    "DESCRIPTION": "Deal !D! damage. NL The next Power you play this combat costs 1 less.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL The next 2 Powers you play this combat cost 1 less."
   },
   "${modID}:Doom Will Bloom": {
     "NAME": "Doom Will Bloom",
@@ -522,6 +522,29 @@
     "NAME": "Echo Form",
     "DESCRIPTION": "Ethereal. NL The first card you play each turn is played twice.",
     "UPGRADE_DESCRIPTION": "The first card you play each turn is played twice."
+  },
+  "${modID}:Multichaos": {
+    "NAME": "Multi-Chaos",
+    "DESCRIPTION": "Channel 1 random Orb. NL Evoke your next Orb X times.",
+    "UPGRADE_DESCRIPTION": "Channel 1 random Orb. NL Evoke your next Orb X+1 times."
+  },
+  "${modID}:Limit Break": {
+    "NAME": "Limit Break",
+    "DESCRIPTION": "Double your Strength. NL Double your Focus. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Double your Strength. NL Double your Focus."
+  },
+  "${modID}:Evoke Fury": {
+    "NAME": "Evoke Fury",
+    "DESCRIPTION": "Whenever you Evoke an Orb, gain !M! Strength."
+  },
+  "${modID}:Evoke Serenity": {
+    "NAME": "Evoke Serenity",
+    "DESCRIPTION": "Whenever you Evoke an Orb, gain !M! Block."
+  },
+  "${modID}:Evoke Dominance": {
+    "NAME": "Evoke Dominance",
+    "DESCRIPTION": "Whenever you Evoke an Orb, Evoke it an additional time.",
+    "UPGRADE_DESCRIPTION": "Whenever you Evoke an Orb, Evoke it !M! additional times."
   }
 }
 
