@@ -404,11 +404,11 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Impatience());
         tmpPool.add(new JackOfAllTrades());
         tmpPool.add(new Madness());
-        tmpPool.add(new Magnetism2());
+        tmpPool.add(new Magnetism());
         tmpPool.add(new MasterOfStrategy());
         //tmpPool.add(new Mayhem());
         tmpPool.add(new Metamorphosis());
-        tmpPool.add(new MindBlast2());
+        tmpPool.add(new MindBlast());
         tmpPool.add(new Panacea());
         tmpPool.add(new Panache());
         tmpPool.add(new PanicButton());
