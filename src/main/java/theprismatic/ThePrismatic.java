@@ -463,14 +463,14 @@ public class ThePrismatic extends CustomPlayer {
     public AbstractCard getPrismaticCard(){
         ArrayList<AbstractCard> prismaticCards = new ArrayList<>();
         Collections.addAll(prismaticCards, new CunningStrike(), new DivineStrike(), new EmpoweringStrike(),
-                new EmptyStrike(), new ExhaustingStrike(), new FrostyStrike(), new InsightfulStrike(),
+                new EmptyStrike(), new ExhaustingStrike(), new FocusedStrike(), new FrostyStrike(),
                 new LootingStrike(), new SadisticStrike(), new ScrapingStrike(), new ScryingStrike(),
                 new StormyStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike(),
                 new CunningDefend(), new DefendForOne(), new DivineDefend(), new EmpoweringDefend(),
-                new EmptyDefend(), new ExhaustingDefend(), new FrostyDefend(), new InsightfulDefend(),
+                new EmptyDefend(), new ExhaustingDefend(), new FocusedDefend(), new FrostyDefend(),
                 new LootingDefend(), new SadisticDefend(), new ScrapingDefend(), new ScryingDefend(),
                 new StormyDefend(), new TargetingDefend(), new ToxicDefend());
-        //RetainingStrike.ID, RetainingDefend.ID
+        //RetainingStrike.ID, RetainingDefend.ID, InsightfulStrike.ID, InsightfulDefend.ID
         Random rand = new Random();
         return prismaticCards.get(rand.nextInt(prismaticCards.size()));
     }

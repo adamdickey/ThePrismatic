@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -32,15 +33,27 @@ public class Dropkick2 extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        int debuffs = 0;
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-        if (m != null && m.hasPower("Vulnerable")) {
+        for(AbstractPower power : m.powers){
+            if(power.type == AbstractPower.PowerType.DEBUFF && !power.ID.equals("Shackled")){
+                debuffs++;
+            }
+        }
+        if(debuffs >= 2){
             addToBot(new DrawCardAction(AbstractDungeon.player, 1));
         }
     }
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-            if (!m.isDeadOrEscaped() && m.hasPower("Vulnerable")) {
+            int debuffs = 0;
+            for(AbstractPower power : m.powers){
+                if(power.type == AbstractPower.PowerType.DEBUFF && !power.ID.equals("Shackled")){
+                    debuffs++;
+                }
+            }
+            if(debuffs >= 2){
                 this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
                 break;
             }

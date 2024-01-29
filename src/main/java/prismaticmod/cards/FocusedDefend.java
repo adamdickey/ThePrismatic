@@ -1,15 +1,16 @@
 package prismaticmod.cards;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
-import com.megacrit.cardcrawl.cards.tempCards.Insight;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.FocusPower;
+import prismaticmod.powers.FocusDownPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
-public class InsightfulDefend extends BaseCard {
-    public static final String ID = makeID("Insightful Defend"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
+public class FocusedDefend extends BaseCard {
+    public static final String ID = makeID("Focused Defend"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
     private static final CardStats info = new CardStats(
             ThePrismatic.Enums.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.
             CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -22,19 +23,19 @@ public class InsightfulDefend extends BaseCard {
 
     private static final int BLOCK = 5;
     private static final int UPG_BLOCK = 3;
-    private static final int insightNumber = 1;
-    private static final int UPG_Insight = 0;
+    private static final int baseMagicNumber = 2;
+    private static final int UPG_Number = 1;
 
-    public InsightfulDefend() {
+    public FocusedDefend() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
-        setMagic(insightNumber, UPG_Insight);
+        setMagic(baseMagicNumber, UPG_Number);
         tags.add(CardTags.STARTER_DEFEND);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        this.cardsToPreview = new Insight();
-        addToBot(new MakeTempCardInDrawPileAction(this.cardsToPreview.makeStatEquivalentCopy(), magicNumber, true, true));
+        addToBot(new ApplyPowerAction(p, p, new FocusPower(p, magicNumber), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new FocusDownPower(magicNumber), magicNumber));
     }
 }

@@ -25,6 +25,10 @@ public class Nirvana2Power extends BasePower {
     }
     int cardsDiscarded = 0;
     boolean endOfTurn = false;
+    @Override
+    public void onInitialApplication() {
+        cardsDiscarded = GameActionManager.totalDiscardedThisTurn;
+    }
     public void atStartOfTurn(){
         cardsDiscarded = 0;
         endOfTurn = false;

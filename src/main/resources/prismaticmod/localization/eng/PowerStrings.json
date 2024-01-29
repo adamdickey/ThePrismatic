@@ -127,5 +127,12 @@
       "Whenever you #yEvoke an Orb, #yEvoke it #b",
       " additional times."
     ]
+  },
+  "${modID}:Focus Down": {
+    "NAME": "Focus Down",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, lose #b",
+      " #yFocus."
+    ]
   }
 }
