@@ -25,7 +25,7 @@ public class Doppelganger2 extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DoppelgangerAction(p, this.upgraded, this.freeToPlayOnce, this.energyOnUse+1));
+        addToBot(new DoppelgangerAction(p, this.upgraded, this.freeToPlayOnce, this.energyOnUse));
     }
     public void upgrade() {
         if (!this.upgraded) {

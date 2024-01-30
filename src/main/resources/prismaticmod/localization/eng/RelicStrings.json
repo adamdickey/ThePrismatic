@@ -210,5 +210,12 @@
       "Whenever you add a card to your deck, gain #b",
       " #yGold. No longer works when you skip a card reward."
     ]
+  },
+  "${modID}:Snecko Skull": {
+    "NAME": "Snecko Skull",
+    "FLAVOR": "A snecko skull in pristine condition. Mysteriously clean and smooth, dirt and grime fall off inexplicably.",
+    "DESCRIPTIONS": [
+      "Whenever you apply a debuff to an enemy, apply #b1 more."
+    ]
   }
 }

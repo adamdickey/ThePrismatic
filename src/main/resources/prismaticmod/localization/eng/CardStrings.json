@@ -137,7 +137,7 @@
   },
   "${modID}:Bane": {
     "NAME": "Bane",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy has 2 or more debuffs, deal !D! damage again."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has 2 or more debuffs, apply !M! Poison."
   },
   "${modID}:Barrage": {
     "NAME": "Barrage",
@@ -251,8 +251,8 @@
   },
   "${modID}:Doppelganger": {
     "NAME": "Doppelganger",
-    "DESCRIPTION": "Next turn, draw X+1 cards and gain X+1 Energy. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Next turn, draw X+2 cards and gain X+2 Energy. NL Exhaust."
+    "DESCRIPTION": "Next turn, draw X cards and gain X Energy. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Next turn, draw X+1 cards and gain X+1 Energy. NL Exhaust."
   },
   "${modID}:Prepared": {
     "NAME": "Prepared",
@@ -320,7 +320,7 @@
   },
   "${modID}:Setup": {
     "NAME": "Setup",
-    "DESCRIPTION": "Draw 1 card. NL Put a card from your hand on top of your draw pile. NL It costs 0 until played."
+    "DESCRIPTION": "Scry 1. NL Put a card from your hand on top of your draw pile. NL It costs 0 until played."
   },
   "${modID}:Magnetism": {
     "NAME": "Magnetism",
@@ -343,8 +343,8 @@
   },
   "${modID}:Infinite Blades": {
     "NAME": "Infinite Blades",
-    "DESCRIPTION": "At the start of your turn, add a Shiv into your hand. NL Whenever you are attacked, deal 3 damage back.",
-    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a Shiv into your hand. NL Whenever you are attacked, deal 5 damage back."
+    "DESCRIPTION": "Add a Shiv into your hand. NL At the start of your turn, add a Shiv into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Add a Shiv into your hand. NL At the start of your turn, add a Shiv into your hand."
   },
   "${modID}:Choke": {
     "NAME": "Choke",
@@ -435,11 +435,12 @@
   },
   "${modID}:Eviscerate": {
     "NAME": "Eviscerate",
-    "DESCRIPTION": "Costs 1 less [G] NL for each card ${modID}:Milled this turn. NL Deal !D! damage 3 times."
+    "DESCRIPTION": "Costs 1 less [E] NL for each card ${modID}:Milled this turn. NL Deal !D! damage 3 times."
   },
   "${modID}:Slice": {
     "NAME": "Slice",
-    "DESCRIPTION": "Deal !D! damage. NL Exhaust 1 card."
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust 1 card at random.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Exhaust 1 card."
   },
   "${modID}:Dark Embrace": {
     "NAME": "Dark Embrace",
@@ -516,7 +517,7 @@
   },
   "${modID}:Juggernaut": {
     "NAME": "Juggernaut",
-    "DESCRIPTION": "Whenever you gain Block, deal !M! damage to a random enemy."
+    "DESCRIPTION": "Channel 1 Frost. NL Whenever you gain Block, deal !M! damage to a random enemy."
   },
   "${modID}:Echo Form": {
     "NAME": "Echo Form",
@@ -553,6 +554,18 @@
   "${modID}:Focused Strike": {
     "NAME": "Focused Strike",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! temporary Focus."
+  },
+  "${modID}:Biased Cognition": {
+    "NAME": "Biased Cognition",
+    "DESCRIPTION": "Gain !M! Focus and !M! Strength. NL At the start of your turn, lose 1 Focus and 1 Strength."
+  },
+  "${modID}:Mental Fortress": {
+    "NAME": "Mental Fortress",
+    "DESCRIPTION": "Whenever you change Stances or Channel an Orb, gain !M! Block."
+  },
+  "${modID}:Searing Blow": {
+    "NAME": "Searing Blow",
+    "DESCRIPTION": "Deal !D! damage. NL Can be Upgraded any number of times."
   }
 }
 

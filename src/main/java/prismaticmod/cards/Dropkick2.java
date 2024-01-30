@@ -9,8 +9,15 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
+import com.megacrit.cardcrawl.powers.EnvenomPower;
+import com.megacrit.cardcrawl.powers.PoisonPower;
+import com.megacrit.cardcrawl.powers.watcher.FreeAttackPower;
+import prismaticmod.relics.WristBlade2;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
+
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class Dropkick2 extends BaseCard {
     public static final String ID = makeID("Dropkick"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
@@ -39,6 +46,13 @@ public class Dropkick2 extends BaseCard {
             if(power.type == AbstractPower.PowerType.DEBUFF && !power.ID.equals("Shackled")){
                 debuffs++;
             }
+        }
+        if(p.hasPower(EnvenomPower.POWER_ID) && !m.hasPower(ArtifactPower.POWER_ID) && !m.hasPower(PoisonPower.POWER_ID)){
+            debuffs++;
+        }
+        if(p.hasRelic(WristBlade2.ID) && !m.hasPower(ArtifactPower.POWER_ID) && !m.hasPower(PoisonPower.POWER_ID)
+                && !p.hasPower(EnvenomPower.POWER_ID) && !(this.costForTurn == 0 || this.freeToPlayOnce || player.hasPower(FreeAttackPower.POWER_ID))){
+            debuffs++;
         }
         if(debuffs >= 2){
             addToBot(new DrawCardAction(AbstractDungeon.player, 1));

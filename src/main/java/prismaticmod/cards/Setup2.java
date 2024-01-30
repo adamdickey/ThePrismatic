@@ -1,7 +1,7 @@
 package prismaticmod.cards;
 
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.unique.SetupAction;
+import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import prismaticmod.util.CardStats;
@@ -25,7 +25,7 @@ public class Setup2 extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DrawCardAction(p, 1));
+        addToBot(new ScryAction(1));
         addToBot(new SetupAction());
     }
     public void upgrade() {

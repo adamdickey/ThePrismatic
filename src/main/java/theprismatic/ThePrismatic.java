@@ -117,7 +117,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new DarkEmbrace2());
         tmpPool.add(new DemonForm());
         tmpPool.add(new Disarm());
-        tmpPool.add(new DoubleTap2());
+        tmpPool.add(new DoubleTap());
         tmpPool.add(new Dropkick2());
         tmpPool.add(new DualWield());
         tmpPool.add(new Entrench2());
@@ -153,7 +153,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Reaper());
         tmpPool.add(new RecklessCharge());
         tmpPool.add(new MetallicRupture());
-        //tmpPool.add(new SearingBlow());
+        tmpPool.add(new SearingBlow2());
         tmpPool.add(new SecondWind());
         tmpPool.add(new SeeingRed());
         tmpPool.add(new Sentinel());
@@ -183,9 +183,9 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Blur());
         tmpPool.add(new BouncingFlask());
         tmpPool.add(new BulletTime());
-        tmpPool.add(new Burst2());
+        tmpPool.add(new Burst());
         tmpPool.add(new CalculatedGamble());
-        //tmpPool.add(new Caltrops());
+        tmpPool.add(new Caltrops());
         tmpPool.add(new Catalyst2());
         tmpPool.add(new Choke2());
         tmpPool.add(new CloakAndDagger());
@@ -196,7 +196,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new DaggerThrow());
         tmpPool.add(new Dash());
         tmpPool.add(new DeadlyPoison2());
-        //tmpPool.add(new Deflect());
+        tmpPool.add(new Deflect());
         tmpPool.add(new DieDieDie());
         tmpPool.add(new Distraction2());
         tmpPool.add(new DodgeAndRoll());
@@ -216,7 +216,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new InfiniteBlades2());
         tmpPool.add(new LegSweep());
         tmpPool.add(new Malaise());
-        //tmpPool.add(new MasterfulStab());
+        tmpPool.add(new MasterfulStab());
         tmpPool.add(new Neutralize2());
         tmpPool.add(new Nightmare());
         //tmpPool.add(new NoxiousFumes());
@@ -243,12 +243,12 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new WraithForm2());
         tmpPool.add(new Aggregate());
         tmpPool.add(new AllForOne());
-        tmpPool.add(new Amplify2());
+        tmpPool.add(new Amplify());
         tmpPool.add(new AutoShields());
         tmpPool.add(new BallLightning());
         tmpPool.add(new Barrage2());
         tmpPool.add(new BeamCell());
-        tmpPool.add(new BiasedCognition());
+        tmpPool.add(new BiasedCognition2());
         tmpPool.add(new Blizzard2());
         tmpPool.add(new BootSequence());
         tmpPool.add(new Buffer());
@@ -353,7 +353,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new LikeWater2());
         tmpPool.add(new MasterReality2());
         tmpPool.add(new Meditate());
-        //tmpPool.add(new MentalFortress());
+        tmpPool.add(new MentalFortress2());
         tmpPool.add(new Nirvana2());
         tmpPool.add(new Omniscience());
         tmpPool.add(new Perseverance2());

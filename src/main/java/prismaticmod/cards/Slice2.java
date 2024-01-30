@@ -21,8 +21,8 @@ public class Slice2 extends BaseCard {
     //These will be used in the constructor. Technically you can just use the values directly,
     //but constants at the top of the file are easy to adjust.
 
-    private static final int DAMAGE = 6;
-    private static final int UPG_DAMAGE = 3;
+    private static final int DAMAGE = 5;
+    private static final int UPG_DAMAGE = 2;
 
     public Slice2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
@@ -31,6 +31,10 @@ public class Slice2 extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot(new ExhaustAction(1, false));
+        if (this.upgraded) {
+            addToBot(new ExhaustAction(1, false));
+        } else {
+            addToBot(new ExhaustAction(1, true, false, false));
+        }
     }
 }

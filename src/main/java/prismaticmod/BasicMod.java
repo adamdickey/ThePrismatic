@@ -330,7 +330,7 @@ public class BasicMod implements
         BaseMod.addRelicToCustomPool(new PaperCrane(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new RingOfTheSerpent(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new SnakeRing(), CARD_COLOR);
-        BaseMod.addRelicToCustomPool(new SneckoSkull(), CARD_COLOR);
+        //BaseMod.addRelicToCustomPool(new SneckoSkull(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new TheSpecimen(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new Tingsha(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new ToughBandages(), CARD_COLOR);

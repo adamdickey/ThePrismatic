@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.rewards.RewardItem;
 import theprismatic.ThePrismatic;
 
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static prismaticmod.BasicMod.makeID;
 
 public class CeramicFish2 extends BaseRelic implements OnSkipCardRelic {
@@ -26,7 +27,7 @@ public class CeramicFish2 extends BaseRelic implements OnSkipCardRelic {
 
     public void onObtainCard(AbstractCard c) {
         if(!this.usedUp){
-            AbstractDungeon.player.gainGold(goldCount);
+            player.gainGold(goldCount);
         }
     }
 

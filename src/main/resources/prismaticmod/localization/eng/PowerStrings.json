@@ -134,5 +134,28 @@
       "At the start of your next turn, lose #b",
       " #yFocus."
     ]
+  },
+  "${modID}:Bias": {
+    "NAME": "Bias",
+    "DESCRIPTIONS": [
+      "At the start of your turn, lose #b",
+      " #yFocus and #b",
+      " #yStrength."
+    ]
+  },
+  "${modID}:Evolve": {
+    "NAME": "Evolve",
+    "DESCRIPTIONS": [
+      "Whenever you draw a #yStatus or #yCurse card, draw #b1 card.",
+      "Whenever you draw a #yStatus or #yCurse card, draw #b",
+      " cards."
+    ]
+  },
+  "${modID}:Mental Fortress": {
+    "NAME": "Mental Fortress",
+    "DESCRIPTIONS": [
+      "Whenever you change #yStances or #yChannel an Orb, gain #b",
+      " Block."
+    ]
   }
 }
