@@ -566,6 +566,30 @@
   "${modID}:Searing Blow": {
     "NAME": "Searing Blow",
     "DESCRIPTION": "Deal !D! damage. NL Can be Upgraded any number of times."
+  },
+  "${modID}:Thunder Strike": {
+    "NAME": "Thunder Strike",
+    "DESCRIPTION": "Deal !D! damage to a random enemy for each Orb Channeled this combat.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Channeled !M! Orb.)",
+      " NL (Channeled !M! Orbs.)"
+    ]
+  },
+  "${modID}:Hyperbeam": {
+    "NAME": "Hyperbeam",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Lose !M! Focus and !M! Strength."
+  },
+  "${modID}:Reprogram": {
+    "NAME": "Reprogram",
+    "DESCRIPTION": "Gain !M! Focus. NL Lose 1 Strength. NL Lose 1 Dexterity."
+  },
+  "${modID}:Recursion": {
+    "NAME": "Recursion",
+    "DESCRIPTION": "Evoke your next Orb. NL Channel the Orb that was just Evoked. NL Exit your Stance, then enter that Stance."
+  },
+  "${modID}:Perfected Strike": {
+    "NAME": "Perfected Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for ALL your cards containing \"Strike\"."
   }
 }
 

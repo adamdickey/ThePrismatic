@@ -144,7 +144,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new LimitBreak2());
         //tmpPool.add(new Metallicize());
         tmpPool.add(new Offering());
-        //tmpPool.add(new PerfectedStrike());
+        tmpPool.add(new PerfectedStrike2());
         tmpPool.add(new PommelStrike());
         tmpPool.add(new PowerThrough());
         tmpPool.add(new Pummel());
@@ -280,7 +280,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Heatsinks2());
         tmpPool.add(new HelloWorld2());
         tmpPool.add(new Hologram());
-        //tmpPool.add(new Hyperbeam());
+        tmpPool.add(new Hyperbeam2());
         tmpPool.add(new Leap());
         tmpPool.add(new Bullseye2()); //tmpPool.add(new LockOn());
         tmpPool.add(new Loop());
@@ -292,10 +292,10 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Rainbow2());
         tmpPool.add(new Reboot());
         tmpPool.add(new Rebound());
-        //tmpPool.add(new Recursion());
+        tmpPool.add(new Recursion2());
         tmpPool.add(new Recycle());
         tmpPool.add(new ReinforcedBody());
-        //tmpPool.add(new Reprogram());
+        tmpPool.add(new Reprogram2());
         tmpPool.add(new RipAndTear());
         tmpPool.add(new Scrape2());
         tmpPool.add(new Seek());
@@ -309,7 +309,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Sunder());
         tmpPool.add(new SweepingBeam());
         tmpPool.add(new Tempest2());
-        //tmpPool.add(new ThunderStrike());
+        tmpPool.add(new ThunderStrike2());
         tmpPool.add(new Turbo());
         tmpPool.add(new Equilibrium());
         tmpPool.add(new WhiteNoise2());
