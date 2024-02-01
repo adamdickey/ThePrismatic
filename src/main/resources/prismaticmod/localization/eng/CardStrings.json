@@ -561,7 +561,7 @@
   },
   "${modID}:Mental Fortress": {
     "NAME": "Mental Fortress",
-    "DESCRIPTION": "Whenever you change Stances or Channel an Orb, gain !M! Block."
+    "DESCRIPTION": "Whenever you change Stances or create a card during combat, gain !M! Block."
   },
   "${modID}:Searing Blow": {
     "NAME": "Searing Blow",
@@ -590,6 +590,14 @@
   "${modID}:Perfected Strike": {
     "NAME": "Perfected Strike",
     "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for ALL your cards containing \"Strike\"."
+  },
+  "${modID}:Caltrops": {
+    "NAME": "Caltrops",
+    "DESCRIPTION": "Whenever you are attacked, apply 1 ${modID}:Target and deal !M! damage back."
+  },
+  "${modID}:Deflect": {
+    "NAME": "Deflect",
+    "DESCRIPTION": "Gain !B! Block. NL Retain up to 1 card this turn."
   }
 }
 

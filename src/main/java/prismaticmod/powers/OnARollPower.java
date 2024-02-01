@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.powers.*;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static prismaticmod.BasicMod.makeID;
 
-public class OnARollPower extends BasePower{
+public class OnARollPower extends BasePower {
 
     public static final String ID = makeID("On A Roll");
 
@@ -17,8 +17,8 @@ public class OnARollPower extends BasePower{
         this.amount = amount;
     }
     public void updateDescription() {
-            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] +
-                    this.amount + DESCRIPTIONS[2];
+        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] +
+                this.amount + DESCRIPTIONS[2];
     }
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if(card.type == AbstractCard.CardType.ATTACK){
