@@ -28,7 +28,7 @@ public class SadisticStrike extends BaseCard {
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 3;
     private static final int Magic = 2;
-    private static final int UPG_Magic = 1;
+    private static final int UPG_Magic = 0;
 
     public SadisticStrike() {
         super(ID, info); //Pass the required information to the BaseCard constructor.

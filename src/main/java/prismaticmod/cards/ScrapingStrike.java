@@ -24,7 +24,7 @@ public class ScrapingStrike extends BaseCard {
 
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 3;
-    private static final int scrapeNumber = 4;
+    private static final int scrapeNumber = 3;
     private static final int UPG_Scrape = 1;
 
     public ScrapingStrike() {

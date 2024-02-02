@@ -93,9 +93,9 @@
   "${modID}:Empowered": {
     "NAME": "Empowered",
     "DESCRIPTIONS": [
-      "The next Power you play this combat costs #b1 less.",
+      "The next Power you play this turn costs #b1 less.",
       "The next #b",
-      " Powers you play this combat cost #b1 less."
+      " Powers you play this turn cost #b1 less."
     ]
   },
   "${modID}:Echo Form": {

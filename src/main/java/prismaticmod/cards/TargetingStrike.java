@@ -26,7 +26,7 @@ public class TargetingStrike extends BaseCard {
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 3;
     private static final int lockOnNumber = 2;
-    private static final int UPG_LockOn = 1;
+    private static final int UPG_LockOn = 0;
 
     public TargetingStrike() {
         super(ID, info); //Pass the required information to the BaseCard constructor.

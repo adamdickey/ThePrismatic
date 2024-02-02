@@ -335,7 +335,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new EmptyFist());
         tmpPool.add(new EmptyMind());
         tmpPool.add(new Eruption2());
-        tmpPool.add(new Establishment());
+        tmpPool.add(new Establishment2());
         tmpPool.add(new Evaluate());
         tmpPool.add(new Fasting2());
         tmpPool.add(new FearNoEvil());

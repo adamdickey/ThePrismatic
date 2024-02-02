@@ -35,9 +35,6 @@ public class CunningDefend extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
         Shiv shiv = new Shiv();
-        if(this.upgraded){
-            shiv.upgrade();
-        }
         addToBot(new MakeTempCardInHandAction(shiv, this.magicNumber));
     }
 }

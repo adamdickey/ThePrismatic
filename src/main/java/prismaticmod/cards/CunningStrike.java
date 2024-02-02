@@ -38,9 +38,6 @@ public class CunningStrike extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         Shiv shiv = new Shiv();
-        if(this.upgraded){
-            shiv.upgrade();
-        }
         addToBot(new MakeTempCardInHandAction(shiv, this.magicNumber));
     }
 }

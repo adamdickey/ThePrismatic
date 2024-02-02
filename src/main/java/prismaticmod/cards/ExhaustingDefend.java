@@ -22,7 +22,7 @@ public class ExhaustingDefend extends BaseCard {
     private static final int BLOCK = 5;
     private static final int UPG_BLOCK = 3;
     private static final int exhaustNumber = 2;
-    private static final int UPG_Exhaust = 1;
+    private static final int UPG_Exhaust = 0;
 
     public ExhaustingDefend() {
         super(ID, info); //Pass the required information to the BaseCard constructor.

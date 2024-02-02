@@ -24,7 +24,7 @@ public class ScryingStrike extends BaseCard {
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 3;
     private static final int scryNumber = 2;
-    private static final int UPG_Scry = 1;
+    private static final int UPG_Scry = 0;
 
     public ScryingStrike() {
         super(ID, info); //Pass the required information to the BaseCard constructor.

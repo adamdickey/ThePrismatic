@@ -22,7 +22,7 @@ public class ScrapingDefend extends BaseCard {
 
     private static final int BLOCK = 5;
     private static final int UPG_BLOCK = 3;
-    private static final int scrapeNumber = 4;
+    private static final int scrapeNumber = 3;
     private static final int UPG_Scrape = 1;
 
     public ScrapingDefend() {

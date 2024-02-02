@@ -26,7 +26,7 @@ public class DefendForOne extends BaseCard {
     private static final int BLOCK = 5;
     private static final int UPG_BLOCK = 3;
     private static final int baseMagicNumber = 1;
-    private static final int UPG_Number = 1;
+    private static final int UPG_Number = 0;
 
     public DefendForOne() {
         super(ID, info); //Pass the required information to the BaseCard constructor.

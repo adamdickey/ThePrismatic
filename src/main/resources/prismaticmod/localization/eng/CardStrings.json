@@ -47,8 +47,7 @@
   },
   "${modID}:Cunning Strike": {
     "NAME": "Cunning Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Add 1 Shiv into your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add 1 Shiv+ into your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Add 1 Shiv into your hand."
   },
   "${modID}:Toxic Strike": {
     "NAME": "Toxic Strike",
@@ -61,8 +60,7 @@
   },
   "${modID}:Cunning Defend": {
     "NAME": "Cunning Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Add 1 Shiv into your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add 1 Shiv+ into your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Add 1 Shiv into your hand."
   },
   "${modID}:Divine Defend": {
     "NAME": "Divine Defend",
@@ -287,13 +285,11 @@
   },
   "${modID}:Strike for One": {
     "NAME": "Strike for One",
-    "DESCRIPTION": "Deal !D! damage. NL Return !M! random cost 0 card from your discard pile into your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Return !M! random cost 0 cards from your discard pile into your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Return !M! random cost 0 card from your discard pile into your hand."
   },
   "${modID}:Defend for One": {
     "NAME": "Defend for One",
-    "DESCRIPTION": "Gain !B! Block. NL Put !M! random cost 0 card from your discard pile into your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Put !M! random cost 0 cards from your discard pile into your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Put !M! random cost 0 card from your discard pile into your hand."
   },
   "${modID}:Infernal Blade": {
     "NAME": "Infernal Blade",
@@ -409,7 +405,7 @@
   },
   "${modID}:Exploit Pain": {
     "NAME": "Exploit Pain",
-    "DESCRIPTION": "Deal !D! damage. NL Repeat for each debuff on the enemy."
+    "DESCRIPTION": "Deal !D! damage, then deal !M! damage for each debuff on the enemy."
   },
   "${modID}:Storm of Steel": {
     "NAME": "Storm of Steel",
@@ -476,13 +472,13 @@
   },
   "${modID}:Empowering Defend": {
     "NAME": "Empowering Defend",
-    "DESCRIPTION": "Gain !B! Block. NL The next Power you play this combat costs 1 less.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL The next 2 Powers you play this combat cost 1 less."
+    "DESCRIPTION": "Gain !B! Block. NL The next Power you play this turn costs 1 less.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL The next !M! Powers you play this turn cost 1 less."
   },
   "${modID}:Empowering Strike": {
     "NAME": "Empowering Strike",
-    "DESCRIPTION": "Deal !D! damage. NL The next Power you play this combat costs 1 less.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL The next 2 Powers you play this combat cost 1 less."
+    "DESCRIPTION": "Deal !D! damage. NL The next Power you play this turn costs 1 less.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL The next !M! Powers you play this turn cost 1 less."
   },
   "${modID}:Doom Will Bloom": {
     "NAME": "Doom Will Bloom",
@@ -598,6 +594,11 @@
   "${modID}:Deflect": {
     "NAME": "Deflect",
     "DESCRIPTION": "Gain !B! Block. NL Retain up to 1 card this turn."
+  },
+  "${modID}:Establishment": {
+    "NAME": "Establishment",
+    "DESCRIPTION": "Whenever a card is Retained, reduce its cost by 1 this combat.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever a card is Retained, reduce its cost by 1 this combat."
   }
 }
 

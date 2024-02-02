@@ -24,7 +24,7 @@ public class TargetingDefend extends BaseCard {
     private static final int BLOCK = 5;
     private static final int UPG_BLOCK = 3;
     private static final int baseMagicNumber = 2;
-    private static final int UPG_Number = 1;
+    private static final int UPG_Number = 0;
 
     public TargetingDefend() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
