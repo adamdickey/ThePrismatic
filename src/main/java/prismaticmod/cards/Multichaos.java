@@ -3,8 +3,10 @@ package prismaticmod.cards;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.actions.unique.MulticastAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -25,7 +27,12 @@ public class Multichaos extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ChannelAction(AbstractOrb.getRandomOrb(true)));
+        for(AbstractOrb o : AbstractDungeon.player.orbs){
+            if(o instanceof EmptyOrbSlot){
+                addToBot(new ChannelAction(AbstractOrb.getRandomOrb(true)));
+                break;
+            }
+        }
         addToBot(new MulticastAction(p, this.energyOnUse, this.upgraded, this.freeToPlayOnce));
     }
 }

@@ -20,43 +20,43 @@
     "NAME": "Chimera Form",
     "DESCRIPTIONS": [
       "At the start of your turn, gain #b",
-      " Strength, #b",
-      " Dexterity, #b",
+      " #yStrength, #b",
+      " #yDexterity, #b",
       " Orb slot, and #b",
       " Orb slots, and #b",
-      " Mantra."
+      " #yMantra."
     ]
   },
   "${modID}:On A Roll": {
     "NAME": "On A Roll",
     "DESCRIPTIONS": [
       "When you play an #yAttack, gain #b",
-      " temporary Strength and #b",
-      " temporary Dexterity."
+      " temporary #yStrength and #b",
+      " temporary #yDexterity."
     ]
   },
   "${modID}:Static Discharge": {
     "NAME": "Static Discharge",
     "DESCRIPTIONS": [
-      "Whenever you apply a debuff for the first time each turn, Channel #b1 Lightning.",
+      "Whenever you apply a debuff for the first time each turn, #yChannel #b1 #yLightning.",
       "Whenever you apply a debuff for the first #b",
-      " times each turn, Channel #b1 Lightning."
+      " times each turn, #yChannel #b1 #yLightning."
 
     ]
   },
   "${modID}:Rushdown": {
     "NAME": "Rushdown",
     "DESCRIPTIONS": [
-      "Whenever you change Stances for the first time each turn, draw #b",
+      "Whenever you change #yStances for the first time each turn, draw #b",
       " cards.",
-      "Whenever you change Stances for the first #b",
+      "Whenever you change #yStances for the first #b",
       " times each turn, draw #b"
     ]
   },
   "${modID}:Accuracy": {
     "NAME": "Accuracy",
     "DESCRIPTIONS": [
-      "Cost 0 Attacks deal #b",
+      "Cost 0 #yAttacks deal #b",
       " additional damage."
     ]
   },
@@ -65,37 +65,36 @@
     "DESCRIPTIONS": [
       "At the start of your turn, lose #b",
       " HP and apply #b",
-      " Poison to ALL enemies."
+      " #yPoison to ALL enemies."
     ]
   },
-  "${modID}:Retain": {
-    "NAME": "Retain",
+  "${modID}:Lose Retain": {
+    "NAME": "Lose Retain",
     "DESCRIPTIONS": [
-      "At the end of this turn, you may retain #b",
-      " card.",
-      " cards."
+      "At the end of this turn, lose #b",
+      " #yRetain."
     ]
   },
   "${modID}:Like Water": {
     "NAME": "Like Water",
     "DESCRIPTIONS": [
       "At the end of your turn, if you are in #yCalm or have a #yFrost #yChanneled, gain #b",
-      " Block."
+      " #yBlock."
     ]
   },
   "${modID}:Nirvana": {
     "NAME": "Nirvana",
     "DESCRIPTIONS": [
       "Whenever you #yMill a card, gain #b",
-      " Block."
+      " #yBlock."
     ]
   },
   "${modID}:Empowered": {
     "NAME": "Empowered",
     "DESCRIPTIONS": [
-      "The next Power you play this turn costs #b1 less.",
+      "The next #yPower card you play this turn costs #b1 less.",
       "The next #b",
-      " Powers you play this turn cost #b1 less."
+      " #yPower cards you play this turn cost #b1 less."
     ]
   },
   "${modID}:Echo Form": {
@@ -104,28 +103,6 @@
       "The first card you play each turn is played twice.",
       "The first #b",
       " cards you play each turn are played twice."
-    ]
-  },
-  "${modID}:Evoke Fury": {
-    "NAME": "Evoke Fury",
-    "DESCRIPTIONS": [
-      "Whenever you #yEvoke an Orb, gain #b",
-      " #yStrength."
-    ]
-  },
-  "${modID}:Evoke Serenity": {
-    "NAME": "Evoke Serenity",
-    "DESCRIPTIONS": [
-      "Whenever you #yEvoke an Orb, gain #b",
-      " #yBlock."
-    ]
-  },
-  "${modID}:Evoke Dominance": {
-    "NAME": "Evoke Dominance",
-    "DESCRIPTIONS": [
-      "Whenever you #yEvoke an Orb, #yEvoke it an additional time.",
-      "Whenever you #yEvoke an Orb, #yEvoke it #b",
-      " additional times."
     ]
   },
   "${modID}:Focus Down": {
@@ -155,7 +132,7 @@
     "NAME": "Mental Fortress",
     "DESCRIPTIONS": [
       "Whenever you change #yStances or create a card during combat, gain #b",
-      " Block."
+      " #yBlock."
     ]
   },
   "${modID}:Caltrops": {

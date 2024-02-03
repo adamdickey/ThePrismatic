@@ -522,26 +522,13 @@
   },
   "${modID}:Multichaos": {
     "NAME": "Multi-Chaos",
-    "DESCRIPTION": "Channel 1 random Orb. NL Evoke your next Orb X times.",
-    "UPGRADE_DESCRIPTION": "Channel 1 random Orb. NL Evoke your next Orb X+1 times."
+    "DESCRIPTION": "If you have an empty Orb slot, Channel 1 random Orb. NL Evoke your next Orb X times.",
+    "UPGRADE_DESCRIPTION": "If you have an empty Orb slot, Channel 1 random Orb. NL Evoke your next Orb X+1 times."
   },
   "${modID}:Limit Break": {
     "NAME": "Limit Break",
     "DESCRIPTION": "Double your Strength. NL Double your Focus. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Double your Strength. NL Double your Focus."
-  },
-  "${modID}:Evoke Fury": {
-    "NAME": "Evoke Fury",
-    "DESCRIPTION": "Whenever you Evoke an Orb, gain !M! Strength."
-  },
-  "${modID}:Evoke Serenity": {
-    "NAME": "Evoke Serenity",
-    "DESCRIPTION": "Whenever you Evoke an Orb, gain !M! Block."
-  },
-  "${modID}:Evoke Dominance": {
-    "NAME": "Evoke Dominance",
-    "DESCRIPTION": "Whenever you Evoke an Orb, Evoke it an additional time.",
-    "UPGRADE_DESCRIPTION": "Whenever you Evoke an Orb, Evoke it !M! additional times."
   },
   "${modID}:Focused Defend": {
     "NAME": "Focused Defend",
