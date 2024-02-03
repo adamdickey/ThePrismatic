@@ -30,7 +30,7 @@
   "${modID}:On A Roll": {
     "NAME": "On A Roll",
     "DESCRIPTIONS": [
-      "When you play an attack, gain #b",
+      "When you play an #yAttack, gain #b",
       " temporary Strength and #b",
       " temporary Dexterity."
     ]

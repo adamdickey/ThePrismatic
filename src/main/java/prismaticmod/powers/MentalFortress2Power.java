@@ -18,6 +18,15 @@ public class MentalFortress2Power extends BasePower implements OnCreateCardInter
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
+    boolean playerTurn = true;
+
+    public void atStartOfTurn(){
+        playerTurn = true;
+    }
+
+    public void atEndOfTurnPreEndTurnCards(boolean isPlayer){
+        playerTurn = false;
+    }
 
     public void onChangeStance(AbstractStance oldStance, AbstractStance newStance) {
         if (!oldStance.ID.equals(newStance.ID)) {
@@ -28,7 +37,9 @@ public class MentalFortress2Power extends BasePower implements OnCreateCardInter
 
     @Override
     public void onCreateCard(AbstractCard abstractCard) {
-        flash();
-        addToBot(new GainBlockAction(this.owner, this.owner, this.amount));
+        if(playerTurn){
+            flash();
+            addToBot(new GainBlockAction(this.owner, this.owner, this.amount));
+        }
     }
 }

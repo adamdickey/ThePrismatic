@@ -29,6 +29,6 @@ public class OnARoll extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-            addToBot(new ApplyPowerAction(p, p, new OnARollPower(magicNumber), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new OnARollPower(p, magicNumber, 1), magicNumber));
     }
 }

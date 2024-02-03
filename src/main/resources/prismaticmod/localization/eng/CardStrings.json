@@ -119,7 +119,7 @@
   },
   "${modID}:On A Roll": {
     "NAME": "On A Roll",
-    "DESCRIPTION": "Whenever you play an Attack, gain !M! temporary Strength and !M! temporary Dexterity."
+    "DESCRIPTION": "Whenever you play an Attack, gain !M! temporary Strength and 1 temporary Dexterity."
   },
   "${modID}:Havoc": {
     "NAME": "Havoc",
