@@ -316,7 +316,7 @@
   },
   "${modID}:Setup": {
     "NAME": "Setup",
-    "DESCRIPTION": "Scry 1. NL Put a card from your hand on top of your draw pile. NL It costs 0 until played."
+    "DESCRIPTION": "Gain !B! Block. NL Put a card from your hand on top of your draw pile. NL It costs 0 until played."
   },
   "${modID}:Magnetism": {
     "NAME": "Magnetism",
@@ -580,7 +580,7 @@
   },
   "${modID}:Deflect": {
     "NAME": "Deflect",
-    "DESCRIPTION": "Gain !B! Block. NL Retain up to 1 card this turn."
+    "DESCRIPTION": "Gain !B! Block. NL Increase the Block gained from ALL cost 0 cards by !M! this combat."
   },
   "${modID}:Establishment": {
     "NAME": "Establishment",

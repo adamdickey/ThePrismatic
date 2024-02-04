@@ -1,7 +1,7 @@
 package prismaticmod.cards;
 
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.unique.SetupAction;
-import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import prismaticmod.util.CardStats;
@@ -19,13 +19,15 @@ public class Setup2 extends BaseCard {
     //These will be used in the constructor. Technically you can just use the values directly,
     //but constants at the top of the file are easy to adjust.
 
+    private static final int BLOCK = 4;
+    private static final int UPG_BLOCK = 0;
     public Setup2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
-
+        setBlock(BLOCK, UPG_BLOCK);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ScryAction(1));
+        addToBot(new GainBlockAction(p, block));
         addToBot(new SetupAction());
     }
     public void upgrade() {

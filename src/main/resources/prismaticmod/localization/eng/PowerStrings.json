@@ -141,5 +141,12 @@
       "Whenever you are attacked, apply #b",
       " #yTarget."
     ]
+  },
+  "${modID}:Deflection": {
+    "NAME": "Deflection",
+    "DESCRIPTIONS": [
+      "Cost 0 cards give #b",
+      " additional #yBlock."
+    ]
   }
 }
