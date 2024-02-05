@@ -31,6 +31,7 @@ public class PerfectedStrike2 extends BaseCard {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(baseMagicNumber, UPG_Number);
+        tags.add(CardTags.STRIKE);
     }
     public static int countCards() {
         int count = 0;

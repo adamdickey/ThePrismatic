@@ -293,18 +293,15 @@
   },
   "${modID}:Infernal Blade": {
     "NAME": "Infernal Blade",
-    "DESCRIPTION": "Choose 1 of 3 random Attack cards to add into your hand. NL It costs 0 this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Choose 1 of 3 random Attack cards to add into your hand. NL It costs 0 this turn."
+    "DESCRIPTION": "Choose 1 of 3 random Attack cards to add into your hand. NL It costs 0 this turn. NL Exhaust."
   },
   "${modID}:Distraction": {
     "NAME": "Distraction",
-    "DESCRIPTION": "Choose 1 of 3 random Skill cards to add into your hand. NL It costs 0 this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Choose 1 of 3 random Skill cards to add into your hand. NL It costs 0 this turn."
+    "DESCRIPTION": "Choose 1 of 3 random Skill cards to add into your hand. NL It costs 0 this turn. NL Exhaust."
   },
   "${modID}:White Noise": {
     "NAME": "White Noise",
-    "DESCRIPTION": "Choose 1 of 3 random Power cards to add into your hand. NL It costs 0 this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Choose 1 of 3 Power cards to add into your hand. NL It costs 0 this turn."
+    "DESCRIPTION": "Choose 1 of 3 random Power cards to add into your hand. NL It costs 0 this turn. NL Exhaust."
   },
   "${modID}:Tempest": {
     "NAME": "Tempest",

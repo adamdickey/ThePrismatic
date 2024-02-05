@@ -1,5 +1,6 @@
 package prismaticmod.powers;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.powers.watcher.FreeAttackPower;
 
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static prismaticmod.BasicMod.makeID;
@@ -23,7 +24,7 @@ public class DeflectionPower extends BasePower {
     }
 
     public float modifyBlock(float blockAmount, AbstractCard card) {
-        if ((card.costForTurn == 0 || (card.freeToPlayOnce && card.cost != -1))) {
+        if ((card.costForTurn == 0 || (card.freeToPlayOnce && card.cost != -1)) || (player.hasPower(FreeAttackPower.POWER_ID) && card.type == AbstractCard.CardType.ATTACK)) {
             return super.modifyBlock(blockAmount + this.amount);
         } else {
             return super.modifyBlock(blockAmount);

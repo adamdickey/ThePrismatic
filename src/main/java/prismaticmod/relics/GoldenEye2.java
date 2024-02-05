@@ -1,11 +1,12 @@
 package prismaticmod.relics;
 
-import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.ScryAction;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.powers.watcher.ForesightPower;
 import theprismatic.ThePrismatic;
 
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static prismaticmod.BasicMod.makeID;
 
 public class GoldenEye2 extends BaseRelic {
@@ -22,22 +23,10 @@ public class GoldenEye2 extends BaseRelic {
         return this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1];
     }
 
-    private boolean turn1 = true;
-
     public void atBattleStartPreDraw(){
         flash();
         addToBot(new ScryAction(1));
-        addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        turn1 = true;
-    }
-    public void atTurnStart() {
-        if (!turn1) {
-            if (AbstractDungeon.player.drawPile.size() <= 0)
-                addToTop(new EmptyDeckShuffleAction());
-            flash();
-            addToBot(new ScryAction(1));
-            addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        }
-        turn1 = false;
+        addToTop(new RelicAboveCreatureAction(player, this));
+        addToBot(new ApplyPowerAction(player, player, new ForesightPower(player, 1)));
     }
 }

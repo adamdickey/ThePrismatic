@@ -22,7 +22,6 @@ public class WhiteNoise2 extends BaseCard {
     public WhiteNoise2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         this.exhaust = true;
-
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -31,9 +30,7 @@ public class WhiteNoise2 extends BaseCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.exhaust = false;
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
+            upgradeBaseCost(0);
         }
     }
 }

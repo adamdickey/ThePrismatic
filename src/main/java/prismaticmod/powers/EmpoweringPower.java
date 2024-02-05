@@ -29,7 +29,7 @@ public class EmpoweringPower extends BasePower {
     public void stackPower(int stackAmount) {
         this.fontScale = 8.0F;
         this.amount += stackAmount;
-        updateExistingPowers();
+        //updateExistingPowers();
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
@@ -45,7 +45,6 @@ public class EmpoweringPower extends BasePower {
     }
     public void atStartOfTurn(){
         addToBot(new RemoveSpecificPowerAction(player, player, this));
-        unUpdateExistingPowers();
     }
     private void updateExistingPowers() {
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
@@ -82,35 +81,9 @@ public class EmpoweringPower extends BasePower {
             }
         }
     }
-    private void unUpdateExistingPowers(AbstractCard powerPlayed) {
+    private void unUpdateExistingPowers(AbstractCard cardPlayed) {
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c.type == AbstractCard.CardType.POWER && c.isCostModified && c != powerPlayed) {
-                c.costForTurn++;
-                c.isCostModified = false;
-            }
-        }
-        for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
-            if (c.type == AbstractCard.CardType.POWER && c.isCostModified) {
-                c.costForTurn++;
-                c.isCostModified = false;
-            }
-        }
-        for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
-            if (c.type == AbstractCard.CardType.POWER && c.isCostModified) {
-                c.costForTurn++;
-                c.isCostModified = false;
-            }
-        }
-        for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
-            if (c.type == AbstractCard.CardType.POWER && c.isCostModified) {
-                c.costForTurn++;
-                c.isCostModified = false;
-            }
-        }
-    }
-    private void unUpdateExistingPowers() {
-        for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c.type == AbstractCard.CardType.POWER && c.isCostModified) {
+            if (c.type == AbstractCard.CardType.POWER && c.isCostModified && c != cardPlayed) {
                 c.costForTurn++;
                 c.isCostModified = false;
             }
