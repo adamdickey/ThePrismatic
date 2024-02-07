@@ -21,9 +21,9 @@ public class Deflect2 extends BaseCard {
     //but constants at the top of the file are easy to adjust.
 
     private static final int BLOCK = 3;
-    private static final int UPG_BLOCK = 0;
+    private static final int UPG_BLOCK = 3;
     private static final int baseMagicNumber = 1;
-    private static final int UPG_Number = 1;
+    private static final int UPG_Number = 0;
 
     public Deflect2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.

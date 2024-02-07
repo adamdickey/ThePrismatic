@@ -3,8 +3,8 @@ package prismaticmod.cards;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.EvolvePower;
 import com.megacrit.cardcrawl.powers.FireBreathingPower;
+import prismaticmod.powers.Evolve2Power;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -30,6 +30,6 @@ public class FieryEvolution extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new FireBreathingPower(p, 6), 6));
-        addToBot(new ApplyPowerAction(p, p, new EvolvePower(p, magicNumber), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new Evolve2Power(magicNumber), magicNumber));
     }
 }

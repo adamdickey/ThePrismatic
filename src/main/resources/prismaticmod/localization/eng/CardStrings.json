@@ -56,7 +56,7 @@
   "${modID}:0ch0 Form": {
     "NAME": "0ch0 F0rm",
     "DESCRIPTION": "The first cost 0 card you play each turn is played twice.",
-    "UPGRADE_DESCRIPTION": "The first 2 cost 0 cards you play each turn are played twice."
+    "UPGRADE_DESCRIPTION": "The first !M! cost 0 cards you play each turn are played twice."
   },
   "${modID}:Cunning Defend": {
     "NAME": "Cunning Defend",
@@ -402,7 +402,7 @@
   },
   "${modID}:Exploit Pain": {
     "NAME": "Exploit Pain",
-    "DESCRIPTION": "Deal !D! damage, then deal !M! damage for each debuff on the enemy."
+    "DESCRIPTION": "Deal !D! damage. NL Repeat for each debuff on the enemy."
   },
   "${modID}:Storm of Steel": {
     "NAME": "Storm of Steel",
