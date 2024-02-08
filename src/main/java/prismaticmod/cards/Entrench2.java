@@ -30,7 +30,10 @@ public class Entrench2 extends BaseCard {
     }
     public void upgrade() {
         if (!this.upgraded) {
+            upgradeName();
             upgradeBaseCost(1);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 }

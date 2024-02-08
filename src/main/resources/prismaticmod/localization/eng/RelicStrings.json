@@ -217,5 +217,14 @@
     "DESCRIPTIONS": [
       "Whenever you apply a debuff to an enemy, apply #b1 more."
     ]
+  },
+  "${modID}:Bag of Marbles": {
+    "NAME": "Bag of Marbles",
+    "FLAVOR": "A once popular toy in the City. Useful for throwing enemies off balance.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, apply #b",
+      " #yVulnerable and #b",
+      " #yMark to ALL enemies."
+    ]
   }
 }

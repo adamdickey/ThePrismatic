@@ -483,7 +483,8 @@
   },
   "${modID}:Entrench": {
     "NAME": "Entrench",
-    "DESCRIPTION": "Double your Block. NL Block is not removed at the start of your next turn."
+    "DESCRIPTION": "Double your Block. NL Block is not removed at the start of your next turn.",
+    "UPGRADE_DESCRIPTION": "Double your Block. NL Block is not removed at the start of your next turn."
   },
   "${modID}:Compile Driver": {
     "NAME": "Compile Driver",

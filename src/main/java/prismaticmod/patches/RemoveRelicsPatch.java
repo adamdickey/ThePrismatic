@@ -31,6 +31,7 @@ public class RemoveRelicsPatch {
         relicsToRemoveOnStart.add(JuzuBracelet.ID);
         relicsToRemoveOnStart.add(TinyChest.ID);
         relicsToRemoveOnStart.add(BustedCrown.ID);
+        relicsToRemoveOnStart.add(BagOfMarbles.ID);
 
         for (String remove : relicsToRemoveOnStart) {
             Iterator<String> s;
