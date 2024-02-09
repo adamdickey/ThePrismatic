@@ -3,8 +3,10 @@ package prismaticmod;
 import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.abstracts.CustomRelic;
+import basemod.devcommands.relic.Relic;
 import basemod.interfaces.*;
 import com.badlogic.gdx.graphics.Color;
+import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.potions.*;
 import com.megacrit.cardcrawl.relics.*;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
@@ -325,6 +327,16 @@ public class BasicMod implements
                     BaseMod.addRelicToCustomPool(relic, CARD_COLOR);
                     UnlockTracker.markRelicAsSeen(relic.relicId);
                 });
+
+        ArrayList<String> relicsToRemove = new ArrayList<>();
+        Collections.addAll(relicsToRemove, Ectoplasm.ID, HandDrill.ID, PrismaticShard.ID, Cauldron.ID, Boot.ID, CeramicFish.ID,
+                DuVuDoll.ID, DarkstonePeriapt.ID, Shovel.ID, UnceasingTop.ID, MummifiedHand.ID, TinyHouse.ID, JuzuBracelet.ID,
+                TinyChest.ID, BustedCrown.ID, BagOfMarbles.ID);
+        for(String r : relicsToRemove){
+            BaseMod.removeRelic(RelicLibrary.getRelic(r));
+            RelicLibrary.getRelic(r).isSeen = true;
+        }
+
         //BaseMod.addRelicToCustomPool(new HoveringKite(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new NinjaScroll(), CARD_COLOR);
         BaseMod.addRelicToCustomPool(new PaperCrane(), CARD_COLOR);

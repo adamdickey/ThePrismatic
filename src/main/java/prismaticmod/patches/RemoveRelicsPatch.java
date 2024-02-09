@@ -2,6 +2,7 @@ package prismaticmod.patches;
 
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.*;
 import javassist.CannotCompileException;
@@ -16,6 +17,7 @@ import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.*;
 public class RemoveRelicsPatch {
     @SpireInsertPatch(locator = Locator.class)
     public static void Insert() {
+        /*
         relicsToRemoveOnStart.add(Ectoplasm.ID);
         relicsToRemoveOnStart.add(HandDrill.ID);
         relicsToRemoveOnStart.add(PrismaticShard.ID);
@@ -66,6 +68,8 @@ public class RemoveRelicsPatch {
                 }
             }
         }
+
+         */
     }
 
     private static class Locator extends SpireInsertLocator {
