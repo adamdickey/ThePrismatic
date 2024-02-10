@@ -37,7 +37,7 @@ public class MentalFortress2Power extends BasePower implements OnCreateCardInter
 
     @Override
     public void onCreateCard(AbstractCard abstractCard) {
-        if(playerTurn){
+        if(playerTurn || abstractCard.type != AbstractCard.CardType.STATUS){
             flash();
             addToBot(new GainBlockAction(this.owner, this.owner, this.amount));
         }
