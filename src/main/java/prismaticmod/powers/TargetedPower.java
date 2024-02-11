@@ -20,21 +20,29 @@ public class TargetedPower extends BasePower implements OnLoseBlockPower, Health
     public static final String ID = makeID("Targeted");
     private static final int MULTI_STR = 50;
 
+    private static int explosivePotion = 0;
+
     public TargetedPower(AbstractCreature owner, int amount) {
         super(ID, PowerType.DEBUFF, true, owner, player, amount, true);
         loadRegion("lockon");
     }
     @Override
     public int onLoseBlock(DamageInfo info, int damageAmount){
-        if(info.type != DamageInfo.DamageType.NORMAL){
+        if(info.type != DamageInfo.DamageType.NORMAL || explosivePotion > 0){
             info.isModified = true;
+            if(explosivePotion > 0){
+                explosivePotion--;
+            }
             return this.onAttackedToChangeDamage(info, (int) (damageAmount*1.5));
         }
         return damageAmount;
     }
     @Override
     public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
-        if(info.type != DamageInfo.DamageType.NORMAL && !info.isModified){
+        if((info.type != DamageInfo.DamageType.NORMAL || explosivePotion > 0) && !info.isModified){
+            if(explosivePotion > 0){
+                explosivePotion--;
+            }
             return (int)(damageAmount*1.5);
         }
         return damageAmount;
@@ -69,5 +77,9 @@ public class TargetedPower extends BasePower implements OnLoseBlockPower, Health
     @Override
     public Color getColor() {
         return Color.valueOf("78c13c00");
+    }
+
+    public static void explosivePotionUsed(){
+        explosivePotion = AbstractDungeon.getCurrRoom().monsters.monsters.size();
     }
 }
