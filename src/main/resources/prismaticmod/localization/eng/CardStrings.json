@@ -584,6 +584,35 @@
     "NAME": "Establishment",
     "DESCRIPTION": "Whenever a card is Retained, reduce its cost by 1 this combat.",
     "UPGRADE_DESCRIPTION": "Innate. NL Whenever a card is Retained, reduce its cost by 1 this combat."
+  },
+  "${modID}:Grand Finale": {
+    "NAME": "Grand Finale",
+    "DESCRIPTION": "Retain. NL Can only be played if there are no cards in your draw pile. NL Deal !D! damage to ALL enemies.",
+    "EXTENDED_DESCRIPTION":[
+      "My draw pile NL must be #rEmpty."
+    ]
+  },
+  "${modID}:Alpha": {
+    "NAME": "Alpha",
+    "DESCRIPTION": "Shuffle a *Beta into your draw pile. NL Scry !M!. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Shuffle a *Beta into your draw pile. NL Scry !M!. NL Exhaust."
+  },
+  "${modID}:Beta": {
+    "NAME": "Beta",
+    "DESCRIPTION": "Shuffle an *Omega into your draw pile. NL Scry !M!. NL Exhaust."
+  },
+  "${modID}:Conjure Blade": {
+    "NAME": "Conjure Blade",
+    "DESCRIPTION": "Shuffle an *Expunger into your draw pile. NL Scry X. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Shuffle an *Expunger with X+1 into your draw pile. NL Scry X+1. NL Exhaust."
+  },
+  "${modID}:Expunger": {
+    "NAME": "Expunger",
+    "DESCRIPTION": "Deal !D! damage X times. NL Channel X Dark.",
+    "EXTENDED_DESCRIPTION": [
+      "Deal !D! damage !M! times. NL Channel !M! Dark.",
+      "Deal !D! damage !M! time. NL Channel !M! Dark."
+    ]
   }
 }
 

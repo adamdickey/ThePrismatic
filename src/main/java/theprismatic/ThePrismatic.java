@@ -211,7 +211,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new FlyingKnee());
         tmpPool.add(new Footwork());
         tmpPool.add(new GlassKnife());
-        //tmpPool.add(new GrandFinale());
+        tmpPool.add(new GrandFinale2());
         //tmpPool.add(new HeelHook());
         tmpPool.add(new InfiniteBlades());
         tmpPool.add(new LegSweep());
@@ -314,7 +314,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Equilibrium());
         tmpPool.add(new WhiteNoise2());
         tmpPool.add(new Zap());
-        //tmpPool.add(new Alpha());
+        tmpPool.add(new Alpha2());
         tmpPool.add(new BattleHymn());
         tmpPool.add(new Blasphemy());
         tmpPool.add(new BowlingBash());
@@ -322,7 +322,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new CarveReality());
         tmpPool.add(new Collect());
         tmpPool.add(new Conclude());
-        //tmpPool.add(new ConjureBlade());
+        tmpPool.add(new ConjureBlade2());
         tmpPool.add(new Consecrate());
         tmpPool.add(new Crescendo());
         tmpPool.add(new CrushJoints());
@@ -347,7 +347,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Halt());
         tmpPool.add(new Indignation());
         tmpPool.add(new InnerPeace());
-        //tmpPool.add(new Judgement());
+        tmpPool.add(new Judgement());
         tmpPool.add(new JustLucky());
         tmpPool.add(new LessonLearned());
         tmpPool.add(new LikeWater2());

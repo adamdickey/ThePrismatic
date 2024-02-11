@@ -15,7 +15,7 @@ public class CeramicFish2 extends BaseRelic implements OnSkipCardRelic {
     public static final String ID = makeID(NAME); //This adds the mod's prefix to the relic ID, resulting in modID:MyRelic
     private static final RelicTier RARITY = RelicTier.COMMON; //The relic's rarity.
     private static final LandingSound SOUND = LandingSound.FLAT; //The sound played when the relic is clicked.
-    private static final int goldCount = 20;
+    private static final int goldCount = 25;
 
     public CeramicFish2() {
         super(ID, NAME, ThePrismatic.Enums.CARD_COLOR, RARITY, SOUND);
