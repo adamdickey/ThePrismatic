@@ -8,7 +8,7 @@ import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
 public class OnARoll extends BaseCard {
-    public static final String ID = makeID("On A Roll"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
+    public static final String ID = makeID("On a Roll"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
     private static final CardStats info = new CardStats(
             ThePrismatic.Enums.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.
             CardType.POWER, //The type. ATTACK/SKILL/POWER/CURSE/STATUS

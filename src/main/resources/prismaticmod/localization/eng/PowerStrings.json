@@ -27,8 +27,8 @@
       " #yMantra."
     ]
   },
-  "${modID}:On A Roll": {
-    "NAME": "On A Roll",
+  "${modID}:On a Roll": {
+    "NAME": "On a Roll",
     "DESCRIPTIONS": [
       "When you play an #yAttack, gain #b",
       " temporary #yStrength and #b",
@@ -66,13 +66,6 @@
       "At the start of your turn, lose #b",
       " HP and apply #b",
       " #yPoison to ALL enemies."
-    ]
-  },
-  "${modID}:Lose Retain": {
-    "NAME": "Lose Retain",
-    "DESCRIPTIONS": [
-      "At the end of this turn, lose #b",
-      " #yRetain."
     ]
   },
   "${modID}:Like Water": {

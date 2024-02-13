@@ -117,8 +117,8 @@
     "NAME": "Foreign Powers",
     "DESCRIPTION": "For each color, add a random Power card of that color into your hand. They cost 0 this turn. NL Exhaust."
   },
-  "${modID}:On A Roll": {
-    "NAME": "On A Roll",
+  "${modID}:On a Roll": {
+    "NAME": "On a Roll",
     "DESCRIPTION": "Whenever you play an Attack, gain !M! temporary Strength and 1 temporary Dexterity."
   },
   "${modID}:Havoc": {

@@ -18,7 +18,7 @@ import static prismaticmod.BasicMod.makeID;
 public class OnARollPower extends TwoAmountPower {
     public AbstractCreature source;
 
-    public static String POWER_ID = makeID("On A Roll");
+    public static String POWER_ID = makeID("On a Roll");
     private static final PowerStrings getPowerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     private static final String NAME = getPowerStrings.NAME;
     private static final String[] powerStrings = getPowerStrings.DESCRIPTIONS;

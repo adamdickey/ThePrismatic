@@ -1,5 +1,6 @@
 package prismaticmod.cards;
 
+import basemod.helpers.BaseModCardTags;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -22,6 +23,7 @@ public class ChimeraForm extends BaseCard {
     public ChimeraForm() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         this.isEthereal = true;
+        tags.add(BaseModCardTags.FORM);
     }
 
     @Override

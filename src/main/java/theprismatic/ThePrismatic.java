@@ -4,6 +4,7 @@ import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -18,6 +19,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
@@ -25,6 +27,7 @@ import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import prismaticmod.cards.*;
 import prismaticmod.relics.BurningRing;
+import prismaticmod.util.TextureLoader;
 
 import java.util.*;
 
@@ -470,7 +473,6 @@ public class ThePrismatic extends CustomPlayer {
                 new EmptyDefend(), new ExhaustingDefend(), new FocusedDefend(), new FrostyDefend(),
                 new LootingDefend(), new SadisticDefend(), new ScrapingDefend(), new ScryingDefend(),
                 new StormyDefend(), new TargetingDefend(), new ToxicDefend());
-        //RetainingStrike.ID, RetainingDefend.ID, InsightfulStrike.ID, InsightfulDefend.ID
         Random rand = new Random();
         return prismaticCards.get(rand.nextInt(prismaticCards.size()));
     }
@@ -560,6 +562,16 @@ public class ThePrismatic extends CustomPlayer {
     @Override
     public String getVampireText() {
         return TEXT[2]; //Generally, the only difference in this text is how the vampires refer to the player.
+    }
+    public Texture getCutsceneBg() {
+        return TextureLoader.getTexture("images/scenes/blueBg.jpg");
+    }
+    public List<CutscenePanel> getCutscenePanels() {
+        List<CutscenePanel> panels = new ArrayList<>();
+        panels.add(new CutscenePanel("images/scenes/defect1.png", "ATTACK_MAGIC_BEAM_SHORT"));
+        panels.add(new CutscenePanel("images/scenes/defect2.png"));
+        panels.add(new CutscenePanel("images/scenes/defect3.png"));
+        return panels;
     }
 
     /*- You shouldn't need to edit any of the following methods. -*/
