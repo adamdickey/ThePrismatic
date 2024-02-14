@@ -1,0 +1,118 @@
+
+skeleton.png
+size: 256,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+object3
+  rotate: false
+  xy: 1, 198
+  size: 123, 31
+  orig: 123, 31
+  offset: 0, 0
+  index: -1
+pattern - Copy
+  rotate: false
+  xy: 191, 229
+  size: 29, 72
+  orig: 35, 75
+  offset: 2, 0
+  index: -1
+wire_main_neck
+  rotate: false
+  xy: 1, 231
+  size: 37, 39
+  orig: 42, 43
+  offset: 2, 2
+  index: -1
+tail_spine
+  rotate: false
+  xy: 147, 181
+  size: 37, 10
+  orig: 41, 14
+  offset: 2, 2
+  index: -1
+pants
+  rotate: false
+  xy: 1, 1
+  size: 128, 80
+  orig: 132, 84
+  offset: 2, 2
+  index: -1
+boot_right
+  rotate: false
+  xy: 147, 116
+  size: 46, 63
+  orig: 51, 67
+  offset: 3, 2
+  index: -1
+boot_left
+  rotate: false
+  xy: 195, 116
+  size: 43, 59
+  orig: 47, 63
+  offset: 2, 2
+  index: -1
+headAndSkull2
+  rotate: false
+  xy: 131, 1
+  size: 114, 86
+  orig: 120, 90
+  offset: 2, 3
+  index: -1
+PrismaticSmallEyeFinal
+  rotate: false
+  xy: 240, 116
+  size: 8, 8
+  orig: 12, 12
+  offset: 2, 2
+  index: -1
+robe_upper
+  rotate: false
+  xy: 1, 116
+  size: 77, 78
+  orig: 79, 80
+  offset: 1, 1
+  index: -1
+sash
+  rotate: false
+  xy: 126, 198
+  size: 63, 59
+  orig: 66, 61
+  offset: 2, 1
+  index: -1
+sleeve_right
+  rotate: false
+  xy: 40, 231
+  size: 53, 23
+  orig: 56, 25
+  offset: 1, 1
+  index: -1
+swordAndHand
+  rotate: false
+  xy: 1, 89
+  size: 238, 25
+  orig: 242, 29
+  offset: 2, 2
+  index: -1
+kris
+  rotate: false
+  xy: 191, 181
+  size: 59, 46
+  orig: 64, 50
+  offset: 3, 2
+  index: -1
+new_sleeve
+  rotate: false
+  xy: 80, 116
+  size: 65, 80
+  orig: 70, 80
+  offset: 5, 0
+  index: -1
+PrismaticBigEyeFinal
+  rotate: false
+  xy: 95, 231
+  size: 20, 21
+  orig: 25, 25
+  offset: 3, 1
+  index: -1

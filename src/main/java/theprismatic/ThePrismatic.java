@@ -2,10 +2,11 @@ package theprismatic;
 
 import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
-import basemod.animations.SpriterAnimation;
+import basemod.animations.SpineAnimation;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -431,7 +432,8 @@ public class ThePrismatic extends CustomPlayer {
     public ThePrismatic() {
         super(NAMES[0], Enums.Prismatic,
                 new CustomEnergyOrb(orbPath, orbVfxPath, null), //Energy OrbSlot
-                new SpriterAnimation(characterPath("animation/default.scml"))); //Animation
+                new SpineAnimation(characterPath("animation/skeleton.atlas"), characterPath( "animation/skeleton.json"), 1f));
+        AnimationState.TrackEntry e = state.setAnimation(0, "idle", true);
 
         initializeClass(null,
                 SHOULDER_2,
