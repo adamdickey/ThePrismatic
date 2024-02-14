@@ -104,7 +104,8 @@
     "FLAVOR": "I wouldn't drink out of it.",
     "DESCRIPTIONS": [
       "At the start of each combat, apply #b",
-      " #yPoison to ALL enemies. Whenever an enemy dies, transfer any #yPoison it has to a random enemy."
+      " #yPoison and #b",
+      " #yMark to ALL enemies. Whenever an enemy dies, transfer any #yPoison and #yMark it has to a random enemy."
     ]
   },
   "${modID}:Hovering Kite": {
@@ -216,15 +217,6 @@
     "FLAVOR": "A snecko skull in pristine condition. Mysteriously clean and smooth, dirt and grime fall off inexplicably.",
     "DESCRIPTIONS": [
       "Whenever you apply a debuff to an enemy, apply #b1 more."
-    ]
-  },
-  "${modID}:Bag of Marbles": {
-    "NAME": "Bag of Marbles",
-    "FLAVOR": "A once popular toy in the City. Useful for throwing enemies off balance.",
-    "DESCRIPTIONS": [
-      "At the start of each combat, apply #b",
-      " #yVulnerable and #b",
-      " #yMark to ALL enemies."
     ]
   }
 }
