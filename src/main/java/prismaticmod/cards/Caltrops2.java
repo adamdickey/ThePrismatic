@@ -30,6 +30,6 @@ public class Caltrops2 extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new ThornsPower(p, magicNumber), magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new Caltrops2Power(1), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new Caltrops2Power(1), 1));
     }
 }

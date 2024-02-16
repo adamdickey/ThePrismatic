@@ -43,6 +43,7 @@ public class OchoPower extends BasePower {
     }
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if(power instanceof OchoPower){
+            cardsDoubledThisTurn = 0;
             for(AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisTurn){
                 if((c.costForTurn == 0 || (c.freeToPlayOnce && c.cost != -1))){
                     cardsDoubledThisTurn++;

@@ -47,7 +47,7 @@
   },
   "${modID}:Hardwood Barrel": {
     "NAME": "Hardwood Barrel",
-    "FLAVOR": "Nice to have until you're scraping the bottom of it.",
+    "FLAVOR": "Nice to have until you're scraping the bottom of it. Designed by u/Charrat.",
     "DESCRIPTIONS": [
       "Gain [E] at the start of each turn until you empty your draw pile."
     ]
@@ -181,7 +181,7 @@
   },
   "${modID}:Brimstone": {
     "NAME": "Brimstone",
-    "FLAVOR": "Emanates an infernal heat.",
+    "FLAVOR": "Emanates an infernal heat. The rarity swap is Baalorlord's fault.",
     "DESCRIPTIONS": [
       "At the start of your turn, gain #b",
       " #yStrength and ALL enemies gain #b",
@@ -199,7 +199,7 @@
   },
   "${modID}:Orb Slot": {
     "NAME": "Orb Slot",
-    "FLAVOR": "The bottled Orb slot will prove handy in future battles.",
+    "FLAVOR": "Bottled Potenial.",
     "DESCRIPTIONS": [
       "Start each combat with additional Orb slots."
     ]

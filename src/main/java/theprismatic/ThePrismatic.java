@@ -334,7 +334,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new DeceiveReality());
         tmpPool.add(new DeusExMachina());
         tmpPool.add(new DevaForm());
-        tmpPool.add(new Devotion2());
+        tmpPool.add(new Devotion());
         tmpPool.add(new EmptyBody());
         tmpPool.add(new EmptyFist());
         tmpPool.add(new EmptyMind());
