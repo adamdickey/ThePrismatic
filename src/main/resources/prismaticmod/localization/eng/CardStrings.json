@@ -604,8 +604,8 @@
   },
   "${modID}:Conjure Blade": {
     "NAME": "Conjure Blade",
-    "DESCRIPTION": "Shuffle an *Expunger into your draw pile. NL Scry X. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Shuffle an *Expunger with X+1 into your draw pile. NL Scry X+1. NL Exhaust."
+    "DESCRIPTION": "Shuffle an *Expunger into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Shuffle an *Expunger with X+1 into your draw pile. NL Exhaust."
   },
   "${modID}:Expunger": {
     "NAME": "Expunger",

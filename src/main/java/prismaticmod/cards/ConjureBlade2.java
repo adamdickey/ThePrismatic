@@ -1,7 +1,6 @@
 package prismaticmod.cards;
 
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
-import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
@@ -43,7 +42,7 @@ public class ConjureBlade2 extends BaseCard {
             addToBot(new MakeTempCardInDrawPileAction(c, 1, true, true));
             if (!this.freeToPlayOnce)
                 player.energy.use(EnergyPanel.totalCount);
-            addToBot(new ScryAction(this.energyOnUse + 1));
+            //addToBot(new ScryAction(this.energyOnUse + 1));
         } else {
             int effect = EnergyPanel.totalCount;
             if (this.energyOnUse != -1)
@@ -57,7 +56,7 @@ public class ConjureBlade2 extends BaseCard {
             addToBot(new MakeTempCardInDrawPileAction(c, 1, true, true));
             if (!this.freeToPlayOnce)
                 player.energy.use(EnergyPanel.totalCount);
-            addToBot(new ScryAction(this.energyOnUse));
+            //addToBot(new ScryAction(this.energyOnUse));
         }
     }
     public void upgrade() {

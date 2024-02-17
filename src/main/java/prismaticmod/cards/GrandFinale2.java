@@ -24,7 +24,7 @@ public class GrandFinale2 extends BaseCard {
     //These will be used in the constructor. Technically you can just use the values directly,
     //but constants at the top of the file are easy to adjust.
 
-    private static final int DAMAGE = 40;
+    private static final int DAMAGE = 50;
     private static final int UPG_DAMAGE = 10;
 
     public GrandFinale2() {

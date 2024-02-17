@@ -572,7 +572,7 @@ public class ThePrismatic extends CustomPlayer {
         List<CutscenePanel> panels = new ArrayList<>();
         panels.add(new CutscenePanel("images/scenes/defect1.png", "ATTACK_MAGIC_BEAM_SHORT"));
         panels.add(new CutscenePanel("images/scenes/defect2.png"));
-        panels.add(new CutscenePanel("images/scenes/defect3.png"));
+        panels.add(new CutscenePanel("prismaticmod/images/character/prismatic3.png"));
         return panels;
     }
 
