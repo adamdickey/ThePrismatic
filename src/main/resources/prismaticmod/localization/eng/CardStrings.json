@@ -480,7 +480,7 @@
   },
   "${modID}:Doom Will Bloom": {
     "NAME": "Doom Will Bloom",
-    "DESCRIPTION": "Apply !M! Mark. NL ALL enemies lose HP equal to their Mark. NL Channel 1 Dark."
+    "DESCRIPTION": "Apply !M! Mark to ALL enemies. NL ALL enemies lose HP equal to their Mark. NL Channel 1 Dark."
   },
   "${modID}:Entrench": {
     "NAME": "Entrench",
