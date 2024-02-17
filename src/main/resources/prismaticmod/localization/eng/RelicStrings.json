@@ -31,8 +31,8 @@
     "NAME": "Wrist Blade",
     "FLAVOR": "Handy for assassinations.",
     "DESCRIPTIONS": [
-      "#yAttacks that cost 0 deal #b",
-      " additional damage. Whenever a non-0 cost #yAttack deals unblocked damage, apply #b",
+      "#yAttacks that cost #b0 deal #b",
+      " additional damage. Whenever an #yAttack that does not cost #b0 deals unblocked damage, apply #b",
       " #yPoison."
     ]
   },
@@ -47,7 +47,7 @@
   },
   "${modID}:Hardwood Barrel": {
     "NAME": "Hardwood Barrel",
-    "FLAVOR": "Nice to have until you're scraping the bottom of it. Designed by u/Charrat.",
+    "FLAVOR": "Nice to have until you're scraping the bottom of it.                      Designed by u/Charrat",
     "DESCRIPTIONS": [
       "Gain [E] at the start of each turn until you empty your draw pile."
     ]
@@ -199,7 +199,7 @@
   },
   "${modID}:Orb Slot": {
     "NAME": "Orb Slot",
-    "FLAVOR": "Bottled Potenial.",
+    "FLAVOR": "Bottled Potential.",
     "DESCRIPTIONS": [
       "Start each combat with additional Orb slots."
     ]

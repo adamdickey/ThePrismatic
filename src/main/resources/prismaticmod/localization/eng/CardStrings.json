@@ -329,11 +329,11 @@
   },
   "${modID}:Accuracy": {
     "NAME": "Accuracy",
-    "DESCRIPTION": "Cost 0 Attacks deal !M! additional damage."
+    "DESCRIPTION": "Attacks that cost 0 deal !M! additional damage."
   },
   "${modID}:Claw": {
     "NAME": "Claw",
-    "DESCRIPTION": "Deal !D! damage. NL Increase the damage of ALL cost 0 Attacks by !M! this combat."
+    "DESCRIPTION": "Deal !D! damage. NL Increase the damage of ALL Attacks that cost 0 by !M! this combat."
   },
   "${modID}:Infinite Blades": {
     "NAME": "Infinite Blades",

@@ -56,7 +56,7 @@
   "${modID}:Accuracy": {
     "NAME": "Accuracy",
     "DESCRIPTIONS": [
-      "Cost 0 #yAttacks deal #b",
+      "#yAttacks that cost 0 deal #b",
       " additional damage."
     ]
   },

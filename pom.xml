@@ -3,7 +3,7 @@
 
     <properties>
         <modID>ThePrismatic</modID>
-        <author>Dr. Monty, KarateFire</author>
+        <author>Dr. Monty, KarateFire11</author>
 
         <!-- Change the path for your system to match your Steam installation. -->
         <steam.windows>C:/Program Files (x86)/steam/steamapps</steam.windows>
