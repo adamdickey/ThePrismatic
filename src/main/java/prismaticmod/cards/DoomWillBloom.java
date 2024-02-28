@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.Dark;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.watcher.MarkPower;
+import prismaticmod.relics.SneckoSkull2;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -42,6 +43,9 @@ public class DoomWillBloom extends BaseCard {
         addToBot(new ChannelAction(new Dark()));
     }
     private void pressurePointsAction(AbstractPlayer p){
+        if(AbstractDungeon.player.hasRelic(SneckoSkull2.ID)){
+            magicNumber++;
+        }
         for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
             if (mo.hasPower(MarkPower.POWER_ID)) {
                 if (!mo.hasPower(ArtifactPower.POWER_ID)) {

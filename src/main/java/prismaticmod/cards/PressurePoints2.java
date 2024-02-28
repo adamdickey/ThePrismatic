@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.watcher.MarkPower;
 import com.megacrit.cardcrawl.vfx.combat.PressurePointEffect;
 import prismaticmod.powers.TargetedPower;
+import prismaticmod.relics.SneckoSkull2;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -44,6 +45,9 @@ public class PressurePoints2 extends BaseCard {
     private void pressurePointsAction(AbstractPlayer p, AbstractMonster m){
         if (m != null) {
             addToBot(new VFXAction(new PressurePointEffect(m.hb.cX, m.hb.cY)));
+        }
+        if(AbstractDungeon.player.hasRelic(SneckoSkull2.ID)){
+            magicNumber++;
         }
         for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
             if(mo == m) {
