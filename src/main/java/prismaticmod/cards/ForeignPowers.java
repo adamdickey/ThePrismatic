@@ -4,9 +4,13 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
+
+import java.util.ArrayList;
+import java.util.Random;
 
 public class ForeignPowers extends BaseCard {
     public static final String ID = makeID("Foreign Powers"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
@@ -28,39 +32,91 @@ public class ForeignPowers extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.POWER);
+        try{
+            AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.POWER);
 
-        //Red Power
-        while (c.color != CardColor.RED && c.color != ThePrismatic.Enums.Red){
-            c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.POWER);
-        }
-        c.makeCopy();
-        c.setCostForTurn(0);
-        addToBot(new MakeTempCardInHandAction(c, true));
+            //Red Power
+            while (c.color != CardColor.RED && c.color != ThePrismatic.Enums.Red){
+                c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.POWER);
+            }
+            c.makeCopy();
+            c.setCostForTurn(0);
+            addToBot(new MakeTempCardInHandAction(c, true));
 
-        //Green Power
-        while (c.color != CardColor.GREEN && c.color != ThePrismatic.Enums.Green){
-            c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.POWER);
-        }
-        c.makeCopy();
-        c.setCostForTurn(0);
-        addToBot(new MakeTempCardInHandAction(c, true));
+            //Green Power
+            while (c.color != CardColor.GREEN && c.color != ThePrismatic.Enums.Green){
+                c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.POWER);
+            }
+            c.makeCopy();
+            c.setCostForTurn(0);
+            addToBot(new MakeTempCardInHandAction(c, true));
 
-        //Blue Power
-        while (c.color != CardColor.BLUE && c.color != ThePrismatic.Enums.Blue){
-            c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.POWER);
-        }
-        c.makeCopy();
-        c.setCostForTurn(0);
-        addToBot(new MakeTempCardInHandAction(c, true));
+            //Blue Power
+            while (c.color != CardColor.BLUE && c.color != ThePrismatic.Enums.Blue){
+                c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.POWER);
+            }
+            c.makeCopy();
+            c.setCostForTurn(0);
+            addToBot(new MakeTempCardInHandAction(c, true));
 
-        //Purple Power
-        while (c.color != CardColor.PURPLE && c.color != ThePrismatic.Enums.Purple){
-            c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.POWER);
+            //Purple Power
+            while (c.color != CardColor.PURPLE && c.color != ThePrismatic.Enums.Purple){
+                c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.POWER);
+            }
+            c.makeCopy();
+            c.setCostForTurn(0);
+            addToBot(new MakeTempCardInHandAction(c, true));
+
+        } catch (Exception e) {
+            ArrayList<AbstractCard> cards = CardLibrary.getAllCards();
+            ArrayList<AbstractCard> powers = new ArrayList<>();
+
+            for(AbstractCard c: cards){
+                if(c.type == CardType.POWER){
+                    powers.add(c);
+                }
+            }
+
+            Random rand = new Random();
+            int randNum = rand.nextInt(powers.size());
+            AbstractCard c = powers.get(randNum);
+
+            //Red Power
+            while (c.color != CardColor.RED && c.color != ThePrismatic.Enums.Red){
+                randNum = rand.nextInt(powers.size());
+                c = powers.get(randNum);
+            }
+            c.makeCopy();
+            c.setCostForTurn(0);
+            addToBot(new MakeTempCardInHandAction(c, true));
+
+            //Green Power
+            while (c.color != CardColor.GREEN && c.color != ThePrismatic.Enums.Green){
+                randNum = rand.nextInt(powers.size());
+                c = powers.get(randNum);
+            }
+            c.makeCopy();
+            c.setCostForTurn(0);
+            addToBot(new MakeTempCardInHandAction(c, true));
+
+            //Blue Power
+            while (c.color != CardColor.BLUE && c.color != ThePrismatic.Enums.Blue){
+                randNum = rand.nextInt(powers.size());
+                c = powers.get(randNum);
+            }
+            c.makeCopy();
+            c.setCostForTurn(0);
+            addToBot(new MakeTempCardInHandAction(c, true));
+
+            //Purple Power
+            while (c.color != CardColor.PURPLE && c.color != ThePrismatic.Enums.Purple){
+                randNum = rand.nextInt(powers.size());
+                c = powers.get(randNum);
+            }
+            c.makeCopy();
+            c.setCostForTurn(0);
+            addToBot(new MakeTempCardInHandAction(c, true));
         }
-        c.makeCopy();
-        c.setCostForTurn(0);
-        addToBot(new MakeTempCardInHandAction(c, true));
     }
 
     public void upgrade() {

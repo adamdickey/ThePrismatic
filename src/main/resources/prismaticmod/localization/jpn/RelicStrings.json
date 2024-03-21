@@ -1,0 +1,222 @@
+{
+  "ThePrismatic:Burning Ring": {
+    "NAME": "燃える指輪",
+    "FLAVOR": "英雄たちの力が放たれている。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、追加で #b",
+      " 枚のカードを引き、 #y集中力 #b",
+      " を得る。戦闘終了時、HP #b",
+      " を回復する。"
+    ]
+  },
+  "ThePrismatic:Pure Core": {
+    "NAME": "清いコア",
+    "FLAVOR": "燃える指輪の真の力を覚醒させ、英雄たちの魂を解放する。",
+    "DESCRIPTIONS": [
+      "#r燃える指輪 と置き換える。獲得時に、 #rバーニングブラッド 、 #g蛇の指輪 、 #bひび割れたコア 、 #p清水 を獲得する。"
+    ]
+  },
+  "ThePrismatic:Inserter": {
+    "NAME": "インサーター",
+    "FLAVOR": "プッシュ。プル。スタック。リピート。",
+    "DESCRIPTIONS": [
+      "#b",
+      " ターンごとに、 #ytheprismatic:オーブスロット #b",
+      " 、 #y筋力 #b",
+      " 、 #yマントラ #b",
+      " を得る。"
+    ]
+  },
+  "ThePrismatic:Wrist Blade": {
+    "NAME": "リストブレード",
+    "FLAVOR": "暗殺に便利。",
+    "DESCRIPTIONS": [
+      "コストが #b0 の #yアタック が #b",
+      " の追加ダメージを与え、ブロックされないダメージを与えた場合は更に #y毒 #b",
+      " を与える。"
+    ]
+  },
+  "ThePrismatic:Ring of Keys": {
+    "NAME": "鍵の指輪",
+    "FLAVOR": "心の中のアイデアを解き放つ。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、追加で #b",
+      " 枚のカードを山札のカード #b",
+      " 枚につき引く。"
+    ]
+  },
+  "ThePrismatic:Hardwood Barrel": {
+    "NAME": "広葉樹の樽",
+    "FLAVOR": "底を削るまでは持っておくと便利だ。",
+    "DESCRIPTIONS": [
+      "山札が空になるまで、ターン開始時に [E] を得る。"
+    ]
+  },
+  "ThePrismatic:Runic Cube": {
+    "NAME": "ルーニックキューブ",
+    "FLAVOR": "ルーンは解読不可能。",
+    "DESCRIPTIONS": [
+      "HPを失うたび、カードを #b",
+      " 枚引く。"
+    ]
+  },
+  "ThePrismatic:Sadistic Dagger": {
+    "NAME": "加虐性のダガー",
+    "FLAVOR": "その刃を見ると、残忍な行為をするよう誘惑される。",
+    "DESCRIPTIONS": [
+      "敵1体にデバフを与えるたび、その敵に #b",
+      " ダメージを与える。"
+    ]
+  },
+  "ThePrismatic:Reality Box": {
+    "NAME": "掌握の箱",
+    "FLAVOR": "箱は大きな力を持っている。",
+    "DESCRIPTIONS": [
+      "カードが戦闘中に作られるたび、それを #yアップグレード する。"
+    ]
+  },
+  "ThePrismatic:Golden Eye": {
+    "NAME": "黄金の目",
+    "FLAVOR": "未来の自分の心を覗き、運命を予測する。",
+    "DESCRIPTIONS": [
+      "ターン開始時、 #y占術 #b",
+      " 。"
+    ]
+  },
+  "ThePrismatic:Establishing Seal": {
+    "NAME": "制定の印",
+    "FLAVOR": "運命を封印し、未来への道を明らかにする。",
+    "DESCRIPTIONS": [
+      "カードが #y保留 されるたび、そのコストを #b1 下げる。"
+    ]
+  },
+  "ThePrismatic:Dark Core": {
+    "NAME": "闇のコア",
+    "FLAVOR": "コアの中から大きなエネルギーが湧き上がってくる。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、 #y集中力 #b",
+      " を得て、 #yダーク #b",
+      " を #y生成 する。"
+    ]
+  },
+  "ThePrismatic:Specimen Funnel": {
+    "NAME": "捻じれた漏斗",
+    "FLAVOR": "「これを通して飲みたくはないな。」",
+    "DESCRIPTIONS": [
+      "戦闘開始時、敵全体に #y毒 #b",
+      " と #y点穴 #b",
+      " を与える。倒した敵に蓄積していた #y毒 と #y点穴 をランダムな敵に付与する。"
+    ]
+  },
+  "ThePrismatic:Hovering Kite": {
+    "NAME": "漂う凧",
+    "FLAVOR": "戦っている間、あなたの周りを漂う。不可思議な力が働いている。",
+    "DESCRIPTIONS": [
+      "毎ターン、最初にカードを #ytheprismatic:ミル したとき、 [E] を得る。"
+    ]
+  },
+  "ThePrismatic:Tough Bandages": {
+    "NAME": "丈夫な包帯",
+    "FLAVOR": "失うことで強くなれる。",
+    "DESCRIPTIONS": [
+      "ターン中にカードを #ytheprismatic:ミル するたびに #b",
+      " #yブロック を得る。"
+    ]
+  },
+  "ThePrismatic:Tingsha": {
+    "NAME": "ティンシャ",
+    "FLAVOR": "この楽器が発する音は、苦痛を伴う音量にまで反響する。",
+    "DESCRIPTIONS": [
+      "ターン中にカードを1枚 #ytheprismatic:ミル するたび、ランダムな敵に #b",
+      " ダメージを与える。"
+    ]
+  },
+  "ThePrismatic:Darkstone Doll": {
+    "NAME": "ドゥーヴーのお守り",
+    "FLAVOR": "このお守りは神秘的な人形から力を引き出し、悪意のあるエネルギーを着用者の力と活力に変換する。",
+    "DESCRIPTIONS": [
+      "#r呪い を獲得するたび、最大HP #b",
+      " を得る。",
+      "戦闘開始時、デッキの #y呪い 1枚につき、 #y筋力 #b",
+      " を得る。"
+    ]
+  },
+  "ThePrismatic:Shovel": {
+    "NAME": "ショベル",
+    "FLAVOR": "塔には古代文明の遺物と、時間の戦いに敗れた強力な冒険者たちが集っている。発掘を始めよう！",
+    "DESCRIPTIONS": [
+      "休憩場所で #y発掘 が可能になる。"
+    ]
+  },
+  "ThePrismatic:Teardrop Locket": {
+    "NAME": "涙滴状のペンダント",
+    "FLAVOR": "持ち主は盲人であり、中が見られることはない。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、 #y平静 のスタンスに入る。"
+    ]
+  },
+  "ThePrismatic:Unceasing Top": {
+    "NAME": "永久コマ",
+    "FLAVOR": "駒は軽やかに回り続ける、まるで夢でも見ているようだ。",
+    "DESCRIPTIONS": [
+      "手札にカードが1枚もない時に、カードを1枚引く。"
+    ]
+  },
+  "ThePrismatic:Mummified Hand": {
+    "NAME": "ミイラの手",
+    "FLAVOR": "頻繁に痙攣している、特にあなたの心拍数が上がったときに。",
+    "DESCRIPTIONS": [
+      "#y「パワー」 をプレイ時、このターンの間手札のランダムなカード1枚のコストが #b0 になる。"
+    ]
+  },
+  "ThePrismatic:Small House": {
+    "NAME": "小さな家",
+    "FLAVOR": "「完璧な小型化の体現だ。現時点で最高の成果だが、また適切とは言えない」-造物主",
+    "DESCRIPTIONS": [
+      "獲得時、ポーションを #b1 個獲得。 NL #yゴールド #b",
+      " 獲得。 NL 最大HP+ #b",
+      " NL コモンレリックを #b1 個獲得。 NL カードを #b1 枚獲得。 NL ランダムなカードを #b1 枚アップグレード。",
+      "小さな家！"
+    ]
+  },
+  "ThePrismatic:Brimstone": {
+    "NAME": "ブリムストーン",
+    "FLAVOR": "地獄の熱を発し続けている。",
+    "DESCRIPTIONS": [
+      "ターン開始時、自分は #y筋力 #b",
+      " を得て、すべての敵は #y筋力 #b",
+      " を得る。"
+    ]
+  },
+  "ThePrismatic:Champion Belt": {
+    "NAME": "チャンピオンベルト",
+    "FLAVOR": "真の王者のみが腰に巻くことを許される。",
+    "DESCRIPTIONS": [
+      "敵に #y弱体 を与えるたび、 #y脱力 #b",
+      " を与え、さらに #ytheprismatic:ターゲット #b",
+      " を与える。"
+    ]
+  },
+  "ThePrismatic:Orb Slot": {
+    "NAME": "オーブスロット",
+    "FLAVOR": "瓶に詰まった可能性。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、追加の #ytheprismatic:オーブスロット を得る。"
+    ]
+  },
+  "ThePrismatic:Ceramic Fish": {
+    "NAME": "陶器の魚",
+    "FLAVOR": "精緻に描かれたこの魚は、幸運をもたらすと尊ばれていた。",
+    "DESCRIPTIONS": [
+      "デッキにカードを追加するたび、 #b",
+      " #yゴールド を得る。カードをスキップするとこの効果を失う。"
+    ]
+  },
+  "ThePrismatic:Snecko Skull": {
+    "NAME": "スネッコスカル",
+    "FLAVOR": "良い保存状態のスネッコの頭蓋骨。不思議なくらい綺麗で滑らか、どういうわけか土や汚れが付着しない。",
+    "DESCRIPTIONS": [
+      "敵に #yデバフ を与えるたび、追加で #b1 与える。"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "ThePrismatic:Targeting Potion": {
+    "NAME": "ターゲットポーション",
+    "DESCRIPTIONS": [
+      "#yターゲット #b",
+      " を与える。"
+    ]
+  },
+  "ThePrismatic:Bottled Orb": {
+    "NAME": "瓶詰のオーブ",
+    "DESCRIPTIONS": [
+      "永続的に #yオーブスロット #b",
+      " を得る。",
+      " を得る。"
+    ]
+  }
+}

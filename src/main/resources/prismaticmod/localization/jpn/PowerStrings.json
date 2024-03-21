@@ -1,0 +1,145 @@
+{
+  "ThePrismatic:0ch0 F0rm": {
+    "NAME": "反零化",
+    "DESCRIPTIONS": [
+      "ターン中初めてプレイする0コストカードを2回プレイする。",
+      "ターン中 #b",
+      " 回まで、プレイする0コストカードを2回プレイする。"
+    ]
+  },
+  "ThePrismatic:Targeted": {
+    "NAME": "ターゲット",
+    "DESCRIPTIONS": [
+      "#yアタック 以外で受けるダメージが #b",
+      "% 増加する。あと #b",
+      " ターンの間有効。",
+      " ターンの間有効。"
+    ]
+  },
+  "ThePrismatic:Chimera Form": {
+    "NAME": "混成化",
+    "DESCRIPTIONS": [
+      "ターン開始時、 #y筋力 #b",
+      " 、 #y敏捷性 #b",
+      " 、 #yオーブスロット #b",
+      " 、 #yマントラ #b",
+      " 、 #yマントラ #b",
+      " を得る。"
+    ]
+  },
+  "ThePrismatic:On a Roll": {
+    "NAME": "絶好調",
+    "DESCRIPTIONS": [
+      "#y「アタック」 をプレイするたび、一時的な #y筋力 #b",
+      " と一時的な #y敏捷性 #b",
+      " を得る。"
+    ]
+  },
+  "ThePrismatic:Static Discharge": {
+    "NAME": "静電放電",
+    "DESCRIPTIONS": [
+      "ターン中初めて敵にデバフを与えたとき、 #yライトニング #b1 を生成する。",
+      "ターン中 #b",
+      " 回まで、敵にデバフを与えるたび、 #yライトニング #b1 を生成する。"
+
+    ]
+  },
+  "ThePrismatic:Rushdown": {
+    "NAME": "猪突猛進",
+    "DESCRIPTIONS": [
+      "ターン中初めて #yスタンス を変更したとき、カードを #b",
+      " 枚引く。",
+      "ターン中 #b",
+      " 回まで、 #yスタンス を変更するたび、カードを #b"
+    ]
+  },
+  "ThePrismatic:Accuracy": {
+    "NAME": "精度上昇",
+    "DESCRIPTIONS": [
+      "0コストの #yアタック が #b",
+      " の追加ダメージを与える。"
+    ]
+  },
+  "ThePrismatic:Combustive Fumes": {
+    "NAME": "燃焼ガス",
+    "DESCRIPTIONS": [
+      "ターン開始時、HP #b",
+      " を失い、全ての敵に #y毒 #b",
+      " を与える。"
+    ]
+  },
+  "ThePrismatic:Like Water": {
+    "NAME": "水の如し",
+    "DESCRIPTIONS": [
+      "ターン終了時、 #y平静 もしくは #yフロスト が存在するならば、 #b",
+      " #yブロック を得る。"
+    ]
+  },
+  "ThePrismatic:Nirvana": {
+    "NAME": "涅槃",
+    "DESCRIPTIONS": [
+      "カードを #yミル するたび、 #b",
+      " #yブロック を得る。"
+    ]
+  },
+  "ThePrismatic:Empowered": {
+    "NAME": "パワフル",
+    "DESCRIPTIONS": [
+      "このターン、次にプレイする #yパワー のコストが #b1 下がる。",
+      "このターン、次にプレイする #b",
+      " 枚の #yパワー のコストが #b1 下がる。"
+    ]
+  },
+  "ThePrismatic:Echo Form": {
+    "NAME": "反響化",
+    "DESCRIPTIONS": [
+      "ターンの最初にプレイするカードを2回プレイする。",
+      "ターン中 #b",
+      " 回まで、プレイするカードを2回プレイする。"
+    ]
+  },
+  "ThePrismatic:Focus Down": {
+    "NAME": "集中力低下",
+    "DESCRIPTIONS": [
+      "次のターン開始時、 #y集中力 #b",
+      " を失う。"
+    ]
+  },
+  "ThePrismatic:Bias": {
+    "NAME": "偏向",
+    "DESCRIPTIONS": [
+      "ターン開始時、 #y筋力 #b",
+      " と #y集中力 #b",
+      " を失う。"
+    ]
+  },
+  "ThePrismatic:Evolve": {
+    "NAME": "進化",
+    "DESCRIPTIONS": [
+      "#y状態異常 または #y呪い を引いたとき、カードを #b1 枚引く。",
+      "#y状態異常 または #y呪い を引いたとき、カードを #b",
+      " 枚引く。"
+    ]
+  },
+  "ThePrismatic:Mental Fortress": {
+    "NAME": "不動心",
+    "DESCRIPTIONS": [
+      "#yスタンス を変更するか、カードを作成するたび、 #b",
+      " #yブロック を得る。"
+    ]
+  },
+  "ThePrismatic:Caltrops": {
+    "NAME": "トゲ+",
+    "DESCRIPTIONS": [
+      "攻撃を受けるたび、攻撃を行った敵に #yターゲット #b",
+      " を与える。"
+    ]
+  },
+  "ThePrismatic:Deflection": {
+    "NAME": "ディフレクション",
+    "DESCRIPTIONS": [
+      "0コストのカードから #b",
+      " の追加 #yブロック を得られる。"
+    ]
+  }
+}
