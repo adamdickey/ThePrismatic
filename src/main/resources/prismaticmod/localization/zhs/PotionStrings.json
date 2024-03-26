@@ -1,0 +1,17 @@
+{
+  "ThePrismatic:Targeting Potion": {
+    "NAME": "锁定药水",
+    "DESCRIPTIONS": [
+      "给予 #b",
+      " #y 层 目标化 。"
+    ]
+  },
+  "ThePrismatic:Bottled Orb": {
+    "NAME": "瓶装充能球",
+    "DESCRIPTIONS": [
+      "永久获得 #b",
+      " 个充能球栏位。",
+      " 个充能球栏位。"
+    ]
+  }
+}

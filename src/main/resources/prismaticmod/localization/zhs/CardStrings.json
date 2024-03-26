@@ -1,0 +1,622 @@
+{
+  "ThePrismatic:Targeting Strike": {
+    "NAME": "瞄准打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予所有敌人 !M! 层 目标化 效果。"
+  },
+  "ThePrismatic:Divine Strike": {
+    "NAME": "神圣打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !M! 层 真言 。"
+  },
+  "ThePrismatic:Looting Strike": {
+    "NAME": "掠夺打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽 !M! 张牌， 然后丢弃 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 抽 !M! 张牌， 然后丢弃 !M! 张牌。"
+  },
+  "ThePrismatic:Retaining Strike": {
+    "NAME": "凝滞打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 选择 !M! 张卡在本回合 保留 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 选择 !M! 张卡在本回合 保留 。"
+  },
+  "ThePrismatic:Scrying Strike": {
+    "NAME": "远见打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 预见 !M!。"
+  },
+  "ThePrismatic:Stormy Strike": {
+    "NAME": "风暴打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 生成 !M! 个 闪电 充能球。"
+  },
+  "ThePrismatic:Frosty Strike": {
+    "NAME": "寒霜打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 生成 !M! 个 冰霜 充能球。"
+  },
+  "ThePrismatic:Exhausting Strike": {
+    "NAME": "鲁莽打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 最多 !M! 张牌。"
+  },
+  "ThePrismatic:Insightful Strike": {
+    "NAME": "洞悉打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 在你的抽牌堆中加入一张 *洞见 。"
+  },
+  "ThePrismatic:Scraping Strike": {
+    "NAME": "刮削打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽 !M! 张牌。 NL 丢弃抽到的牌中耗能不为0的牌。"
+  },
+  "ThePrismatic:Empty Strike": {
+    "NAME": "无垢打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 退出当前 姿态 。"
+  },
+  "ThePrismatic:Cunning Strike": {
+    "NAME": "灵巧打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 在你的手牌中增加一张 *小刀 。"
+  },
+  "ThePrismatic:Toxic Strike": {
+    "NAME": "剧毒打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予所有敌人 !M! 层 中毒 。"
+  },
+  "ThePrismatic:0ch0 Form": {
+    "NAME": "零号形态",
+    "DESCRIPTION": "每回合第一张耗能为 0 的牌会打出两次。",
+    "UPGRADE_DESCRIPTION": "每回合前 !M! 张耗能为 0 的牌会打出两次。"
+  },
+  "ThePrismatic:Cunning Defend": {
+    "NAME": "灵巧防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 在你的手牌中增加一张 *小刀 。"
+  },
+  "ThePrismatic:Divine Defend": {
+    "NAME": "神圣防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 !M! 层 真言 。"
+  },
+  "ThePrismatic:Empty Defend": {
+    "NAME": "无垢防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 退出当前 姿态 。"
+  },
+  "ThePrismatic:Exhausting Defend": {
+    "NAME": "鲁莽防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 消耗 最多 !M! 张牌。"
+  },
+  "ThePrismatic:Frosty Defend": {
+    "NAME": "寒霜防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 生成 !M! 个 冰霜 充能球。"
+  },
+  "ThePrismatic:Insightful Defend": {
+    "NAME": "洞悉防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 在你的抽牌堆中加入一张 *洞见 。"
+  },
+  "ThePrismatic:Looting Defend": {
+    "NAME": "掠夺防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 !M! 张牌， 然后丢弃 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 !M! 张牌， 然后丢弃 !M! 张牌。"
+  },
+  "ThePrismatic:Retaining Defend": {
+    "NAME": "凝滞防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 选择 !M! 张卡在本回合 保留 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 选择 !M! 张卡在本回合 保留 。"
+  },
+  "ThePrismatic:Scraping Defend": {
+    "NAME": "刮削防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 !M! 张牌。 NL 丢弃抽到的牌中耗能不为0的牌。"
+  },
+  "ThePrismatic:Scrying Defend": {
+    "NAME": "远见防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 预见 !M!。"
+  },
+  "ThePrismatic:Stormy Defend": {
+    "NAME": "风暴防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 生成 !M! 个 闪电 充能球。"
+  },
+  "ThePrismatic:Toxic Defend": {
+    "NAME": "剧毒防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 给予所有敌人 !M! 层 中毒 。"
+  },
+  "ThePrismatic:Chimera Form": {
+    "NAME": "嵌合形态",
+    "DESCRIPTION": " 虚无 。 NL 在你的回合开始时， 获得 1 点 力量 ， 1 点 敏捷 ， 1 个 充能球栏位 ，和 1 层 真言 。",
+    "UPGRADE_DESCRIPTION": "在你的回合开始时， 获得 1 点 力量 ， 1 点 敏捷 ， 1 个 充能球栏位 ，和 1 层 真言 。"
+  },
+  "ThePrismatic:Foreign Powers": {
+    "NAME": "他山之棱",
+    "DESCRIPTION": "将每种颜色各一张随机能力牌加入你的手牌。他们在本回合的耗能变为0。 NL 消耗 。"
+  },
+  "ThePrismatic:On a Roll": {
+    "NAME": "生生不息",
+    "DESCRIPTION": "你每打出一张攻击牌， 获得 1 点 临时 力量 和 1 点 临时 敏捷 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 你每打出一张攻击牌， 获得 1 点 临时 力量 和 1 点 临时 敏捷 。"
+  },
+  "ThePrismatic:Havoc": {
+    "NAME": "破灭预言",
+    "DESCRIPTION": " 预见 1。 NL 打出抽牌堆顶部的牌，将其 消耗 。"
+  },
+  "ThePrismatic:Sever Soul": {
+    "NAME": "超度斩",
+    "DESCRIPTION": " 消耗 手牌中所有非攻击牌， NL 每张获得 1 点 真言 。 NL 造成 !D! 点伤害。"
+  },
+  "ThePrismatic:Neutralize": {
+    "NAME": "中和",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 虚弱 。"
+  },
+  "ThePrismatic:Bane": {
+    "NAME": "祸不单行",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果敌人存在至少两种负面状态， 给予 !M! 层 中毒 。"
+  },
+  "ThePrismatic:Barrage": {
+    "NAME": "弹幕齐射",
+    "DESCRIPTION": "你每拥有一个充能球，造成 !D! 点伤害。"
+  },
+  "ThePrismatic:Heatsinks": {
+    "NAME": "散热片",
+    "DESCRIPTION": " 固有 。 NL 你每打出一张能力牌，抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 你每打出一张能力牌，抽 !M! 张牌。"
+  },
+  "ThePrismatic:Hello World": {
+    "NAME": "你好，世界",
+    "DESCRIPTION": "在你的回合开始时，增加一张随机普通牌到你的手牌。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 在你的回合开始时，增加一张随机普通牌到你的手牌。"
+  },
+  "ThePrismatic:Storm": {
+    "NAME": "雷暴",
+    "DESCRIPTION": " 固有 。 NL 你每打出一张能力牌，生成 1 个 闪电 充能球。"
+  },
+  "ThePrismatic:Streamline": {
+    "NAME": "精简改良",
+    "DESCRIPTION": " 保留 。 NL 造成 !D! 点伤害。 NL 这张牌每被打出一次，它在本场战斗中的耗能减少 1 。"
+  },
+  "ThePrismatic:Scrape": {
+    "NAME": "刮削",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽 !M! 张牌。 NL 丢弃抽到的牌中耗能不为0的牌。"
+  },
+  "ThePrismatic:Dualcast": {
+    "NAME": "双重释放",
+    "DESCRIPTION": "激发 你最右侧的充能球2次。 NL 抽 1 张牌。"
+  },
+  "ThePrismatic:Defragment": {
+    "NAME": "碎片整理",
+    "DESCRIPTION": "获得 !M! 点 集中 。 NL 获得 !M! 点 力量 。"
+  },
+  "ThePrismatic:Capacitor": {
+    "NAME": "扩容",
+    "DESCRIPTION": "获得 !M! 个充能球栏位。 NL 获得 !ThePrismatic:dex! 点 敏捷 。"
+  },
+  "ThePrismatic:Consume": {
+    "NAME": "竭尽全力",
+    "DESCRIPTION": "获得 !M! 点 集中 。 NL 获得 !M! 点 力量 。 NL 失去 1 个充能球栏位。"
+  },
+  "ThePrismatic:Go for the Eyes": {
+    "NAME": "要害攻击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果目标敌人的意图是攻击，则给予其 !M! 层 虚弱 ，否则给予其 !M! 层 易伤 。"
+  },
+  "ThePrismatic:Rainbow": {
+    "NAME": "彩虹",
+    "DESCRIPTION": "生成 闪电 、 冰霜 、 黑暗 充能球各一个。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "生成 闪电 、 冰霜 、 黑暗 充能球各一个。"
+  },
+  "ThePrismatic:Fission": {
+    "NAME": "裂变",
+    "DESCRIPTION": "移除所有 充能球 ，每移除一个充能球获得 [B] 并抽 1 张牌 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "激发 所有 充能球 ，每激发一个充能球获得 [B] 并抽 1 张牌 。 NL 消耗 。"
+  },
+  "ThePrismatic:Static Discharge": {
+    "NAME": "静电干扰",
+    "DESCRIPTION": "每回合第一次给敌人施加负面状态时，生成 1 个 闪电 充能球。",
+    "UPGRADE_DESCRIPTION": "每回合前 !M! 次给敌人施加负面状态时，生成 1 个 闪电 充能球。"
+  },
+  "ThePrismatic:Swivel": {
+    "NAME": "旋身",
+    "DESCRIPTION": " 保留 。 NL 获得 !B! 点 格挡 。 NL 你打出的下一张攻击牌耗能变为0。"
+  },
+  "ThePrismatic:Fasting": {
+    "NAME": "斋戒",
+    "DESCRIPTION": "获得 !M! 点 力量 。 NL 获得 !M! 敏捷 。 NL 获得 1 点 集中 。 NL 每回合开始时少获得 1 点 能量 。"
+  },
+  "ThePrismatic:Study": {
+    "NAME": "研习",
+    "DESCRIPTION": "获得 1 点 集中 。 NL 在你的回合结束时，在你的抽牌堆中加入一张 *洞见 。"
+  },
+  "ThePrismatic:Deus Ex Machina": {
+    "NAME": "机械降神",
+    "DESCRIPTION": "不能被打出。 NL 当你抽到这张牌时，在你的手牌中加入 !M! 张 *奇迹 ，然后 消耗 。"
+  },
+  "ThePrismatic:Rushdown": {
+    "NAME": "猛虎下山",
+    "DESCRIPTION": "每回合首次转换 姿态 时， 抽 2 张牌。"
+  },
+  "ThePrismatic:Devotion": {
+    "NAME": "虔信",
+    "DESCRIPTION": "在你的回合开始时，获得 3 层 真言 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 在你的回合开始时，获得 3 层 真言 。"
+  },
+  "ThePrismatic:Pray": {
+    "NAME": "祈祷",
+    "DESCRIPTION": "获得 !M! 层 真言 。 NL 生成 1 个 冰霜 充能球。 NL 在你的抽牌堆中加入1张 *洞见 。"
+  },
+  "ThePrismatic:Eruption": {
+    "NAME": "暴怒",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 进入 愤怒 。"
+  },
+  "ThePrismatic:Vigilance": {
+    "NAME": "警惕",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 进入 平静 。"
+  },
+  "ThePrismatic:Blade Dance": {
+    "NAME": "刀刃之舞",
+    "DESCRIPTION": "增加 !M! 张 *小刀 到你的手牌。"
+  },
+  "ThePrismatic:Envenom": {
+    "NAME": "涂毒",
+    "DESCRIPTION": "每有一次攻击造成未被格挡的伤害，就给予1层 中毒 。"
+  },
+  "ThePrismatic:Tools of the Trade": {
+    "NAME": "必备工具",
+    "DESCRIPTION": "在你的回合开始时，抽1张牌，丢弃1张牌。"
+  },
+  "ThePrismatic:Doppelganger": {
+    "NAME": "双重存在",
+    "DESCRIPTION": "下一回合，抽X张牌，获得X [G] 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "下一回合，抽X+1张牌，获得X+1 [G] 。 NL 消耗 。"
+  },
+  "ThePrismatic:Prepared": {
+    "NAME": "早有准备",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 !M! 张牌。 NL 丢弃 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 !M! 张牌。 NL 丢弃 !M! 张牌。"
+  },
+  "ThePrismatic:Sneaky Strike": {
+    "NAME": "隐秘打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果你在这回合通过 预见 丢弃过牌， 这张卡耗能变为 0。"
+  },
+  "ThePrismatic:A Thousand Cuts": {
+    "NAME": "凌迟",
+    "DESCRIPTION": "你每打出一张牌，就对所有敌人造成 2 点伤害。"
+  },
+  "ThePrismatic:Wraith Form": {
+    "NAME": "幽魂形态",
+    "DESCRIPTION": "虚无 。 NL 获得 2 层 无实体 。 NL 在每回合结束时失去1点 敏捷 。",
+    "UPGRADE_DESCRIPTION": "获得 2 层 无实体 。 NL 在每回合结束时失去1点 敏捷 。"
+  },
+  "ThePrismatic:Darkness": {
+    "NAME": "漆黑",
+    "DESCRIPTION": "生成 1 个 黑暗 充能球。",
+    "UPGRADE_DESCRIPTION": "生成 1 个 黑暗 充能球。 NL 使用所有 黑暗 充能球 的被动能力。"
+  },
+  "ThePrismatic:Master Reality": {
+    "NAME": "操控现实",
+    "DESCRIPTION": " 固有 。 NL 所有在战斗中临时增加的牌将被 升级 。"
+  },
+  "ThePrismatic:Perseverance": {
+    "NAME": "坚韧",
+    "DESCRIPTION": " 保留 。 NL 获得 !B! 点 格挡 。 NL 每当这张牌被 保留 时，将其在本场战斗的 格挡 增加 !M! 点。"
+  },
+  "ThePrismatic:Strike for One": {
+    "NAME": "打击一心",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 将弃牌堆中随机 !M! 张0耗能的牌放入你的手牌。"
+  },
+  "ThePrismatic:Defend for One": {
+    "NAME": "防御一心",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 将弃牌堆中随机 !M! 张0耗能的牌放入你的手牌。"
+  },
+  "ThePrismatic:Infernal Blade": {
+    "NAME": "地狱之刃",
+    "DESCRIPTION": "从3张攻击牌中选择1张加入你的手牌。 NL 这张牌在本回合耗能变为0。 NL 消耗 。"
+  },
+  "ThePrismatic:Distraction": {
+    "NAME": "声东击西",
+    "DESCRIPTION": "从3张技能牌中选择1张加入你的手牌。 NL 这张牌在本回合耗能变为0。 NL 消耗 。"
+  },
+  "ThePrismatic:White Noise": {
+    "NAME": "白噪声",
+    "DESCRIPTION": "从3张能力牌中选择1张加入你的手牌。 NL 这张牌在本回合耗能变为0。 NL 消耗 。"
+  },
+  "ThePrismatic:Tempest": {
+    "NAME": "雷霆风暴",
+    "DESCRIPTION": "生成 !M! 个 闪电 充能球。 NL 进入 愤怒 。"
+  },
+  "ThePrismatic:Blizzard": {
+    "NAME": "冰寒风暴",
+    "DESCRIPTION": "生成 !M! 个 冰霜 充能球。 NL 进入 平静 。"
+  },
+  "ThePrismatic:Setup": {
+    "NAME": "部署",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 将手牌中的一张牌放到抽牌堆的顶部。 NL 并且在其被打出之前，其耗能变为0。"
+  },
+  "ThePrismatic:Magnetism": {
+    "NAME": "磁力",
+    "DESCRIPTION": "在每回合开始时，增加一张随机无色牌到你的手牌。"
+  },
+  "ThePrismatic:Mind Blast": {
+    "NAME": "心灵震慑",
+    "DESCRIPTION": " 固有 。 NL 造成你抽牌堆中剩余牌数的伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （造成 !D! 点伤害。）"
+    ]
+  },
+  "ThePrismatic:Accuracy": {
+    "NAME": "精准",
+    "DESCRIPTION": "费用为0的 攻击牌 额外造成 !M! 点伤害。"
+  },
+  "ThePrismatic:Claw": {
+    "NAME": "爪击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 在本场战斗中所有费用为0的牌造成的伤害增加 !M! 。"
+  },
+  "ThePrismatic:Infinite Blades": {
+    "NAME": "无限刀刃",
+    "DESCRIPTION": "增加 1 张 *小刀 到你的手牌。 NL 在你的回合开始时，增加一张 *小刀 到你的手牌。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 增加 1 张 *小刀 到你的手牌。 NL 在你的回合开始时，增加一张 *小刀 到你的手牌。"
+  },
+  "ThePrismatic:Choke": {
+    "NAME": "勒脖",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 你在这个回合内每打出一张牌，该名敌人都会失去 !M! 点生命。"
+  },
+  "ThePrismatic:Wild Strike": {
+    "NAME": "狂野打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 将一张 *伤口 放入你的手牌中。"
+  },
+  "ThePrismatic:Dropkick": {
+    "NAME": "飞身踢",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果敌人存在至少两种负面状态， 抽 1 张牌。"
+  },
+  "ThePrismatic:Combustive Fumes": {
+    "NAME": "易燃毒烟",
+    "DESCRIPTION": "在你的回合开始时，你失去1点生命，给予所有敌人 !M! 层 中毒 。"
+  },
+  "ThePrismatic:Intimidate": {
+    "NAME": "恃强凌弱",
+    "DESCRIPTION": "给予所有敌人 !M! 层 虚弱 。 NL 获得 1 点 力量 。 NL 消耗 。"
+  },
+  "ThePrismatic:Fiery Evolution": {
+    "NAME": "炽热进化",
+    "DESCRIPTION": "每当你抽到一张 状态牌 或 诅咒 牌时，对所有敌人造成 6 点伤害，并抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "每当你抽到一张 状态牌 或 诅咒 牌时，对所有敌人造成 6 点伤害，并抽 !M! 张牌。"
+  },
+  "ThePrismatic:Metallic Rupture": {
+    "NAME": "撕裂钢躯",
+    "DESCRIPTION": "在你的回合结束时，获得 !M! 点 格挡 。 NL 每当你从一张牌中失去生命时， 获得 !ThePrismatic:S! 点 力量 。"
+  },
+  "ThePrismatic:Deadly Poison": {
+    "NAME": "致命毒药",
+    "DESCRIPTION": "给予 !M! 层 中毒 。 NL 如果这张卡在 预见 中被丢弃， 给予随机敌人 !M! 层 中毒 。"
+  },
+  "ThePrismatic:Tactician": {
+    "NAME": "战术大师",
+    "DESCRIPTION": "不能被打出。 NL 如果这张卡在 预见 中被丢弃， NL 获得 [G] 。",
+    "UPGRADE_DESCRIPTION": "不能被打出。 NL 如果这张卡在 预见 中被丢弃， NL 获得 [G] [G] 。",
+    "EXTENDED_DESCRIPTION": [
+      "这张牌不能被打出。"
+    ]
+  },
+  "ThePrismatic:Reflex": {
+    "NAME": "本能反应",
+    "DESCRIPTION": "不能被打出。 NL 如果这张卡在 预见 中被丢弃， 抽 !M! 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "这张牌不能被打出。"
+    ]
+  },
+  "ThePrismatic:Weave": {
+    "NAME": "迂回",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果你在这回合通过 预见 丢弃过牌，将这张牌从弃牌堆放回你的手牌。"
+  },
+  "ThePrismatic:Follow-Up": {
+    "NAME": "追击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本场战斗中打出的上一张牌是攻击牌， 抽 2 张牌。"
+  },
+  "ThePrismatic:Berserk": {
+    "NAME": "狂暴",
+    "DESCRIPTION": "进入 愤怒 。 NL 在每回合开始时获得 [R] 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 进入 愤怒 。 NL 在每回合开始时获得 [R] 。"
+  },
+  "ThePrismatic:Like Water": {
+    "NAME": "如水",
+    "DESCRIPTION": "在你的回合结束时，如果你处于 平静 或拥有 冰霜 充能球 ， 则获得 !M! 点 格挡 。"
+  },
+  "ThePrismatic:Exploit Pain": {
+    "NAME": "折磨",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 敌人每有一种负面状态再造成一次伤害。"
+  },
+  "ThePrismatic:Storm of Steel": {
+    "NAME": "钢铁风暴",
+    "DESCRIPTION": "丢弃所有手牌。 NL 每丢弃一张牌，在你的手牌中增加一张 *小刀 。",
+    "UPGRADE_DESCRIPTION": "丢弃所有手牌。 NL 每丢弃一张牌，在你的手牌中增加一张 *小刀+ 。"
+  },
+  "ThePrismatic:Bullseye": {
+    "NAME": "正中靶心",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 目标化 。"
+  },
+  "ThePrismatic:Targeting Defend": {
+    "NAME": "瞄准防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 给予所有敌人 !M! 层 目标化 效果。"
+  },
+  "ThePrismatic:Catalyst": {
+    "NAME": "催化剂",
+    "DESCRIPTION": "将一名敌人的 中毒 层数翻倍。 NL 给予 99 层 目标化 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "将一名敌人的 中毒 层数变为三倍。 NL 给予 99 层 目标化 。 NL 消耗 。"
+  },
+  "ThePrismatic:Pressure Points": {
+    "NAME": "点穴",
+    "DESCRIPTION": "给予 !M! 层 *印记 。 NL 给予 !ThePrismatic:LockOn! 层 目标化 。 NL 所有拥有 *印记 的敌人，失去与层数相等的生命。"
+  },
+  "ThePrismatic:Eviscerate": {
+    "NAME": "内脏切除",
+    "DESCRIPTION": "你在这个回合内每通过 预见 丢弃过一张牌，耗能就减少1 [E] 。 NL 造成 !D! 点伤害三次。"
+  },
+  "ThePrismatic:Slice": {
+    "NAME": "切割",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 一张随机手牌。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 一张手牌。"
+  },
+  "ThePrismatic:Dark Embrace": {
+    "NAME": "黑暗之拥",
+    "DESCRIPTION": "每当有一张牌被 消耗 时， 抽1张牌。"
+  },
+  "ThePrismatic:Exploit Weakness": {
+    "NAME": "看破",
+    "DESCRIPTION": "给予 !M! 层 虚弱 。 NL 敌人每有一种负面状态获得 !B! 格挡 。"
+  },
+  "ThePrismatic:Nirvana": {
+    "NAME": "涅槃",
+    "DESCRIPTION": "你每次通过 预见 丢弃牌时，获得 !M! 点 格挡 。"
+  },
+  "ThePrismatic:Sadistic Defend": {
+    "NAME": "残虐防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 对于拥有负面效果最多的敌人，每有一种负面效果，额外获得 !ThePrismatic:Magic! 点 格挡 。"
+  },
+  "ThePrismatic:Sadistic Strike": {
+    "NAME": "残虐打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 对于拥有负面效果最多的敌人，每有一种负面效果，额外造成 !ThePrismatic:Magic! 点伤害。"
+  },
+  "ThePrismatic:Thunderclap": {
+    "NAME": "雷霆霹雳",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，给予1层 易伤 。 NL 生成 1 个 闪电 充能球。"
+  },
+  "ThePrismatic:Uppercut": {
+    "NAME": "上勾拳",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 虚弱 。 NL 给予 !M! 层 易伤 。 NL 给予 !M! 层 目标化 。"
+  },
+  "ThePrismatic:Shockwave": {
+    "NAME": "震荡波",
+    "DESCRIPTION": "给予所有敌人 !M! 层 虚弱 ， 易伤 和 目标化 。 NL 消耗 。"
+  },
+  "ThePrismatic:Empowering Defend": {
+    "NAME": "赋能防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 在这个回合，你打出的下一张能力牌费用减少 1 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 在这个回合，你打出的下 !M! 张能力牌费用减少 1 。"
+  },
+  "ThePrismatic:Empowering Strike": {
+    "NAME": "赋能打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 在这个回合，你打出的下一张能力牌费用减少 1 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 在这个回合，你打出的下 !M! 张能力牌费用减少 1 。"
+  },
+  "ThePrismatic:Doom Will Bloom": {
+    "NAME": "灾厄将至",
+    "DESCRIPTION": "给予所有敌人 !M! 层 *印记 。 NL 所有拥有 *印记 的敌人，失去与层数相等的生命。 NL 生成 1 个 黑暗 充能球。"
+  },
+  "ThePrismatic:Entrench": {
+    "NAME": "巩固",
+    "DESCRIPTION": "将你当前的 格挡 翻倍。 NL 你的下一回合开始时 格挡 不会消失。",
+    "UPGRADE_DESCRIPTION": "将你当前的 格挡 翻倍。 NL 你的下一回合开始时 格挡 不会消失。"
+  },
+  "ThePrismatic:Compile Driver": {
+    "NAME": "编译冲击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 你每有一个 充能球 ，抽 1 张牌。"
+  },
+  "ThePrismatic:Double Tap": {
+    "NAME": "双发",
+    "DESCRIPTION": " 保留 。 NL 在这个回合，你打出的下一张攻击牌会打出两次。",
+    "UPGRADE_DESCRIPTION": " 保留 。 NL 在这个回合，你打出的下 !M! 张攻击牌会打出两次。"
+  },
+  "ThePrismatic:Burst": {
+    "NAME": "爆发",
+    "DESCRIPTION": " 保留 。 NL 在这个回合，你打出的下一张技能牌会打出两次。",
+    "UPGRADE_DESCRIPTION": " 保留 。 NL 在这个回合，你打出的下 !M! 张技能牌会打出两次。"
+  },
+  "ThePrismatic:Amplify": {
+    "NAME": "增幅",
+    "DESCRIPTION": " 保留 。 NL 在这个回合，你打出的下一张 能力牌 会打出两次。",
+    "UPGRADE_DESCRIPTION": " 保留 。 NL 在这个回合，你打出的下 !M! 张 能力牌 会打出两次。"
+  },
+  "ThePrismatic:Clothesline": {
+    "NAME": "金刚臂",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 虚弱 。 NL 给予 !M! 层 目标化 。"
+  },
+  "ThePrismatic:Juggernaut": {
+    "NAME": "势不可当",
+    "DESCRIPTION": "生成 1 个 冰霜 充能球。 NL 每当你获得 格挡 时， NL 对随机一名敌人造成 NL !M! 点伤害。"
+  },
+  "ThePrismatic:Echo Form": {
+    "NAME": "回响形态",
+    "DESCRIPTION": "你每回合打出的第一张牌会打出两次。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "你每回合打出的第一张牌会打出两次。"
+  },
+  "ThePrismatic:Multichaos": {
+    "NAME": "多重混沌",
+    "DESCRIPTION": "如果你存在空的充能球栏位， 生成 1 随机充能球。 NL 激发 你最右侧的充能球X次。",
+    "UPGRADE_DESCRIPTION": "如果你存在空的充能球栏位， 生成 1 随机充能球。 NL 激发 你最右侧的充能球X+1次。"
+  },
+  "ThePrismatic:Limit Break": {
+    "NAME": "突破极限",
+    "DESCRIPTION": "将你的 力量 和 集中 翻倍。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "将你的 力量 和 集中 翻倍。"
+  },
+  "ThePrismatic:Focused Defend": {
+    "NAME": "聚焦防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 !M! 点 临时 集中 。"
+  },
+  "ThePrismatic:Focused Strike": {
+    "NAME": "聚焦打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !M! 点 临时 集中 。"
+  },
+  "ThePrismatic:Biased Cognition": {
+    "NAME": "偏差认知",
+    "DESCRIPTION": "获得 !M! 点 集中 和 力量 。 NL 在每回合开始时，失去 1 点 集中 和 1 点 力量 。"
+  },
+  "ThePrismatic:Mental Fortress": {
+    "NAME": "心灵堡垒",
+    "DESCRIPTION": "每当你转换 姿态 或临时增添牌到手牌中时，获得 !M! 点 格挡 。"
+  },
+  "ThePrismatic:Searing Blow": {
+    "NAME": "灼热攻击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 能被多次 升级 。"
+  },
+  "ThePrismatic:Thunder Strike": {
+    "NAME": "雷鸣打击",
+    "DESCRIPTION": "你在本场战斗中每 生成 过 一个 充能球，随机造成一次 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "（共 !M! 次。）",
+      "（共 !M! 次。）"
+    ]
+  },
+  "ThePrismatic:Hyperbeam": {
+    "NAME": "超能光束",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 失去 !M! 点 集中 和 力量 。"
+  },
+  "ThePrismatic:Reprogram": {
+    "NAME": "重编程",
+    "DESCRIPTION": "获得 !M! 点 集中 。 NL 失去 1 点 力量 。 NL 失去 1 点 敏捷 。"
+  },
+  "ThePrismatic:Recursion": {
+    "NAME": "深度递归",
+    "DESCRIPTION": "激发 你最右侧的充能球。 NL 然后 生成 一个刚才被 激发 的充能球。 NL 退出当前 姿态 ， 然后再进入该 姿态。"
+  },
+  "ThePrismatic:Perfected Strike": {
+    "NAME": "完美打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 你每有一张名字中有 打击 的牌，伤害 + !M!。"
+  },
+  "ThePrismatic:Caltrops": {
+    "NAME": "铁蒺藜",
+    "DESCRIPTION": "每当你被攻击时，对攻击者施加 1 层 目标化 并造成 !M! 点伤害。"
+  },
+  "ThePrismatic:Deflect": {
+    "NAME": "偏折",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 在本场战斗中从所有费用为0的牌中获得的 格挡 的增加 !M! 。"
+  },
+  "ThePrismatic:Establishment": {
+    "NAME": "确立基础",
+    "DESCRIPTION": "每当有卡牌被 保留 时，将其在本场战斗的耗能减少 1 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 每当有卡牌被 保留 时，将其在本场战斗的耗能减少 1 。"
+  },
+  "ThePrismatic:Grand Finale": {
+    "NAME": "华丽收场",
+    "DESCRIPTION": " 保留 。 NL 只有当抽牌堆中没有牌时才能打出。 NL 对所有敌人造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "我的抽牌堆必须是 #r空的。 "
+    ]
+  },
+  "ThePrismatic:Alpha": {
+    "NAME": "阿尔法",
+    "DESCRIPTION": "将一张 *贝塔 放入你的抽牌堆中。 NL 预见 !M!。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 将一张 *贝塔 放入你的抽牌堆中。 NL 预见 !M!。 NL 消耗 。"
+  },
+  "ThePrismatic:Beta": {
+    "NAME": "贝塔",
+    "DESCRIPTION": "将一张 *欧米伽 放入你的抽牌堆中。 NL 预见 !M!。 NL 消耗 。"
+  },
+  "ThePrismatic:Conjure Blade": {
+    "NAME": "聚能成刃",
+    "DESCRIPTION": "将一张 *湮灭之刃 放入你的抽牌堆中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "将一张X+1数值的 *湮灭之刃 放入你的抽牌堆中。 NL 消耗 。"
+  },
+  "ThePrismatic:Expunger": {
+    "NAME": "湮灭之刃",
+    "DESCRIPTION": "造成 !D! 点伤害 X 次。 NL 生成 X 个 黑暗 充能球。",
+    "EXTENDED_DESCRIPTION": [
+      "造成 !D! 点伤害 !M! 次。 NL 生成 !M! 个 黑暗 充能球。",
+      "造成 !D! 点伤害 !M! 次。 NL 生成 !M! 个 黑暗 充能球。"
+    ]
+  }
+}
