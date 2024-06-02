@@ -19,10 +19,10 @@ public class RemoveRelicsPatch {
     public static void Insert() {
         if(player.chosenClass == Prismatic){
             relicsToRemoveOnStart.add(Ectoplasm.ID);
-            relicsToRemoveOnStart.add(HandDrill.ID);
+            //relicsToRemoveOnStart.add(HandDrill.ID);
             relicsToRemoveOnStart.add(PrismaticShard.ID);
-            relicsToRemoveOnStart.add(Cauldron.ID);
-            relicsToRemoveOnStart.add(Boot.ID);
+            //relicsToRemoveOnStart.add(Cauldron.ID);
+            //relicsToRemoveOnStart.add(Boot.ID);
             relicsToRemoveOnStart.add(CeramicFish.ID);
             relicsToRemoveOnStart.add(DuVuDoll.ID);
             relicsToRemoveOnStart.add(DarkstonePeriapt.ID);
@@ -30,8 +30,8 @@ public class RemoveRelicsPatch {
             relicsToRemoveOnStart.add(UnceasingTop.ID);
             relicsToRemoveOnStart.add(MummifiedHand.ID);
             relicsToRemoveOnStart.add(TinyHouse.ID);
-            relicsToRemoveOnStart.add(JuzuBracelet.ID);
-            relicsToRemoveOnStart.add(TinyChest.ID);
+            //relicsToRemoveOnStart.add(JuzuBracelet.ID);
+            //relicsToRemoveOnStart.add(TinyChest.ID);
             relicsToRemoveOnStart.add(BustedCrown.ID);
             //relicsToRemoveOnStart.add(BagOfMarbles.ID);
 

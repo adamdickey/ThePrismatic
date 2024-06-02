@@ -306,14 +306,14 @@ public class BasicMod implements
                     //playerClass will make a potion character-specific. By default, it's null and will do nothing.
                 });
         BaseMod.addPotion(BloodPotion.class, null, null, null, "BloodPotion", Prismatic);
-        //BaseMod.addPotion(Elixir.class, null, null, null, "ElixirPotion", Prismatic);
+        BaseMod.addPotion(Elixir.class, null, null, null, "ElixirPotion", Prismatic);
         BaseMod.addPotion(HeartOfIron.class, null, null, null, "HeartOfIron", Prismatic);
         BaseMod.addPotion(PoisonPotion.class, null, null, null, "Poison Potion", Prismatic);
         BaseMod.addPotion(CunningPotion.class, null, null, null, "CunningPotion", Prismatic);
         BaseMod.addPotion(GhostInAJar.class, null, null, null, "GhostInAJar", Prismatic);
         BaseMod.addPotion(FocusPotion.class, null, null, null, "FocusPotion", Prismatic);
         //BaseMod.addPotion(PotionOfCapacity.class, null, null, null, "PotionOfCapacity", Prismatic);
-        //BaseMod.addPotion(EssenceOfDarkness.class, null, null, null, "EssenceOfDarkness", Prismatic);
+        BaseMod.addPotion(EssenceOfDarkness.class, null, null, null, "EssenceOfDarkness", Prismatic);
         BaseMod.addPotion(BottledMiracle.class, null, null, null, "BottledMiracle", Prismatic);
         BaseMod.addPotion(StancePotion.class, null, null, null, "StancePotion", Prismatic);
         BaseMod.addPotion(Ambrosia.class, null, null, null, "Ambrosia", Prismatic);
@@ -363,7 +363,7 @@ public class BasicMod implements
         BaseMod.addRelicToCustomPool(new Damaru(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new GoldenEye(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new HolyWater(), CARD_COLOR);
-        //BaseMod.addRelicToCustomPool(new Melange(), CARD_COLOR);
+        BaseMod.addRelicToCustomPool(new Melange(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new PureWater(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new VioletLotus(), CARD_COLOR);
         //BaseMod.addRelicToCustomPool(new TeardropLocket(), CARD_COLOR);
