@@ -31,7 +31,7 @@
   },
   "${modID}:Exhausting Strike": {
     "NAME": "Exhausting Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Exhaust up to !M! cards from your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust up to !M! card from your hand."
   },
   "${modID}:Insightful Strike": {
     "NAME": "Insightful Strike",
@@ -72,7 +72,7 @@
   },
   "${modID}:Exhausting Defend": {
     "NAME": "Exhausting Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Exhaust up to !M! cards from your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust up to !M! card from your hand."
   },
   "${modID}:Frosty Defend": {
     "NAME": "Frosty Defend",
@@ -132,7 +132,7 @@
   },
   "${modID}:Neutralize": {
     "NAME": "Neutralize",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak. NL Apply !M! ${modID}:Target."
   },
   "${modID}:Bane": {
     "NAME": "Bane",
@@ -614,6 +614,18 @@
       "Deal !D! damage !M! times. NL Channel !M! Dark.",
       "Deal !D! damage !M! time. NL Channel !M! Dark."
     ]
+  },
+  "${modID}:Heel Hook": {
+    "NAME": "Heel Hook",
+    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL If the enemy has 2 or more debuffs, gain [E] ."
+  },
+  "${modID}:Clawing Strike": {
+    "NAME": "Clawing Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Increase the damage of ALL Attacks that cost 0 by !M! this combat."
+  },
+  "${modID}:Deflecting Defend": {
+    "NAME": "Deflecting Defend",
+    "DESCRIPTION": "Gain !B! Block. NL Increase the Block gained from ALL cost 0 cards by !M! this combat."
   }
 }
 

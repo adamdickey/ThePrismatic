@@ -21,7 +21,7 @@ public class BurningRing extends BaseRelic {
     }
     private static final int focus = 1;
     private static final int cards = 1;
-    private static final int heal = 3;
+    private static final int heal = 2;
     @Override
     public void atBattleStart() {
         flash();

@@ -25,7 +25,7 @@ public class Pray2 extends BaseCard {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         //These will be used in the constructor. Technically you can just use the values directly,
         //but constants at the top of the file are easy to adjust.
-        int baseMagicNumber = 3;
+        int baseMagicNumber = 2;
         int UPG_Number = 1;
         setMagic(baseMagicNumber, UPG_Number);
         this.cardsToPreview = new Insight();

@@ -1,17 +1,17 @@
 package prismaticmod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.Frost;
+import prismaticmod.powers.Accuracy2Power;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
-public class FrostyStrike extends BaseCard {
-    public static final String ID = makeID("Frosty Strike"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
+public class ClawingStrike extends BaseCard {
+    public static final String ID = makeID("Clawing Strike"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
     private static final CardStats info = new CardStats(
             ThePrismatic.Enums.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.
             CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -24,20 +24,19 @@ public class FrostyStrike extends BaseCard {
 
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 3;
-    private static final int frostNumber = 1;
-    private static final int UPG_Frost = 0;
+    private static final int clawNumber = 1;
+    private static final int UPG_claw = 0;
 
-    public FrostyStrike() {
+    public ClawingStrike() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
-        setMagic(frostNumber, UPG_Frost);
+        setMagic(clawNumber, UPG_claw);
         tags.add(CardTags.STRIKE);
-        tags.add(CardTags.STARTER_STRIKE);
+        //tags.add(CardTags.STARTER_STRIKE);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        for (int i = 0; i < this.magicNumber; i++)
-            addToBot(new ChannelAction(new Frost()));
+        addToBot(new ApplyPowerAction(p, p, new Accuracy2Power(magicNumber), magicNumber));
     }
 }

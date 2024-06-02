@@ -32,7 +32,7 @@ public class SadisticDefend extends BaseCard {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
         setCustomVar("Magic", Magic, UPG_Magic);
-        tags.add(CardTags.STARTER_DEFEND);
+        //tags.add(CardTags.STARTER_DEFEND);
         this.baseMagicNumber = 0;
         this.magicNumber = this.baseMagicNumber;
     }

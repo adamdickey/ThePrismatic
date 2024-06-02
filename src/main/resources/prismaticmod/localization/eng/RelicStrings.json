@@ -184,7 +184,8 @@
     "FLAVOR": "Emanates an infernal heat. The rarity swap is Baalorlord's fault.",
     "DESCRIPTIONS": [
       "At the start of your turn, gain #b",
-      " #yStrength and ALL enemies gain #b",
+      " #yStrength and #b",
+      " #yFocus, and ALL enemies gain #b",
       " #yStrength."
     ]
   },

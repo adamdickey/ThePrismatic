@@ -21,14 +21,14 @@ public class ExhaustingDefend extends BaseCard {
 
     private static final int BLOCK = 5;
     private static final int UPG_BLOCK = 3;
-    private static final int exhaustNumber = 2;
+    private static final int exhaustNumber = 1;
     private static final int UPG_Exhaust = 0;
 
     public ExhaustingDefend() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
         setMagic(exhaustNumber, UPG_Exhaust);
-        tags.add(CardTags.STARTER_DEFEND);
+        //tags.add(CardTags.STARTER_DEFEND);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

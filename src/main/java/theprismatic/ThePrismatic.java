@@ -142,13 +142,13 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Impervious());
         tmpPool.add(new InfernalBlade2());
         tmpPool.add(new Inflame());
-        tmpPool.add(new Intimidate2());
+        tmpPool.add(new Intimidate()); //Intimidate2
         tmpPool.add(new IronWave());
         tmpPool.add(new Juggernaut2());
         tmpPool.add(new LimitBreak2());
         //tmpPool.add(new Metallicize());
         tmpPool.add(new Offering());
-        tmpPool.add(new PerfectedStrike2());
+        tmpPool.add(new PerfectedStrike()); //PerfectedStrike2
         tmpPool.add(new PommelStrike());
         tmpPool.add(new PowerThrough());
         tmpPool.add(new Pummel());
@@ -216,7 +216,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Footwork());
         tmpPool.add(new GlassKnife());
         tmpPool.add(new GrandFinale2());
-        //tmpPool.add(new HeelHook());
+        tmpPool.add(new HeelHook2());
         tmpPool.add(new InfiniteBlades());
         tmpPool.add(new LegSweep());
         tmpPool.add(new Malaise());
@@ -237,14 +237,14 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Skewer());
         tmpPool.add(new Slice2());
         tmpPool.add(new SneakyStrike2());
-        tmpPool.add(new StormOfSteel2());
+        tmpPool.add(new StormOfSteel()); //StormOfSteel2
         tmpPool.add(new SuckerPunch());
         tmpPool.add(new Tactician2());
         tmpPool.add(new Terror());
         tmpPool.add(new ToolsOfTheTrade2());
         tmpPool.add(new Unload());
         tmpPool.add(new WellLaidPlans());
-        tmpPool.add(new WraithForm2());
+        tmpPool.add(new WraithForm()); //WraithForm2
         tmpPool.add(new Aggregate());
         tmpPool.add(new AllForOne());
         tmpPool.add(new Amplify());
@@ -252,11 +252,11 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new BallLightning());
         tmpPool.add(new Barrage2());
         tmpPool.add(new BeamCell());
-        tmpPool.add(new BiasedCognition2());
+        tmpPool.add(new BiasedCognition()); //BiasedCognition2
         tmpPool.add(new Blizzard2());
         tmpPool.add(new BootSequence());
         tmpPool.add(new Buffer());
-        tmpPool.add(new Capacitor2());
+        tmpPool.add(new Capacitor()); //Capacitor2
         tmpPool.add(new Multichaos()); //tmpPool.add(new Chaos());
         tmpPool.add(new Chill());
         tmpPool.add(new Claw2());
@@ -268,7 +268,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new CoreSurge());
         tmpPool.add(new CreativeAI());
         tmpPool.add(new Darkness2());
-        tmpPool.add(new Defragment2());
+        tmpPool.add(new Defragment()); //Defragment2
         tmpPool.add(new DoomWillBloom()); //tmpPool.add(new DoomAndGloom());
         tmpPool.add(new DoubleEnergy());
         tmpPool.add(new Dualcast2());
@@ -345,7 +345,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new FearNoEvil());
         tmpPool.add(new FlurryOfBlows());
         tmpPool.add(new FlyingSleeves());
-        tmpPool.add(new FollowUp2());
+        tmpPool.add(new FollowUp()); //FollowUp2
         //tmpPool.add(new ForeignInfluence());
         tmpPool.add(new Foresight());
         tmpPool.add(new Halt());
@@ -360,7 +360,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new MentalFortress2());
         tmpPool.add(new Nirvana2());
         tmpPool.add(new Omniscience());
-        tmpPool.add(new Perseverance2());
+        tmpPool.add(new Perseverance()); //Perseverance2
         tmpPool.add(new Pray2());
         tmpPool.add(new PressurePoints2());
         tmpPool.add(new Prostrate());
@@ -410,7 +410,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Madness());
         tmpPool.add(new Magnetism());
         tmpPool.add(new MasterOfStrategy());
-        //tmpPool.add(new Mayhem());
+        tmpPool.add(new Mayhem());
         tmpPool.add(new Metamorphosis());
         tmpPool.add(new MindBlast());
         tmpPool.add(new Panacea());
@@ -455,7 +455,9 @@ public class ThePrismatic extends CustomPlayer {
         //If you want multiple of the same card, you have to add it multiple times.
         retVal.add(Strike_Red.ID);
         retVal.add(Strike_Green.ID);
+        retVal.add(Strike_Blue.ID);
         retVal.add(Strike_Purple.ID);
+        retVal.add(Defend_Red.ID);
         retVal.add(Defend_Green.ID);
         retVal.add(Defend_Blue.ID);
         retVal.add(Defend_Watcher.ID);
@@ -467,14 +469,15 @@ public class ThePrismatic extends CustomPlayer {
     }
     public AbstractCard getPrismaticCard(){
         ArrayList<AbstractCard> prismaticCards = new ArrayList<>();
-        Collections.addAll(prismaticCards, new CunningStrike(), new DivineStrike(), new EmpoweringStrike(),
-                new EmptyStrike(), new ExhaustingStrike(), new FocusedStrike(), new FrostyStrike(),
+        Collections.addAll(prismaticCards, new ClawingStrike(),new CunningStrike(), new DivineStrike(),
+                new EmpoweringStrike(), new EmptyStrike(), new ExhaustingStrike(), new FocusedStrike(),
                 new LootingStrike(), new SadisticStrike(), new ScrapingStrike(), new ScryingStrike(),
                 new StormyStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike(),
-                new CunningDefend(), new DefendForOne(), new DivineDefend(), new EmpoweringDefend(),
-                new EmptyDefend(), new ExhaustingDefend(), new FocusedDefend(), new FrostyDefend(),
+                new CunningDefend(), new DefendForOne(), new DeflectingDefend(), new DivineDefend(),
+                new EmpoweringDefend(), new EmptyDefend(), new ExhaustingDefend(), new FocusedDefend(),
                 new LootingDefend(), new SadisticDefend(), new ScrapingDefend(), new ScryingDefend(),
                 new StormyDefend(), new TargetingDefend(), new ToxicDefend());
+        //new FrostyStrike(), new FrostyDefend(),
         Random rand = new Random();
         return prismaticCards.get(rand.nextInt(prismaticCards.size()));
     }

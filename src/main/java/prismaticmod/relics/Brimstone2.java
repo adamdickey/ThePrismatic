@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.FocusPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import theprismatic.ThePrismatic;
 
@@ -18,18 +19,21 @@ public class Brimstone2 extends BaseRelic {
 
     private static final int STR_AMT = 2;
 
+    private static final int FOCUS_AMT = 1;
+
     private static final int ENEMY_STR_AMT = 1;
 
     public Brimstone2() {
         super(ID, NAME, ThePrismatic.Enums.CARD_COLOR, RARITY, SOUND);
     }
 
-    public String getUpdatedDescription() {return this.DESCRIPTIONS[0] + STR_AMT + this.DESCRIPTIONS[1] + ENEMY_STR_AMT + this.DESCRIPTIONS[2];}
+    public String getUpdatedDescription() {return this.DESCRIPTIONS[0] + STR_AMT + this.DESCRIPTIONS[1] + FOCUS_AMT + this.DESCRIPTIONS[2] + ENEMY_STR_AMT + this.DESCRIPTIONS[3];}
 
     public void atTurnStart() {
         flash();
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, STR_AMT), STR_AMT));
+        addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FocusPower(AbstractDungeon.player, FOCUS_AMT), FOCUS_AMT));
         for (AbstractMonster m : (AbstractDungeon.getMonsters()).monsters)
             addToTop(new ApplyPowerAction(m, m, new StrengthPower(m, ENEMY_STR_AMT), ENEMY_STR_AMT));
     }

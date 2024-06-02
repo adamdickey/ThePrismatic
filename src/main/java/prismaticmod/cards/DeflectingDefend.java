@@ -1,15 +1,15 @@
 package prismaticmod.cards;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.Frost;
+import prismaticmod.powers.DeflectionPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
-public class FrostyDefend extends BaseCard {
-    public static final String ID = makeID("Frosty Defend"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
+public class DeflectingDefend extends BaseCard {
+    public static final String ID = makeID("Deflecting Defend"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
     private static final CardStats info = new CardStats(
             ThePrismatic.Enums.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.
             CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -22,19 +22,18 @@ public class FrostyDefend extends BaseCard {
 
     private static final int BLOCK = 5;
     private static final int UPG_BLOCK = 3;
-    private static final int frostNumber = 1;
-    private static final int UPG_Frost = 0;
+    private static final int deflectNumber = 1;
+    private static final int UPG_deflect = 0;
 
-    public FrostyDefend() {
+    public DeflectingDefend() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
-        setMagic(frostNumber, UPG_Frost);
-        tags.add(CardTags.STARTER_DEFEND);
+        setMagic(deflectNumber, UPG_deflect);
+        //tags.add(CardTags.STARTER_DEFEND);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        for (int i = 0; i < this.magicNumber; i++)
-            addToBot(new ChannelAction(new Frost()));
+        addToBot(new ApplyPowerAction(p, p, new DeflectionPower(magicNumber)));
     }
 }

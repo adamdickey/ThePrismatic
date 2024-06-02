@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.WeakPower;
+import prismaticmod.powers.TargetedPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -36,5 +37,6 @@ public class Neutralize2 extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         addToBot(new ApplyPowerAction(m, p, new WeakPower(m, this.magicNumber, false), this.magicNumber));
+        addToBot(new ApplyPowerAction(m, p, new TargetedPower(m, this.magicNumber), this.magicNumber));
     }
 }

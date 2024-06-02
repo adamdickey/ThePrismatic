@@ -11,7 +11,7 @@ public class FocusDownPower extends BasePower {
     public static final String ID = makeID("Focus Down");
 
     public FocusDownPower(int amount) {
-        super(ID, PowerType.BUFF, false, player, player, amount, true);
+        super(ID, PowerType.DEBUFF, false, player, player, amount, true);
         this.amount = amount;
     }
 

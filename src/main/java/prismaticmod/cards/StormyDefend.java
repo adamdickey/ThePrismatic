@@ -29,7 +29,7 @@ public class StormyDefend extends BaseCard {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
         setMagic(lightningNumber, UPG_Lightning);
-        tags.add(CardTags.STARTER_DEFEND);
+        //tags.add(CardTags.STARTER_DEFEND);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

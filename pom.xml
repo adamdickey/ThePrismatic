@@ -20,7 +20,7 @@
 
     <!-- This information will be displayed in ModTheSpire, the modded launcher. -->
     <name>The Prismatic</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <!-- Avoid using \ in this description, as they can cause the description to fail to load. -->
     <!-- If you really want to use them, you'll need to "escape" them by putting another one in front, like \\ -->
     <description>Adds the Prismatic character to the game.</description>

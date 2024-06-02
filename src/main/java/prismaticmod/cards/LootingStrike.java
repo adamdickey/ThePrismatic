@@ -25,14 +25,14 @@ public class LootingStrike extends BaseCard {
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 3;
     private static final int lootNumber = 1;
-    private static final int UPG_Loot = 1;
+    private static final int UPG_Loot = 0;
 
     public LootingStrike() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(lootNumber, UPG_Loot);
         tags.add(CardTags.STRIKE);
-        tags.add(CardTags.STARTER_STRIKE);
+        //tags.add(CardTags.STARTER_STRIKE);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

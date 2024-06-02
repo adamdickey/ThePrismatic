@@ -23,7 +23,7 @@ public class ExhaustingStrike extends BaseCard {
 
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 3;
-    private static final int exhaustNumber = 2;
+    private static final int exhaustNumber = 1;
     private static final int UPG_Exhaust = 0;
 
     public ExhaustingStrike() {
@@ -31,7 +31,7 @@ public class ExhaustingStrike extends BaseCard {
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(exhaustNumber, UPG_Exhaust);
         tags.add(CardTags.STRIKE);
-        tags.add(CardTags.STARTER_STRIKE);
+        //tags.add(CardTags.STARTER_STRIKE);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

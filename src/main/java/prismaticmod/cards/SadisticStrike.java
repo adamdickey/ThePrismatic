@@ -35,7 +35,7 @@ public class SadisticStrike extends BaseCard {
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setCustomVar("Magic", Magic, UPG_Magic);
         tags.add(CardTags.STRIKE);
-        tags.add(CardTags.STARTER_STRIKE);
+        //tags.add(CardTags.STARTER_STRIKE);
         this.baseMagicNumber = 0;
         this.magicNumber = this.baseMagicNumber;
     }

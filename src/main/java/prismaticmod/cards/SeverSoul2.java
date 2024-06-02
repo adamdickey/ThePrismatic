@@ -27,8 +27,8 @@ public class SeverSoul2 extends BaseCard {
     //These will be used in the constructor. Technically you can just use the values directly,
     //but constants at the top of the file are easy to adjust.
 
-    private static final int DAMAGE = 16;
-    private static final int UPG_DAMAGE = 6;
+    private static final int DAMAGE = 15;
+    private static final int UPG_DAMAGE = 5;
     private static final int mantraNumber = 1;
 
     public SeverSoul2() {

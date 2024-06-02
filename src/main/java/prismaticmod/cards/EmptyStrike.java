@@ -31,7 +31,7 @@ public class EmptyStrike extends BaseCard {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         tags.add(CardTags.STRIKE);
-        tags.add(CardTags.STARTER_STRIKE);
+        //tags.add(CardTags.STARTER_STRIKE);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
