@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -34,7 +35,7 @@ public class HeelHook2 extends BaseCard {
     public HeelHook2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         int baseDamage = 5;
-        int UPG_Damage = 3;
+        int UPG_Damage = 0;
         setDamage(baseDamage, UPG_Damage);
     }
 
@@ -56,7 +57,25 @@ public class HeelHook2 extends BaseCard {
             debuffs++;
         }
         if(debuffs >= 2){
+            if(this.upgraded){
+                addToBot(new GainEnergyAction(1));
+            }
             addToBot(new GainEnergyAction(1));
+        }
+    }
+    public void triggerOnGlowCheck() {
+        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
+            int debuffs = 0;
+            for(AbstractPower power : m.powers){
+                if(power.type == AbstractPower.PowerType.DEBUFF && !power.ID.equals("Shackled")){
+                    debuffs++;
+                }
+            }
+            if(debuffs >= 2){
+                this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+                break;
+            }
         }
     }
 }

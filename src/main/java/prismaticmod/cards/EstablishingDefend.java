@@ -1,14 +1,15 @@
 package prismaticmod.cards;
 
-import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
-public class ExhaustingDefend extends BaseCard {
-    public static final String ID = makeID("Exhausting Defend"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
+public class EstablishingDefend extends BaseCard {
+    public static final String ID = makeID("Establishing Defend"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
     private static final CardStats info = new CardStats(
             ThePrismatic.Enums.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.
             CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -21,18 +22,45 @@ public class ExhaustingDefend extends BaseCard {
 
     private static final int BLOCK = 5;
     private static final int UPG_BLOCK = 3;
-    private static final int exhaustNumber = 1;
-    private static final int UPG_Exhaust = 0;
+    private static final int Magic = 2;
+    private static final int UPG_Magic = 0;
 
-    public ExhaustingDefend() {
+    public EstablishingDefend() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
-        setMagic(exhaustNumber, UPG_Exhaust);
+        setCustomVar("Magic", Magic, UPG_Magic);
         //tags.add(CardTags.STARTER_DEFEND);
+        this.baseMagicNumber = 0;
+        this.magicNumber = this.baseMagicNumber;
     }
-    @Override
+    public void applyPowers() {
+        int realBaseBlock = this.baseBlock;
+        this.baseMagicNumber = findRetain();
+        this.baseBlock += this.baseMagicNumber;
+        super.applyPowers();
+        this.baseBlock = realBaseBlock;
+        this.isBlockModified = (this.block != this.baseBlock);
+    }
+    public void calculateCardDamage(AbstractMonster mo) {
+        this.baseMagicNumber = findRetain();
+        int realBaseBlock = this.baseBlock;
+        this.baseBlock += this.baseMagicNumber;
+        super.calculateCardDamage(mo);
+        this.baseBlock = realBaseBlock;
+        this.isBlockModified = (this.block != this.baseBlock);
+    }
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, p, block));
-        addToBot(new ExhaustAction(this.magicNumber, false, true, true));
+        this.block += this.magicNumber;
+        calculateCardDamage(m);
+        addToBot(new GainBlockAction(p, p, this.block));
+    }
+    private int findRetain(){
+        int retainCards = 0;
+        for(AbstractCard c : AbstractDungeon.player.hand.group){
+            if (c.selfRetain) {
+                retainCards++;
+            }
+        }
+        return customVar("Magic")* retainCards;
     }
 }

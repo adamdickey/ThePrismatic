@@ -9,8 +9,7 @@
   },
   "${modID}:Looting Strike": {
     "NAME": "Looting Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card, then discard !M! card.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw !M! cards, then discard !M! cards."
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card, then discard !M! card."
   },
   "${modID}:Retaining Strike": {
     "NAME": "Retaining Strike",
@@ -31,7 +30,7 @@
   },
   "${modID}:Exhausting Strike": {
     "NAME": "Exhausting Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Exhaust up to !M! card from your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust up to !M! card in your hand."
   },
   "${modID}:Insightful Strike": {
     "NAME": "Insightful Strike",
@@ -72,7 +71,7 @@
   },
   "${modID}:Exhausting Defend": {
     "NAME": "Exhausting Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Exhaust up to !M! card from your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust up to !M! card in your hand."
   },
   "${modID}:Frosty Defend": {
     "NAME": "Frosty Defend",
@@ -84,8 +83,7 @@
   },
   "${modID}:Looting Defend": {
     "NAME": "Looting Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card, then discard !M! card.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !M! cards, then discard !M! cards."
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card, then discard !M! card."
   },
   "${modID}:Retaining Defend": {
     "NAME": "Retaining Defend",
@@ -282,7 +280,7 @@
   },
   "${modID}:Perseverance": {
     "NAME": "Perseverance",
-    "DESCRIPTION": "Retain. NL Gain !B! Block. When Retained, increase its Block by !M!."
+    "DESCRIPTION": "Retain. NL Gain !B! Block. NL When Retained, increase its Block by !M! this combat."
   },
   "${modID}:Strike for One": {
     "NAME": "Strike for One",
@@ -470,13 +468,11 @@
   },
   "${modID}:Empowering Defend": {
     "NAME": "Empowering Defend",
-    "DESCRIPTION": "Gain !B! Block. NL The next Power you play this turn costs 1 less.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL The next !M! Powers you play this turn cost 1 less."
+    "DESCRIPTION": "Gain !B! Block. NL The next Power you play this turn costs 1 less."
   },
   "${modID}:Empowering Strike": {
     "NAME": "Empowering Strike",
-    "DESCRIPTION": "Deal !D! damage. NL The next Power you play this turn costs 1 less.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL The next !M! Powers you play this turn cost 1 less."
+    "DESCRIPTION": "Deal !D! damage. NL The next Power you play this turn costs 1 less."
   },
   "${modID}:Doom Will Bloom": {
     "NAME": "Doom Will Bloom",
@@ -517,7 +513,7 @@
   "${modID}:Echo Form": {
     "NAME": "Echo Form",
     "DESCRIPTION": "Ethereal. NL The first card you play each turn is played twice.",
-    "UPGRADE_DESCRIPTION": "The first card you play each turn is played twice."
+    "UPGRADE_DESCRIPTION": "Retain. NL The first card you play each turn is played twice."
   },
   "${modID}:Multichaos": {
     "NAME": "Multi-Chaos",
@@ -617,7 +613,8 @@
   },
   "${modID}:Heel Hook": {
     "NAME": "Heel Hook",
-    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL If the enemy has 2 or more debuffs, gain [E] ."
+    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL If the enemy has NL 2 or more debuffs, NL gain [E] .",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL If the enemy has NL 2 or more debuffs, NL gain [E] [E] ."
   },
   "${modID}:Clawing Strike": {
     "NAME": "Clawing Strike",
@@ -626,6 +623,22 @@
   "${modID}:Deflecting Defend": {
     "NAME": "Deflecting Defend",
     "DESCRIPTION": "Gain !B! Block. NL Increase the Block gained from ALL cost 0 cards by !M! this combat."
+  },
+  "${modID}:Bash": {
+    "NAME": "Bash",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Apply !M! ${modID}:Target."
+  },
+  "${modID}:Survivor": {
+    "NAME": "Survivor",
+    "DESCRIPTION": "Gain !B! Block. NL Discard 1 card. NL If a Status or Curse is discarded, Exhaust it and draw !M! cards."
+  },
+  "${modID}:Establishing Strike": {
+    "NAME": "Establishing Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Deals !${modID}:Magic! additional damage for each card in your hand with Retain."
+  },
+  "${modID}:Establishing Defend": {
+    "NAME": "Establishing Defend",
+    "DESCRIPTION": "Gain !B! Block. NL Gains !${modID}:Magic! additional Block for each card in your hand with Retain."
   }
 }
 

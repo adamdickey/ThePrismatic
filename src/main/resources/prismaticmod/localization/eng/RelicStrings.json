@@ -166,7 +166,7 @@
     "NAME": "Mummified Hand",
     "FLAVOR": "Frequently twitches, especially when your pulse is high.",
     "DESCRIPTIONS": [
-      "Whenever you play a #yPower card, a random card in your hand costs 0 that turn."
+      "Whenever you play your first #yPower card each turn, draw 1 card. Whenever you play a #yPower card, a random card in your hand costs 0 that turn."
     ]
   },
   "${modID}:Small House": {

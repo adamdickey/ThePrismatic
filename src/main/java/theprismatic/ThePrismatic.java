@@ -104,6 +104,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Anger());
         tmpPool.add(new Armaments());
         tmpPool.add(new Barricade());
+        tmpPool.add(new Bash2());
         tmpPool.add(new BattleTrance());
         tmpPool.add(new Berserk2());
         tmpPool.add(new BloodForBlood());
@@ -142,13 +143,13 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Impervious());
         tmpPool.add(new InfernalBlade2());
         tmpPool.add(new Inflame());
-        tmpPool.add(new Intimidate()); //Intimidate2
+        tmpPool.add(new Intimidate());
         tmpPool.add(new IronWave());
         tmpPool.add(new Juggernaut2());
         tmpPool.add(new LimitBreak2());
         //tmpPool.add(new Metallicize());
         tmpPool.add(new Offering());
-        tmpPool.add(new PerfectedStrike()); //PerfectedStrike2
+        tmpPool.add(new PerfectedStrike());
         tmpPool.add(new PommelStrike());
         tmpPool.add(new PowerThrough());
         tmpPool.add(new Pummel());
@@ -237,14 +238,15 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Skewer());
         tmpPool.add(new Slice2());
         tmpPool.add(new SneakyStrike2());
-        tmpPool.add(new StormOfSteel()); //StormOfSteel2
+        tmpPool.add(new StormOfSteel());
         tmpPool.add(new SuckerPunch());
+        tmpPool.add(new Survivor2());
         tmpPool.add(new Tactician2());
         tmpPool.add(new Terror());
         tmpPool.add(new ToolsOfTheTrade2());
         tmpPool.add(new Unload());
         tmpPool.add(new WellLaidPlans());
-        tmpPool.add(new WraithForm()); //WraithForm2
+        tmpPool.add(new WraithForm2());
         tmpPool.add(new Aggregate());
         tmpPool.add(new AllForOne());
         tmpPool.add(new Amplify());
@@ -252,11 +254,11 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new BallLightning());
         tmpPool.add(new Barrage2());
         tmpPool.add(new BeamCell());
-        tmpPool.add(new BiasedCognition()); //BiasedCognition2
+        tmpPool.add(new BiasedCognition2());
         tmpPool.add(new Blizzard2());
         tmpPool.add(new BootSequence());
         tmpPool.add(new Buffer());
-        tmpPool.add(new Capacitor()); //Capacitor2
+        tmpPool.add(new Capacitor());
         tmpPool.add(new Multichaos()); //tmpPool.add(new Chaos());
         tmpPool.add(new Chill());
         tmpPool.add(new Claw2());
@@ -268,7 +270,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new CoreSurge());
         tmpPool.add(new CreativeAI());
         tmpPool.add(new Darkness2());
-        tmpPool.add(new Defragment()); //Defragment2
+        tmpPool.add(new Defragment());
         tmpPool.add(new DoomWillBloom()); //tmpPool.add(new DoomAndGloom());
         tmpPool.add(new DoubleEnergy());
         tmpPool.add(new Dualcast2());
@@ -345,7 +347,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new FearNoEvil());
         tmpPool.add(new FlurryOfBlows());
         tmpPool.add(new FlyingSleeves());
-        tmpPool.add(new FollowUp()); //FollowUp2
+        tmpPool.add(new FollowUp());
         //tmpPool.add(new ForeignInfluence());
         tmpPool.add(new Foresight());
         tmpPool.add(new Halt());
@@ -360,7 +362,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new MentalFortress2());
         tmpPool.add(new Nirvana2());
         tmpPool.add(new Omniscience());
-        tmpPool.add(new Perseverance()); //Perseverance2
+        tmpPool.add(new Perseverance2());
         tmpPool.add(new Pray2());
         tmpPool.add(new PressurePoints2());
         tmpPool.add(new Prostrate());
@@ -461,25 +463,41 @@ public class ThePrismatic extends CustomPlayer {
         retVal.add(Defend_Green.ID);
         retVal.add(Defend_Blue.ID);
         retVal.add(Defend_Watcher.ID);
-        retVal.add(Bash.ID);
-        retVal.add(Survivor.ID);
         retVal.add(Zap.ID);
-        retVal.add(getPrismaticCard().cardID);
+        retVal.add(getPrismaticCards().get(0).cardID);
+        retVal.add(getPrismaticCards().get(1).cardID);
         return retVal;
     }
     public AbstractCard getPrismaticCard(){
         ArrayList<AbstractCard> prismaticCards = new ArrayList<>();
-        Collections.addAll(prismaticCards, new ClawingStrike(),new CunningStrike(), new DivineStrike(),
-                new EmpoweringStrike(), new EmptyStrike(), new ExhaustingStrike(), new FocusedStrike(),
+        Collections.addAll(prismaticCards, new ClawingStrike(), new CunningStrike(), new DivineStrike(),
+                new EmpoweringStrike(), new EmptyStrike(), new EstablishingStrike(), new FocusedStrike(),
                 new LootingStrike(), new SadisticStrike(), new ScrapingStrike(), new ScryingStrike(),
                 new StormyStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike(),
                 new CunningDefend(), new DefendForOne(), new DeflectingDefend(), new DivineDefend(),
-                new EmpoweringDefend(), new EmptyDefend(), new ExhaustingDefend(), new FocusedDefend(),
+                new EmpoweringDefend(), new EmptyDefend(), new EstablishingDefend(), new FocusedDefend(),
                 new LootingDefend(), new SadisticDefend(), new ScrapingDefend(), new ScryingDefend(),
                 new StormyDefend(), new TargetingDefend(), new ToxicDefend());
-        //new FrostyStrike(), new FrostyDefend(),
         Random rand = new Random();
         return prismaticCards.get(rand.nextInt(prismaticCards.size()));
+    }
+    public ArrayList<AbstractCard> getPrismaticCards(){
+        ArrayList<AbstractCard> prismaticStrikes = new ArrayList<>();
+        ArrayList<AbstractCard> prismaticDefends = new ArrayList<>();
+        Collections.addAll(prismaticStrikes, new ClawingStrike(), new CunningStrike(), new DivineStrike(),
+                new EmpoweringStrike(), new EmptyStrike(), new EstablishingStrike(), new FocusedStrike(),
+                new LootingStrike(), new SadisticStrike(), new ScrapingStrike(), new ScryingStrike(),
+                new StormyStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike());
+        Collections.addAll(prismaticDefends, new DeflectingDefend(), new CunningDefend(), new DivineDefend(),
+                new EmpoweringDefend(), new EmptyDefend(), new EstablishingDefend(), new FocusedDefend(),
+                new LootingDefend(), new SadisticDefend(), new ScrapingDefend(), new ScryingDefend(),
+                new StormyDefend(), new DefendForOne(), new TargetingDefend(), new ToxicDefend());
+        ArrayList<Integer> cardNums = new ArrayList<>();
+        for (int i=1; i<prismaticStrikes.size(); i++) cardNums.add(i);
+        Collections.shuffle(cardNums);
+        ArrayList<AbstractCard> cardList = new ArrayList<>();
+        Collections.addAll(cardList, prismaticStrikes.get(cardNums.get(0)), prismaticDefends.get(cardNums.get(0)));
+        return cardList;
     }
 
     @Override

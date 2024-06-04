@@ -1,5 +1,6 @@
 package prismaticmod.relics;
 
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -19,12 +20,20 @@ public class MummifiedHand2 extends BaseRelic {
     public MummifiedHand2() {
         super(ID, NAME, ThePrismatic.Enums.CARD_COLOR, RARITY, SOUND);
     }
+    boolean powerPlayed = false;
 
     public String getUpdatedDescription() {
         return this.DESCRIPTIONS[0];
     }
+    public void atTurnStart() {
+        powerPlayed = false;
+    }
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == AbstractCard.CardType.POWER) {
+            if(!powerPlayed){
+                addToBot(new DrawCardAction(1));
+                powerPlayed = true;
+            }
             flash();
             addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             ArrayList<AbstractCard> groupCopy = new ArrayList<>();

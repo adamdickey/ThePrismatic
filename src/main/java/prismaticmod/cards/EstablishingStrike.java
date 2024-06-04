@@ -2,15 +2,16 @@ package prismaticmod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
-public class ExhaustingStrike extends BaseCard {
-    public static final String ID = makeID("Exhausting Strike"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
+public class EstablishingStrike extends BaseCard {
+    public static final String ID = makeID("Establishing Strike"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
     private static final CardStats info = new CardStats(
             ThePrismatic.Enums.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.
             CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -23,21 +24,46 @@ public class ExhaustingStrike extends BaseCard {
 
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 3;
-    private static final int exhaustNumber = 1;
-    private static final int UPG_Exhaust = 0;
+    private static final int Magic = 2;
+    private static final int UPG_Magic = 0;
 
-    public ExhaustingStrike() {
+    public EstablishingStrike() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
-        setMagic(exhaustNumber, UPG_Exhaust);
+        setCustomVar("Magic", Magic, UPG_Magic);
         tags.add(CardTags.STRIKE);
         //tags.add(CardTags.STARTER_STRIKE);
+        this.baseMagicNumber = 0;
+        this.magicNumber = this.baseMagicNumber;
     }
-    @Override
+    public void applyPowers() {
+        int realBaseDamage = this.baseDamage;
+        this.baseMagicNumber = findRetain();
+        this.baseDamage += this.baseMagicNumber;
+        super.applyPowers();
+        this.baseDamage = realBaseDamage;
+        this.isDamageModified = (this.damage != this.baseDamage);
+    }
+    public void calculateCardDamage(AbstractMonster mo) {
+        this.baseMagicNumber = findRetain();
+        int realBaseDamage = this.baseDamage;
+        this.baseDamage += this.baseMagicNumber;
+        super.calculateCardDamage(mo);
+        this.baseDamage = realBaseDamage;
+        this.isDamageModified = (this.damage != this.baseDamage);
+    }
     public void use(AbstractPlayer p, AbstractMonster m) {
+        this.damage += this.magicNumber;
+        calculateCardDamage(m);
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot(new ExhaustAction(this.magicNumber, false, true, true));
+    }
+    private int findRetain(){
+        int retainCards = 0;
+        for(AbstractCard c : AbstractDungeon.player.hand.group){
+            if (c.selfRetain) {
+                retainCards++;
+            }
+        }
+        return customVar("Magic")* retainCards;
     }
 }
-
-
