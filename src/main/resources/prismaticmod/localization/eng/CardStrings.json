@@ -632,13 +632,17 @@
     "NAME": "Survivor",
     "DESCRIPTION": "Gain !B! Block. NL Discard 1 card. NL If a Status or Curse is discarded, Exhaust it and draw !M! cards."
   },
-  "${modID}:Establishing Strike": {
-    "NAME": "Establishing Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Deals !${modID}:Magic! additional damage for each card in your hand with Retain."
+  "${modID}:Established Strike": {
+    "NAME": "Established Strike",
+    "DESCRIPTION": "Deal !D! damage. NL If a card in your hand has Retain, draw 1 card."
   },
-  "${modID}:Establishing Defend": {
-    "NAME": "Establishing Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Gains !${modID}:Magic! additional Block for each card in your hand with Retain."
+  "${modID}:Established Defend": {
+    "NAME": "Established Defend",
+    "DESCRIPTION": "Gain !B! Block. NL If a card in your hand has Retain, draw 1 card."
+  },
+  "${modID}:Wreath of Flame": {
+    "NAME": "Wreath of Flame",
+    "DESCRIPTION": "Your next Attack deals !M! additional damage. NL Gain !${modID}:Focus! temporary Focus."
   }
 }
 

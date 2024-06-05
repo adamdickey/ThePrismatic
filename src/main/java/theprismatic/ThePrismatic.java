@@ -392,7 +392,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new WindmillStrike());
         tmpPool.add(new Wish());
         tmpPool.add(new Worship());
-        tmpPool.add(new WreathOfFlame());
+        tmpPool.add(new WreathOfFlame2());
         //tmpPool.add(new Apotheosis());
         tmpPool.add(new BandageUp());
         tmpPool.add(new Blind());
@@ -471,11 +471,11 @@ public class ThePrismatic extends CustomPlayer {
     public AbstractCard getPrismaticCard(){
         ArrayList<AbstractCard> prismaticCards = new ArrayList<>();
         Collections.addAll(prismaticCards, new ClawingStrike(), new CunningStrike(), new DivineStrike(),
-                new EmpoweringStrike(), new EmptyStrike(), new EstablishingStrike(), new FocusedStrike(),
+                new EmpoweringStrike(), new EmptyStrike(), new EstablishedStrike(), new FocusedStrike(),
                 new LootingStrike(), new SadisticStrike(), new ScrapingStrike(), new ScryingStrike(),
                 new StormyStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike(),
                 new CunningDefend(), new DefendForOne(), new DeflectingDefend(), new DivineDefend(),
-                new EmpoweringDefend(), new EmptyDefend(), new EstablishingDefend(), new FocusedDefend(),
+                new EmpoweringDefend(), new EmptyDefend(), new EstablishedDefend(), new FocusedDefend(),
                 new LootingDefend(), new SadisticDefend(), new ScrapingDefend(), new ScryingDefend(),
                 new StormyDefend(), new TargetingDefend(), new ToxicDefend());
         Random rand = new Random();
@@ -485,11 +485,11 @@ public class ThePrismatic extends CustomPlayer {
         ArrayList<AbstractCard> prismaticStrikes = new ArrayList<>();
         ArrayList<AbstractCard> prismaticDefends = new ArrayList<>();
         Collections.addAll(prismaticStrikes, new ClawingStrike(), new CunningStrike(), new DivineStrike(),
-                new EmpoweringStrike(), new EmptyStrike(), new EstablishingStrike(), new FocusedStrike(),
+                new EmpoweringStrike(), new EmptyStrike(), new EstablishedStrike(), new FocusedStrike(),
                 new LootingStrike(), new SadisticStrike(), new ScrapingStrike(), new ScryingStrike(),
                 new StormyStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike());
         Collections.addAll(prismaticDefends, new DeflectingDefend(), new CunningDefend(), new DivineDefend(),
-                new EmpoweringDefend(), new EmptyDefend(), new EstablishingDefend(), new FocusedDefend(),
+                new EmpoweringDefend(), new EmptyDefend(), new EstablishedDefend(), new FocusedDefend(),
                 new LootingDefend(), new SadisticDefend(), new ScrapingDefend(), new ScryingDefend(),
                 new StormyDefend(), new DefendForOne(), new TargetingDefend(), new ToxicDefend());
         ArrayList<Integer> cardNums = new ArrayList<>();

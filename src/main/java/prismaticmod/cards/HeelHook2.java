@@ -58,9 +58,10 @@ public class HeelHook2 extends BaseCard {
         }
         if(debuffs >= 2){
             if(this.upgraded){
+                addToBot(new GainEnergyAction(2));
+            } else {
                 addToBot(new GainEnergyAction(1));
             }
-            addToBot(new GainEnergyAction(1));
         }
     }
     public void triggerOnGlowCheck() {

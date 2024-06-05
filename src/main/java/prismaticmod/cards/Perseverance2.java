@@ -18,9 +18,9 @@ public class Perseverance2 extends BaseCard {
     //These will be used in the constructor. Technically you can just use the values directly,
     //but constants at the top of the file are easy to adjust.
 
-    private static final int BLOCK = 2;
-    private static final int UPG_BLOCK = 1;
-    private static final int baseMagicNumber = 2;
+    private static final int BLOCK = 3;
+    private static final int UPG_BLOCK = 0;
+    private static final int baseMagicNumber = 1;
     private static final int UPG_Number = 1;
 
     public Perseverance2() {
