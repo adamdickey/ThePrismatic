@@ -2,7 +2,7 @@ package prismaticmod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -30,13 +30,14 @@ public class EstablishedStrike extends BaseCard {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         tags.add(CardTags.STRIKE);
+        this.selfRetain = true;
         //tags.add(CardTags.STARTER_STRIKE);
     }
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c.selfRetain) {
-                addToBot(new DrawCardAction(1));
+                addToBot(new GainEnergyAction(1));
                 break;
             }
         }

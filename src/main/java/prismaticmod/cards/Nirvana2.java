@@ -21,7 +21,7 @@ public class Nirvana2 extends BaseCard {
     //but constants at the top of the file are easy to adjust.
     public Nirvana2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
-        int baseMagicNumber = 2;
+        int baseMagicNumber = 3;
         int UPG_Number = 1;
         setMagic(baseMagicNumber, UPG_Number);
     }

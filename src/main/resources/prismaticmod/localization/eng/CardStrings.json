@@ -152,7 +152,8 @@
   },
   "${modID}:Storm": {
     "NAME": "Storm",
-    "DESCRIPTION": "Innate. NL Whenever you play a Power card, Channel 1 Lightning."
+    "DESCRIPTION": "Whenever you play a Power card or ${modID}:Mill any number of cards, Channel 1 Lightning.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a Power card or ${modID}:Mill any number of cards, Channel 1 Lightning."
   },
   "${modID}:Streamline": {
     "NAME": "Streamline",
@@ -228,11 +229,11 @@
   },
   "${modID}:Eruption": {
     "NAME": "Eruption",
-    "DESCRIPTION": "Deal !D! damage. NL Enter Wrath."
+    "DESCRIPTION": "Deal !D! damage. NL Enter Wrath. NL If this card is ${modID}:Milled, enter Wrath."
   },
   "${modID}:Vigilance": {
     "NAME": "Vigilance",
-    "DESCRIPTION": "Gain !B! Block. NL Enter Calm."
+    "DESCRIPTION": "Gain !B! Block. NL Enter Calm. NL If this card is ${modID}:Milled, enter Calm."
   },
   "${modID}:Blade Dance": {
     "NAME": "Blade Dance",
@@ -630,19 +631,24 @@
   },
   "${modID}:Survivor": {
     "NAME": "Survivor",
-    "DESCRIPTION": "Gain !B! Block. NL Discard 1 card. NL If a Status or Curse is discarded, Exhaust it and draw !M! cards."
+    "DESCRIPTION": "Gain !B! Block. NL Discard 1 card. NL If a Status or Curse is discarded, Exhaust it and draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Discard 1 card. NL If a Status or Curse is discarded, Exhaust it and draw !M! cards."
   },
   "${modID}:Established Strike": {
     "NAME": "Established Strike",
-    "DESCRIPTION": "Deal !D! damage. NL If a card in your hand has Retain, draw 1 card."
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL If another card in your hand has Retain, gain [E] ."
   },
   "${modID}:Established Defend": {
     "NAME": "Established Defend",
-    "DESCRIPTION": "Gain !B! Block. NL If a card in your hand has Retain, draw 1 card."
+    "DESCRIPTION": "Retain. NL Gain !B! Block. NL If another card in your hand has Retain, gain [E] ."
   },
   "${modID}:Wreath of Flame": {
     "NAME": "Wreath of Flame",
     "DESCRIPTION": "Your next Attack deals !M! additional damage. NL Gain !${modID}:Focus! temporary Focus."
+  },
+  "${modID}:Halt": {
+    "NAME": "Halt",
+    "DESCRIPTION": "Gain !B! Block. NL If you are in a Stance, gain !M! additional Block."
   }
 }
 

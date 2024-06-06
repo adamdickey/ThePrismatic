@@ -33,6 +33,9 @@ public class Eruption2 extends BaseCard {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
         addToBot(new ChangeStanceAction("Wrath"));
     }
+    public void triggerOnManualDiscard() {
+        addToBot(new ChangeStanceAction("Wrath"));
+    }
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();

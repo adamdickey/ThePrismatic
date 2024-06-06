@@ -1,7 +1,7 @@
 package prismaticmod.cards;
 
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -27,13 +27,14 @@ public class EstablishedDefend extends BaseCard {
     public EstablishedDefend() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
+        this.selfRetain = true;
         //tags.add(CardTags.STARTER_DEFEND);
     }
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, this.block));
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c.selfRetain) {
-                addToBot(new DrawCardAction(1));
+                addToBot(new GainEnergyAction(1));
                 break;
             }
         }

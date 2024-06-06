@@ -141,5 +141,12 @@
       "Cost 0 cards give #b",
       " additional #yBlock."
     ]
+  },
+  "${modID}:Storm": {
+    "NAME": "Storm",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yPower card or #yMill any number of cards, #yChannel #b",
+      " #yLightning."
+    ]
   }
 }

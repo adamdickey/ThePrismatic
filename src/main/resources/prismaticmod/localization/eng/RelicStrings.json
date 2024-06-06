@@ -219,5 +219,12 @@
     "DESCRIPTIONS": [
       "Whenever you apply a debuff to an enemy, apply #b1 more."
     ]
+  },
+  "${modID}:The Boot": {
+    "NAME": "The Boot",
+    "FLAVOR": "When wound up, the boot grows larger in size.",
+    "DESCRIPTIONS": [
+      "Whenever you would deal less than #b5 unblocked Attack damage, apply Poison equal to the difference."
+    ]
   }
 }

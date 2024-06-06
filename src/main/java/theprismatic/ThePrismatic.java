@@ -350,7 +350,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new FollowUp());
         //tmpPool.add(new ForeignInfluence());
         tmpPool.add(new Foresight());
-        tmpPool.add(new Halt());
+        tmpPool.add(new Halt2());
         tmpPool.add(new Indignation());
         tmpPool.add(new InnerPeace());
         tmpPool.add(new Judgement());
@@ -496,7 +496,7 @@ public class ThePrismatic extends CustomPlayer {
         for (int i=1; i<prismaticStrikes.size(); i++) cardNums.add(i);
         Collections.shuffle(cardNums);
         ArrayList<AbstractCard> cardList = new ArrayList<>();
-        Collections.addAll(cardList, prismaticStrikes.get(cardNums.get(0)), prismaticDefends.get(cardNums.get(0)));
+        Collections.addAll(cardList, prismaticStrikes.get(cardNums.get(0)), prismaticDefends.get(cardNums.get(1)));
         return cardList;
     }
 

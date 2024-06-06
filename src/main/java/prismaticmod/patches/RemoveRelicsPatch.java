@@ -22,7 +22,7 @@ public class RemoveRelicsPatch {
             //relicsToRemoveOnStart.add(HandDrill.ID);
             relicsToRemoveOnStart.add(PrismaticShard.ID);
             //relicsToRemoveOnStart.add(Cauldron.ID);
-            //relicsToRemoveOnStart.add(Boot.ID);
+            relicsToRemoveOnStart.add(Boot.ID);
             relicsToRemoveOnStart.add(CeramicFish.ID);
             relicsToRemoveOnStart.add(DuVuDoll.ID);
             relicsToRemoveOnStart.add(DarkstonePeriapt.ID);
