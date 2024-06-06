@@ -23,6 +23,7 @@ public class Storm2Power extends BasePower {
     }
 
     int cardsDiscarded = 0;
+    boolean cardPlayed = false;
     boolean endOfTurn = false;
     @Override
     public void onInitialApplication() {
@@ -30,35 +31,29 @@ public class Storm2Power extends BasePower {
     }
     public void atStartOfTurn(){
         cardsDiscarded = 0;
+        cardPlayed = true;
         endOfTurn = false;
     }
     public void atEndOfTurnPreEndTurnCards(boolean isPlayer) {
         endOfTurn = true;
     }
-    public void onAfterUseCard(AbstractCard card, UseCardAction action) {
-        if(GameActionManager.totalDiscardedThisTurn > cardsDiscarded && !endOfTurn){
+    public void onDrawOrDiscard(){
+        if (GameActionManager.totalDiscardedThisTurn > cardsDiscarded && !endOfTurn && cardPlayed) {
             flash();
-            for (int i = 0; i < this.amount; i++){
+            for (int i = 0; i < this.amount; i++) {
                 addToBot(new ChannelAction(new Lightning()));
             }
+            cardPlayed = false;
         }
         cardsDiscarded = GameActionManager.totalDiscardedThisTurn;
     }
-    public void atStartOfTurnPostDraw() {
-        if(GameActionManager.totalDiscardedThisTurn > cardsDiscarded && !endOfTurn){
-            flash();
-            for (int i = 0; i < this.amount; i++){
-                addToBot(new ChannelAction(new Lightning()));
-            }
-        }
-        cardsDiscarded = GameActionManager.totalDiscardedThisTurn;
-    }
-
-    public void onUseCard(AbstractCard card, UseCardAction action) {
+    public void onUseCard(AbstractCard card, UseCardAction action){
+        cardPlayed = true;
         if (card.type == AbstractCard.CardType.POWER && this.amount > 0) {
             flash();
             for (int i = 0; i < this.amount; i++)
                 addToBot(new ChannelAction(new Lightning()));
         }
+        cardsDiscarded = GameActionManager.totalDiscardedThisTurn;
     }
 }
