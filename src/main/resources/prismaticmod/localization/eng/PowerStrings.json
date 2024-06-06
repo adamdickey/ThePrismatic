@@ -124,7 +124,7 @@
   "${modID}:Mental Fortress": {
     "NAME": "Mental Fortress",
     "DESCRIPTIONS": [
-      "Whenever you change #yStances or create a card during combat, gain #b",
+      "Whenever you change #yStances or play a #yPower card, gain #b",
       " #yBlock."
     ]
   },
@@ -147,6 +147,21 @@
     "DESCRIPTIONS": [
       "Whenever you play a #yPower card or #yMill any number of cards, #yChannel #b",
       " #yLightning."
+    ]
+  },
+  "${modID}:Metallic Faith": {
+    "NAME": "Metallic Faith",
+    "DESCRIPTIONS": [
+      "At the end of your turn, gain #yBlock equal to your #yMantra.",
+      "At the end of your turn, gain #yBlock equal to #b",
+      " times your #yMantra."
+    ]
+  },
+  "${modID}:Rupture": {
+    "NAME": "Rupture",
+    "DESCRIPTIONS": [
+      "Whenever you lose HP from a card or play a #yPower card, gain #b",
+      " #yStrength."
     ]
   }
 }

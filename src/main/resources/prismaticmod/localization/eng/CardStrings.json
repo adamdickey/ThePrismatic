@@ -540,7 +540,7 @@
   },
   "${modID}:Mental Fortress": {
     "NAME": "Mental Fortress",
-    "DESCRIPTION": "Whenever you change Stances or create a card during combat, gain !M! Block."
+    "DESCRIPTION": "Whenever you change Stances or play a Power card, gain !M! Block."
   },
   "${modID}:Searing Blow": {
     "NAME": "Searing Blow",
@@ -649,6 +649,19 @@
   "${modID}:Halt": {
     "NAME": "Halt",
     "DESCRIPTION": "Gain !B! Block. NL If you are in a Stance, gain !M! additional Block."
+  },
+  "${modID}:Sentinel": {
+    "NAME": "Sentinel",
+    "DESCRIPTION": "Gain !B! Block. NL If this card is ${modID}:Milled, Exhaust it and NL gain [E] [E] .",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If this card is ${modID}:Milled, Exhaust it and NL gain [E] [E] [E] ."
+  },
+  "${modID}:Metallic Faith": {
+    "NAME": "Metallic Faith",
+    "DESCRIPTION": "Gain !M! Mantra. NL At the end of your turn, gain Block equal to your Mantra."
+  },
+  "${modID}:Rupture": {
+    "NAME": "Rupture",
+    "DESCRIPTION": "Whenever you lose HP from a card or play a Power card, gain !M! Strength."
   }
 }
 
