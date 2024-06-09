@@ -516,10 +516,10 @@
     "DESCRIPTION": "Ethereal. NL The first card you play each turn is played twice.",
     "UPGRADE_DESCRIPTION": "Retain. NL The first card you play each turn is played twice."
   },
-  "${modID}:Multichaos": {
+  "${modID}:Multi-Chaos": {
     "NAME": "Multi-Chaos",
-    "DESCRIPTION": "If you have an empty Orb slot, Channel 1 random Orb. NL Evoke your next Orb X times.",
-    "UPGRADE_DESCRIPTION": "If you have an empty Orb slot, Channel 1 random Orb. NL Evoke your next Orb X+1 times."
+    "DESCRIPTION": "Evoke your next Orb X times. NL Channel X random Orbs.",
+    "UPGRADE_DESCRIPTION": "Evoke your next Orb X+1 times. NL Channel X+1 random Orbs."
   },
   "${modID}:Limit Break": {
     "NAME": "Limit Break",
@@ -675,10 +675,9 @@
     "NAME": "Signature Move",
     "DESCRIPTION": "Retain. NL Can only be played if this is the only Attack in your hand. NL Deal !D! damage."
   },
-  "${modID}:Multi-Cast": {
-    "NAME": "Multi-Cast",
-    "DESCRIPTION": "Evoke your next Orb X times. NL Put X random cost 0 cards from your draw pile into your hand.",
-    "UPGRADE_DESCRIPTION": "Evoke your next Orb X+1 times. NL Put X+1 random cost 0 cards from your draw pile into your hand."
+  "${modID}:One for All": {
+    "NAME": "One for All",
+    "DESCRIPTION": "Gain !B! Block. NL Put all cost 0 cards from your draw pile into your hand."
   }
 }
 

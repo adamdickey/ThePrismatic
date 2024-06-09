@@ -259,7 +259,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new BootSequence());
         tmpPool.add(new Buffer());
         tmpPool.add(new Capacitor());
-        tmpPool.add(new Chaos()); //tmpPool.add(new Chaos());
+        //tmpPool.add(new Chaos());
         tmpPool.add(new Chill());
         tmpPool.add(new Claw2());
         tmpPool.add(new ColdSnap());
@@ -293,7 +293,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new MachineLearning());
         tmpPool.add(new Melter());
         tmpPool.add(new MeteorStrike());
-        tmpPool.add(new MultiCast2());
+        tmpPool.add(new Multichaos()); //MultiCast
         tmpPool.add(new Overclock());
         tmpPool.add(new Rainbow2());
         tmpPool.add(new Reboot());
