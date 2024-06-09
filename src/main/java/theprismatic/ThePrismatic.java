@@ -137,7 +137,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new GhostlyArmor());
         tmpPool.add(new Havoc2());
         tmpPool.add(new Headbutt());
-        tmpPool.add(new HeavyBlade());
+        tmpPool.add(new HeavyBlade2());
         tmpPool.add(new Hemokinesis());
         tmpPool.add(new Immolate());
         tmpPool.add(new Impervious());
@@ -196,7 +196,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new CloakAndDagger());
         tmpPool.add(new Concentrate());
         tmpPool.add(new CorpseExplosion());
-        tmpPool.add(new CripplingPoison());
+        tmpPool.add(new CripplingCloud2()); //CripplingPoison
         tmpPool.add(new DaggerSpray());
         tmpPool.add(new DaggerThrow());
         tmpPool.add(new Dash());
@@ -259,7 +259,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new BootSequence());
         tmpPool.add(new Buffer());
         tmpPool.add(new Capacitor());
-        tmpPool.add(new Multichaos()); //tmpPool.add(new Chaos());
+        tmpPool.add(new Chaos()); //tmpPool.add(new Chaos());
         tmpPool.add(new Chill());
         tmpPool.add(new Claw2());
         tmpPool.add(new ColdSnap());
@@ -293,7 +293,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new MachineLearning());
         tmpPool.add(new Melter());
         tmpPool.add(new MeteorStrike());
-        //tmpPool.add(new MultiCast());
+        tmpPool.add(new MultiCast2());
         tmpPool.add(new Overclock());
         tmpPool.add(new Rainbow2());
         tmpPool.add(new Reboot());
@@ -374,7 +374,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new SandsOfTime());
         tmpPool.add(new SashWhip());
         tmpPool.add(new Scrawl());
-        tmpPool.add(new SignatureMove());
+        tmpPool.add(new SignatureMove2());
         tmpPool.add(new SimmeringFury());
         tmpPool.add(new SpiritShield());
         tmpPool.add(new Study2());

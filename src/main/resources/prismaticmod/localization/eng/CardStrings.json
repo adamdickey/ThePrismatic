@@ -636,11 +636,11 @@
   },
   "${modID}:Established Strike": {
     "NAME": "Established Strike",
-    "DESCRIPTION": "Retain. NL Deal !D! damage. NL If another card in your hand has Retain, gain [E] ."
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL If another card in your hand has Retain, NL gain [E] ."
   },
   "${modID}:Established Defend": {
     "NAME": "Established Defend",
-    "DESCRIPTION": "Retain. NL Gain !B! Block. NL If another card in your hand has Retain, gain [E] ."
+    "DESCRIPTION": "Retain. NL Gain !B! Block. NL If another card in your hand has Retain, NL gain [E] ."
   },
   "${modID}:Wreath of Flame": {
     "NAME": "Wreath of Flame",
@@ -662,6 +662,23 @@
   "${modID}:Rupture": {
     "NAME": "Rupture",
     "DESCRIPTION": "Whenever you lose HP from a card or play a Power card, gain !M! Strength."
+  },
+  "${modID}:Crippling Cloud": {
+    "NAME": "Crippling Cloud",
+    "DESCRIPTION": "Apply !M! Poison, 2 Weak, and 2 Target to ALL enemies. NL Exhaust."
+  },
+  "${modID}:Heavy Blade": {
+    "NAME": "Heavy Blade",
+    "DESCRIPTION": "Deal !D! damage. NL Deals !${modID}:Magic! additional damage for each Strength and Mantra you have."
+  },
+  "${modID}:Signature Move": {
+    "NAME": "Signature Move",
+    "DESCRIPTION": "Retain. NL Can only be played if this is the only Attack in your hand. NL Deal !D! damage."
+  },
+  "${modID}:Multi-Cast": {
+    "NAME": "Multi-Cast",
+    "DESCRIPTION": "Evoke your next Orb X times. NL Put X random cost 0 cards from your draw pile into your hand.",
+    "UPGRADE_DESCRIPTION": "Evoke your next Orb X+1 times. NL Put X+1 random cost 0 cards from your draw pile into your hand."
   }
 }
 

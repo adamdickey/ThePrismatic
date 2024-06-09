@@ -33,7 +33,7 @@ public class EstablishedDefend extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, this.block));
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c.selfRetain) {
+            if (c.selfRetain && c != this) {
                 addToBot(new GainEnergyAction(1));
                 break;
             }

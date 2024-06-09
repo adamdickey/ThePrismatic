@@ -36,7 +36,7 @@ public class EstablishedStrike extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c.selfRetain) {
+            if (c.selfRetain && c != this) {
                 addToBot(new GainEnergyAction(1));
                 break;
             }
