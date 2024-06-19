@@ -19,7 +19,7 @@ public class Havoc2 extends BaseCard {
     );
     //These will be used in the constructor. Technically you can just use the values directly,
     //but constants at the top of the file are easy to adjust.
-    private static final int scryNumber = 1;
+    private static final int scryNumber = 2;
     public Havoc2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
     }

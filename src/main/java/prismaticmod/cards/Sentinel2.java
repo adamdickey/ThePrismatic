@@ -40,4 +40,7 @@ public class Sentinel2 extends BaseCard {
         player.discardPile.moveToExhaustPile(this);
         addToBot(new GainEnergyAction(magicNumber));
     }
+    public void triggerOnExhaust(){
+        addToBot(new GainEnergyAction(magicNumber));
+    }
 }

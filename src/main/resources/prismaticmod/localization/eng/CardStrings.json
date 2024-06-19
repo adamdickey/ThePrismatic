@@ -122,7 +122,7 @@
   },
   "${modID}:Havoc": {
     "NAME": "Havoc",
-    "DESCRIPTION": "Scry 1. NL Play the top card of your draw pile and Exhaust it."
+    "DESCRIPTION": "Scry 2. NL Play the top card of your draw pile and Exhaust it."
   },
   "${modID}:Sever Soul": {
     "NAME": "Sever Soul",
@@ -652,8 +652,8 @@
   },
   "${modID}:Sentinel": {
     "NAME": "Sentinel",
-    "DESCRIPTION": "Gain !B! Block. NL If this card is ${modID}:Milled, Exhaust it and NL gain [E] [E] .",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If this card is ${modID}:Milled, Exhaust it and NL gain [E] [E] [E] ."
+    "DESCRIPTION": "Gain !B! Block. NL If this card is ${modID}:Milled or Exhausted, Exhaust it and gain [E] [E] .",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If this card is ${modID}:Milled or Exhausted, Exhaust it and gain [E] [E] [E] ."
   },
   "${modID}:Metallic Faith": {
     "NAME": "Metallic Faith",
@@ -665,7 +665,7 @@
   },
   "${modID}:Crippling Cloud": {
     "NAME": "Crippling Cloud",
-    "DESCRIPTION": "Apply !M! Poison, 2 Weak, and 2 Target to ALL enemies. NL Exhaust."
+    "DESCRIPTION": "Apply !M! Poison, 2 Weak, and 2 ${modID}:Target to ALL enemies. NL Exhaust."
   },
   "${modID}:Heavy Blade": {
     "NAME": "Heavy Blade",
