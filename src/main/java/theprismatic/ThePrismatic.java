@@ -12,7 +12,6 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.blue.*;
 import com.megacrit.cardcrawl.cards.blue.Stack;
-import com.megacrit.cardcrawl.cards.colorless.*;
 import com.megacrit.cardcrawl.cards.green.*;
 import com.megacrit.cardcrawl.cards.purple.*;
 import com.megacrit.cardcrawl.cards.red.*;
@@ -393,6 +392,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Wish());
         tmpPool.add(new Worship());
         tmpPool.add(new WreathOfFlame2());
+        /*
         //tmpPool.add(new Apotheosis());
         tmpPool.add(new BandageUp());
         tmpPool.add(new Blind());
@@ -428,6 +428,7 @@ public class ThePrismatic extends CustomPlayer {
         //tmpPool.add(new Transmutation());
         tmpPool.add(new Trip());
         tmpPool.add(new Violence());
+         */
         return tmpPool;
     }
 
