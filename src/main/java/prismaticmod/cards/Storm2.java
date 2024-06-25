@@ -3,7 +3,7 @@ package prismaticmod.cards;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import prismaticmod.powers.Storm2Power;
+import com.megacrit.cardcrawl.powers.StormPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -21,17 +21,18 @@ public class Storm2 extends BaseCard {
     //but constants at the top of the file are easy to adjust.
     public Storm2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
+        this.isInnate = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new Storm2Power(p, 1), 1));
+        addToBot(new ApplyPowerAction(p, p, new StormPower(p, 1), 1));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.isInnate = true;
+            upgradeBaseCost(0);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

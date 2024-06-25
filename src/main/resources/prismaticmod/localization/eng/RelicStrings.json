@@ -162,11 +162,11 @@
       "Whenever you have no cards in hand during your turn, draw a card."
     ]
   },
-  "${modID}:Mummified Hand": {
-    "NAME": "Mummified Hand",
+  "${modID}:Mummyfied Hand": {
+    "NAME": "Mummyfied Hand",
     "FLAVOR": "Frequently twitches, especially when your pulse is high.",
     "DESCRIPTIONS": [
-      "Whenever you play your first #yPower card each turn, draw 1 card. Whenever you play a #yPower card, a random card in your hand costs 0 that turn."
+      "Whenever you play your first #yPower card each turn, draw 1 card. NL Whenever you play a #yPower card, a random card in your hand costs 0 that turn."
     ]
   },
   "${modID}:Small House": {
@@ -224,7 +224,7 @@
     "NAME": "The Boot",
     "FLAVOR": "When wound up, the boot grows larger in size.",
     "DESCRIPTIONS": [
-      "Whenever you would deal less than #b5 unblocked Attack damage, apply Poison equal to the difference."
+      "Whenever you would deal less than #b5 unblocked Attack damage, apply #yPoison equal to the difference."
     ]
   }
 }

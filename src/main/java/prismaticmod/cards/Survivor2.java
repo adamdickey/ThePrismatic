@@ -39,6 +39,7 @@ public class Survivor2 extends BaseCard {
         addToBot(new HandSelectAction(1, c -> true, list -> {
             for (AbstractCard c : list) {
                 if (c.type == CardType.CURSE || c.type == CardType.STATUS) {
+                    c.triggerOnManualDiscard();
                     p.hand.moveToExhaustPile(c);
                     addToBot(new DrawCardAction(magicNumber));
                     continue;

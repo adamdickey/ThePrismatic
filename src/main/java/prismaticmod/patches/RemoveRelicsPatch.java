@@ -26,7 +26,7 @@ public class RemoveRelicsPatch {
             relicsToRemoveOnStart.add(CeramicFish.ID);
             relicsToRemoveOnStart.add(DuVuDoll.ID);
             relicsToRemoveOnStart.add(DarkstonePeriapt.ID);
-            relicsToRemoveOnStart.add(Shovel.ID);
+            //relicsToRemoveOnStart.add(Shovel.ID);
             relicsToRemoveOnStart.add(UnceasingTop.ID);
             relicsToRemoveOnStart.add(MummifiedHand.ID);
             relicsToRemoveOnStart.add(TinyHouse.ID);

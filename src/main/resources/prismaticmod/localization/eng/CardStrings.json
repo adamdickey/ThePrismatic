@@ -54,8 +54,8 @@
   },
   "${modID}:0ch0 Form": {
     "NAME": "0ch0 F0rm",
-    "DESCRIPTION": "The first cost 0 card you play each turn is played twice.",
-    "UPGRADE_DESCRIPTION": "The first !M! cost 0 cards you play each turn are played twice."
+    "DESCRIPTION": "The first 0-cost card you play each turn is played twice.",
+    "UPGRADE_DESCRIPTION": "The first !M! 0-cost cards you play each turn are played twice."
   },
   "${modID}:Cunning Defend": {
     "NAME": "Cunning Defend",
@@ -152,8 +152,8 @@
   },
   "${modID}:Storm": {
     "NAME": "Storm",
-    "DESCRIPTION": "Whenever you play a Power card or ${modID}:Mill any number of cards, Channel 1 Lightning.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a Power card or ${modID}:Mill any number of cards, Channel 1 Lightning."
+    "DESCRIPTION": "Whenever you play a Power card, Channel 1 Lightning.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a Power card, Channel 1 Lightning."
   },
   "${modID}:Streamline": {
     "NAME": "Streamline",
@@ -285,11 +285,11 @@
   },
   "${modID}:Strike for One": {
     "NAME": "Strike for One",
-    "DESCRIPTION": "Deal !D! damage. NL Return !M! random cost 0 card from your discard pile into your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Return !M! random 0-cost card from your discard pile into your hand."
   },
   "${modID}:Defend for One": {
     "NAME": "Defend for One",
-    "DESCRIPTION": "Gain !B! Block. NL Put !M! random cost 0 card from your discard pile into your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Put !M! random 0-cost card from your discard pile into your hand."
   },
   "${modID}:Infernal Blade": {
     "NAME": "Infernal Blade",
@@ -576,7 +576,7 @@
   },
   "${modID}:Deflect": {
     "NAME": "Deflect",
-    "DESCRIPTION": "Gain !B! Block. NL Increase the Block gained from ALL cost 0 cards by !M! this combat."
+    "DESCRIPTION": "Gain !B! Block. NL Increase the Block gained from ALL 0-cost cards by !M! this combat."
   },
   "${modID}:Establishment": {
     "NAME": "Establishment",
@@ -623,7 +623,7 @@
   },
   "${modID}:Deflecting Defend": {
     "NAME": "Deflecting Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Increase the Block gained from ALL cost 0 cards by !M! this combat."
+    "DESCRIPTION": "Gain !B! Block. NL Increase the Block gained from ALL 0-cost cards by !M! this combat."
   },
   "${modID}:Bash": {
     "NAME": "Bash",
