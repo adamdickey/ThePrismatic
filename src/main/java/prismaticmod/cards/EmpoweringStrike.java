@@ -32,6 +32,7 @@ public class EmpoweringStrike extends BaseCard {
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(baseMagicNumber, UPG_Number);
         tags.add(CardTags.STRIKE);
+        this.selfRetain = true;
         //tags.add(CardTags.STARTER_STRIKE);
     }
     @Override

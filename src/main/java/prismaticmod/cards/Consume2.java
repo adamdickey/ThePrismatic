@@ -5,9 +5,11 @@ import com.megacrit.cardcrawl.actions.defect.DecreaseMaxOrbAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.FocusPower;
-import com.megacrit.cardcrawl.powers.StrengthPower;
+import prismaticmod.powers.FocusDownPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
+
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class Consume2 extends BaseCard {
     public static final String ID = makeID("Consume"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
@@ -30,7 +32,10 @@ public class Consume2 extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new FocusPower(p, magicNumber), magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber),magicNumber));
         addToBot(new DecreaseMaxOrbAction(1));
+    }
+    public void triggerOnManualDiscard(){
+        addToBot(new ApplyPowerAction(player, player, new FocusPower(player, magicNumber)));
+        addToBot(new ApplyPowerAction(player, player, new FocusDownPower(magicNumber)));
     }
 }

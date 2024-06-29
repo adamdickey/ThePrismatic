@@ -472,11 +472,11 @@ public class ThePrismatic extends CustomPlayer {
     public AbstractCard getPrismaticCard(){
         ArrayList<AbstractCard> prismaticCards = new ArrayList<>();
         Collections.addAll(prismaticCards, new ClawingStrike(), new CunningStrike(), new DivineStrike(),
-                new EmpoweringStrike(), new EmptyStrike(), new EstablishedStrike(), new FocusedStrike(),
+                new EmpoweringStrike(), new EmptyStrike(), new CreativeStrike(), new FocusedStrike(),
                 new LootingStrike(), new SadisticStrike(), new ScrapingStrike(), new ScryingStrike(),
                 new StormyStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike(),
                 new CunningDefend(), new DefendForOne(), new DeflectingDefend(), new DivineDefend(),
-                new EmpoweringDefend(), new EmptyDefend(), new EstablishedDefend(), new FocusedDefend(),
+                new EmpoweringDefend(), new EmptyDefend(), new CreativeDefend(), new FocusedDefend(),
                 new LootingDefend(), new SadisticDefend(), new ScrapingDefend(), new ScryingDefend(),
                 new StormyDefend(), new TargetingDefend(), new ToxicDefend());
         Random rand = new Random();
@@ -486,11 +486,11 @@ public class ThePrismatic extends CustomPlayer {
         ArrayList<AbstractCard> prismaticStrikes = new ArrayList<>();
         ArrayList<AbstractCard> prismaticDefends = new ArrayList<>();
         Collections.addAll(prismaticStrikes, new ClawingStrike(), new CunningStrike(), new DivineStrike(),
-                new EmpoweringStrike(), new EmptyStrike(), new EstablishedStrike(), new FocusedStrike(),
+                new EmpoweringStrike(), new EmptyStrike(), new CreativeStrike(), new FocusedStrike(),
                 new LootingStrike(), new SadisticStrike(), new ScrapingStrike(), new ScryingStrike(),
                 new StormyStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike());
         Collections.addAll(prismaticDefends, new DeflectingDefend(), new CunningDefend(), new DivineDefend(),
-                new EmpoweringDefend(), new EmptyDefend(), new EstablishedDefend(), new FocusedDefend(),
+                new EmpoweringDefend(), new EmptyDefend(), new CreativeDefend(), new FocusedDefend(),
                 new LootingDefend(), new SadisticDefend(), new ScrapingDefend(), new ScryingDefend(),
                 new StormyDefend(), new DefendForOne(), new TargetingDefend(), new ToxicDefend());
         Random rand = new Random();

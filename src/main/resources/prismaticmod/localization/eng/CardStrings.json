@@ -152,8 +152,7 @@
   },
   "${modID}:Storm": {
     "NAME": "Storm",
-    "DESCRIPTION": "Whenever you play a Power card, Channel 1 Lightning.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a Power card, Channel 1 Lightning."
+    "DESCRIPTION": " Innate. NL Whenever you play a Power card, Channel 1 Lightning."
   },
   "${modID}:Streamline": {
     "NAME": "Streamline",
@@ -177,7 +176,7 @@
   },
   "${modID}:Consume": {
     "NAME": "Consume",
-    "DESCRIPTION": "Gain !M! Focus. NL Gain !M! Strength. NL Lose 1 Orb slot."
+    "DESCRIPTION": "Gain !M! Focus. NL Lose 1 Orb slot. NL If this card is ${modID}:Milled, gain !M! temporary Focus."
   },
   "${modID}:Go for the Eyes": {
     "NAME": "Go for the Eyes",
@@ -249,8 +248,8 @@
   },
   "${modID}:Doppelganger": {
     "NAME": "Doppelganger",
-    "DESCRIPTION": "Next turn, draw X cards and gain X Energy. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Next turn, draw X+1 cards and gain X+1 Energy. NL Exhaust."
+    "DESCRIPTION": "Next turn, draw X cards and gain X [E] . NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Next turn, draw X+1 cards and gain X+1 [E] . NL Exhaust."
   },
   "${modID}:Prepared": {
     "NAME": "Prepared",
@@ -424,7 +423,7 @@
   },
   "${modID}:Pressure Points": {
     "NAME": "Pressure Points",
-    "DESCRIPTION": "Apply !M! Mark. NL Apply !${modID}:LockOn! ${modID}:Target. NL ALL enemies lose HP equal to their Mark."
+    "DESCRIPTION": "Apply !M! *Mark. NL Apply !${modID}:LockOn! ${modID}:Target. NL ALL enemies lose HP equal to their *Mark."
   },
   "${modID}:Eviscerate": {
     "NAME": "Eviscerate",
@@ -469,15 +468,15 @@
   },
   "${modID}:Empowering Defend": {
     "NAME": "Empowering Defend",
-    "DESCRIPTION": "Gain !B! Block. NL The next Power you play this turn costs 1 less."
+    "DESCRIPTION": "Retain. NL Gain !B! Block. NL The next Power card you play this turn costs 1 less."
   },
   "${modID}:Empowering Strike": {
     "NAME": "Empowering Strike",
-    "DESCRIPTION": "Deal !D! damage. NL The next Power you play this turn costs 1 less."
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL The next Power card you play this turn costs 1 less."
   },
   "${modID}:Doom Will Bloom": {
     "NAME": "Doom Will Bloom",
-    "DESCRIPTION": "Apply !M! Mark to ALL enemies. NL ALL enemies lose HP equal to their Mark. NL Channel 1 Dark."
+    "DESCRIPTION": "Apply !M! *Mark to ALL enemies. NL ALL enemies lose HP equal to their *Mark. NL Channel 1 Dark."
   },
   "${modID}:Entrench": {
     "NAME": "Entrench",
@@ -678,6 +677,14 @@
   "${modID}:One for All": {
     "NAME": "One for All",
     "DESCRIPTION": "Gain !B! Block. NL Put all cost 0 cards from your draw pile into your hand."
+  },
+  "${modID}:Creative Strike": {
+    "NAME": "Creative Strike",
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL If you created a card this turn, gain [E] ."
+  },
+  "${modID}:Creative Defend": {
+    "NAME": "Creative Defend",
+    "DESCRIPTION": "Retain. NL Gain !B! Block. NL If you created a card this turn, gain [E] ."
   }
 }
 
