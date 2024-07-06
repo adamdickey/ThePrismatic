@@ -494,14 +494,13 @@ public class ThePrismatic extends CustomPlayer {
                 new LootingDefend(), new SadisticDefend(), new ScrapingDefend(), new ScryingDefend(),
                 new StormyDefend(), new DefendForOne(), new TargetingDefend(), new ToxicDefend());
         Random rand = new Random();
+        ArrayList<Integer> cardNums = new ArrayList<>();
         ArrayList<AbstractCard> cards = new ArrayList<>();
-        int strikeNum = rand.nextInt(prismaticStrikes.size());
-        int defendNum = rand.nextInt(prismaticDefends.size());
-        while(strikeNum == defendNum){
-            strikeNum = rand.nextInt(prismaticStrikes.size());
-            defendNum = rand.nextInt(prismaticDefends.size());
-        }
-        Collections.addAll(cards, prismaticStrikes.get(strikeNum), prismaticDefends.get(defendNum));
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i=0; i<15; i++) list.add(i);
+        Collections.shuffle(list, rand);
+        for (int i=0; i<2; i++) cardNums.add(list.get(i));
+        Collections.addAll(cards, prismaticStrikes.get(cardNums.get(0)), prismaticDefends.get(cardNums.get(1)));
         return cards;
     }
 

@@ -31,16 +31,20 @@ public class Sentinel2 extends BaseCard {
         setMagic(baseMagicNumber, UPG_Number);
 
     }
+    boolean discarded = false;
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, block));
     }
     public void triggerOnManualDiscard(){
+        discarded = true;
         player.discardPile.moveToExhaustPile(this);
         addToBot(new GainEnergyAction(magicNumber));
     }
     public void triggerOnExhaust(){
-        addToBot(new GainEnergyAction(magicNumber));
+        if(!discarded){
+            addToBot(new GainEnergyAction(magicNumber));
+        }
     }
 }

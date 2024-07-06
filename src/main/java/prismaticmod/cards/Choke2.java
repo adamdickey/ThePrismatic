@@ -24,7 +24,7 @@ public class Choke2 extends BaseCard {
 
     private static final int DAMAGE = 8;
     private static final int UPG_DAMAGE = 2;
-    private static final int baseMagicNumber = 2;
+    private static final int baseMagicNumber = 3;
     private static final int UPG_Number = 1;
     public Choke2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.

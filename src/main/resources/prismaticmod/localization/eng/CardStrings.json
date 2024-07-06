@@ -11,11 +11,6 @@
     "NAME": "Looting Strike",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card, then discard !M! card."
   },
-  "${modID}:Retaining Strike": {
-    "NAME": "Retaining Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Choose !M! card to Retain this turn.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Choose !M! cards to Retain this turn."
-  },
   "${modID}:Scrying Strike": {
     "NAME": "Scrying Strike",
     "DESCRIPTION": "Deal !D! damage. NL Scry !M!."
@@ -23,18 +18,6 @@
   "${modID}:Stormy Strike": {
     "NAME": "Stormy Strike",
     "DESCRIPTION": "Deal !D! damage. NL Channel !M! Lightning."
-  },
-  "${modID}:Frosty Strike": {
-    "NAME": "Frosty Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost."
-  },
-  "${modID}:Exhausting Strike": {
-    "NAME": "Exhausting Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Exhaust up to !M! card in your hand."
-  },
-  "${modID}:Insightful Strike": {
-    "NAME": "Insightful Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Shuffle an *Insight into your draw pile."
   },
   "${modID}:Scraping Strike": {
     "NAME": "Scraping Strike",
@@ -69,26 +52,9 @@
     "NAME": "Empty Defend",
     "DESCRIPTION": "Gain !B! Block. NL Exit your Stance."
   },
-  "${modID}:Exhausting Defend": {
-    "NAME": "Exhausting Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Exhaust up to !M! card in your hand."
-  },
-  "${modID}:Frosty Defend": {
-    "NAME": "Frosty Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Channel !M! Frost."
-  },
-  "${modID}:Insightful Defend": {
-    "NAME": "Insightful Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Shuffle an *Insight into your draw pile."
-  },
   "${modID}:Looting Defend": {
     "NAME": "Looting Defend",
     "DESCRIPTION": "Gain !B! Block. NL Draw !M! card, then discard !M! card."
-  },
-  "${modID}:Retaining Defend": {
-    "NAME": "Retaining Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Choose !M! card to Retain this turn.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Choose !M! cards to Retain this turn."
   },
   "${modID}:Scraping Defend": {
     "NAME": "Scraping Defend",
@@ -152,7 +118,7 @@
   },
   "${modID}:Storm": {
     "NAME": "Storm",
-    "DESCRIPTION": " Innate. NL Whenever you play a Power card, Channel 1 Lightning."
+    "DESCRIPTION": "Innate. NL Whenever you play a Power card, Channel 1 Lightning."
   },
   "${modID}:Streamline": {
     "NAME": "Streamline",
@@ -169,10 +135,6 @@
   "${modID}:Defragment": {
     "NAME": "Defragment",
     "DESCRIPTION": "Gain !M! Focus. NL Gain !M! Strength."
-  },
-  "${modID}:Capacitor": {
-    "NAME": "Capacitor",
-    "DESCRIPTION": "Gain !M! Orb slots. NL Gain !${modID}:dex! Dexterity."
   },
   "${modID}:Consume": {
     "NAME": "Consume",
@@ -209,18 +171,9 @@
     "NAME": "Study",
     "DESCRIPTION": "Gain 1 Focus. NL At the end of your turn, shuffle an Insight into your draw pile."
   },
-  "${modID}:Deus Ex Machina": {
-    "NAME": "Deus Ex Machina",
-    "DESCRIPTION": "Unplayable. NL When you draw this card, add !M! Miracles into your hand. NL Exhaust."
-  },
   "${modID}:Rushdown": {
     "NAME": "Rushdown",
     "DESCRIPTION": "Whenever you change Stances for the first time each turn, draw 2 cards."
-  },
-  "${modID}:Devotion": {
-    "NAME": "Devotion",
-    "DESCRIPTION": "At the start of your turn, gain 3 Mantra.",
-    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, gain 3 Mantra."
   },
   "${modID}:Pray": {
     "NAME": "Pray",
@@ -240,7 +193,7 @@
   },
   "${modID}:Envenom": {
     "NAME": "Envenom",
-    "DESCRIPTION": "Whenever an attack deals unblocked damage, apply 1 Poison."
+    "DESCRIPTION": "Whenever an Attack deals unblocked damage, apply 1 Poison."
   },
   "${modID}:Tools of the Trade": {
     "NAME": "Tools of the Trade",
@@ -284,7 +237,7 @@
   },
   "${modID}:Strike for One": {
     "NAME": "Strike for One",
-    "DESCRIPTION": "Deal !D! damage. NL Return !M! random 0-cost card from your discard pile into your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Put !M! random 0-cost card from your discard pile into your hand."
   },
   "${modID}:Defend for One": {
     "NAME": "Defend for One",
@@ -314,17 +267,6 @@
     "NAME": "Setup",
     "DESCRIPTION": "Gain !B! Block. NL Put a card from your hand on top of your draw pile. NL It costs 0 until played."
   },
-  "${modID}:Magnetism": {
-    "NAME": "Magnetism",
-    "DESCRIPTION": "At the start of your turn, add a random Colorless card into your hand."
-  },
-  "${modID}:Mind Blast": {
-    "NAME": "Mind Blast",
-    "DESCRIPTION": "Innate. NL Deal damage equal to the number of cards in your draw pile.",
-    "EXTENDED_DESCRIPTION": [
-    " NL (Deals !D! damage.)"
-]
-  },
   "${modID}:Accuracy": {
     "NAME": "Accuracy",
     "DESCRIPTION": "Attacks that cost 0 deal !M! additional damage."
@@ -332,11 +274,6 @@
   "${modID}:Claw": {
     "NAME": "Claw",
     "DESCRIPTION": "Deal !D! damage. NL Increase the damage of ALL Attacks that cost 0 by !M! this combat."
-  },
-  "${modID}:Infinite Blades": {
-    "NAME": "Infinite Blades",
-    "DESCRIPTION": "Add a Shiv into your hand. NL At the start of your turn, add a Shiv into your hand.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Add a Shiv into your hand. NL At the start of your turn, add a Shiv into your hand."
   },
   "${modID}:Choke": {
     "NAME": "Choke",
@@ -354,18 +291,10 @@
     "NAME": "Combustive Fumes",
     "DESCRIPTION": "At the start of your turn, lose 1 HP and apply !M! Poison to ALL enemies."
   },
-  "${modID}:Intimidate": {
-    "NAME": "Intimidate",
-    "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Gain 1 Strength. NL Exhaust."
-  },
   "${modID}:Fiery Evolution": {
     "NAME": "Fiery Evolution",
     "DESCRIPTION": "Whenever you draw a Status or Curse card, deal 6 damage to ALL enemies and draw !M! card.",
     "UPGRADE_DESCRIPTION": "Whenever you draw a Status or Curse card, deal 6 damage to ALL enemies and draw !M! cards."
-  },
-  "${modID}:Metallic Rupture": {
-    "NAME": "Metallic Rupture",
-    "DESCRIPTION": "At the end of your turn, gain !M! Block. NL Whenever you lose HP from a card, gain !${modID}:S! Strength."
   },
   "${modID}:Deadly Poison": {
     "NAME": "Deadly Poison",
@@ -386,10 +315,6 @@
     "NAME": "Weave",
     "DESCRIPTION": "Deal !D! damage. NL Whenever you ${modID}:Mill a card, return this from the discard pile to your hand."
   },
-  "${modID}:Follow-Up": {
-    "NAME": "Follow-Up",
-    "DESCRIPTION": "Deal !D! damage. NL If the last card played this combat was an Attack, draw 2 cards."
-  },
   "${modID}:Berserk": {
     "NAME": "Berserk",
     "DESCRIPTION": "Enter Wrath. NL At the start of your turn, gain [R].",
@@ -402,11 +327,6 @@
   "${modID}:Exploit Pain": {
     "NAME": "Exploit Pain",
     "DESCRIPTION": "Deal !D! damage. NL Repeat for each debuff on the enemy."
-  },
-  "${modID}:Storm of Steel": {
-    "NAME": "Storm of Steel",
-    "DESCRIPTION": "Discard your hand. NL Add 1 Shiv into your hand for each card discarded.",
-    "UPGRADE_DESCRIPTION": "Discard your hand. NL Add 1 Shiv+ into your hand for each card discarded."
   },
   "${modID}:Bullseye": {
     "NAME": "Bullseye",
@@ -433,10 +353,6 @@
     "NAME": "Slice",
     "DESCRIPTION": "Deal !D! damage. NL Exhaust 1 card at random.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Exhaust 1 card."
-  },
-  "${modID}:Dark Embrace": {
-    "NAME": "Dark Embrace",
-    "DESCRIPTION": "Whenever a card is Exhausted, NL draw 1 card."
   },
   "${modID}:Exploit Weakness": {
     "NAME": "Exploit Weakness",
@@ -486,21 +402,6 @@
   "${modID}:Compile Driver": {
     "NAME": "Compile Driver",
     "DESCRIPTION": "Deal !D! damage. NL Draw 1 card for each Orb you have."
-  },
-  "${modID}:Double Tap": {
-    "NAME": "Double Tap",
-    "DESCRIPTION": "Retain. NL This turn, your next Attack is played twice.",
-    "UPGRADE_DESCRIPTION": "Retain. NL This turn, your next !M! Attacks are played twice."
-  },
-  "${modID}:Burst": {
-    "NAME": "Burst",
-    "DESCRIPTION": "Retain. NL This turn, your next Skill is played twice.",
-    "UPGRADE_DESCRIPTION": "Retain. NL This turn, your next !M! Skills are played twice."
-  },
-  "${modID}:Amplify": {
-    "NAME": "Amplify",
-    "DESCRIPTION": "Retain. NL This turn, your next Power is played twice.",
-    "UPGRADE_DESCRIPTION": "Retain. NL This turn, your next !M! Powers are played twice."
   },
   "${modID}:Clothesline": {
     "NAME": "Clothesline",
@@ -565,10 +466,6 @@
     "NAME": "Recursion",
     "DESCRIPTION": "Evoke your next Orb. NL Channel the Orb that was just Evoked. NL Exit your Stance, then enter that Stance."
   },
-  "${modID}:Perfected Strike": {
-    "NAME": "Perfected Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for ALL your cards containing \"Strike\"."
-  },
   "${modID}:Caltrops": {
     "NAME": "Caltrops",
     "DESCRIPTION": "Whenever you are attacked, apply 1 ${modID}:Target and deal !M! damage back."
@@ -632,14 +529,6 @@
     "NAME": "Survivor",
     "DESCRIPTION": "Gain !B! Block. NL Discard 1 card. NL If a Status or Curse is discarded, Exhaust it and draw !M! card.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Discard 1 card. NL If a Status or Curse is discarded, Exhaust it and draw !M! cards."
-  },
-  "${modID}:Established Strike": {
-    "NAME": "Established Strike",
-    "DESCRIPTION": "Retain. NL Deal !D! damage. NL If another card in your hand has Retain, NL gain [E] ."
-  },
-  "${modID}:Established Defend": {
-    "NAME": "Established Defend",
-    "DESCRIPTION": "Retain. NL Gain !B! Block. NL If another card in your hand has Retain, NL gain [E] ."
   },
   "${modID}:Wreath of Flame": {
     "NAME": "Wreath of Flame",
