@@ -142,13 +142,6 @@
       " additional #yBlock."
     ]
   },
-  "${modID}:Storm": {
-    "NAME": "Storm",
-    "DESCRIPTIONS": [
-      "Whenever you play a #yPower card or #yMill any number of cards, #yChannel #b",
-      " #yLightning."
-    ]
-  },
   "${modID}:Metallic Faith": {
     "NAME": "Metallic Faith",
     "DESCRIPTIONS": [
@@ -162,6 +155,13 @@
     "DESCRIPTIONS": [
       "Whenever you lose HP from a card or play a #yPower card, gain #b",
       " #yStrength."
+    ]
+  },
+  "${modID}:Scry": {
+    "NAME": "Scry",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, #yScry #b",
+      "."
     ]
   }
 }

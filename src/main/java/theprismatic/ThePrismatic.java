@@ -113,7 +113,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Brutality());
         tmpPool.add(new BurningPact());
         tmpPool.add(new Carnage());
-        tmpPool.add(new Clash());
+        tmpPool.add(new Clash2());
         tmpPool.add(new Cleave());
         tmpPool.add(new Clothesline2());
         //tmpPool.add(new Combust());
@@ -224,7 +224,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Neutralize2());
         tmpPool.add(new Nightmare());
         //tmpPool.add(new NoxiousFumes());
-        tmpPool.add(new Outmaneuver());
+        tmpPool.add(new Outmaneuver2());
         tmpPool.add(new PhantasmalKiller());
         tmpPool.add(new PiercingWail());
         tmpPool.add(new PoisonedStab());

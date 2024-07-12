@@ -74,8 +74,8 @@
   },
   "${modID}:Chimera Form": {
     "NAME": "Chimera Form",
-    "DESCRIPTION": "Ethereal. NL At the start of your turn, gain 1 Strength, 1 Dexterity, 1 Orb slot, and 1 Mantra.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, gain 1 Strength, 1 Dexterity, 1 Orb slot, and 1 Mantra."
+    "DESCRIPTION": "Ethereal. NL At the start of your turn, gain 1 Strength, NL 1 Dexterity, 1 Orb slot, and 1 Mantra.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, gain 1 Strength, NL 1 Dexterity, 1 Orb slot, and 1 Mantra."
   },
   "${modID}:Foreign Powers": {
     "NAME": "Foreign Powers",
@@ -565,7 +565,7 @@
   },
   "${modID}:One for All": {
     "NAME": "One for All",
-    "DESCRIPTION": "Gain !B! Block. NL Put all cost 0 cards from your draw pile into your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Put all 0-cost cards from your draw pile into your hand."
   },
   "${modID}:Creative Strike": {
     "NAME": "Creative Strike",
@@ -574,6 +574,18 @@
   "${modID}:Creative Defend": {
     "NAME": "Creative Defend",
     "DESCRIPTION": "Retain. NL Gain !B! Block. NL If you created a card this turn, gain [E] ."
+  },
+  "${modID}:Outmaneuver": {
+    "NAME": "Outmaneuver",
+    "DESCRIPTION": "Next turn, NL Scry !M! and NL gain [E] [E] .",
+    "UPGRADE_DESCRIPTION": "Next turn, NL Scry !M! and NL gain [E] [E] [E] ."
+  },
+  "${modID}:Clash": {
+    "NAME": "Clash",
+    "DESCRIPTION": "Can only be played if every card in your hand is an Attack or you are in Wrath. NL Deal !D! damage.",
+    "EXTENDED_DESCRIPTION": [
+      "I have non-Attack cards in my hand."
+    ]
   }
 }
 

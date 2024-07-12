@@ -141,13 +141,6 @@
       " additional #yStrength."
     ]
   },
-  "${modID}:Shovel": {
-    "NAME": "Shovel",
-    "FLAVOR": "The Spire houses all number of relics from past civilizations and powerful adventurers lost to time. Time to go dig them up!",
-    "DESCRIPTIONS": [
-      "You can now #yDig for relics at Rest Sites."
-    ]
-  },
   "${modID}:Teardrop Locket": {
     "NAME": "Teardrop Locket",
     "FLAVOR": "Its owner blind, its contents unseen.",
