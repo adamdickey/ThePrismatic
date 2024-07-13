@@ -11,7 +11,6 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.blue.*;
-import com.megacrit.cardcrawl.cards.blue.Stack;
 import com.megacrit.cardcrawl.cards.green.*;
 import com.megacrit.cardcrawl.cards.purple.*;
 import com.megacrit.cardcrawl.cards.red.*;
@@ -306,7 +305,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Seek());
         tmpPool.add(new SelfRepair());
         tmpPool.add(new Skim());
-        tmpPool.add(new Stack());
+        tmpPool.add(new Stack2());
         tmpPool.add(new StaticDischarge2());
         tmpPool.add(new SteamBarrier());
         tmpPool.add(new Storm2());
@@ -392,43 +391,6 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Wish());
         tmpPool.add(new Worship());
         tmpPool.add(new WreathOfFlame2());
-        /*
-        //tmpPool.add(new Apotheosis());
-        tmpPool.add(new BandageUp());
-        tmpPool.add(new Blind());
-        tmpPool.add(new Chrysalis());
-        tmpPool.add(new DarkShackles());
-        tmpPool.add(new DeepBreath());
-        tmpPool.add(new Discovery());
-        tmpPool.add(new DramaticEntrance());
-        tmpPool.add(new Enlightenment());
-        tmpPool.add(new Finesse());
-        tmpPool.add(new FlashOfSteel());
-        //tmpPool.add(new Forethought());
-        tmpPool.add(new GoodInstincts());
-        tmpPool.add(new HandOfGreed());
-        tmpPool.add(new Impatience());
-        tmpPool.add(new JackOfAllTrades());
-        tmpPool.add(new Madness());
-        tmpPool.add(new Magnetism());
-        tmpPool.add(new MasterOfStrategy());
-        tmpPool.add(new Mayhem());
-        tmpPool.add(new Metamorphosis());
-        tmpPool.add(new MindBlast());
-        tmpPool.add(new Panacea());
-        tmpPool.add(new Panache());
-        tmpPool.add(new PanicButton());
-        tmpPool.add(new Purity());
-        tmpPool.add(new SadisticNature());
-        tmpPool.add(new SecretTechnique());
-        tmpPool.add(new SecretWeapon());
-        tmpPool.add(new SwiftStrike());
-        tmpPool.add(new TheBomb());
-        //tmpPool.add(new ThinkingAhead());
-        //tmpPool.add(new Transmutation());
-        tmpPool.add(new Trip());
-        tmpPool.add(new Violence());
-         */
         return tmpPool;
     }
 

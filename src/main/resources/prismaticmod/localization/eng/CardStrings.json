@@ -594,6 +594,14 @@
   "${modID}:Sword Boomerang": {
     "NAME": "Sword Boomerang",
     "DESCRIPTION": "Deal !D! damage to a random enemy !M! times. Apply 1 ${modID}:Target for each hit."
+  },
+  "${modID}:Stack": {
+    "NAME": "Stack",
+    "DESCRIPTION": "Scry !M!. NL Gain Block equal to the number of cards in your discard pile.",
+    "UPGRADE_DESCRIPTION": "Scry !M!. NL Gain Block equal to the number of cards in your discard pile +3.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Gains !B! Block.)"
+    ]
   }
 }
 
