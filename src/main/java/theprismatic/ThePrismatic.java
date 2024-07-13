@@ -165,7 +165,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Shockwave2());
         tmpPool.add(new ShrugItOff());
         tmpPool.add(new SpotWeakness());
-        tmpPool.add(new SwordBoomerang());
+        tmpPool.add(new SwordBoomerang2());
         tmpPool.add(new ThunderClap2());
         tmpPool.add(new TrueGrit());
         tmpPool.add(new TwinStrike());
@@ -230,7 +230,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new PoisonedStab());
         tmpPool.add(new Predator());
         tmpPool.add(new Prepared2());
-        tmpPool.add(new QuickSlash());
+        tmpPool.add(new QuickSlash2());
         tmpPool.add(new Reflex2());
         tmpPool.add(new RiddleWithHoles());
         tmpPool.add(new Setup2());

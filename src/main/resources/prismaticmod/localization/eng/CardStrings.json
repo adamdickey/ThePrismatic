@@ -586,6 +586,14 @@
     "EXTENDED_DESCRIPTION": [
       "I have non-Attack cards in my hand."
     ]
+  },
+  "${modID}:Quick Slash": {
+    "NAME": "Quick Slash",
+    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL If that card costs 0, draw 1 additional card."
+  },
+  "${modID}:Sword Boomerang": {
+    "NAME": "Sword Boomerang",
+    "DESCRIPTION": "Deal !D! damage to a random enemy !M! times. Apply 1 ${modID}:Target for each hit."
   }
 }
 
