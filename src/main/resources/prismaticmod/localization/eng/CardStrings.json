@@ -602,6 +602,19 @@
     "EXTENDED_DESCRIPTION": [
       " NL (Gains !B! Block.)"
     ]
+  },
+  "${modID}:Infinite Blades": {
+    "NAME": "Infinite Blades",
+    "DESCRIPTION": "At the start of your turn and whenever you play a Power card, add a *Shiv into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn and whenever you play a Power card, add a *Shiv into your hand."
+  },
+  "${modID}:Wave of the Hand": {
+    "NAME": "Wave of the Hand",
+    "DESCRIPTION": "Channel 1 Frost. NL Whenever you gain Block this turn, apply !M! Weak to ALL enemies."
+  },
+  "${modID}:Flex": {
+    "NAME": "Flex",
+    "DESCRIPTION": "Gain !M! Strength and 2 Focus. NL At the end of this turn, lose !M! Strength and 2 Focus."
   }
 }
 

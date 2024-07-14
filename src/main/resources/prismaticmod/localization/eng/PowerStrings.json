@@ -163,5 +163,13 @@
       "At the start of your next turn, #yScry #b",
       "."
     ]
+  },
+  "${modID}:Infinite Blades": {
+    "NAME": "Infinite Blades",
+    "DESCRIPTIONS": [
+      "At the start of your turn and whenever you play a Power card, add #b",
+      " #yShivs into your hand.",
+      " #yShiv into your hand."
+    ]
   }
 }
