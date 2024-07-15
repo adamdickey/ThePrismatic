@@ -436,11 +436,11 @@ public class ThePrismatic extends CustomPlayer {
         Collections.addAll(prismaticCards, new ClawingStrike(), new CunningStrike(), new DivineStrike(),
                 new EmpoweringStrike(), new EmptyStrike(), new CreativeStrike(), new FocusedStrike(),
                 new LootingStrike(), new SadisticStrike(), new ScrapingStrike(), new ScryingStrike(),
-                new StormyStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike(),
+                new ChannelingStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike(),
                 new CunningDefend(), new DefendForOne(), new DeflectingDefend(), new DivineDefend(),
                 new EmpoweringDefend(), new EmptyDefend(), new CreativeDefend(), new FocusedDefend(),
                 new LootingDefend(), new SadisticDefend(), new ScrapingDefend(), new ScryingDefend(),
-                new StormyDefend(), new TargetingDefend(), new ToxicDefend());
+                new ChannelingDefend(), new TargetingDefend(), new ToxicDefend());
         Random rand = new Random();
         return prismaticCards.get(rand.nextInt(prismaticCards.size()));
     }
@@ -450,11 +450,11 @@ public class ThePrismatic extends CustomPlayer {
         Collections.addAll(prismaticStrikes, new ClawingStrike(), new CunningStrike(), new DivineStrike(),
                 new EmpoweringStrike(), new EmptyStrike(), new CreativeStrike(), new FocusedStrike(),
                 new LootingStrike(), new SadisticStrike(), new ScrapingStrike(), new ScryingStrike(),
-                new StormyStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike());
+                new ChannelingStrike(), new StrikeForOne(), new TargetingStrike(), new ToxicStrike());
         Collections.addAll(prismaticDefends, new DeflectingDefend(), new CunningDefend(), new DivineDefend(),
                 new EmpoweringDefend(), new EmptyDefend(), new CreativeDefend(), new FocusedDefend(),
                 new LootingDefend(), new SadisticDefend(), new ScrapingDefend(), new ScryingDefend(),
-                new StormyDefend(), new DefendForOne(), new TargetingDefend(), new ToxicDefend());
+                new ChannelingDefend(), new DefendForOne(), new TargetingDefend(), new ToxicDefend());
         Random rand = new Random();
         ArrayList<Integer> cardNums = new ArrayList<>();
         ArrayList<AbstractCard> cards = new ArrayList<>();

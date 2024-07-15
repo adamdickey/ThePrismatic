@@ -15,10 +15,6 @@
     "NAME": "Scrying Strike",
     "DESCRIPTION": "Deal !D! damage. NL Scry !M!."
   },
-  "${modID}:Stormy Strike": {
-    "NAME": "Stormy Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Channel !M! Lightning."
-  },
   "${modID}:Scraping Strike": {
     "NAME": "Scraping Strike",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards. NL Discard all cards drawn this way that do not cost 0."
@@ -63,10 +59,6 @@
   "${modID}:Scrying Defend": {
     "NAME": "Scrying Defend",
     "DESCRIPTION": "Gain !B! Block. NL Scry !M!."
-  },
-  "${modID}:Stormy Defend": {
-    "NAME": "Stormy Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Channel !M! Lightning."
   },
   "${modID}:Toxic Defend": {
     "NAME": "Toxic Defend",
@@ -615,6 +607,14 @@
   "${modID}:Flex": {
     "NAME": "Flex",
     "DESCRIPTION": "Gain !M! Strength and 2 Focus. NL At the end of this turn, lose !M! Strength and 2 Focus."
+  },
+  "${modID}:Channeling Strike": {
+    "NAME": "Channeling Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Trigger the passive ability of your next Orb."
+  },
+  "${modID}:Channeling Defend": {
+    "NAME": "Channeling Defend",
+    "DESCRIPTION": "Gain !B! Block. NL Trigger the passive ability of your next Orb."
   }
 }
 

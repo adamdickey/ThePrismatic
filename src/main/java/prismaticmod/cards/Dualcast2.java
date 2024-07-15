@@ -23,6 +23,7 @@ public class Dualcast2 extends BaseCard {
 
     public Dualcast2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
+        this.showEvokeValue = true;
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
