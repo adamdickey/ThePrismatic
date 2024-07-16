@@ -22,7 +22,7 @@ public class Stack2 extends BaseCard {
     //but constants at the top of the file are easy to adjust.
 
     private static final int baseMagicNumber = 3;
-    private static final int UPG_Number = 1;
+    private static final int UPG_Number = 0;
 
     public Stack2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.

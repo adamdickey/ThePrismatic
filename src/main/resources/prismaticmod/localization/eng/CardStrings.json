@@ -519,8 +519,7 @@
   },
   "${modID}:Survivor": {
     "NAME": "Survivor",
-    "DESCRIPTION": "Gain !B! Block. NL Discard 1 card. NL If a Status or Curse is discarded, Exhaust it and draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Discard 1 card. NL If a Status or Curse is discarded, Exhaust it and draw !M! cards."
+    "DESCRIPTION": "Gain !B! Block. NL Discard 1 card. NL If a Status or Curse is discarded, Exhaust it and draw !M! card."
   },
   "${modID}:Wreath of Flame": {
     "NAME": "Wreath of Flame",
