@@ -614,6 +614,15 @@
   "${modID}:Channeling Defend": {
     "NAME": "Channeling Defend",
     "DESCRIPTION": "Gain !B! Block. NL Trigger the passive ability of your next Orb."
+  },
+  "${modID}:Dodge and Roll": {
+    "NAME": "Dodge and Roll",
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain !B! Block. NL If this card is ${modID}:Milled, gain !B! Block."
+  },
+  "${modID}:Brutality": {
+    "NAME": "Brutality",
+    "DESCRIPTION": "Whenever you apply any amount of debuffs to enemies, lose 1 HP and draw 1 card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you apply any amount of debuffs to enemies, lose 1 HP and draw 1 card."
   }
 }
 

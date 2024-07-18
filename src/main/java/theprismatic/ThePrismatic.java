@@ -109,7 +109,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Bloodletting());
         tmpPool.add(new Bludgeon());
         tmpPool.add(new BodySlam());
-        tmpPool.add(new Brutality());
+        tmpPool.add(new Brutality2());
         tmpPool.add(new BurningPact());
         tmpPool.add(new Carnage());
         tmpPool.add(new Clash2());
@@ -202,7 +202,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Deflect2());
         tmpPool.add(new DieDieDie());
         tmpPool.add(new Distraction2());
-        tmpPool.add(new DodgeAndRoll());
+        tmpPool.add(new DodgeAndRoll2());
         tmpPool.add(new Doppelganger2());
         tmpPool.add(new EndlessAgony());
         tmpPool.add(new Envenom2());

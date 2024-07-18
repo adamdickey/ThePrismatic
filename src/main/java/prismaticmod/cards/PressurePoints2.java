@@ -1,17 +1,11 @@
 package prismaticmod.cards;
 
-import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.watcher.MarkPower;
-import com.megacrit.cardcrawl.vfx.combat.PressurePointEffect;
+import prismaticmod.actions.PressurePointsAction;
 import prismaticmod.powers.TargetedPower;
-import prismaticmod.relics.SneckoSkull2;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -40,34 +34,6 @@ public class PressurePoints2 extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(m, p, new MarkPower(m, magicNumber), magicNumber));
         addToBot(new ApplyPowerAction(m, p, new TargetedPower(m, customVar("LockOn")), customVar("LockOn")));
-        pressurePointsAction(p, m);
-    }
-    private void pressurePointsAction(AbstractPlayer p, AbstractMonster m){
-        if (m != null) {
-            addToBot(new VFXAction(new PressurePointEffect(m.hb.cX, m.hb.cY)));
-        }
-        if(AbstractDungeon.player.hasRelic(SneckoSkull2.ID)){
-            magicNumber++;
-        }
-        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-            if(mo == m) {
-                if (mo.hasPower(MarkPower.POWER_ID)) {
-                    if (!mo.hasPower(ArtifactPower.POWER_ID)) {
-                        addToBot(new DamageAction(mo, new DamageInfo(p, mo.getPower(MarkPower.POWER_ID).amount + magicNumber, DamageInfo.DamageType.HP_LOSS)));
-                    } else {
-                        addToBot(new DamageAction(mo, new DamageInfo(p, mo.getPower(MarkPower.POWER_ID).amount, DamageInfo.DamageType.HP_LOSS)));
-                    }
-                } else {
-                    if (!mo.hasPower(ArtifactPower.POWER_ID)) {
-                        addToBot(new DamageAction(mo, new DamageInfo(p, magicNumber, DamageInfo.DamageType.HP_LOSS)));
-                    }
-                }
-            }
-            else{
-                if(mo.hasPower(MarkPower.POWER_ID)){
-                    addToBot(new DamageAction(mo, new DamageInfo(p, mo.getPower(MarkPower.POWER_ID).amount, DamageInfo.DamageType.HP_LOSS)));
-                }
-            }
-        }
+        addToBot(new PressurePointsAction(this));
     }
 }

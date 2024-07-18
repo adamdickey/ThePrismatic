@@ -1,7 +1,6 @@
 package prismaticmod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -9,15 +8,10 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.ArtifactPower;
-import com.megacrit.cardcrawl.powers.EnvenomPower;
-import com.megacrit.cardcrawl.powers.PoisonPower;
-import com.megacrit.cardcrawl.powers.watcher.FreeAttackPower;
-import prismaticmod.relics.WristBlade2;
+import prismaticmod.actions.BaneAction;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
-import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class Bane2 extends BaseCard {
     public static final String ID = makeID("Bane"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
@@ -43,23 +37,8 @@ public class Bane2 extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int debuffs = 0;
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        for(AbstractPower power : m.powers){
-            if(power.type == AbstractPower.PowerType.DEBUFF && !power.ID.equals("Shackled")){
-                debuffs++;
-            }
-        }
-        if(p.hasPower(EnvenomPower.POWER_ID) && !m.hasPower(ArtifactPower.POWER_ID) && !m.hasPower(PoisonPower.POWER_ID)){
-            debuffs++;
-        }
-        if(p.hasRelic(WristBlade2.ID) && !m.hasPower(ArtifactPower.POWER_ID) && !m.hasPower(PoisonPower.POWER_ID)
-                && !p.hasPower(EnvenomPower.POWER_ID) && !(this.costForTurn == 0 || this.freeToPlayOnce || player.hasPower(FreeAttackPower.POWER_ID))){
-            debuffs++;
-        }
-        if(debuffs >= 2){
-            addToBot(new ApplyPowerAction(m, p, new PoisonPower(m, p, magicNumber), magicNumber));
-        }
+        addToBot(new BaneAction(m, magicNumber));
     }
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();

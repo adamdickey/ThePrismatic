@@ -1,4 +1,4 @@
-package prismaticmod.patches;
+package prismaticmod.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.defect.AnimateOrbAction;

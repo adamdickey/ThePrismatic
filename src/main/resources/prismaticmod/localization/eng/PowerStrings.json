@@ -171,5 +171,16 @@
       " #yShivs into your hand.",
       " #yShiv into your hand."
     ]
+  },
+  "${modID}:Brutality": {
+    "NAME": "Brutality",
+    "DESCRIPTIONS": [
+      "Whenever you apply any amount of debuffs, lose #b",
+      " HP and draw #b",
+      " card.",
+      "Whenever you apply any amount of debuffs, lose #b",
+      " HP and draw #b",
+      " cards."
+    ]
   }
 }

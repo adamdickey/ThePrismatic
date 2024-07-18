@@ -1,16 +1,13 @@
 package prismaticmod.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.Dark;
-import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.watcher.MarkPower;
-import prismaticmod.relics.SneckoSkull2;
+import prismaticmod.actions.PressurePointsAction;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -39,25 +36,7 @@ public class DoomWillBloom extends BaseCard {
                 addToBot(new ApplyPowerAction(mo, p, new MarkPower(mo, magicNumber), magicNumber));
             }
         }
-        pressurePointsAction(p);
+        addToBot(new PressurePointsAction(this));
         addToBot(new ChannelAction(new Dark()));
-    }
-    private void pressurePointsAction(AbstractPlayer p){
-        if(AbstractDungeon.player.hasRelic(SneckoSkull2.ID)){
-            magicNumber++;
-        }
-        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-            if (mo.hasPower(MarkPower.POWER_ID)) {
-                if (!mo.hasPower(ArtifactPower.POWER_ID)) {
-                    addToBot(new DamageAction(mo, new DamageInfo(p, mo.getPower(MarkPower.POWER_ID).amount + magicNumber, DamageInfo.DamageType.HP_LOSS)));
-                } else {
-                    addToBot(new DamageAction(mo, new DamageInfo(p, mo.getPower(MarkPower.POWER_ID).amount, DamageInfo.DamageType.HP_LOSS)));
-                }
-            } else {
-                if (!mo.hasPower(ArtifactPower.POWER_ID)) {
-                    addToBot(new DamageAction(mo, new DamageInfo(p, magicNumber, DamageInfo.DamageType.HP_LOSS)));
-                }
-            }
-        }
     }
 }

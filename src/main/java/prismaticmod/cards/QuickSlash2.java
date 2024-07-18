@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import prismaticmod.patches.QuickSlashFollowUpAction;
+import prismaticmod.actions.QuickSlashFollowUpAction;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 

@@ -3,7 +3,7 @@ package prismaticmod.cards;
 import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import prismaticmod.patches.StackAction;
+import prismaticmod.actions.StackAction;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 

@@ -2,7 +2,7 @@ package prismaticmod.cards;
 
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import prismaticmod.patches.MultichaosAction;
+import prismaticmod.actions.MultichaosAction;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
