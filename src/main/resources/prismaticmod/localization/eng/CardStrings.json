@@ -391,10 +391,6 @@
     "DESCRIPTION": "Double your Block. NL Block is not removed at the start of your next turn.",
     "UPGRADE_DESCRIPTION": "Double your Block. NL Block is not removed at the start of your next turn."
   },
-  "${modID}:Compile Driver": {
-    "NAME": "Compile Driver",
-    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card for each Orb you have."
-  },
   "${modID}:Clothesline": {
     "NAME": "Clothesline",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak. NL Apply !M! ${modID}:Target."
@@ -582,10 +578,6 @@
     "NAME": "Quick Slash",
     "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL If that card costs 0, draw 1 additional card."
   },
-  "${modID}:Sword Boomerang": {
-    "NAME": "Sword Boomerang",
-    "DESCRIPTION": "Deal !D! damage to a random enemy !M! times. Apply 1 ${modID}:Target for each hit."
-  },
   "${modID}:Stack": {
     "NAME": "Stack",
     "DESCRIPTION": "Scry !M!. NL Gain Block equal to the number of cards in your discard pile.",
@@ -619,10 +611,13 @@
     "NAME": "Dodge and Roll",
     "DESCRIPTION": "Gain !B! Block. NL Next turn, gain !B! Block. NL If this card is ${modID}:Milled, gain !B! Block."
   },
-  "${modID}:Brutality": {
-    "NAME": "Brutality",
-    "DESCRIPTION": "Whenever you apply any amount of debuffs to enemies, lose 1 HP and draw 1 card.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you apply any amount of debuffs to enemies, lose 1 HP and draw 1 card."
+  "${modID}:Reckless Charge": {
+    "NAME": "Reckless Charge",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has fewer than 2 debuffs, shuffle a Dazed into your draw pile."
+  },
+  "${modID}:Rage": {
+    "NAME": "Rage",
+    "DESCRIPTION": "Whenever you apply a debuff to an enemy this turn, gain !M! Block."
   }
 }
 

@@ -109,7 +109,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Bloodletting());
         tmpPool.add(new Bludgeon());
         tmpPool.add(new BodySlam());
-        tmpPool.add(new Brutality2());
+        tmpPool.add(new Brutality());
         tmpPool.add(new BurningPact());
         tmpPool.add(new Carnage());
         tmpPool.add(new Clash2());
@@ -151,10 +151,10 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new PommelStrike());
         tmpPool.add(new PowerThrough());
         tmpPool.add(new Pummel());
-        tmpPool.add(new Rage());
+        tmpPool.add(new Rage2());
         tmpPool.add(new Rampage());
         tmpPool.add(new Reaper());
-        tmpPool.add(new RecklessCharge());
+        tmpPool.add(new RecklessCharge2());
         tmpPool.add(new Rupture2()); //tmpPool.add(new MetallicRupture());
         tmpPool.add(new SearingBlow2());
         tmpPool.add(new SecondWind());
@@ -261,7 +261,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Chill());
         tmpPool.add(new Claw2());
         tmpPool.add(new ColdSnap());
-        tmpPool.add(new CompileDriver2());
+        tmpPool.add(new CompileDriver());
         tmpPool.add(new ConserveBattery());
         tmpPool.add(new Consume2());
         tmpPool.add(new Coolheaded());

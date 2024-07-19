@@ -36,7 +36,7 @@ public class Inserter2 extends BaseRelic {
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             addToBot(new IncreaseMaxOrbAction(1));
             addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, 1), 1));
-            addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new MantraPower(AbstractDungeon.player, 2), 2));
+            addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new MantraPower(AbstractDungeon.player, 1), 1));
         }
     }
     @Override
