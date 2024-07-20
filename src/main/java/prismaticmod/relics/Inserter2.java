@@ -41,6 +41,6 @@ public class Inserter2 extends BaseRelic {
     }
     @Override
     public String getUpdatedDescription() {
-        return this.DESCRIPTIONS[0] + 2 + this.DESCRIPTIONS[1] + 1 + this.DESCRIPTIONS[2] + 1 + this.DESCRIPTIONS[3] + 2 + this.DESCRIPTIONS[4];
+        return this.DESCRIPTIONS[0] + 2 + this.DESCRIPTIONS[1] + 1 + this.DESCRIPTIONS[2] + 1 + this.DESCRIPTIONS[3] + 1 + this.DESCRIPTIONS[4];
     }
 }

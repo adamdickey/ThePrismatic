@@ -2,15 +2,17 @@ package prismaticmod.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
-import com.megacrit.cardcrawl.cards.status.Dazed;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class RecklessChargeAction extends AbstractGameAction {
     private final AbstractMonster m;
+    private final AbstractCard status;
 
-    public RecklessChargeAction(AbstractMonster m) {
+    public RecklessChargeAction(AbstractMonster m, AbstractCard status) {
         this.m = m;
+        this.status = status;
     }
 
     public void update() {
@@ -20,8 +22,8 @@ public class RecklessChargeAction extends AbstractGameAction {
                 debuffs++;
             }
         }
-        if(debuffs < 2){
-            addToBot(new MakeTempCardInDrawPileAction(new Dazed(), 1, true, true));
+        if(debuffs < 1){
+            addToBot(new MakeTempCardInDrawPileAction(status, 1, true, true));
         }
         this.isDone = true;
     }

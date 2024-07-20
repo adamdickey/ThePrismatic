@@ -21,7 +21,7 @@ public class LikeWater2 extends BaseCard {
     //but constants at the top of the file are easy to adjust.
     public LikeWater2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
-        int baseMagicNumber = 5;
+        int baseMagicNumber = 4;
         int UPG_Number = 2;
         setMagic(baseMagicNumber, UPG_Number);
     }

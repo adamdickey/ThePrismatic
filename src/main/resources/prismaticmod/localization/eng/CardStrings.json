@@ -273,7 +273,7 @@
   },
   "${modID}:Wild Strike": {
     "NAME": "Wild Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Add a Wound into your hand."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is not debuffed, shuffle a *Wound into your draw pile."
   },
   "${modID}:Dropkick": {
     "NAME": "Dropkick",
@@ -613,11 +613,16 @@
   },
   "${modID}:Reckless Charge": {
     "NAME": "Reckless Charge",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy has fewer than 2 debuffs, shuffle a Dazed into your draw pile."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is not debuffed, shuffle a *Dazed into your draw pile."
   },
-  "${modID}:Rage": {
-    "NAME": "Rage",
-    "DESCRIPTION": "Whenever you apply a debuff to an enemy this turn, gain !M! Block."
+  "${modID}:Brutality": {
+    "NAME": "Brutality",
+    "DESCRIPTION": "At the start of your turn, lose 1 HP, then draw 1 card for each debuffed enemy.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, lose 1 HP, then draw 1 card for each debuffed enemy."
+  },
+  "${modID}:Intimidate": {
+    "NAME": "Intimidate",
+    "DESCRIPTION": "Apply !M! Weak to ALL enemies. Apply !${modID}:Magic! Weak instead if an enemy has 2 or more debuffs. NL Exhaust."
   }
 }
 

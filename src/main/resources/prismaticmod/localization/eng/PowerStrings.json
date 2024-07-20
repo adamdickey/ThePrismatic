@@ -172,11 +172,15 @@
       " #yShiv into your hand."
     ]
   },
-  "${modID}:Rage": {
-    "NAME": "Rage",
+  "${modID}:Brutality": {
+    "NAME": "Brutality",
     "DESCRIPTIONS": [
-      "Whenever you apply a debuff to an enemy this turn, gain #b",
-      " #yBlock."
+      "At the start of your turn, lose #b",
+      " HP, then draw #b",
+      " card for each debuffed enemy.",
+      "At the start of your turn, lose #b",
+      " HP, then draw #b",
+      " cards for each debuffed enemy."
     ]
   }
 }

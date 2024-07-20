@@ -2,11 +2,11 @@ package prismaticmod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.status.Wound;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import prismaticmod.actions.RecklessChargeAction;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -33,6 +33,6 @@ public class WildStrike2 extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-        addToBot(new MakeTempCardInHandAction(new Wound(), 1, true));
+        addToBot(new RecklessChargeAction(m, new Wound()));
     }
 }

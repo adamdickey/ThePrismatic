@@ -109,7 +109,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Bloodletting());
         tmpPool.add(new Bludgeon());
         tmpPool.add(new BodySlam());
-        tmpPool.add(new Brutality());
+        tmpPool.add(new Brutality2());
         tmpPool.add(new BurningPact());
         tmpPool.add(new Carnage());
         tmpPool.add(new Clash2());
@@ -141,7 +141,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Impervious());
         tmpPool.add(new InfernalBlade2());
         tmpPool.add(new Inflame());
-        tmpPool.add(new Intimidate());
+        tmpPool.add(new Intimidate2());
         tmpPool.add(new IronWave());
         tmpPool.add(new Juggernaut2());
         tmpPool.add(new LimitBreak2());
@@ -151,7 +151,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new PommelStrike());
         tmpPool.add(new PowerThrough());
         tmpPool.add(new Pummel());
-        tmpPool.add(new Rage2());
+        tmpPool.add(new Rage());
         tmpPool.add(new Rampage());
         tmpPool.add(new Reaper());
         tmpPool.add(new RecklessCharge2());
