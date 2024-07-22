@@ -29,6 +29,7 @@ public class WildStrike2 extends BaseCard {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         tags.add(CardTags.STRIKE);
+        this.cardsToPreview = new Wound();
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

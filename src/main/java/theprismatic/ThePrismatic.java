@@ -31,6 +31,7 @@ import prismaticmod.util.TextureLoader;
 import java.util.*;
 
 import static com.badlogic.gdx.math.MathUtils.random;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static prismaticmod.BasicMod.characterPath;
 import static prismaticmod.BasicMod.makeID;
 import static theprismatic.ThePrismatic.Enums.*;
@@ -427,8 +428,9 @@ public class ThePrismatic extends CustomPlayer {
         retVal.add(Defend_Blue.ID);
         retVal.add(Defend_Watcher.ID);
         retVal.add(Zap.ID);
-        retVal.add(getPrismaticCards().get(0).cardID);
-        retVal.add(getPrismaticCards().get(1).cardID);
+        ArrayList<AbstractCard> cards = getPrismaticCards();
+        retVal.add(cards.get(0).cardID);
+        retVal.add(cards.get(1).cardID);
         return retVal;
     }
     public AbstractCard getPrismaticCard(){
@@ -553,13 +555,79 @@ public class ThePrismatic extends CustomPlayer {
         return TEXT[2]; //Generally, the only difference in this text is how the vampires refer to the player.
     }
     public Texture getCutsceneBg() {
-        return TextureLoader.getTexture("images/scenes/blueBg.jpg");
+        int redCards = 0, greenCards = 0, blueCards = 0, purpleCards = 0;
+        for(AbstractCard c : player.masterDeck.group){
+            if(c.color == AbstractCard.CardColor.RED || c.color == ThePrismatic.Enums.Red){
+                redCards++;
+            }
+            if(c.color == AbstractCard.CardColor.GREEN || c.color == ThePrismatic.Enums.Green){
+                greenCards++;
+            }
+            if(c.color == AbstractCard.CardColor.BLUE || c.color == ThePrismatic.Enums.Blue){
+                blueCards++;
+            }
+            if(c.color == AbstractCard.CardColor.PURPLE || c.color == ThePrismatic.Enums.Purple){
+                purpleCards++;
+            }
+        }
+        if((redCards > greenCards) && (redCards > blueCards) && (redCards > purpleCards)){
+            return TextureLoader.getTexture("images/scenes/redBg.jpg");
+        }
+        else if(((greenCards > redCards) && (greenCards > blueCards) && (greenCards > purpleCards))){
+            return TextureLoader.getTexture("images/scenes/greenBg.jpg");
+        }
+        else if(((blueCards > redCards) && (blueCards > greenCards) && (blueCards > purpleCards))){
+            return TextureLoader.getTexture("images/scenes/blueBg.jpg");
+        }
+        else if(((purpleCards > redCards) && (purpleCards > greenCards) && (purpleCards > blueCards))){
+            return TextureLoader.getTexture("images/scenes/purpleBg.jpg");
+        }
+        else{
+            return TextureLoader.getTexture("images/scenes/blueBg.jpg");
+        }
     }
     public List<CutscenePanel> getCutscenePanels() {
         List<CutscenePanel> panels = new ArrayList<>();
-        panels.add(new CutscenePanel("images/scenes/defect1.png", "ATTACK_MAGIC_BEAM_SHORT"));
-        panels.add(new CutscenePanel("images/scenes/defect2.png"));
-        panels.add(new CutscenePanel("prismaticmod/images/character/prismatic3.png"));
+        int redCards = 0, greenCards = 0, blueCards = 0, purpleCards = 0;
+        for(AbstractCard c : player.masterDeck.group){
+            if(c.color == AbstractCard.CardColor.RED || c.color == ThePrismatic.Enums.Red){
+                redCards++;
+            }
+            if(c.color == AbstractCard.CardColor.GREEN || c.color == ThePrismatic.Enums.Green){
+                greenCards++;
+            }
+            if(c.color == AbstractCard.CardColor.BLUE || c.color == ThePrismatic.Enums.Blue){
+                blueCards++;
+            }
+            if(c.color == AbstractCard.CardColor.PURPLE || c.color == ThePrismatic.Enums.Purple){
+                purpleCards++;
+            }
+        }
+        if((redCards > greenCards) && (redCards > blueCards) && (redCards > purpleCards)){
+            panels.add(new CutscenePanel("images/scenes/ironclad1.png", "ATTACK_HEAVY"));
+            panels.add(new CutscenePanel("images/scenes/ironclad2.png"));
+            panels.add(new CutscenePanel("images/scenes/ironclad3.png"));
+        }
+        else if(((greenCards > redCards) && (greenCards > blueCards) && (greenCards > purpleCards))){
+            panels.add(new CutscenePanel("images/scenes/silent1.png", "ATTACK_POISON2"));
+            panels.add(new CutscenePanel("images/scenes/silent2.png"));
+            panels.add(new CutscenePanel("images/scenes/silent3.png"));
+        }
+        else if(((blueCards > redCards) && (blueCards > greenCards) && (blueCards > purpleCards))){
+            panels.add(new CutscenePanel("images/scenes/defect1.png", "ATTACK_MAGIC_BEAM_SHORT"));
+            panels.add(new CutscenePanel("images/scenes/defect2.png"));
+            panels.add(new CutscenePanel("images/scenes/defect3.png"));
+        }
+        else if(((purpleCards > redCards) && (purpleCards > greenCards) && (purpleCards > blueCards))){
+            panels.add(new CutscenePanel("images/scenes/watcher1.png", "WATCHER_HEART_PUNCH"));
+            panels.add(new CutscenePanel("images/scenes/watcher2.png"));
+            panels.add(new CutscenePanel("images/scenes/watcher3.png"));
+        }
+        else{
+            panels.add(new CutscenePanel("images/scenes/defect1.png", "ATTACK_MAGIC_BEAM_SHORT"));
+            panels.add(new CutscenePanel("images/scenes/defect2.png"));
+            panels.add(new CutscenePanel("prismaticmod/images/character/prismatic3.png"));
+        }
         return panels;
     }
 

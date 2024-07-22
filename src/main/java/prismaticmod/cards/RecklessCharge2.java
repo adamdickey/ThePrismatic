@@ -29,6 +29,7 @@ public class RecklessCharge2 extends BaseCard {
     public RecklessCharge2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
+        this.cardsToPreview = new Dazed();
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
