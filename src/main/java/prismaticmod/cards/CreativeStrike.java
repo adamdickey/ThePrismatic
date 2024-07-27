@@ -30,6 +30,7 @@ public class CreativeStrike extends BaseCard implements OnCreateCardInterface {
     public CreativeStrike() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
+        tags.add(CardTags.STRIKE);
         this.selfRetain = true;
     }
     @Override

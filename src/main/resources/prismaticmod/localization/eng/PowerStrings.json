@@ -2,9 +2,9 @@
   "${modID}:0ch0 F0rm": {
     "NAME": "0ch0 F0rm",
     "DESCRIPTIONS": [
-      "The first cost 0 card you play each turn is played twice.",
+      "The first 0-cost card you play each turn is played twice.",
       "The first #b",
-      " cost 0 cards you play each turn are played twice."
+      " 0-cost cards you play each turn are played twice."
     ]
   },
   "${modID}:Targeted": {
@@ -138,7 +138,7 @@
   "${modID}:Deflection": {
     "NAME": "Deflection",
     "DESCRIPTIONS": [
-      "Cost 0 cards give #b",
+      "0-cost cards give #b",
       " additional #yBlock."
     ]
   },

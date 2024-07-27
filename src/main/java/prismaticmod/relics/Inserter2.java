@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.powers.watcher.MantraPower;
 import theprismatic.ThePrismatic;
 
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static prismaticmod.BasicMod.makeID;
 
 public class Inserter2 extends BaseRelic {
@@ -34,7 +35,9 @@ public class Inserter2 extends BaseRelic {
             this.counter = 0;
             flash();
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-            addToBot(new IncreaseMaxOrbAction(1));
+            if(player.orbs.size() < 10){
+                addToBot(new IncreaseMaxOrbAction(1));
+            }
             addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, 1), 1));
             addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new MantraPower(AbstractDungeon.player, 1), 1));
         }

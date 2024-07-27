@@ -80,7 +80,8 @@
   },
   "${modID}:Havoc": {
     "NAME": "Havoc",
-    "DESCRIPTION": "Scry 2. NL Play the top card of your draw pile and Exhaust it."
+    "DESCRIPTION": "Play the top card of your draw pile and Exhaust it.",
+    "UPGRADE_DESCRIPTION": "Scry 1. NL Play the top card of your draw pile and Exhaust it."
   },
   "${modID}:Sever Soul": {
     "NAME": "Sever Soul",
@@ -376,11 +377,11 @@
   },
   "${modID}:Empowering Defend": {
     "NAME": "Empowering Defend",
-    "DESCRIPTION": "Retain. NL Gain !B! Block. NL The next Power card you play this turn costs 1 less."
+    "DESCRIPTION": "Retain. NL Gain !B! Block. NL The next Power card you play this turn costs 1 less [E] ."
   },
   "${modID}:Empowering Strike": {
     "NAME": "Empowering Strike",
-    "DESCRIPTION": "Retain. NL Deal !D! damage. NL The next Power card you play this turn costs 1 less."
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL The next Power card you play this turn costs 1 less [E] ."
   },
   "${modID}:Doom Will Bloom": {
     "NAME": "Doom Will Bloom",
@@ -406,7 +407,7 @@
   },
   "${modID}:Multi-Chaos": {
     "NAME": "Multi-Chaos",
-    "DESCRIPTION": "Evoke your next Orb X times. NL Channel X random Orbs.",
+    "DESCRIPTION": "Evoke your next Orb NL X times. NL Channel X random Orbs.",
     "UPGRADE_DESCRIPTION": "Evoke your next Orb X+1 times. NL Channel X+1 random Orbs."
   },
   "${modID}:Limit Break": {
