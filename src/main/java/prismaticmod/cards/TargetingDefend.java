@@ -36,13 +36,7 @@ public class TargetingDefend extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
-            flash();
-            for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
-                if (!monster.isDead && !monster.isDying) {
-                    addToBot(new ApplyPowerAction(monster, p, new TargetedPower(monster, this.magicNumber), this.magicNumber));
-                }
-            }
-        }
+        AbstractMonster randomMonster = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+        addToBot(new ApplyPowerAction(randomMonster, AbstractDungeon.player, new TargetedPower(randomMonster, magicNumber), magicNumber));
     }
 }

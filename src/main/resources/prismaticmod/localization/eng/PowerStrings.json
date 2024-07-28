@@ -27,14 +27,6 @@
       " #yMantra."
     ]
   },
-  "${modID}:On a Roll": {
-    "NAME": "On a Roll",
-    "DESCRIPTIONS": [
-      "When you play an #yAttack, gain #b",
-      " temporary #yStrength and #b",
-      " temporary #yDexterity."
-    ]
-  },
   "${modID}:Static Discharge": {
     "NAME": "Static Discharge",
     "DESCRIPTIONS": [

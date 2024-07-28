@@ -1,7 +1,7 @@
 {
   "${modID}:Targeting Strike": {
     "NAME": "Targeting Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${modID}:Target to ALL enemies."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${modID}:Target."
   },
   "${modID}:Divine Strike": {
     "NAME": "Divine Strike",
@@ -72,11 +72,6 @@
   "${modID}:Foreign Powers": {
     "NAME": "Foreign Powers",
     "DESCRIPTION": "For each color, add a random Power card of that color into your hand. They cost 0 this turn. NL Exhaust."
-  },
-  "${modID}:On a Roll": {
-    "NAME": "On a Roll",
-    "DESCRIPTION": "Whenever you play an Attack, gain 1 temporary Strength and 1 temporary Dexterity.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play an Attack, gain 1 temporary Strength and 1 temporary Dexterity."
   },
   "${modID}:Havoc": {
     "NAME": "Havoc",
@@ -327,7 +322,7 @@
   },
   "${modID}:Targeting Defend": {
     "NAME": "Targeting Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Apply !M! ${modID}:Target to ALL enemies."
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! ${modID}:Target to a random enemy."
   },
   "${modID}:Catalyst": {
     "NAME": "Catalyst",
