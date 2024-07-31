@@ -24,11 +24,9 @@ public class Rage2 extends BaseCard {
 
     //These will be used in the constructor. Technically you can just use the values directly,
     //but constants at the top of the file are easy to adjust.
+    int rageNumber = 2;
     public Rage2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
-        int baseMagicNumber = 3;
-        int UPG_Number = 2;
-        setMagic(baseMagicNumber, UPG_Number);
     }
 
     @Override
@@ -36,6 +34,8 @@ public class Rage2 extends BaseCard {
         addToBot(new SFXAction("RAGE"));
         addToBot(new VFXAction(p, new ShockWaveEffect(p.hb.cX, p.hb.cY, Color.ORANGE, ShockWaveEffect.ShockWaveType.CHAOTIC), 1.0F));
         addToBot(new ChangeStanceAction("Wrath"));
-        addToBot(new ApplyPowerAction(p, p, new RagePower(p, magicNumber), magicNumber));
+        if(this.upgraded){
+            addToBot(new ApplyPowerAction(p, p, new RagePower(p, rageNumber), rageNumber));
+        }
     }
 }

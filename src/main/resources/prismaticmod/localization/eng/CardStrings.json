@@ -444,7 +444,7 @@
   },
   "${modID}:Reprogram": {
     "NAME": "Reprogram",
-    "DESCRIPTION": "Gain !M! Focus. NL Lose 1 Strength. NL Lose 1 Dexterity."
+    "DESCRIPTION": "Gain !M! Focus. NL Lose !${modID}:loss! Strength. NL Lose !${modID}:loss! Dexterity."
   },
   "${modID}:Recursion": {
     "NAME": "Recursion",
@@ -622,7 +622,8 @@
   },
   "${modID}:Rage": {
     "NAME": "Rage",
-    "DESCRIPTION": "Enter Wrath. NL Whenever you play an Attack this turn, gain !M! Block."
+    "DESCRIPTION": "Enter Wrath.",
+    "UPGRADE_DESCRIPTION": "Enter Wrath. NL Whenever you play an Attack this turn, gain 2 Block."
   }
 }
 
