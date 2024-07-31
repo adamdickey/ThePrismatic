@@ -619,6 +619,10 @@
   "${modID}:Intimidate": {
     "NAME": "Intimidate",
     "DESCRIPTION": "Apply !M! Weak to ALL enemies. Apply !${modID}:Magic! Weak instead if an enemy has 2 or more debuffs. NL Exhaust."
+  },
+  "${modID}:Rage": {
+    "NAME": "Rage",
+    "DESCRIPTION": "Enter Wrath. NL Whenever you play an Attack this turn, gain !M! Block."
   }
 }
 

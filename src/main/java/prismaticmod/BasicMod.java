@@ -28,8 +28,15 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.scannotation.AnnotationDB;
 import theprismatic.ThePrismatic;
+
 import java.nio.charset.StandardCharsets;
 import java.util.*;
+
+import basemod.ModLabeledToggleButton;
+import basemod.ModPanel;
+import basemod.interfaces.PostDungeonInitializeSubscriber;
+import basemod.interfaces.PostInitializeSubscriber;
+import com.megacrit.cardcrawl.helpers.FontHelper;
 
 import static theprismatic.ThePrismatic.Enums.*;
 
@@ -40,11 +47,16 @@ public class BasicMod implements
         EditCharactersSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
+        PostDungeonInitializeSubscriber,
         PostInitializeSubscriber,
         PrePotionUseSubscriber {
     public static ModInfo info;
     public static String modID; //Edit your pom.xml to change this
-    static { loadModInfo(); }
+
+    static {
+        loadModInfo();
+    }
+
     public static final Logger logger = LogManager.getLogger(modID); //Used to output to the console.
     private static final String resourcesFolder = "prismaticmod";
 
@@ -143,6 +155,17 @@ public class BasicMod implements
                 SMALL_COLORLESS);
     }
 
+    public static Boolean OrigStartDeckSetting = Boolean.FALSE;
+    public static Boolean EnColorlessSetting = Boolean.FALSE;
+    public static Boolean OrigStartDeck = Boolean.FALSE;
+    public static Boolean EnColorless = Boolean.FALSE;
+
+
+    public void receivePostDungeonInitialize() {
+        if (OrigStartDeckSetting) OrigStartDeck = true;
+        if (EnColorlessSetting) EnColorless = true;
+    }
+
     public BasicMod() {
         BaseMod.subscribe(this); //This will make BaseMod trigger all the subscribers at their appropriate times.
         logger.info(modID + " subscribed to BaseMod.");
@@ -154,17 +177,35 @@ public class BasicMod implements
         Texture badgeTexture = TextureLoader.getTexture(imagePath("badge.png"));
         //Set up the mod information displayed in the in-game mods menu.
         //The information used is taken from your pom.xml file.
-        BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
         registerPotions();
+
+        ModPanel settingsPanel = new ModPanel();
+        ModLabeledToggleButton enableOriginalStartingDeck = new ModLabeledToggleButton("Enable the Prismatic's original, more powerful starting deck?", 350.0F, 750.0F, Settings.CREAM_COLOR, FontHelper.charDescFont, OrigStartDeckSetting, settingsPanel, label -> {
+        }, button -> SetBoolean(button.enabled)
+        );
+        settingsPanel.addUIElement(enableOriginalStartingDeck);
+
+        ModLabeledToggleButton enableColorlessCards = new ModLabeledToggleButton("Enable the Prismatic to see colorless cards in card rewards?", 350.0F, 700.0F, Settings.CREAM_COLOR, FontHelper.charDescFont, EnColorlessSetting, settingsPanel, label -> {
+        }, button -> SetBoolean(button.enabled)
+        );
+        settingsPanel.addUIElement(enableColorlessCards);
+        BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, settingsPanel);
+    }
+
+    public void SetBoolean(Boolean bool) {
+        OrigStartDeckSetting = bool;
+        EnColorlessSetting = bool;
+        OrigStartDeck = bool;
+        EnColorless = bool;
     }
 
     /*----------Localization----------*/
 
     //This is used to load the appropriate localization files based on language.
-    private static String getLangString()
-    {
+    private static String getLangString() {
         return Settings.language.name().toLowerCase();
     }
+
     private static final String defaultLanguage = "eng";
 
     public static final Map<String, KeywordInfo> keywords = new HashMap<>();
@@ -181,8 +222,7 @@ public class BasicMod implements
         if (!defaultLanguage.equals(getLangString())) {
             try {
                 loadLocalization(getLangString());
-            }
-            catch (GdxRuntimeException e) {
+            } catch (GdxRuntimeException e) {
                 e.printStackTrace();
             }
         }
@@ -210,8 +250,7 @@ public class BasicMod implements
     }
 
     @Override
-    public void receiveEditKeywords()
-    {
+    public void receiveEditKeywords() {
         Gson gson = new Gson();
         String json = Gdx.files.internal(localizationPath(defaultLanguage, "Keywords.json")).readString(String.valueOf(StandardCharsets.UTF_8));
         KeywordInfo[] keywords = gson.fromJson(json, KeywordInfo[].class);
@@ -221,17 +260,14 @@ public class BasicMod implements
         }
 
         if (!defaultLanguage.equals(getLangString())) {
-            try
-            {
+            try {
                 json = Gdx.files.internal(localizationPath(getLangString(), "Keywords.json")).readString(String.valueOf(StandardCharsets.UTF_8));
                 keywords = gson.fromJson(json, KeywordInfo[].class);
                 for (KeywordInfo keyword : keywords) {
                     keyword.prep();
                     registerKeyword(keyword);
                 }
-            }
-            catch (Exception e)
-            {
+            } catch (Exception e) {
                 logger.warn(modID + " does not support " + getLangString() + " keywords.");
             }
         }
@@ -239,8 +275,7 @@ public class BasicMod implements
 
     private void registerKeyword(KeywordInfo info) {
         BaseMod.addKeyword(modID.toLowerCase(), info.PROPER_NAME, info.NAMES, info.DESCRIPTION);
-        if (!info.ID.isEmpty())
-        {
+        if (!info.ID.isEmpty()) {
             keywords.put(info.ID, info);
         }
     }
@@ -253,12 +288,15 @@ public class BasicMod implements
     public static String imagePath(String file) {
         return resourcesFolder + "/images/" + file;
     }
+
     public static String characterPath(String file) {
         return resourcesFolder + "/images/character/" + file;
     }
+
     public static String powerPath(String file) {
         return resourcesFolder + "/images/powers/" + file;
     }
+
     public static String relicPath(String file) {
         return resourcesFolder + "/images/relics/" + file;
     }
@@ -266,7 +304,7 @@ public class BasicMod implements
 
     //This determines the mod's ID based on information stored by ModTheSpire.
     private static void loadModInfo() {
-        Optional<ModInfo> infos = Arrays.stream(Loader.MODINFOS).filter((modInfo)->{
+        Optional<ModInfo> infos = Arrays.stream(Loader.MODINFOS).filter((modInfo) -> {
             AnnotationDB annotationDB = Patcher.annotationDBMap.get(modInfo.jarURL);
             if (annotationDB == null)
                 return false;
@@ -276,8 +314,7 @@ public class BasicMod implements
         if (infos.isPresent()) {
             info = infos.get();
             modID = info.ID;
-        }
-        else {
+        } else {
             throw new RuntimeException("Failed to determine mod info/ID based on initializer.");
         }
     }
@@ -295,6 +332,7 @@ public class BasicMod implements
                 .setDefaultSeen(true) //And marks them as seen in the compendium
                 .cards(); //Adds the cards
     }
+
     public static void registerPotions() {
         new AutoAdd(modID) //Loads files from this mod
                 .packageFilter(BasePotion.class) //In the same package as this class
@@ -318,8 +356,8 @@ public class BasicMod implements
         BaseMod.addPotion(StancePotion.class, null, null, null, "StancePotion", Prismatic);
         BaseMod.addPotion(Ambrosia.class, null, null, null, "Ambrosia", Prismatic);
     }
-    public void receiveEditRelics()
-    {
+
+    public void receiveEditRelics() {
         // This finds and adds all relics inheriting from CustomRelic that are in the same package
         // as MyRelic, keeping all as unseen except those annotated with @AutoAdd.Seen
         new AutoAdd(modID)
@@ -372,7 +410,7 @@ public class BasicMod implements
 
     @Override
     public void receivePrePotionUse(AbstractPotion potion) {
-        if(potion instanceof ExplosivePotion){
+        if (potion instanceof ExplosivePotion) {
             TargetedPower.explosivePotionUsed();
         }
     }

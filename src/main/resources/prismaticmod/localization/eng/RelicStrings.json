@@ -40,16 +40,14 @@
     "NAME": "Ring of Keys",
     "FLAVOR": "Unlock the ideas contained within your mind.",
     "DESCRIPTIONS": [
-      "At the start of each combat, draw #b",
-      " additional card for every #b",
-      " cards in your draw pile."
+      "At the start of each combat, draw 1 additional card for each Innate card in your deck."
     ]
   },
   "${modID}:Hardwood Barrel": {
     "NAME": "Hardwood Barrel",
     "FLAVOR": "Nice to have until you're scraping the bottom of it.                      Designed by u/Charrat",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of each turn until you empty your draw pile."
+      "Gain [E] at the start of each turn until you shuffle your draw pile."
     ]
   },
   "${modID}:Runic Cube": {

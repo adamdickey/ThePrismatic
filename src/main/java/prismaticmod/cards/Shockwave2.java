@@ -24,7 +24,7 @@ public class Shockwave2 extends BaseCard {
     //but constants at the top of the file are easy to adjust.
 
     private static final int baseMagicNumber = 3;
-    private static final int UPG_Number = 2;
+    private static final int UPG_Number = 1;
 
     public Shockwave2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.

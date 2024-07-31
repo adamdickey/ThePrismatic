@@ -5,7 +5,7 @@
   "description": "!(project.description)",
   "version": "${project.version}",
   "sts_version": "${SlayTheSpire.version}",
-  "credits": "Ari Morese, u/Charrat, LoneLuneth, and players like you, thank you!",
+  "credits": "Ari Morese (Art), u/Charrat, LoneLuneth, Cae, and players like you, thank you!",
   "mts_version": "${ModTheSpire.version}",
   "dependencies": ["basemod", "stslib"],
   "update_json": ""
