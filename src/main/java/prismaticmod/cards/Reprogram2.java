@@ -23,18 +23,15 @@ public class Reprogram2 extends BaseCard {
 
     private static final int baseMagicNumber = 2;
     private static final int UPG_Number = 1;
-    private static final int baseLossNumber = 1;
-    private static final int UPG_Loss = 1;
 
     public Reprogram2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setMagic(baseMagicNumber, UPG_Number);
-        setCustomVar("loss", baseLossNumber, UPG_Loss);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new FocusPower(p, magicNumber), magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, -customVar("loss")), -customVar("loss")));
-        addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, -customVar("loss")), -customVar("loss")));
+        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, -1), -1));
+        addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, -1), -1));
     }
 }

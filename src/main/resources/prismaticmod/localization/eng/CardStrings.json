@@ -245,11 +245,13 @@
   },
   "${modID}:Tempest": {
     "NAME": "Tempest",
-    "DESCRIPTION": "Channel !M! Lightning. NL Enter Wrath."
+    "DESCRIPTION": "Channel !M! Lightning. NL Enter Wrath.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Channel !M! Lightning. NL Enter Wrath."
   },
   "${modID}:Blizzard": {
     "NAME": "Blizzard",
-    "DESCRIPTION": "Channel !M! Frost. NL Enter Calm."
+    "DESCRIPTION": "Channel !M! Frost. NL Enter Calm.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Channel !M! Frost. NL Enter Calm."
   },
   "${modID}:Setup": {
     "NAME": "Setup",
@@ -433,6 +435,7 @@
   "${modID}:Thunder Strike": {
     "NAME": "Thunder Strike",
     "DESCRIPTION": "Deal !D! damage to a random enemy for each Orb Channeled this combat.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage to a random enemy for each Orb Channeled this combat.",
     "EXTENDED_DESCRIPTION": [
       " NL (Channeled !M! Orb.)",
       " NL (Channeled !M! Orbs.)"
@@ -444,7 +447,7 @@
   },
   "${modID}:Reprogram": {
     "NAME": "Reprogram",
-    "DESCRIPTION": "Gain !M! Focus. NL Lose !${modID}:loss! Strength. NL Lose !${modID}:loss! Dexterity."
+    "DESCRIPTION": "Gain !M! Focus. NL Lose 1 Strength. NL Lose 1 Dexterity."
   },
   "${modID}:Recursion": {
     "NAME": "Recursion",
@@ -589,7 +592,7 @@
   },
   "${modID}:Wave of the Hand": {
     "NAME": "Wave of the Hand",
-    "DESCRIPTION": "Channel 1 Frost. NL Whenever you gain Block this turn, apply !M! Weak to ALL enemies."
+    "DESCRIPTION": "Whenever you gain Block this turn, apply NL !M! Weak and !M! ${modID}:Target to a random enemy."
   },
   "${modID}:Flex": {
     "NAME": "Flex",
@@ -605,7 +608,7 @@
   },
   "${modID}:Dodge and Roll": {
     "NAME": "Dodge and Roll",
-    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain !B! Block. NL If this card is ${modID}:Milled, gain !B! Block."
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain !B! Block."
   },
   "${modID}:Reckless Charge": {
     "NAME": "Reckless Charge",
@@ -624,6 +627,10 @@
     "NAME": "Rage",
     "DESCRIPTION": "Enter Wrath.",
     "UPGRADE_DESCRIPTION": "Enter Wrath. NL Whenever you play an Attack this turn, gain 2 Block."
+  },
+  "${modID}:Reach Heaven": {
+    "NAME": "Reach Heaven",
+    "DESCRIPTION": "Deal !D! damage. NL Channel 1 Dark. NL Shuffle a NL *Through *Violence into your draw pile."
   }
 }
 

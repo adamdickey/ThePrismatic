@@ -671,7 +671,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Prostrate());
         tmpPool.add(new Protect());
         tmpPool.add(new Ragnarok());
-        tmpPool.add(new ReachHeaven());
+        tmpPool.add(new ReachHeaven2());
         tmpPool.add(new Rushdown2());
         tmpPool.add(new Sanctity());
         tmpPool.add(new SandsOfTime());

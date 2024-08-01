@@ -21,12 +21,11 @@ public class Blizzard2 extends BaseCard {
     //but constants at the top of the file are easy to adjust.
 
     private static final int baseMagicNumber = 1;
-    private static final int UPG_Number = 1;
+    private static final int UPG_Number = 0;
 
     public Blizzard2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setMagic(baseMagicNumber, UPG_Number);
-
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -34,5 +33,13 @@ public class Blizzard2 extends BaseCard {
             addToBot(new ChannelAction(new Frost()));
         }
         addToBot(new ChangeStanceAction("Calm"));
+    }
+    public void upgrade() {
+        if (!this.upgraded) {
+            upgradeName();
+            this.selfRetain = true;
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
+        }
     }
 }

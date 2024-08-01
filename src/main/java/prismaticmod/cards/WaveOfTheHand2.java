@@ -1,11 +1,9 @@
 package prismaticmod.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.Frost;
-import com.megacrit.cardcrawl.powers.watcher.WaveOfTheHandPower;
+import prismaticmod.powers.WaveOfTheHand2Power;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -31,7 +29,6 @@ public class WaveOfTheHand2 extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ChannelAction(new Frost()));
-        addToBot(new ApplyPowerAction(p, p, new WaveOfTheHandPower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new WaveOfTheHand2Power(magicNumber)));
     }
 }
