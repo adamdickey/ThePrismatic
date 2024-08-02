@@ -149,8 +149,8 @@
       " #yStrength."
     ]
   },
-  "${modID}:Scry": {
-    "NAME": "Scry",
+  "${modID}:Next Turn Scry": {
+    "NAME": "Next Turn Scry",
     "DESCRIPTIONS": [
       "At the start of your next turn, #yScry #b",
       "."
@@ -181,6 +181,22 @@
       "Whenever you gain Block this turn, apply #b",
       " #yWeak and #b",
       " #yTarget to a random enemy."
+    ]
+  },
+  "${modID}:Hello World": {
+    "NAME": "Hello World",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " random cards of any rarity into your hand.",
+      " random card of any rarity into your hand."
+    ]
+  },
+  "${modID}:Retain This Turn": {
+    "NAME": "Retain This Turn",
+    "DESCRIPTIONS": [
+      "At the end of this turn, you may retain #b",
+      " card.",
+      " cards."
     ]
   }
 }

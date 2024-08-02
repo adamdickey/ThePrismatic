@@ -1,16 +1,16 @@
 package prismaticmod.cards;
 
-import com.evacipated.cardcrawl.mod.stslib.patches.bothInterfaces.OnCreateCardInterface;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
-public class CreativeDefend extends BaseCard implements OnCreateCardInterface {
-    public static final String ID = makeID("Creative Defend"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
+public class EstablishedDefend extends BaseCard {
+    public static final String ID = makeID("Established Defend"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
     private static final CardStats info = new CardStats(
             ThePrismatic.Enums.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.
             CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -23,32 +23,20 @@ public class CreativeDefend extends BaseCard implements OnCreateCardInterface {
 
     private static final int BLOCK = 5;
     private static final int UPG_BLOCK = 3;
-    boolean cardCreated = false;
 
-    public CreativeDefend() {
+    public EstablishedDefend() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
         this.selfRetain = true;
+        //tags.add(CardTags.STARTER_DEFEND);
     }
-    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, block));
-        if(cardCreated){
-            addToBot(new GainEnergyAction(1));
-        }
-    }
-
-    @Override
-    public void onCreateCard(AbstractCard abstractCard) {
-        cardCreated = true;
-    }
-    public void atTurnStart(){
-        cardCreated = false;
-    }
-    public void triggerOnGlowCheck() {
-        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        if(cardCreated){
-            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        addToBot(new GainBlockAction(p, p, this.block));
+        for (AbstractCard c : AbstractDungeon.player.hand.group) {
+            if (c.selfRetain && c != this) {
+                addToBot(new GainEnergyAction(1));
+                break;
+            }
         }
     }
 }

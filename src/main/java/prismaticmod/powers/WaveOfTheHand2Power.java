@@ -1,5 +1,7 @@
 package prismaticmod.powers;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.WeakPower;
@@ -28,9 +30,13 @@ public class WaveOfTheHand2Power extends BasePower {
     public void onGainedBlock(float blockAmount) {
         if (blockAmount > 0.0F) {
             flash();
-            AbstractMonster randomMonster = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
-            addToBot(new ApplyPowerAction(randomMonster, AbstractDungeon.player, new WeakPower(randomMonster, this.amount, false), this.amount));
-            addToBot(new ApplyPowerAction(randomMonster, AbstractDungeon.player, new TargetedPower(randomMonster, this.amount), this.amount));
+            for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters){
+                addToBot(new ApplyPowerAction(mo, player, new WeakPower(mo, this.amount, false), this.amount, true, AbstractGameAction.AttackEffect.NONE));
+                addToBot(new ApplyPowerAction(mo, player, new TargetedPower(mo, this.amount), this.amount, true, AbstractGameAction.AttackEffect.NONE));
+            }
         }
+    }
+    public void atEndOfRound() {
+        addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
     }
 }

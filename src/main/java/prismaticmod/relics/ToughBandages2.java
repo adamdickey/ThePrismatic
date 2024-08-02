@@ -18,12 +18,12 @@ public class ToughBandages2 extends BaseRelic {
     }
 
     public String getUpdatedDescription() {
-        return this.DESCRIPTIONS[0] + 3 + this.DESCRIPTIONS[1];
+        return this.DESCRIPTIONS[0] + 2 + this.DESCRIPTIONS[1];
     }
 
     public void onManualDiscard() {
         flash();
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        addToBot(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 3, true));
+        addToBot(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 2, true));
     }
 }

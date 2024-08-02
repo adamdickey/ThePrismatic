@@ -7,7 +7,7 @@ import static prismaticmod.BasicMod.makeID;
 
 public class ScryNextTurnPower extends BasePower {
 
-    public static final String ID = makeID("Scry");
+    public static final String ID = makeID("Next Turn Scry");
 
     public ScryNextTurnPower(int amount) {
         super(ID, PowerType.BUFF, true, player, player, amount, true);

@@ -71,7 +71,7 @@
   },
   "${modID}:Foreign Powers": {
     "NAME": "Foreign Powers",
-    "DESCRIPTION": "For each color, add a random Power card of that color into your hand. They cost 0 this turn. NL Exhaust."
+    "DESCRIPTION": "Add a random Power card of each color into your hand. They cost 0 this turn. NL Exhaust."
   },
   "${modID}:Havoc": {
     "NAME": "Havoc",
@@ -101,8 +101,8 @@
   },
   "${modID}:Hello World": {
     "NAME": "Hello World",
-    "DESCRIPTION": "At the start of your turn, add a random Common card into your hand.",
-    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a random Common card into your hand."
+    "DESCRIPTION": "At the start of your turn, add a random card of any rarity into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a random card of any rarity into your hand."
   },
   "${modID}:Storm": {
     "NAME": "Storm",
@@ -294,12 +294,16 @@
     "NAME": "Tactician",
     "DESCRIPTION": "Unplayable. NL If this card is ${modID}:Milled, NL gain [G].",
     "UPGRADE_DESCRIPTION": "Unplayable. NL If this card is ${modID}:Milled, NL gain [G] [G].",
-    "EXTENDED_DESCRIPTION": ["I can't play this card."]
+    "EXTENDED_DESCRIPTION": [
+      "I can't play this card."
+    ]
   },
   "${modID}:Reflex": {
     "NAME": "Reflex",
     "DESCRIPTION": "Unplayable. NL If this card is ${modID}:Milled, draw !M! cards.",
-    "EXTENDED_DESCRIPTION": ["I can't play this card."]
+    "EXTENDED_DESCRIPTION": [
+      "I can't play this card."
+    ]
   },
   "${modID}:Weave": {
     "NAME": "Weave",
@@ -469,7 +473,7 @@
   "${modID}:Grand Finale": {
     "NAME": "Grand Finale",
     "DESCRIPTION": "Retain. NL Can only be played if there are no cards in your draw pile. NL Deal !D! damage to ALL enemies.",
-    "EXTENDED_DESCRIPTION":[
+    "EXTENDED_DESCRIPTION": [
       "My draw pile NL must be #rEmpty."
     ]
   },
@@ -592,7 +596,8 @@
   },
   "${modID}:Wave of the Hand": {
     "NAME": "Wave of the Hand",
-    "DESCRIPTION": "Whenever you gain Block this turn, apply NL !M! Weak and !M! ${modID}:Target to a random enemy."
+    "DESCRIPTION": "Whenever you gain Block this turn, apply NL !M! Weak and !M! ${modID}:Target to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Channel 1 Frost. NL Whenever you gain Block this turn, apply NL !M! Weak and !M! ${modID}:Target to ALL enemies."
   },
   "${modID}:Flex": {
     "NAME": "Flex",
@@ -631,6 +636,19 @@
   "${modID}:Reach Heaven": {
     "NAME": "Reach Heaven",
     "DESCRIPTION": "Deal !D! damage. NL Channel 1 Dark. NL Shuffle a NL *Through *Violence into your draw pile."
+  },
+  "${modID}:Protect": {
+    "NAME": "Protect",
+    "DESCRIPTION": "Retain. NL Gain !B! Block. NL At the end of this turn, Retain up to !M! card.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain !B! Block. NL At the end of this turn, Retain up to !M! cards."
+  },
+  "${modID}:Established Strike": {
+    "NAME": "Established Strike",
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL If another card in NL your hand has Retain, NL add [E] ."
+  },
+  "${modID}:Established Defend": {
+    "NAME": "Established Defend",
+    "DESCRIPTION": "Retain. NL Gain !B! Block. NL If another card in NL your hand has Retain, NL add [E] ."
   }
 }
 
