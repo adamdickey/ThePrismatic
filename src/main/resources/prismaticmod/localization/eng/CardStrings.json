@@ -649,6 +649,14 @@
   "${modID}:Established Defend": {
     "NAME": "Established Defend",
     "DESCRIPTION": "Retain. NL Gain !B! Block. NL If another card in NL your hand has Retain, NL add [E] ."
+  },
+  "${modID}:Flying Sleeves": {
+    "NAME": "Flying Sleeves",
+    "DESCRIPTION": "Retain. NL Deal !D! damage twice. NL When Retained, gain 1 temporary Strength."
+  },
+  "${modID}:Windmill Strike": {
+    "NAME": "Windmill Strike",
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL When Retained, increase its damage by !M! this combat for each card Retained."
   }
 }
 

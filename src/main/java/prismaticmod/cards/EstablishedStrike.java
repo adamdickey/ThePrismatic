@@ -6,10 +6,11 @@ import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
+
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class EstablishedStrike extends BaseCard {
     public static final String ID = makeID("Established Strike"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
@@ -35,9 +36,18 @@ public class EstablishedStrike extends BaseCard {
     }
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        for (AbstractCard c : AbstractDungeon.player.hand.group) {
+        for (AbstractCard c : player.hand.group) {
             if (c.selfRetain && c != this) {
                 addToBot(new GainEnergyAction(1));
+                break;
+            }
+        }
+    }
+    public void triggerOnGlowCheck() {
+        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        for (AbstractCard c : player.hand.group) {
+            if (c.selfRetain && c != this) {
+                this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
                 break;
             }
         }

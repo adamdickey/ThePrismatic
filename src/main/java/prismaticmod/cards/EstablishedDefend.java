@@ -39,4 +39,13 @@ public class EstablishedDefend extends BaseCard {
             }
         }
     }
+    public void triggerOnGlowCheck() {
+        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        for (AbstractCard c : AbstractDungeon.player.hand.group) {
+            if (c.selfRetain && c != this) {
+                this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+                break;
+            }
+        }
+    }
 }
