@@ -376,7 +376,7 @@ public class ThePrismatic extends CustomPlayer {
             tmpPool.add(new Prostrate());
             tmpPool.add(new Protect2());
             tmpPool.add(new Ragnarok());
-            tmpPool.add(new ReachHeaven());
+            tmpPool.add(new ReachHeaven2());
             tmpPool.add(new Rushdown2());
             tmpPool.add(new Sanctity());
             tmpPool.add(new SandsOfTime());
@@ -397,7 +397,7 @@ public class ThePrismatic extends CustomPlayer {
             tmpPool.add(new WaveOfTheHand2());
             tmpPool.add(new Weave2());
             tmpPool.add(new WheelKick());
-            tmpPool.add(new WindmillStrike());
+            tmpPool.add(new WindmillStrike2());
             tmpPool.add(new Wish());
             tmpPool.add(new Worship());
             tmpPool.add(new WreathOfFlame2());
@@ -648,7 +648,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Fasting2());
         tmpPool.add(new FearNoEvil());
         tmpPool.add(new FlurryOfBlows());
-        tmpPool.add(new FlyingSleeves());
+        tmpPool.add(new FlyingSleeves2());
         tmpPool.add(new FollowUp());
         //tmpPool.add(new ForeignInfluence());
         tmpPool.add(new Foresight());
@@ -669,7 +669,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Pray2());
         tmpPool.add(new PressurePoints2());
         tmpPool.add(new Prostrate());
-        tmpPool.add(new Protect());
+        tmpPool.add(new Protect2());
         tmpPool.add(new Ragnarok());
         tmpPool.add(new ReachHeaven2());
         tmpPool.add(new Rushdown2());

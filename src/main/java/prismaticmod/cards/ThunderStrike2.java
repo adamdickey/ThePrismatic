@@ -1,18 +1,12 @@
 package prismaticmod.cards;
 
-import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.actions.defect.NewThunderStrikeAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
-
-import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class ThunderStrike2 extends BaseCard {
     public static final String ID = makeID("Thunder Strike"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
@@ -41,12 +35,7 @@ public class ThunderStrike2 extends BaseCard {
         this.baseMagicNumber = AbstractDungeon.actionManager.orbsChanneledThisCombat.size();
         this.magicNumber = this.baseMagicNumber;
         for (int i = 0; i < this.magicNumber; i++){
-            AbstractMonster randomMonster = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
-            if (randomMonster != null) {
-                addToBot(new VFXAction(new LightningEffect(randomMonster.drawX, randomMonster.drawY)));
-                addToBot(new SFXAction("ORB_LIGHTNING_EVOKE", 0.1F));
-                addToBot(new DamageAction(randomMonster, new DamageInfo(player, damage, DamageInfo.DamageType.NORMAL)));
-            }
+            addToBot(new NewThunderStrikeAction(this));
         }
     }
 
