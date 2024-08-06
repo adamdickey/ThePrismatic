@@ -662,7 +662,6 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new MasterReality2());
         tmpPool.add(new Meditate());
         tmpPool.add(new MentalFortress2());
-        tmpPool.add(new MentalFortress2());
         tmpPool.add(new Nirvana2());
         tmpPool.add(new Omniscience());
         tmpPool.add(new Perseverance2());

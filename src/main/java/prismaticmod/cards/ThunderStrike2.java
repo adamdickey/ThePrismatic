@@ -20,8 +20,8 @@ public class ThunderStrike2 extends BaseCard {
     //These will be used in the constructor. Technically you can just use the values directly,
     //but constants at the top of the file are easy to adjust.
 
-    private static final int DAMAGE = 7;
-    private static final int UPG_DAMAGE = 2;
+    private static final int DAMAGE = 8;
+    private static final int UPG_DAMAGE = 3;
 
     public ThunderStrike2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
@@ -42,54 +42,25 @@ public class ThunderStrike2 extends BaseCard {
     public void applyPowers() {
         super.applyPowers();
         this.baseMagicNumber = AbstractDungeon.actionManager.orbsChanneledThisCombat.size();
-        if(this.upgraded){
-            if (this.baseMagicNumber == 1) {
-                this.rawDescription = cardStrings.UPGRADE_DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0];
-            } else if(this.baseMagicNumber > 0) {
-                this.rawDescription = cardStrings.UPGRADE_DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[1];
-            }
-        } else {
-            if (this.baseMagicNumber == 1) {
-                this.rawDescription = cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0];
-            } else if(this.baseMagicNumber > 0) {
-                this.rawDescription = cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[1];
-            }
+        if (this.baseMagicNumber == 1) {
+            this.rawDescription = cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0];
+        } else if(this.baseMagicNumber > 0) {
+            this.rawDescription = cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[1];
         }
         initializeDescription();
     }
     public void onMoveToDiscard() {
-        if(this.upgraded){
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-        } else {
-            this.rawDescription = cardStrings.DESCRIPTION;
-        }
+        this.rawDescription = cardStrings.DESCRIPTION;
         initializeDescription();
     }
 
     public void calculateCardDamage(AbstractMonster mo) {
         super.calculateCardDamage(mo);
-        if(this.upgraded){
-            if (this.baseMagicNumber == 1) {
-                this.rawDescription = cardStrings.UPGRADE_DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0];
-            } else if(this.baseMagicNumber > 0) {
-                this.rawDescription = cardStrings.UPGRADE_DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[1];
-            }
-        } else {
-            if (this.baseMagicNumber == 1) {
-                this.rawDescription = cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0];
-            } else if(this.baseMagicNumber > 0) {
-                this.rawDescription = cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[1];
-            }
+        if (this.baseMagicNumber == 1) {
+            this.rawDescription = cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0];
+        } else if(this.baseMagicNumber > 0) {
+            this.rawDescription = cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[1];
         }
         initializeDescription();
-    }
-    public void upgrade() {
-        if (!this.upgraded) {
-            upgradeName();
-            this.selfRetain = true;
-            upgradeDamage(2);
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
-        }
     }
 }

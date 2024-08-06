@@ -180,7 +180,7 @@
     "DESCRIPTIONS": [
       "Whenever you gain Block this turn, apply #b",
       " #yWeak and #b",
-      " #yTarget to a random enemy."
+      " #yTarget to ALL enemies."
     ]
   },
   "${modID}:Hello World": {

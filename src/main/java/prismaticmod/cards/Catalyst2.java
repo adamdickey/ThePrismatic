@@ -2,7 +2,6 @@ package prismaticmod.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.unique.DoublePoisonAction;
-import com.megacrit.cardcrawl.actions.unique.TriplePoisonAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import prismaticmod.powers.TargetedPower;
@@ -28,11 +27,13 @@ public class Catalyst2 extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (!this.upgraded) {
-            addToBot(new DoublePoisonAction(m, p));
-        } else {
-            addToBot(new TriplePoisonAction(m, p));
-        }
+        addToBot(new DoublePoisonAction(m, p));
         addToBot(new ApplyPowerAction(m, p, new TargetedPower(m, 99), 99));
+    }
+    public void upgrade() {
+        if (!this.upgraded) {
+            upgradeName();
+            this.upgradeBaseCost(0);
+        }
     }
 }

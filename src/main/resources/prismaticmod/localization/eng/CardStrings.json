@@ -120,10 +120,6 @@
     "NAME": "Dualcast",
     "DESCRIPTION": "Evoke your next orb twice. NL Draw 1 card."
   },
-  "${modID}:Defragment": {
-    "NAME": "Defragment",
-    "DESCRIPTION": "Gain !M! Focus. NL Gain !M! Strength."
-  },
   "${modID}:Consume": {
     "NAME": "Consume",
     "DESCRIPTION": "Gain !M! Focus. NL Lose 1 Orb slot. NL If this card is ${modID}:Milled, gain !M! temporary Focus."
@@ -332,8 +328,7 @@
   },
   "${modID}:Catalyst": {
     "NAME": "Catalyst",
-    "DESCRIPTION": "Double the enemy's Poison. NL Apply 99 ${modID}:Target. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Triple the enemy's Poison. NL Apply 99 ${modID}:Target. NL Exhaust."
+    "DESCRIPTION": "Double the enemy's Poison. NL Apply 99 ${modID}:Target. NL Exhaust."
   },
   "${modID}:Pressure Points": {
     "NAME": "Pressure Points",
@@ -439,7 +434,6 @@
   "${modID}:Thunder Strike": {
     "NAME": "Thunder Strike",
     "DESCRIPTION": "Deal !D! damage to a random enemy for each Orb Channeled this combat.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage to a random enemy for each Orb Channeled this combat.",
     "EXTENDED_DESCRIPTION": [
       " NL (Channeled !M! Orb.)",
       " NL (Channeled !M! Orbs.)"
@@ -556,14 +550,6 @@
   "${modID}:One for All": {
     "NAME": "One for All",
     "DESCRIPTION": "Gain !B! Block. NL Put all 0-cost cards from your draw pile into your hand."
-  },
-  "${modID}:Creative Strike": {
-    "NAME": "Creative Strike",
-    "DESCRIPTION": "Retain. NL Deal !D! damage. NL If you created a card this turn, gain [E] ."
-  },
-  "${modID}:Creative Defend": {
-    "NAME": "Creative Defend",
-    "DESCRIPTION": "Retain. NL Gain !B! Block. NL If you created a card this turn, gain [E] ."
   },
   "${modID}:Outmaneuver": {
     "NAME": "Outmaneuver",
