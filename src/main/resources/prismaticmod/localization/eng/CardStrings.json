@@ -328,7 +328,7 @@
   },
   "${modID}:Catalyst": {
     "NAME": "Catalyst",
-    "DESCRIPTION": "Double the enemy's Poison. NL Apply 99 ${modID}:Target. NL Exhaust."
+    "DESCRIPTION": "Double the enemy's Poison and *Mark. NL Apply 99 ${modID}:Target. NL Exhaust."
   },
   "${modID}:Pressure Points": {
     "NAME": "Pressure Points",
@@ -545,7 +545,7 @@
   },
   "${modID}:Signature Move": {
     "NAME": "Signature Move",
-    "DESCRIPTION": "Retain. NL Can only be played if this is the only Attack in your hand. NL Deal !D! damage."
+    "DESCRIPTION": "Can only be played if NL this is the only Attack NL in your hand or NL you are in Calm. NL Deal !D! damage."
   },
   "${modID}:One for All": {
     "NAME": "One for All",
@@ -643,6 +643,10 @@
   "${modID}:Windmill Strike": {
     "NAME": "Windmill Strike",
     "DESCRIPTION": "Retain. NL Deal !D! damage. NL When Retained, increase its damage by !M! this combat for each card Retained."
+  },
+  "${modID}:Fusion": {
+    "NAME": "Fusion",
+    "DESCRIPTION": "Gain 1 Orb slot. NL Channel 1 Plasma."
   }
 }
 

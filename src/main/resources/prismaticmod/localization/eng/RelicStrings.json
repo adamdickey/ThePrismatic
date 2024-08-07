@@ -40,7 +40,7 @@
     "NAME": "Ring of Keys",
     "FLAVOR": "Unlock the ideas contained within your mind.",
     "DESCRIPTIONS": [
-      "At the start of each combat, draw 1 additional card for each Innate card in your deck."
+      "At the start of each combat, draw 1 additional card for each Innate or Bottled card in your deck."
     ]
   },
   "${modID}:Hardwood Barrel": {

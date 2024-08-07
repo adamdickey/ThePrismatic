@@ -287,7 +287,7 @@ public class ThePrismatic extends CustomPlayer {
             tmpPool.add(new Fission2());
             tmpPool.add(new ForceField());
             tmpPool.add(new FTL());
-            tmpPool.add(new Fusion());
+            tmpPool.add(new Fusion2());
             tmpPool.add(new GeneticAlgorithm());
             tmpPool.add(new Glacier());
             tmpPool.add(new GoForTheEyes2());
@@ -581,7 +581,7 @@ public class ThePrismatic extends CustomPlayer {
         tmpPool.add(new Fission2());
         tmpPool.add(new ForceField());
         tmpPool.add(new FTL());
-        tmpPool.add(new Fusion());
+        tmpPool.add(new Fusion2());
         tmpPool.add(new GeneticAlgorithm());
         tmpPool.add(new Glacier());
         tmpPool.add(new GoForTheEyes2());

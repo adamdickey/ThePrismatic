@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.unique.DoublePoisonAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.watcher.MarkPower;
 import prismaticmod.powers.TargetedPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
@@ -28,6 +29,9 @@ public class Catalyst2 extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DoublePoisonAction(m, p));
+        if(m.hasPower(MarkPower.POWER_ID)){
+            addToBot(new ApplyPowerAction(m, p, new MarkPower(m, m.getPower(MarkPower.POWER_ID).amount)));
+        }
         addToBot(new ApplyPowerAction(m, p, new TargetedPower(m, 99), 99));
     }
     public void upgrade() {

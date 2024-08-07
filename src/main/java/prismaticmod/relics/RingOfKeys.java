@@ -2,9 +2,10 @@ package prismaticmod.relics;
 
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import theprismatic.ThePrismatic;
 
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static prismaticmod.BasicMod.makeID;
 
 public class RingOfKeys extends BaseRelic {
@@ -19,8 +20,8 @@ public class RingOfKeys extends BaseRelic {
     public void atBattleStart() {
         updateCounter();
         if (counter > 0) {
-            addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-            addToBot(new DrawCardAction(AbstractDungeon.player, counter));
+            addToBot(new RelicAboveCreatureAction(player, this));
+            addToBot(new DrawCardAction(player, counter));
         }
     }
 
@@ -33,7 +34,12 @@ public class RingOfKeys extends BaseRelic {
         updateCounter();
     }
     void updateCounter() {
-        counter = (int)AbstractDungeon.player.masterDeck.group.stream().filter(c -> c.isInnate).count();
+        counter = 0;
+        for(AbstractCard c: player.masterDeck.group){
+            if(c.isInnate || c.inBottleFlame || c.inBottleLightning || c.inBottleTornado){
+                counter++;
+            }
+        }
     }
 
     @Override

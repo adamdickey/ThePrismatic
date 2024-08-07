@@ -13,6 +13,8 @@ import com.megacrit.cardcrawl.vfx.combat.ClashEffect;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
+
 public class SignatureMove2 extends BaseCard {
     public static final String ID = makeID("Signature Move"); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
     private static final CardStats info = new CardStats(
@@ -31,7 +33,6 @@ public class SignatureMove2 extends BaseCard {
     public SignatureMove2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
-        this.selfRetain = true;
     }
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (m != null)
@@ -43,10 +44,12 @@ public class SignatureMove2 extends BaseCard {
         boolean canUse = super.canUse(p, m);
         if (!canUse)
             return false;
-        for (AbstractCard c : p.hand.group) {
-            if (c.type == AbstractCard.CardType.ATTACK && c != this) {
-                canUse = false;
-                this.cantUseMessage = (CardCrawlGame.languagePack.getUIString("SignatureMoveMessage")).TEXT[0];
+        if (!player.stance.ID.equals("Calm")) {
+            for (AbstractCard c : p.hand.group) {
+                if (c.type == AbstractCard.CardType.ATTACK && c != this) {
+                    canUse = false;
+                    this.cantUseMessage = (CardCrawlGame.languagePack.getUIString("SignatureMoveMessage")).TEXT[0];
+                }
             }
         }
         return canUse;
