@@ -4,8 +4,10 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.status.Burn;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.EquilibriumPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -41,9 +43,17 @@ public class WindmillStrike2 extends BaseCard {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
     public void triggerOnEndOfTurnForPlayingCard(){
-        for(AbstractCard c: player.hand.group){
-            if(c.retain || c.selfRetain){
-                upgradeDamage(magicNumber);
+        if(!player.hasPower(EquilibriumPower.POWER_ID)) {
+            for (AbstractCard c : player.hand.group) {
+                if ((c.retain || c.selfRetain) && !c.isEthereal && !(c instanceof Burn)) {
+                    upgradeDamage(magicNumber);
+                }
+            }
+        } else {
+            for (AbstractCard c : player.hand.group) {
+                if(!c.isEthereal && !(c instanceof Burn)){
+                    upgradeDamage(magicNumber);
+                }
             }
         }
     }
