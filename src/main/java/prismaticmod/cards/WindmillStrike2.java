@@ -4,10 +4,8 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.cards.status.Burn;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.EquilibriumPower;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -26,8 +24,8 @@ public class WindmillStrike2 extends BaseCard {
     //These will be used in the constructor. Technically you can just use the values directly,
     //but constants at the top of the file are easy to adjust.
 
-    private static final int DAMAGE = 12;
-    private static final int UPG_DAMAGE = 3;
+    private static final int DAMAGE = 8;
+    private static final int UPG_DAMAGE = 2;
     private static final int baseMagicNumber = 2;
     private static final int UPG_Number = 1;
 
@@ -42,19 +40,9 @@ public class WindmillStrike2 extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
-    public void triggerOnEndOfTurnForPlayingCard(){
-        if(!player.hasPower(EquilibriumPower.POWER_ID)) {
-            for (AbstractCard c : player.hand.group) {
-                if ((c.retain || c.selfRetain) && !c.isEthereal && !(c instanceof Burn)) {
-                    upgradeDamage(magicNumber);
-                }
-            }
-        } else {
-            for (AbstractCard c : player.hand.group) {
-                if(!c.isEthereal && !(c instanceof Burn)){
-                    upgradeDamage(magicNumber);
-                }
-            }
+    public void atTurnStart(){
+        for(AbstractCard ignored : player.hand.group){
+            upgradeDamage(magicNumber);
         }
     }
 }
