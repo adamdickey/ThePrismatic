@@ -1,5 +1,5 @@
 {
-  "ThePrismatic:0ch0 F0rm": {
+  "${modID}:0ch0 F0rm": {
     "NAME": "反零化",
     "DESCRIPTIONS": [
       "ターン中初めてプレイする0コストカードを2回プレイする。",
@@ -7,7 +7,7 @@
       " 回まで、プレイする0コストカードを2回プレイする。"
     ]
   },
-  "ThePrismatic:Targeted": {
+  "${modID}:Targeted": {
     "NAME": "ターゲット",
     "DESCRIPTIONS": [
       "#yアタック 以外で受けるダメージが #b",
@@ -16,7 +16,7 @@
       " ターンの間有効。"
     ]
   },
-  "ThePrismatic:Chimera Form": {
+  "${modID}:Chimera Form": {
     "NAME": "混成化",
     "DESCRIPTIONS": [
       "ターン開始時、 #y筋力 #b",
@@ -27,24 +27,15 @@
       " を得る。"
     ]
   },
-  "ThePrismatic:On a Roll": {
-    "NAME": "絶好調",
-    "DESCRIPTIONS": [
-      "#y「アタック」 をプレイするたび、一時的な #y筋力 #b",
-      " と一時的な #y敏捷性 #b",
-      " を得る。"
-    ]
-  },
-  "ThePrismatic:Static Discharge": {
+  "${modID}:Static Discharge": {
     "NAME": "静電放電",
     "DESCRIPTIONS": [
       "ターン中初めて敵にデバフを与えたとき、 #yライトニング #b1 を生成する。",
       "ターン中 #b",
       " 回まで、敵にデバフを与えるたび、 #yライトニング #b1 を生成する。"
-
     ]
   },
-  "ThePrismatic:Rushdown": {
+  "${modID}:Rushdown": {
     "NAME": "猪突猛進",
     "DESCRIPTIONS": [
       "ターン中初めて #yスタンス を変更したとき、カードを #b",
@@ -53,14 +44,14 @@
       " 回まで、 #yスタンス を変更するたび、カードを #b"
     ]
   },
-  "ThePrismatic:Accuracy": {
+  "${modID}:Accuracy": {
     "NAME": "精度上昇",
     "DESCRIPTIONS": [
       "0コストの #yアタック が #b",
       " の追加ダメージを与える。"
     ]
   },
-  "ThePrismatic:Combustive Fumes": {
+  "${modID}:Combustive Fumes": {
     "NAME": "燃焼ガス",
     "DESCRIPTIONS": [
       "ターン開始時、HP #b",
@@ -68,21 +59,21 @@
       " を与える。"
     ]
   },
-  "ThePrismatic:Like Water": {
+  "${modID}:Like Water": {
     "NAME": "水の如し",
     "DESCRIPTIONS": [
       "ターン終了時、 #y平静 もしくは #yフロスト が存在するならば、 #b",
       " #yブロック を得る。"
     ]
   },
-  "ThePrismatic:Nirvana": {
+  "${modID}:Nirvana": {
     "NAME": "涅槃",
     "DESCRIPTIONS": [
       "カードを #yミル するたび、 #b",
       " #yブロック を得る。"
     ]
   },
-  "ThePrismatic:Empowered": {
+  "${modID}:Empowered": {
     "NAME": "パワフル",
     "DESCRIPTIONS": [
       "このターン、次にプレイする #yパワー のコストが #b1 下がる。",
@@ -90,7 +81,7 @@
       " 枚の #yパワー のコストが #b1 下がる。"
     ]
   },
-  "ThePrismatic:Echo Form": {
+  "${modID}:Echo Form": {
     "NAME": "反響化",
     "DESCRIPTIONS": [
       "ターンの最初にプレイするカードを2回プレイする。",
@@ -98,14 +89,14 @@
       " 回まで、プレイするカードを2回プレイする。"
     ]
   },
-  "ThePrismatic:Focus Down": {
+  "${modID}:Focus Down": {
     "NAME": "集中力低下",
     "DESCRIPTIONS": [
       "次のターン開始時、 #y集中力 #b",
       " を失う。"
     ]
   },
-  "ThePrismatic:Bias": {
+  "${modID}:Bias": {
     "NAME": "偏向",
     "DESCRIPTIONS": [
       "ターン開始時、 #y筋力 #b",
@@ -113,7 +104,7 @@
       " を失う。"
     ]
   },
-  "ThePrismatic:Evolve": {
+  "${modID}:Evolve": {
     "NAME": "進化",
     "DESCRIPTIONS": [
       "#y状態異常 または #y呪い を引いたとき、カードを #b1 枚引く。",
@@ -121,25 +112,90 @@
       " 枚引く。"
     ]
   },
-  "ThePrismatic:Mental Fortress": {
+  "${modID}:Mental Fortress": {
     "NAME": "不動心",
     "DESCRIPTIONS": [
-      "#yスタンス を変更するか、カードを作成するたび、 #b",
+      "#yスタンス を変更するか、 #yパワー をプレイするたび、 #b",
       " #yブロック を得る。"
     ]
   },
-  "ThePrismatic:Caltrops": {
+  "${modID}:Caltrops": {
     "NAME": "トゲ+",
     "DESCRIPTIONS": [
       "攻撃を受けるたび、攻撃を行った敵に #yターゲット #b",
       " を与える。"
     ]
   },
-  "ThePrismatic:Deflection": {
+  "${modID}:Deflection": {
     "NAME": "ディフレクション",
     "DESCRIPTIONS": [
       "0コストのカードから #b",
       " の追加 #yブロック を得られる。"
+    ]
+  },
+  "${modID}:Metallic Faith": {
+    "NAME": "灼熱の金属化",
+    "DESCRIPTIONS": [
+      "ターン終了時、 #yマントラ に等しい #yブロック を得る。",
+      "ターン終了時、 #yマントラ の #b",
+      " 倍に等しい #yブロック を得る。"
+    ]
+  },
+  "${modID}:Rupture": {
+    "NAME": "破裂",
+    "DESCRIPTIONS": [
+      "カードの効果でHPを失ったか、 #yパワー をプレイしたとき、 #y筋力 #b",
+      " を得る。"
+    ]
+  },
+  "${modID}:Next Turn Scry": {
+    "NAME": "次ターン占術",
+    "DESCRIPTIONS": [
+      "次のターン開始時、 #y占術 #b",
+      " 。"
+    ]
+  },
+  "${modID}:Infinite Blades": {
+    "NAME": "無限の刃",
+    "DESCRIPTIONS": [
+      "ターンが開始したか、 #yパワー をプレイしたとき、 #yナイフ を #b",
+      " 枚手札に加える。",
+      " 枚手札に加える。"
+    ]
+  },
+  "${modID}:Brutality": {
+    "NAME": "残虐",
+    "DESCRIPTIONS": [
+      "ターン開始時、HP #b",
+      " を失い、デバフを受けている敵1体につき、カードを #b",
+      " 引く。",
+      "ターン開始時、HP #b",
+      " を失い、デバフを受けている敵1体につき、カードを #b",
+      " 引く。"
+    ]
+  },
+  "${modID}:Wave of the Hand": {
+    "NAME": "揺れ動く手",
+    "DESCRIPTIONS": [
+      "このターン、ブロックを得るたび、全ての敵に #y脱力 #b",
+      " と #yターゲット #b",
+      " を与える。"
+    ]
+  },
+  "${modID}:Hello World": {
+    "NAME": "ハローワールド",
+    "DESCRIPTIONS": [
+      "ターン開始時、ランダムなカードを #b",
+      " 枚手札に加える。",
+      " 枚手札に加える。"
+    ]
+  },
+  "${modID}:Retain This Turn": {
+    "NAME": "保留",
+    "DESCRIPTIONS": [
+      "このターンの終了時、手札を #b",
+      " 枚まで保留できる。",
+      " 枚まで保留できる。"
     ]
   }
 }
