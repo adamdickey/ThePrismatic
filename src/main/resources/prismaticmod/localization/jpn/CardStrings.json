@@ -1,619 +1,709 @@
 {
-  "ThePrismatic:Targeting Strike": {
+  "${modID}:Targeting Strike": {
     "NAME": "ブルズストライク",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 敵全体に theprismatic:ターゲット !M! を与える。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL theprismatic:ターゲット !M! を与える。"
   },
-  "ThePrismatic:Divine Strike": {
+  "${modID}:Divine Strike": {
     "NAME": "ディバインストライク",
     "DESCRIPTION": "!D! ダメージを与える。 NL マントラ !M! を得る。"
   },
-  "ThePrismatic:Looting Strike": {
+  "${modID}:Looting Strike": {
     "NAME": "ストライクスロー",
     "DESCRIPTION": "!D! ダメージを与える。 NL カードを !M! 枚引き、 !M! 枚捨てる。",
     "UPGRADE_DESCRIPTION": "!D! ダメージを与える。 NL カードを !M! 枚引き、 !M! 枚捨てる。"
   },
-  "ThePrismatic:Retaining Strike": {
+  "${modID}:Retaining Strike": {
     "NAME": "舞い飛ぶストライク",
     "DESCRIPTION": "!D! ダメージを与える。 NL このターン !M! 枚までカードを 保留する。",
     "UPGRADE_DESCRIPTION": "!D! ダメージを与える。 NL このターン !M! 枚までカードを 保留する。"
   },
-  "ThePrismatic:Scrying Strike": {
-    "NAME": "第三のストライク",
+  "${modID}:Scrying Strike": {
+    "NAME": "運命のストライク",
     "DESCRIPTION": "!D! ダメージを与える。 NL 占術 !M!"
   },
-  "ThePrismatic:Stormy Strike": {
-    "NAME": "ボールストライク",
-    "DESCRIPTION": "!D! ダメージを与える。 NL ライトニング !M! を 生成 する。"
-  },
-  "ThePrismatic:Frosty Strike": {
-    "NAME": "フロストストライク",
-    "DESCRIPTION": "!D! ダメージを与える。 NL フロスト !M! を 生成 する。"
-  },
-  "ThePrismatic:Exhausting Strike": {
-    "NAME": "不屈のストライク",
-    "DESCRIPTION": "!D! ダメージを与える。 NL カードを !M! 枚まで 廃棄 する。"
-  },
-  "ThePrismatic:Insightful Strike": {
+  "${modID}:Insightful Strike": {
     "NAME": "祈りのストライク",
     "DESCRIPTION": "!D! ダメージを与える。 NL *洞察 を1枚山札に加える。"
   },
-  "ThePrismatic:Scraping Strike": {
+  "${modID}:Scraping Strike": {
     "NAME": "スクレイプストライク",
     "DESCRIPTION": "!D! ダメージを与える。 NL カードを !M! 枚引く。 NL この方法で引いた0コスト以外のカードを捨てる。"
   },
-  "ThePrismatic:Empty Strike": {
+  "${modID}:Empty Strike": {
     "NAME": "無の型:ストライク",
     "DESCRIPTION": "!D! ダメージを与える。 NL スタンス を解除する。"
   },
-  "ThePrismatic:Cunning Strike": {
+  "${modID}:Cunning Strike": {
     "NAME": "ストライクとダガー",
     "DESCRIPTION": "!D! ダメージを与える。 NL *ナイフ を1枚手札に加える。"
   },
-  "ThePrismatic:Toxic Strike": {
-    "NAME": "毒のストライク",
+  "${modID}:Toxic Strike": {
+    "NAME": "ポイズンストライク",
     "DESCRIPTION": "!D! ダメージを与える。 NL 全ての敵に 毒 !M! を与える。"
   },
-  "ThePrismatic:0ch0 Form": {
+  "${modID}:Clawing Strike": {
+    "NAME": "ひっかきストライク",
+    "DESCRIPTION": "!D! ダメージを与える。 NL この戦闘中、全ての0コストアタックが !M! の追加ダメージを与える。"
+  },
+  "${modID}:Established Strike": {
+    "NAME": "制定ストライク",
+    "DESCRIPTION": "保留 NL !D! ダメージを与える。 NL 手札に他のカードが保留されている場合、 [E] を得る。"
+  },
+  "${modID}:Channeling Strike": {
+    "NAME": "チャネリングストライク",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 先頭の オーブ の自動効果を使用する。"
+  },
+  "${modID}:Channeling Defend": {
+    "NAME": "充電防御",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 先頭の オーブ の自動効果を使用する。."
+  },
+  "${modID}:Established Defend": {
+    "NAME": "制定防御",
+    "DESCRIPTION": "保留 NL !B! ブロック を得る。 NL 手札に他のカードが保留されている場合、 [E] を得る。"
+  },
+  "${modID}:Deflecting Defend": {
+    "NAME": "即興防御",
+    "DESCRIPTION": "!B! ブロック を得る。 NL この戦闘中、全ての0コストカードから !M! の追加ブロックを得られる。"
+  },
+  "${modID}:0ch0 Form": {
     "NAME": "反零化",
     "DESCRIPTION": "ターン中初めてプレイする0コストカードを2回プレイする。",
     "UPGRADE_DESCRIPTION": "ターン中 !M! 回まで、プレイする0コストカードを2回プレイする。"
   },
-  "ThePrismatic:Cunning Defend": {
+  "${modID}:Cunning Defend": {
     "NAME": "防御とダガー",
     "DESCRIPTION": "!B! ブロック を得る。 NL *ナイフ を1枚手札に加える。"
   },
-  "ThePrismatic:Divine Defend": {
+  "${modID}:Divine Defend": {
     "NAME": "神聖な防御",
     "DESCRIPTION": "!B! ブロック を得る。 NL マントラ !M! を得る。"
   },
-  "ThePrismatic:Empty Defend": {
+  "${modID}:Empty Defend": {
     "NAME": "無の型:防御",
     "DESCRIPTION": "!B! ブロック を得る。 NL スタンス を解除する。"
   },
-  "ThePrismatic:Exhausting Defend": {
-    "NAME": "不屈の防御",
-    "DESCRIPTION": "!B! ブロック を得る。 NL カードを !M! 枚まで 廃棄 する。"
-  },
-  "ThePrismatic:Frosty Defend": {
-    "NAME": "冷静な防御",
-    "DESCRIPTION": "!B! ブロック を得る。 NL フロスト !M! を 生成 する。"
-  },
-  "ThePrismatic:Insightful Defend": {
+  "${modID}:Insightful Defend": {
     "NAME": "祈りの防御",
     "DESCRIPTION": "!B! ブロック を得る。 NL *洞察 を1枚山札に加える。"
   },
-  "ThePrismatic:Looting Defend": {
+  "${modID}:Looting Defend": {
     "NAME": "防御スロー",
     "DESCRIPTION": "!B! ブロック を得る。 NL カードを !M! 枚引き、 !M! 枚捨てる。",
     "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL カードを !M! 枚引き、 !M! 枚捨てる。"
   },
-  "ThePrismatic:Retaining Defend": {
+  "${modID}:Retaining Defend": {
     "NAME": "舞い飛ぶ防御",
     "DESCRIPTION": "!B! ブロック を得る。 NL このターン !M! 枚までカードを 保留する。",
     "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL このターン !M! 枚までカードを 保留する。"
   },
-  "ThePrismatic:Scraping Defend": {
+  "${modID}:Scraping Defend": {
     "NAME": "防御スクレイプ",
     "DESCRIPTION": "!B! ブロック を得る。 NL カードを !M! 枚引く。 NL この方法で引いた0コスト以外のカードを捨てる。"
   },
-  "ThePrismatic:Scrying Defend": {
+  "${modID}:Scrying Defend": {
     "NAME": "第三の防御",
     "DESCRIPTION": "!B! ブロック を得る。 NL 占術 !M!"
   },
-  "ThePrismatic:Stormy Defend": {
-    "NAME": "防御ライトニング",
-    "DESCRIPTION": "!B! ブロック を得る。 NL ライトニング !M! を 生成 する。"
-  },
-  "ThePrismatic:Toxic Defend": {
+  "${modID}:Toxic Defend": {
     "NAME": "毒の防御",
     "DESCRIPTION": "!B! ブロック を得る。 NL 全ての敵に 毒 !M! を与える。"
   },
-  "ThePrismatic:Chimera Form": {
+  "${modID}:Chimera Form": {
     "NAME": "混成化",
     "DESCRIPTION": "エセリアル NL ターン開始時、 筋力 1、 敏捷性 1、 theprismatic:オーブスロット 1、 マントラ 1を得る。",
     "UPGRADE_DESCRIPTION": "ターン開始時、 筋力 1、 敏捷性 1、 theprismatic:オーブスロット 1、 マントラ 1を得る。"
   },
-  "ThePrismatic:Foreign Powers": {
+  "${modID}:Foreign Powers": {
     "NAME": "外的ノイズ",
     "DESCRIPTION": "全ての色のパワーを1枚ずつ手札に加える。 NL このターン、それらのコストは0。 NL 廃棄"
   },
-  "ThePrismatic:On a Roll": {
-    "NAME": "絶好調",
-    "DESCRIPTION": "アタックをプレイするたび、一時的な 筋力 1と 敏捷性 1を得る。",
-    "UPGRADE_DESCRIPTION": "天賦 NL アタックをプレイするたび、一時的な 筋力 1と 敏捷性 1を得る。"
-  },
-  "ThePrismatic:Havoc": {
+  "${modID}:Havoc": {
     "NAME": "荒廃",
-    "DESCRIPTION": "占術 1 NL 山札の一番上にあるカードをプレイする。そのカードを 廃棄 する。"
+    "DESCRIPTION": "山札の一番上にあるカードをプレイする。 NL そのカードを 廃棄 する。",
+    "UPGRADE_DESCRIPTION": "占術 1 NL 山札の一番上にあるカードをプレイする。 NL そのカードを 廃棄 する。."
   },
-  "ThePrismatic:Sever Soul": {
+  "${modID}:Sever Soul": {
     "NAME": "霊魂切断",
     "DESCRIPTION": "アタック以外の手札を 廃棄 する。 NL この方法で廃棄した枚数ｘ1 マントラ を得る。 NL !D! ダメージを与える。"
   },
-  "ThePrismatic:Neutralize": {
+  "${modID}:Neutralize": {
     "NAME": "無力化",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 脱力 !M! を与える。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL 脱力 !M! を与える。 NL theprismatic:ターゲット !M! を与える。"
   },
-  "ThePrismatic:Bane": {
+  "${modID}:Outmaneuver": {
+    "NAME": "先読み",
+    "DESCRIPTION": "次のターン開始時、 NL 占術 !M! を行い、 NL [E] [E] を得る。",
+    "UPGRADE_DESCRIPTION": "次のターン開始時、 NL 占術 !M! を行い、 NL [E] [E] [E] を得る。"
+  },
+  "${modID}:Quick Slash": {
+    "NAME": "はやぶさ斬り",
+    "DESCRIPTION": "!D! ダメージを与える。 NL カードを1枚引く。 NL 引いたカードが0コストだった場合、追加でカードを1枚引く。"
+  },
+  "${modID}:Bane": {
     "NAME": "破滅",
     "DESCRIPTION": "!D! ダメージを与える。 NL 敵が受けているデバフが2種類以上の場合、 毒 !M! を与える。"
   },
-  "ThePrismatic:Barrage": {
+  "${modID}:Barrage": {
     "NAME": "集中砲火",
     "DESCRIPTION": "生成 しているオーブ1つにつき、 !D! ダメージを与える。"
   },
-  "ThePrismatic:Heatsinks": {
+  "${modID}:Heatsinks": {
     "NAME": "ヒートシンク",
     "DESCRIPTION": "天賦 NL パワー をプレイするたび、カードを !M! 枚引く。",
     "UPGRADE_DESCRIPTION": "天賦 NL パワー をプレイするたび、カードを !M! 枚引く。"
   },
-  "ThePrismatic:Hello World": {
+  "${modID}:Hello World": {
     "NAME": "ハロー・ワールド",
-    "DESCRIPTION": "ターン開始時、 ランダムなコモンのカードを1枚手札に加える。",
-    "UPGRADE_DESCRIPTION": "天賦 NL ターン開始時、 ランダムなコモンのカードを1枚手札に加える。"
+    "DESCRIPTION": "ターン開始時、 ランダムなカードを1枚手札に加える。",
+    "UPGRADE_DESCRIPTION": "天賦 NL ターン開始時、 ランダムなカードを1枚手札に加える。"
   },
-  "ThePrismatic:Storm": {
+  "${modID}:Storm": {
     "NAME": "ストーム",
     "DESCRIPTION": "天賦 NL パワーをプレイするたび、 ライトニング 1 を 生成 する。"
   },
-  "ThePrismatic:Streamline": {
+  "${modID}:Streamline": {
     "NAME": "効率化",
     "DESCRIPTION": "保留 NL !D! ダメージを与える。 NL このカードをプレイするたび、この戦闘中そのコストが1減る。"
   },
-  "ThePrismatic:Scrape": {
+  "${modID}:Scrape": {
     "NAME": "スクレイプ",
     "DESCRIPTION": "!D! ダメージを与える。 NL カードを !M! 枚引く。 NL この方法で引いた0コスト以外のカードを捨てる。"
   },
-  "ThePrismatic:Dualcast": {
+  "${modID}:Dualcast": {
     "NAME": "デュアルキャスト",
     "DESCRIPTION": "先頭のオーブを2回 解放 する。 NL カードを 1 枚引く。"
   },
-  "ThePrismatic:Defragment": {
-    "NAME": "デフラグ",
-    "DESCRIPTION": "集中力 !M! を得る。 NL 筋力 !M! を得る。"
-  },
-  "ThePrismatic:Capacitor": {
-    "NAME": "コンデンサ",
-    "DESCRIPTION": "theprismatic:オーブスロット を !M! つ得る。 NL 敏捷性 !ThePrismatic:dex! を得る。"
-  },
-  "ThePrismatic:Consume": {
+  "${modID}:Consume": {
     "NAME": "消尽",
-    "DESCRIPTION": "集中力 !M! を得る。 NL 筋力 !M! を得る。 NL theprismatic:オーブスロット を1つ失う。"
+    "DESCRIPTION": "集中力 !M! を得る。 NL theprismatic:オーブスロット を1つ失う。 NL このカードが theprismatic:ミル されたとき、一時的な 集中力 !M! を得る。"
   },
-  "ThePrismatic:Go for the Eyes": {
+  "${modID}:Go for the Eyes": {
     "NAME": "目潰し",
     "DESCRIPTION": "!D! ダメージを与える。 NL 敵が攻撃を予定している場合、 脱力 !M! を与える。 NL そうでない場合、 弱体 !M! を与える。"
   },
-  "ThePrismatic:Rainbow": {
+  "${modID}:Rainbow": {
     "NAME": "レインボー",
     "DESCRIPTION": "ライトニング 1 、 フロスト 1 、 ダーク 1 を 生成 する。 NL 廃棄",
     "UPGRADE_DESCRIPTION": "ライトニング 1 、 フロスト 1 、 ダーク 1 を 生成 する。"
   },
-  "ThePrismatic:Fission": {
+  "${modID}:Fission": {
     "NAME": "核分裂",
     "DESCRIPTION": "すべてのオーブを取り除く。取り除いた オーブ1つにつき、 [B] を得てカードを1枚引く。 NL 廃棄",
     "UPGRADE_DESCRIPTION": "すべてのオーブを 解放 する。 解放 した オーブ1つにつき、 [B] を得てカードを1枚引く。 NL 廃棄"
   },
-  "ThePrismatic:Static Discharge": {
+  "${modID}:Static Discharge": {
     "NAME": "静電放電",
     "DESCRIPTION": "ターン中初めて敵にデバフを与えたとき、 ライトニング 1 を生成する。",
     "UPGRADE_DESCRIPTION": "ターン中 !M! 回まで、敵にデバフを与えるたび、 ライトニング 1 を生成する。"
   },
-  "ThePrismatic:Swivel": {
+  "${modID}:Swivel": {
     "NAME": "旋転回避",
     "DESCRIPTION": "保留 NL !B! ブロック を得る。 NL 次にプレイするアタックのコストは0。"
   },
-  "ThePrismatic:Fasting": {
+  "${modID}:Fasting": {
     "NAME": "断食",
     "DESCRIPTION": "筋力 !M! を得る。 NL 敏捷性 !M! を得る。 NL 集中力 1を得る。 NL ターン開始時 [W] を失う。"
   },
-  "ThePrismatic:Study": {
+  "${modID}:Study": {
     "NAME": "学習",
     "DESCRIPTION": "集中力 1を得る。 NL ターン終了時、 *洞察 を1枚山札に加える。"
   },
-  "ThePrismatic:Deus Ex Machina": {
+  "${modID}:Deus Ex Machina": {
     "NAME": "デウス・エクス・マキナ",
     "DESCRIPTION": "使用不可 NL このカードを引いたとき、 *奇跡 を !M! 枚手札に加えて 廃棄 する。"
   },
-  "ThePrismatic:Rushdown": {
+  "${modID}:Rushdown": {
     "NAME": "猪突猛進",
     "DESCRIPTION": "ターン中初めて スタンス を変更したとき、カードを2枚引く。"
   },
-  "ThePrismatic:Devotion": {
+  "${modID}:Devotion": {
     "NAME": "信心",
     "DESCRIPTION": "ターン開始時、 マントラ 3を得る。",
     "UPGRADE_DESCRIPTION": "天賦 NL ターン開始時、 マントラ 3を得る。"
   },
-  "ThePrismatic:Pray": {
+  "${modID}:Pray": {
     "NAME": "祈り",
     "DESCRIPTION": "マントラ !M! を得る。 NL フロスト 1を 生成 する。 NL *洞察 を1枚山札に加える。"
   },
-  "ThePrismatic:Eruption": {
+  "${modID}:Eruption": {
     "NAME": "噴火",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 憤怒 の スタンス に入る。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL このカードが theprismatic:ミル されたとき、 憤怒 の スタンス に入る。"
   },
-  "ThePrismatic:Vigilance": {
+  "${modID}:Vigilance": {
     "NAME": "警戒",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 平静 の スタンス に入る。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL このカードが theprismatic:ミル されたとき、 平静 の スタンス に入る。"
   },
-  "ThePrismatic:Blade Dance": {
+  "${modID}:Blade Dance": {
     "NAME": "剣の舞",
     "DESCRIPTION": "*ナイフ を !M! 枚手札に加える。"
   },
-  "ThePrismatic:Envenom": {
+  "${modID}:Envenom": {
     "NAME": "猛毒の仕込み",
     "DESCRIPTION": "アタックでダメージを与えるたび、 毒 1 を与える。"
   },
-  "ThePrismatic:Tools of the Trade": {
+  "${modID}:Tools of the Trade": {
     "NAME": "商売道具",
     "DESCRIPTION": "ターン開始時、カードを 1 枚引き、 1 枚捨てる。"
   },
-  "ThePrismatic:Doppelganger": {
+  "${modID}:Doppelganger": {
     "NAME": "ドッペルゲンガー",
     "DESCRIPTION": "次のターンに X 枚のカードを引き X の [G] を得る。 NL 廃棄",
     "UPGRADE_DESCRIPTION": "次のターンにカードを X +1 枚引いて X +1 の [G] を得る。 NL 廃棄"
   },
-  "ThePrismatic:Prepared": {
+  "${modID}:Prepared": {
     "NAME": "準備",
     "DESCRIPTION": "!B! ブロック を得る。 NL カードを !M! 枚引き、 !M! 枚捨てる。",
     "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL カードを !M! 枚引き、 !M! 枚捨てる。"
   },
-  "ThePrismatic:Sneaky Strike": {
+  "${modID}:Sneaky Strike": {
     "NAME": "スニーキーストライク",
     "DESCRIPTION": "!D! ダメージを与える。 NL このターンに theprismatic:ミル をしていれば、このコストは0。"
   },
-  "ThePrismatic:A Thousand Cuts": {
+  "${modID}:A Thousand Cuts": {
     "NAME": "メッタ切り",
     "DESCRIPTION": "カードをプレイするたび、敵全体に2ダメージを与える。"
   },
-  "ThePrismatic:Wraith Form": {
+  "${modID}:Wraith Form": {
     "NAME": "死霊化",
     "DESCRIPTION": "エセリアル NL 無形 2を得る。 NL ターン終了時、 敏捷性 1を失う。",
     "UPGRADE_DESCRIPTION": "無形 2を得る。 NL ターン終了時、 敏捷性 1を失う。"
   },
-  "ThePrismatic:Darkness": {
+  "${modID}:Darkness": {
     "NAME": "暗黒",
     "DESCRIPTION": "ダーク 1を 生成 する。",
     "UPGRADE_DESCRIPTION": "ダーク 1を 生成 する。 NL 全ての ダーク オーブ の自動効果を使用する。"
   },
-  "ThePrismatic:Master Reality": {
+  "${modID}:Wave of the Hand": {
+    "NAME": "揺れ動く手",
+    "DESCRIPTION": "このターン、 ブロック を得るたび、敵全体に 脱力 !M! と theprismatic:ターゲット !M! を与える。",
+    "UPGRADE_DESCRIPTION": "フロスト 1 を 生成 する。 NL このターン、 ブロック を得るたび、敵全体に 脱力 !M! と theprismatic:ターゲット !M! を与える。"
+  },
+  "${modID}:Master Reality": {
     "NAME": "掌握した現実",
     "DESCRIPTION": "天賦 NL カードが戦闘中に作られるたび、それを アップグレード する。"
   },
-  "ThePrismatic:Perseverance": {
+  "${modID}:Signature Move": {
+    "NAME": "フィニッシュブロー",
+    "DESCRIPTION": "アタックがこのカードだけか、 NL 平静 ならばプレイ可能。 NL !D! ダメージを与える。"
+  },
+  "${modID}:Reach Heaven": {
+    "NAME": "昇天",
+    "DESCRIPTION": "!D! ダメージを与える。 NL ダーク 1 を 生成 する。 NL 山札に *蹂躙 を混ぜる。"
+  },
+  "${modID}:Perseverance": {
     "NAME": "忍耐",
     "DESCRIPTION": "保留 NL !B! ブロック を得る。 NL このカードを 保留 するたび、そのブロックが !M! 増加する。"
   },
-  "ThePrismatic:Strike for One": {
+  "${modID}:Strike for One": {
     "NAME": "ストライクフォーワン",
     "DESCRIPTION": "!D! ダメージを与える。 NL 捨て札にあるランダムな !M! 枚の0コストカードを手札に加える。"
   },
-  "ThePrismatic:Defend for One": {
+  "${modID}:Defend for One": {
     "NAME": "防御フォーワン",
     "DESCRIPTION": "!B! ブロック を得る。 NL 捨て札にあるランダムな !M! 枚の0コストカードを手札に加える。"
   },
-  "ThePrismatic:Infernal Blade": {
+  "${modID}:Infernal Blade": {
     "NAME": "非道の刃",
     "DESCRIPTION": "3枚のアタックから1枚選んで手札に加える。 NL このターン、そのコストは0。 NL 廃棄"
   },
-  "ThePrismatic:Distraction": {
+  "${modID}:Distraction": {
     "NAME": "動揺",
     "DESCRIPTION": "3枚のスキルから1枚選んで手札に加える。 NL このターン、そのコストは0。 NL 廃棄"
   },
-  "ThePrismatic:White Noise": {
+  "${modID}:White Noise": {
     "NAME": "ホワイトノイズ",
     "DESCRIPTION": "3枚のパワーから1枚選んで手札に加える。 NL このターン、そのコストは0。 NL 廃棄"
   },
-  "ThePrismatic:Tempest": {
+  "${modID}:Tempest": {
     "NAME": "テンペスト",
-    "DESCRIPTION": "ライトニング !M! を 生成 する。 NL 憤怒 の スタンスに入る。"
+    "DESCRIPTION": "ライトニング !M! を 生成 する。 NL 憤怒 の スタンスに入る。",
+    "UPGRADE_DESCRIPTION": "保留 NL ライトニング !M! を 生成 する。 NL 憤怒 の スタンスに入る。"
   },
-  "ThePrismatic:Blizzard": {
+  "${modID}:Blizzard": {
     "NAME": "ブリザード",
-    "DESCRIPTION": "フロスト !M! を 生成 する。 NL 平静 の スタンスに入る。"
+    "DESCRIPTION": "フロスト !M! を 生成 する。 NL 平静 の スタンスに入る。",
+    "UPGRADE_DESCRIPTION": "保留 NL フロスト !M! を 生成 する。 NL 平静 の スタンスに入る。"
   },
-  "ThePrismatic:Setup": {
+  "${modID}:Setup": {
     "NAME": "セットアップ",
     "DESCRIPTION": "!B! ブロック を得る。 NL 手札のカード1枚を山札の1番上に置く。 NL プレイされるまでそのコストは0。"
   },
-  "ThePrismatic:Magnetism": {
+  "${modID}:Magnetism": {
     "NAME": "磁性",
     "DESCRIPTION": "ターン開始時、ランダムな無色のカードを1枚手札に加える。"
   },
-  "ThePrismatic:Mind Blast": {
+  "${modID}:Mind Blast": {
     "NAME": "マインドブラスト",
     "DESCRIPTION": "天賦 NL 山札にあるカードの枚数に等しいダメージを与える。",
     "EXTENDED_DESCRIPTION": [
-    " NL ( !D! ダメージを与える。)"
-]
+      " NL ( !D! ダメージを与える。)"
+    ]
   },
-  "ThePrismatic:Accuracy": {
+  "${modID}:Accuracy": {
     "NAME": "精度上昇",
     "DESCRIPTION": "0コストアタックが !M! の追加ダメージを与える。"
   },
-  "ThePrismatic:Claw": {
+  "${modID}:Heel Hook": {
+    "NAME": "ヒールフック",
+    "DESCRIPTION": "!D! ダメージを与える。 NL カードを1枚引く。 NL 対象が2種類以上のデバフを持っている場合、 [E] を得る。",
+    "UPGRADE_DESCRIPTION": "!D! ダメージを与える。 NL カードを1枚引く。 NL 対象が2種類以上のデバフを持っている場合、 [E] [E] を得る。"
+  },
+  "${modID}:Claw": {
     "NAME": "爪",
     "DESCRIPTION": "!D! ダメージを与える。 NL この戦闘中、すべての0コストアタックは追加で !M! ダメージを与える。"
   },
-  "ThePrismatic:Infinite Blades": {
+  "${modID}:Infinite Blades": {
     "NAME": "無限の刃",
-    "DESCRIPTION": "*ナイフ を1枚手札に加える。 NL ターン開始時、 *ナイフ を1枚手札に加える。",
-    "UPGRADE_DESCRIPTION": "天賦 NL *ナイフ を1枚手札に加える。 NL ターン開始時、 *ナイフ を1枚手札に加える。"
+    "DESCRIPTION": "ターン開始時、 *ナイフ を1枚手札に加える。 NL パワーをプレイするたび、 *ナイフ を1枚手札に加える。",
+    "UPGRADE_DESCRIPTION": "天賦 NL ターン開始時、 *ナイフ を1枚手札に加える。 NL パワーをプレイするたび、 *ナイフ を1枚手札に加える。"
   },
-  "ThePrismatic:Choke": {
+  "${modID}:Choke": {
     "NAME": "窒息",
     "DESCRIPTION": "!D! ダメージを与える。 NL このターンカードをプレイするたび、対象の敵はHP !M! を失う。"
   },
-  "ThePrismatic:Wild Strike": {
-    "NAME": "ワイルドストライク",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 負傷を1枚手札に加える。"
+  "${modID}:Crippling Cloud": {
+    "NAME": "劇毒",
+    "DESCRIPTION": "全ての敵に !M! 毒 、 脱力 2 、 theprismatic:ターゲット 2 を与える。 NL 廃棄"
   },
-  "ThePrismatic:Dropkick": {
+  "${modID}:Wild Strike": {
+    "NAME": "ワイルドストライク",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 対象がデバフを受けていない場合、 NL *負傷 を1枚山札に加える。"
+  },
+  "${modID}:Reckless Charge": {
+    "NAME": "無謀なる突進",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 対象がデバフを受けていない場合、 NL *めまい を1枚山札に加える。"
+  },
+  "${modID}:Dropkick": {
     "NAME": "ドロップキック",
     "DESCRIPTION": "!D! ダメージを与える。 NL 敵が受けているデバフが2種類以上の場合、カードを1枚引く。"
   },
-  "ThePrismatic:Combustive Fumes": {
+  "${modID}:Combustive Fumes": {
     "NAME": "燃焼ガス",
     "DESCRIPTION": "ターン終了時にHPを 1 失い、敵全体に 毒 !M! を与える。"
   },
-  "ThePrismatic:Intimidate": {
-    "NAME": "威嚇",
-    "DESCRIPTION": "敵全体に 脱力 !M! を与える。 NL 筋力 1を得る。 NL 廃棄"
+  "${modID}:Rupture": {
+    "NAME": "破裂",
+    "DESCRIPTION": "カードの効果でHPを失ったか、パワーをプレイしたとき、 筋力 !M! を得る。"
   },
-  "ThePrismatic:Fiery Evolution": {
+  "${modID}:Brutality": {
+    "NAME": "残虐",
+    "DESCRIPTION": "ターン開始時、HPを1失い、デバフを受けている敵1体につき、カードを1枚引く。",
+    "UPGRADE_DESCRIPTION": "天賦 NL ターン開始時、HPを1失い、デバフを受けている敵1体につき、カードを1枚引く。"
+  },
+  "${modID}:Sentinel": {
+    "NAME": "見張り",
+    "DESCRIPTION": "!B! ブロックを得る。 NL このカードが theprismatic:ミル されたか 廃棄 されたとき、これを 廃棄 して [E] [E] を得る。",
+    "UPGRADE_DESCRIPTION": "!B! ブロックを得る。 NL このカードが theprismatic:ミル されたか 廃棄 されたとき、これを 廃棄 して [E] [E] [E] を得る。"
+  },
+  "${modID}:Intimidate": {
+    "NAME": "威嚇",
+    "DESCRIPTION": "敵全体に 脱力 !M! を与える。 NL 敵が2種類以上のデバフを受けている場合、 代わりに 脱力 !${modID}:Magic! を与える。 NL 廃棄"
+  },
+  "${modID}:Rage": {
+    "NAME": "激怒",
+    "DESCRIPTION": "憤怒 スタンス に入る。",
+    "UPGRADE_DESCRIPTION": "憤怒 スタンス に入る。 NL このターン、アタックをプレイするたび、 2 ブロック を得る。"
+  },
+  "${modID}:Fiery Evolution": {
     "NAME": "炎の進化",
     "DESCRIPTION": "状態異常 か 呪い を引くたび、敵全体に6ダメージを与え、カードを !M! 枚引く。",
     "UPGRADE_DESCRIPTION": "状態異常 か 呪い を引くたび、敵全体に6ダメージを与え、カードを !M! 枚引く。"
   },
-  "ThePrismatic:Metallic Rupture": {
-    "NAME": "金属破裂",
-    "DESCRIPTION": "ターン終了時に !M! ブロック を得る。 NL カードのプレイによってHPが失われるたび、 筋力 !ThePrismatic:S! を得る。"
+  "${modID}:Metallic Faith": {
+    "NAME": "灼熱の金属化",
+    "DESCRIPTION": "マントラ !M! を得る。 NL ターン終了時、 マントラ に等しいブロックを得る。"
   },
-  "ThePrismatic:Deadly Poison": {
+  "${modID}:Deadly Poison": {
     "NAME": "致死毒",
     "DESCRIPTION": "毒 !M! を与える。 NL このカードを theprismatic:ミル したとき、ランダムな敵に 毒 !M! を与える。"
   },
-  "ThePrismatic:Tactician": {
+  "${modID}:Tactician": {
     "NAME": "策士",
     "DESCRIPTION": "使用不可 NL このカードを theprismatic:ミル したとき、 [G] を得る。",
     "UPGRADE_DESCRIPTION": "使用不可 NL このカードを theprismatic:ミル したとき、 [G] [G] を得る。",
-    "EXTENDED_DESCRIPTION": ["このカードはプレイできない。"]
+    "EXTENDED_DESCRIPTION": [ "このカードはプレイできない。" ]
   },
-  "ThePrismatic:Reflex": {
+  "${modID}:Reflex": {
     "NAME": "反射",
     "DESCRIPTION": "使用不可 NL このカードを theprismatic:ミル したとき、カードを !M! 枚引く。",
-    "EXTENDED_DESCRIPTION": ["このカードはプレイできない。"]
+    "EXTENDED_DESCRIPTION": [ "このカードはプレイできない。" ]
   },
-  "ThePrismatic:Weave": {
+  "${modID}:Weave": {
     "NAME": "編み上げ",
     "DESCRIPTION": "!D! ダメージを与える。 NL カードを theprismatic:ミル するたび、捨て札から手札に戻す。"
   },
-  "ThePrismatic:Follow-Up": {
-    "NAME": "追撃",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 直前にプレイしたカードがアタックの場合、カードを2枚引く。"
-  },
-  "ThePrismatic:Berserk": {
+  "${modID}:Berserk": {
     "NAME": "狂戦士",
     "DESCRIPTION": "憤怒 の スタンス に入る。 NL ターン開始時、 [R] を得る。",
     "UPGRADE_DESCRIPTION": "天賦 NL 憤怒 の スタンス に入る。 NL ターン開始時、 [R] を得る。"
   },
-  "ThePrismatic:Like Water": {
+  "${modID}:Like Water": {
     "NAME": "水の如し",
     "DESCRIPTION": "ターン終了時、 平静 もしくは フロスト が存在するならば !M! ブロックを得る。"
   },
-  "ThePrismatic:Exploit Pain": {
+  "${modID}:Exploit Pain": {
     "NAME": "終わりなき加虐",
     "DESCRIPTION": "!D! ダメージを与える。 NL 敵のデバフの種類だけ繰り返す。"
   },
-  "ThePrismatic:Storm of Steel": {
-    "NAME": "鋼の嵐",
-    "DESCRIPTION": "手札をすべて捨てる。 NL 捨てたカード1枚につき、 *ナイフ を1枚手札に加える。",
-    "UPGRADE_DESCRIPTION": "手札をすべて捨てる。 NL 捨てたカード1枚につき、 *ナイフ+ を1枚手札に加える。"
-  },
-  "ThePrismatic:Bullseye": {
+  "${modID}:Bullseye": {
     "NAME": "ブルズアイ",
     "DESCRIPTION": "!D! ダメージを与える。 NL theprismatic:ターゲット !M! を与える。"
   },
-  "ThePrismatic:Targeting Defend": {
+  "${modID}:Stack": {
+    "NAME": "スタック",
+    "DESCRIPTION": "占術 !M! NL 捨て札の枚数に等しい ブロック を得る。",
+    "UPGRADE_DESCRIPTION": "占術 !M! NL 捨て札の枚数+3に等しい ブロック を得る。",
+    "EXTENDED_DESCRIPTION": [
+      " NL ( !B! ブロック を得る。)"
+    ]
+  },
+  "${modID}:Targeting Defend": {
     "NAME": "ターゲット防御",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 敵全体に theprismatic:ターゲット !M! を与える。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL ランダムな敵に theprismatic:ターゲット !M! を与える。"
   },
-  "ThePrismatic:Catalyst": {
+  "${modID}:Catalyst": {
     "NAME": "触媒",
-    "DESCRIPTION": "敵の 毒 を2倍にする。 NL theprismatic:ターゲット 99を与える。 NL 廃棄",
-    "UPGRADE_DESCRIPTION": "敵の 毒 を3倍にする。 NL theprismatic:ターゲット 99を与える。 NL 廃棄"
+    "DESCRIPTION": "敵の 毒 と 点穴 を2倍にする。 NL theprismatic:ターゲット 99を与える。 NL 廃棄"
   },
-  "ThePrismatic:Pressure Points": {
+  "${modID}:Pressure Points": {
     "NAME": "経絡秘孔",
-    "DESCRIPTION": "*点穴 !M! を与える。 NL theprismatic:ターゲット !ThePrismatic:LockOn! を与える。 NL 敵全体が *点穴 に等しいHPを失う。"
+    "DESCRIPTION": "*点穴 !M! を与える。 NL theprismatic:ターゲット !${modID}:LockOn! を与える。 NL 敵全体が *点穴 に等しいHPを失う。"
   },
-  "ThePrismatic:Eviscerate": {
+  "${modID}:Eviscerate": {
     "NAME": "腹裂き",
     "DESCRIPTION": "このターンに theprismatic:ミル したカード1枚につき、 [E] の消費-1。 NL !D! ダメージを3回与える。"
   },
-  "ThePrismatic:Slice": {
+  "${modID}:Dodge and Roll": {
+    "NAME": "ドッジロール",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 次のターン開始時、 !B! ブロック を得る。"
+  },
+  "${modID}:Slice": {
     "NAME": "スライス",
     "DESCRIPTION": "!D! ダメージを与える。 NL 手札をランダムに1枚 廃棄 する。",
     "UPGRADE_DESCRIPTION": "!D! ダメージを与える。 NL 手札を 1 枚 廃棄 する。"
   },
-  "ThePrismatic:Dark Embrace": {
+  "${modID}:Survivor": {
+    "NAME": "サバイバー",
+    "DESCRIPTION": "!B! ブロック を得る。 NL カードを1枚捨てる。 NL 呪い か 状態異常 を捨てたとき、それを 廃棄 し、カードを !M! 枚引く。"
+  },
+  "${modID}:Dark Embrace": {
     "NAME": "闇の抱擁",
     "DESCRIPTION": "カードを 廃棄 するたび、 NL カードを 1 枚引く。"
   },
-  "ThePrismatic:Exploit Weakness": {
+  "${modID}:Exploit Weakness": {
     "NAME": "加虐性の威嚇",
     "DESCRIPTION": "脱力 !M! を与える。 NL 敵のデバフの種類に等しい回数 !B! ブロック を得る。"
   },
-  "ThePrismatic:Nirvana": {
+  "${modID}:Nirvana": {
     "NAME": "涅槃",
     "DESCRIPTION": "カードを theprismatic:ミル するたび、 !M! ブロック を得る。"
   },
-  "ThePrismatic:Sadistic Defend": {
+  "${modID}:Sadistic Defend": {
     "NAME": "加虐性の防御",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 最もデバフの種類が多い敵の持つデバフの種類1つにつき、 !ThePrismatic:Magic! の追加ブロック。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL 最もデバフの種類が多い敵の持つデバフの種類1つにつき、 !${modID}:Magic! の追加ブロック。"
   },
-  "ThePrismatic:Sadistic Strike": {
+  "${modID}:Sadistic Strike": {
     "NAME": "加虐性のストライク",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 最もデバフの種類が多い敵の持つデバフの種類1つにつき、 !ThePrismatic:Magic! の追加ダメージ。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL 最もデバフの種類が多い敵の持つデバフの種類1つにつき、 !${modID}:Magic! の追加ダメージ。"
   },
-  "ThePrismatic:Thunderclap": {
+  "${modID}:Thunderclap": {
     "NAME": "サンダークラップ",
     "DESCRIPTION": "敵全体に !D! ダメージと 弱体 1を与える。 NL ライトニング 1 を 生成 する。"
   },
-  "ThePrismatic:Uppercut": {
+  "${modID}:Uppercut": {
     "NAME": "アッパーカット",
     "DESCRIPTION": "!D! ダメージを与える。 NL 脱力 !M! 、 弱体 !M! 、 theprismatic:ターゲット !M! を与える。"
   },
-  "ThePrismatic:Shockwave": {
+  "${modID}:Shockwave": {
     "NAME": "衝撃波",
     "DESCRIPTION": "敵全体に 脱力 !M! 、 弱体 !M! 、 theprismatic:ターゲット !M! を与える。 NL 廃棄"
   },
-  "ThePrismatic:Empowering Defend": {
+  "${modID}:Empowering Defend": {
     "NAME": "パワフル防御",
-    "DESCRIPTION": "!B! ブロック を得る。 NL このターン、次にプレイするパワーのコストが1下がる。",
-    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL このターン、次にプレイする !M! 枚のパワーのコストが1下がる。"
+    "DESCRIPTION": "保留 NL !B! ブロック を得る。 NL このターン、次にプレイするパワーのコストが1下がる。",
+    "UPGRADE_DESCRIPTION": "保留 NL !B! ブロック を得る。 NL このターン、次にプレイする !M! 枚のパワーのコストが1下がる。"
   },
-  "ThePrismatic:Empowering Strike": {
+  "${modID}:Empowering Strike": {
     "NAME": "パワフルストライク",
-    "DESCRIPTION": "!D! ダメージを与える。 NL このターン、次にプレイするパワーのコストが1下がる。",
-    "UPGRADE_DESCRIPTION": "!D! ダメージを与える。 NL このターン、次にプレイする !M! 枚のパワーのコストが1下がる。"
+    "DESCRIPTION": "保留 NL !D! ダメージを与える。 NL このターン、次にプレイするパワーのコストが1下がる。",
+    "UPGRADE_DESCRIPTION": "保留 NL !D! ダメージを与える。 NL このターン、次にプレイする !M! 枚のパワーのコストが1下がる。"
   },
-  "ThePrismatic:Doom Will Bloom": {
+  "${modID}:Doom Will Bloom": {
     "NAME": "経絡自暴自棄",
     "DESCRIPTION": "敵全体に *点穴 !M! を与える。 NL 敵全体が *点穴 に等しいHPを失う。 NL ダーク 1を 生成 する。"
   },
-  "ThePrismatic:Entrench": {
+  "${modID}:Entrench": {
     "NAME": "塹壕",
     "DESCRIPTION": "現在のブロックの値を2倍にする。 NL 次のターン開始時にブロックを失わない。",
     "UPGRADE_DESCRIPTION": "現在のブロックの値を2倍にする。 NL 次のターン開始時にブロックを失わない。"
   },
-  "ThePrismatic:Compile Driver": {
-    "NAME": "コンパイル・ドライバ",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 生成している オーブ 1種につき、1枚のカードを引く。"
-  },
-  "ThePrismatic:Double Tap": {
+  "${modID}:Double Tap": {
     "NAME": "ダブルタップ",
     "DESCRIPTION": "保留 NL このターン、次のアタックを 2 回プレイする。",
     "UPGRADE_DESCRIPTION": "保留 NL このターン、次の !M! 枚のアタックを 2 回プレイする。"
   },
-  "ThePrismatic:Burst": {
+  "${modID}:Burst": {
     "NAME": "バースト",
     "DESCRIPTION": "保留 NL このターン、次のスキルを 2 回プレイする。",
     "UPGRADE_DESCRIPTION": "保留 NL このターン、次の !M! 枚のスキルを 2 回プレイする。"
   },
-  "ThePrismatic:Amplify": {
+  "${modID}:Amplify": {
     "NAME": "増幅",
     "DESCRIPTION": "保留 NL このターン、次のパワーを 2 回プレイする。",
     "UPGRADE_DESCRIPTION": "保留 NL このターン、次の !M! 枚のパワーを 2 回プレイする。"
   },
-  "ThePrismatic:Clothesline": {
+  "${modID}:Clothesline": {
     "NAME": "ラリアット",
     "DESCRIPTION": "!D! ダメージを与える。 NL 脱力 !M! と theprismatic:ターゲット !M! を与える。"
   },
-  "ThePrismatic:Juggernaut": {
+  "${modID}:Juggernaut": {
     "NAME": "ジャガーノート",
     "DESCRIPTION": "フロスト 1を 生成 する。 NL ブロック を得るたび、ランダムな敵に !M! ダメージを与える。"
   },
-  "ThePrismatic:Echo Form": {
+  "${modID}:Echo Form": {
     "NAME": "反響化",
     "DESCRIPTION": "エセリアル NL ターンの最初にプレイするカードを、2回プレイする。",
-    "UPGRADE_DESCRIPTION": "ターンの最初にプレイするカードを、2回プレイする。"
+    "UPGRADE_DESCRIPTION": "保留 NL ターンの最初にプレイするカードを、2回プレイする。"
   },
-  "ThePrismatic:Multichaos": {
+  "${modID}:Multi-Chaos": {
     "NAME": "マルチ混沌",
-    "DESCRIPTION": "空の theprismatic:オーブスロット が存在する場合、ランダムな オーブ を1つ 生成 する。 NL 先頭の オーブ をX回 解放 する。",
-    "UPGRADE_DESCRIPTION": "空の theprismatic:オーブスロット が存在する場合、ランダムな オーブ を1つ 生成 する。 NL 先頭の オーブ をX+1回 解放 する。"
+    "DESCRIPTION": "先頭の オーブ をX回 解放 する。 NL ランダムな オーブ をX個生成する。",
+    "UPGRADE_DESCRIPTION": "先頭の オーブ をX+1回 解放 する。 NL ランダムな オーブ をX+1個生成する。"
   },
-  "ThePrismatic:Limit Break": {
+  "${modID}:Limit Break": {
     "NAME": "リミットブレイク",
     "DESCRIPTION": "筋力 と 集中力 を2倍にする。 NL 廃棄",
     "UPGRADE_DESCRIPTION": "筋力 と 集中力 を2倍にする。"
   },
-  "ThePrismatic:Focused Defend": {
+  "${modID}:Focused Defend": {
     "NAME": "デフラグ防御",
     "DESCRIPTION": "!B! ブロック を得る。 NL 一時的な 集中力 !M! を得る。"
   },
-  "ThePrismatic:Focused Strike": {
+  "${modID}:Focused Strike": {
     "NAME": "デフラグストライク",
     "DESCRIPTION": "!D! ダメージを与える。 NL 一時的な 集中力 !M! を得る。"
   },
-  "ThePrismatic:Biased Cognition": {
+  "${modID}:Biased Cognition": {
     "NAME": "認知偏向",
     "DESCRIPTION": "筋力 !M! と 集中力 !M! を得る。 NL ターン開始時、 筋力 1と 集中力 1を失う。"
   },
-  "ThePrismatic:Mental Fortress": {
+  "${modID}:Mental Fortress": {
     "NAME": "不動心",
-    "DESCRIPTION": "スタンス を変更するか、カードを作成するたび、 !M! ブロックを得る。"
+    "DESCRIPTION": "スタンス を変更するか、パワーをプレイするたび、 !M! ブロックを得る。"
   },
-  "ThePrismatic:Searing Blow": {
+  "${modID}:Searing Blow": {
     "NAME": "灼熱の一撃",
     "DESCRIPTION": "!D! ダメージを与える。 NL このカードは何度でも アップグレード できる。"
   },
-  "ThePrismatic:Thunder Strike": {
+  "${modID}:Thunder Strike": {
     "NAME": "サンダーストライク",
-    "DESCRIPTION": "この戦闘で 生成 した ライトニング 1つにつき、 ランダムな敵に !D! ダメージを与える。",
+    "DESCRIPTION": "この戦闘で 生成 した オーブ 1つにつき、 ランダムな敵に !D! ダメージを与える。",
     "EXTENDED_DESCRIPTION": [
-      " NL (ライトニング !M! を生成した。)",
-      " NL (ライトニング !M! を生成した。)"
+      " NL (オーブを !M! 個生成した。)",
+      " NL (オーブを !M! 個生成した。)"
     ]
   },
-  "ThePrismatic:Hyperbeam": {
+  "${modID}:Hyperbeam": {
     "NAME": "ハイパービーム",
     "DESCRIPTION": "全ての敵に !D! ダメージを与える。 NL 筋力 !M! と 集中力 !M! を失う。"
   },
-  "ThePrismatic:Reprogram": {
+  "${modID}:Reprogram": {
     "NAME": "再構成",
     "DESCRIPTION": "集中力 !M! を得る。 NL 筋力 1を失う。 NL 敏捷性 1を失う。"
   },
-  "ThePrismatic:Recursion": {
+  "${modID}:Recursion": {
     "NAME": "再帰",
     "DESCRIPTION": "先頭の オーブ を 解放 する。 NL その 解放 した オーブ を 生成 する。 NL スタンス を解除する。 NL その解除した スタンス に入る。"
   },
-  "ThePrismatic:Perfected Strike": {
-    "NAME": "パーフェクトストライク",
-    "DESCRIPTION": "!D! ダメージを与える。 NL デッキ中の名前に「ストライク」の入ったカードの枚数ｘ !M! の追加ダメージ。"
-  },
-  "ThePrismatic:Caltrops": {
+  "${modID}:Caltrops": {
     "NAME": "まきびし",
     "DESCRIPTION": "攻撃を受けるたび、攻撃を行った敵に !M! ダメージと theprismatic:ターゲット 1を与える。"
   },
-  "ThePrismatic:Deflect": {
+  "${modID}:Deflect": {
     "NAME": "ディフレクト",
     "DESCRIPTION": "!B! ブロック を得る。 NL 戦闘中、0コストカードから得られる ブロック が !M! 上昇する。"
   },
-  "ThePrismatic:Establishment": {
+  "${modID}:Establishment": {
     "NAME": "制定",
     "DESCRIPTION": "カードが 保留 されるたび、 そのコストを 1 下げる。",
     "UPGRADE_DESCRIPTION": "天賦 NL カードが 保留 されるたび、 そのコストを 1 下げる。"
   },
-  "ThePrismatic:Grand Finale": {
+  "${modID}:Grand Finale": {
     "NAME": "グランドフィナーレ",
     "DESCRIPTION": "保留 NL 山札にカードがない時だけプレイ可能。 NL 敵全体に !D! ダメージを与える。",
-    "EXTENDED_DESCRIPTION":[
+    "EXTENDED_DESCRIPTION": [
       "山札が #r空っぽ でないとプレイできない。"
     ]
   },
-  "ThePrismatic:Alpha": {
+  "${modID}:Alpha": {
     "NAME": "アルファ",
     "DESCRIPTION": "*ベータ を1枚山札に加える。 NL 占術 !M! NL 廃棄",
     "UPGRADE_DESCRIPTION": "天賦 NL *ベータ を1枚山札に加える。 NL 占術 !M! NL 廃棄"
   },
-  "ThePrismatic:Beta": {
+  "${modID}:Beta": {
     "NAME": "ベータ",
     "DESCRIPTION": "*オメガ を1枚山札に加える。 NL 占術 !M! NL 廃棄"
   },
-  "ThePrismatic:Conjure Blade": {
+  "${modID}:Conjure Blade": {
     "NAME": "剣の召喚",
     "DESCRIPTION": "*抹殺の剣 を1枚山札に加える。 NL 廃棄",
     "UPGRADE_DESCRIPTION": "*抹殺の剣 をX+1にして1枚山札に加える。 NL 廃棄"
   },
-  "ThePrismatic:Expunger": {
+  "${modID}:Expunger": {
     "NAME": "抹殺の剣",
     "DESCRIPTION": "!D! ダメージを与える。 NL ダーク 1を生成する。 NL これをX回繰り返す。",
     "EXTENDED_DESCRIPTION": [
       "!D! ダメージを与える。 NL ダーク 1を生成する。 NL これを !M! 回繰り返す。",
       "!D! ダメージを与える。 NL ダーク 1を生成する。 NL これを !M! 回繰り返す。"
     ]
+  },
+  "${modID}:One for All": {
+    "NAME": "ワンフォーオール",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 山札の全ての0コストカードを手札に加える。"
+  },
+  "${modID}:Bash": {
+    "NAME": "強打",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 弱体 !M! を与える。 NL theprismatic:ターゲット !M! を与える。"
+  },
+  "${modID}:Clash": {
+    "NAME": "クラッシュ",
+    "DESCRIPTION": "手札がすべて「アタック」か 憤怒 ならばプレイ可能。 NL !D! ダメージを与える。",
+    "EXTENDED_DESCRIPTION": [
+      "手札に「アタック」以外のカードがある。"
+    ]
+  },
+  "${modID}:Flex": {
+    "NAME": "フレックス",
+    "DESCRIPTION": "筋力 !M! と 集中力 2 を得る。 NL ターン終了時、 筋力 !M! と 集中力 2 を失う。"
+  },
+  "${modID}:Heavy Blade": {
+    "NAME": "ヘヴィブレード",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 筋力 と マントラ 1 毎に、 !${modID}:Magic! の追加ダメージ。"
+  },
+  "${modID}:Fusion": {
+    "NAME": "消尽",
+    "DESCRIPTION": "theprismatic:オーブスロット 1を得る。 NL プラズマ 1 を 生成 する。"
+  },
+  "${modID}:Flying Sleeves": {
+    "NAME": "舞い飛ぶ袖",
+    "DESCRIPTION": "保留 NL !D! ダメージを2回与える。 NL このカードが 保留 されたとき、一時的な 筋力 1を得る。"
+  },
+  "${modID}:Halt": {
+    "NAME": "停止",
+    "DESCRIPTION": "!B! ブロックを得る。 NL スタンスに入っている場合、追加で !M! ブロックを得る。"
+  },
+  "${modID}:Protect": {
+    "NAME": "護身",
+    "DESCRIPTION": "保留 NL !B! ブロックを得る。 NL このターンの終了時に、カードを !M! 枚まで保留する。",
+    "UPGRADE_DESCRIPTION": "保留 NL !B! ブロックを得る。 NL このターンの終了時に、カードを !M! 枚まで保留する。"
+  },
+  "${modID}:Windmill Strike": {
+    "NAME": "ウィンドミルストライク",
+    "DESCRIPTION": "保留 NL !D! ダメージを与える。 NL 保留されたとき、同時に保留されたカード1枚につき、この戦闘中のダメージが !M! 増加する。"
+  },
+  "${modID}:Wreath of Flame": {
+    "NAME": "火炎輪",
+    "DESCRIPTION": "次のアタックは !M! の追加ダメージを与える。 NL 一時的な 集中力 !${modID}:Focus! を得る。"
   }
 }
 

@@ -6,6 +6,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.EquilibriumPower;
+import com.megacrit.cardcrawl.relics.RunicPyramid;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -28,6 +30,8 @@ public class WindmillStrike2 extends BaseCard {
     private static final int UPG_DAMAGE = 2;
     private static final int baseMagicNumber = 2;
     private static final int UPG_Number = 1;
+    int cardsRetained = 0;
+    boolean retained = false;
 
     public WindmillStrike2() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
@@ -40,9 +44,25 @@ public class WindmillStrike2 extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
+    public void triggerOnEndOfTurnForPlayingCard() {
+        retained = true;
+        cardsRetained = 0;
+        if(player.hasRelic(RunicPyramid.ID)){
+            for(AbstractCard c : player.hand.group){
+                if((c.retain || c.selfRetain) || (player.hasPower(EquilibriumPower.POWER_ID) && !c.isEthereal)){
+                    cardsRetained++;
+                }
+            }
+        }
+    }
     public void atTurnStart(){
-        for(AbstractCard ignored : player.hand.group){
-            upgradeDamage(magicNumber);
+        if(retained){
+            if(cardsRetained != 0){
+                upgradeDamage(magicNumber*cardsRetained);
+            } else {
+                upgradeDamage(magicNumber*player.hand.group.size());
+            }
+            retained = false;
         }
     }
 }

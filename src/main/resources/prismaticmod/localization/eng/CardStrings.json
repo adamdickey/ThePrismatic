@@ -545,7 +545,7 @@
   },
   "${modID}:Signature Move": {
     "NAME": "Signature Move",
-    "DESCRIPTION": "Can only be played if NL this is the only Attack NL in your hand or NL you are in Calm. NL Deal !D! damage."
+    "DESCRIPTION": "Can only be played if NL this is the only Attack NL in your hand or you NL are in Calm. NL Deal !D! damage."
   },
   "${modID}:One for All": {
     "NAME": "One for All",
