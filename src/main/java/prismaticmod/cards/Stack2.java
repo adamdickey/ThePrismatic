@@ -31,7 +31,13 @@ public class Stack2 extends BaseCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ScryAction(magicNumber));
-        addToBot(new StackAction(this));
+        addToBot(new StackAction(this.block, player.discardPile.size()));
+        if (!this.upgraded) {
+            this.rawDescription = cardStrings.DESCRIPTION;
+        } else {
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+        }
+        initializeDescription();
     }
 
     public void applyPowers() {

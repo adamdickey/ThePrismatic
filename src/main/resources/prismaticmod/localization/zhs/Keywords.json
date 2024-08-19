@@ -1,16 +1,24 @@
 [
   {
-    "PROPER_NAME": "目标化",
+    "PROPER_NAME": "目标",
     "NAMES": [
-      "目标化"
+      "target",
+      "Target",
+      "Targeted",
+      "targeted",
+      "目标"
     ],
-    "DESCRIPTION": "目标化的敌人受到的间接伤害增加 #b50% 。"
+    "DESCRIPTION": "受目标影响的敌人受到的非攻击伤害增加 #b50% 。"
   },
   {
     "PROPER_NAME": "铣削",
     "NAMES": [
+      "Milled",
+      "milled",
+      "Mill",
+      "mill",
       "铣削"
     ],
-    "DESCRIPTION": "当一张牌在预见中被丢弃，视作被铣削."
+    "DESCRIPTION": "当你在预见中丢弃一张牌时，其视作被铣削."
   }
 ]

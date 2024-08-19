@@ -1,12 +1,12 @@
 {
-  "ThePrismatic:Targeting Potion": {
+  "${modID}:Targeting Potion": {
     "NAME": "锁定药水",
     "DESCRIPTIONS": [
       "给予 #b",
-      " #y 层 目标化 。"
+      " #y 层 目标 。"
     ]
   },
-  "ThePrismatic:Bottled Orb": {
+  "${modID}:Bottled Orb": {
     "NAME": "瓶装充能球",
     "DESCRIPTIONS": [
       "永久获得 #b",

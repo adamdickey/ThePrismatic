@@ -33,6 +33,5 @@ public class QuickSlash2 extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         addToBot(new DrawCardAction(1, new QuickSlashFollowUpAction()));
-
     }
 }

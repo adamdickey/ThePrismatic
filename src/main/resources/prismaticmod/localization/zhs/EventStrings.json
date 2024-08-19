@@ -1,5 +1,5 @@
 {
-  "ThePrismatic:EventID": {
+  "${modID}:EventID": {
     "NAME": "Event Name",
     "DESCRIPTIONS": [
       "This is event text, generally used to describe what's happening.",

@@ -1,5 +1,5 @@
 {
-  "ThePrismatic:Burning Ring": {
+  "${modID}:Burning Ring": {
     "NAME": "燃烧之戒",
     "FLAVOR": "你能从戒指中感受到几位伟大的战士的力量。",
     "DESCRIPTIONS": [
@@ -9,14 +9,14 @@
       " 点生命。"
     ]
   },
-  "ThePrismatic:Pure Core": {
+  "${modID}:Pure Core": {
     "NAME": "纯粹核心",
     "FLAVOR": "存粹核心唤醒了燃烧之戒的全部力量，解放了前辈们的灵魂。",
     "DESCRIPTIONS": [
       "替换 #r燃烧之戒。 拾取后，获得 #r燃烧之血 ， #g蛇之戒指 ， #b破损核心 ， 和 #p圣水 。"
     ]
   },
-  "ThePrismatic:Inserter": {
+  "${modID}:Inserter": {
     "NAME": "数据输入器",
     "FLAVOR": "压入. 拉取. 堆叠. 重复.",
     "DESCRIPTIONS": [
@@ -27,7 +27,7 @@
       " 层 #y真言 。"
     ]
   },
-  "ThePrismatic:Wrist Blade": {
+  "${modID}:Wrist Blade": {
     "NAME": "腕刃",
     "FLAVOR": "便于暗杀。",
     "DESCRIPTIONS": [
@@ -36,23 +36,21 @@
       " 层 #y中毒 。"
     ]
   },
-  "ThePrismatic:Ring of Keys": {
+  "${modID}:Ring of Keys": {
     "NAME": "钥匙圈",
     "FLAVOR": "开启你头脑中蕴藏的想法。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，额外抽取 #b",
-      " 张牌当你抽牌堆中每存在 #b",
-      " 张牌。"
+      "你的牌组中每有一张瓶装或固有牌，每场战斗开始时，额外抽取 #b1 张牌"
     ]
   },
-  "ThePrismatic:Hardwood Barrel": {
+  "${modID}:Hardwood Barrel": {
     "NAME": "硬木桶",
-    "FLAVOR": "在你的资金快用尽之前，还是挺不错的。                      由 U/夏洛特 设计",
+    "FLAVOR": "在你的资金快用尽之前，还是挺不错的。\n由 U/夏洛特 设计",
     "DESCRIPTIONS": [
       "直到你首次清空抽牌堆之前，每回合获得 [E] 。"
     ]
   },
-  "ThePrismatic:Runic Cube": {
+  "${modID}:Runic Cube": {
     "NAME": "符文立方体",
     "FLAVOR": "上面的符文无法辨识。",
     "DESCRIPTIONS": [
@@ -60,7 +58,7 @@
       " 张牌。"
     ]
   },
-  "ThePrismatic:Sadistic Dagger": {
+  "${modID}:Sadistic Dagger": {
     "NAME": "残虐匕首",
     "FLAVOR": "刀刃诱惑你做出异常残忍的举动。",
     "DESCRIPTIONS": [
@@ -68,14 +66,14 @@
       " 点伤害。"
     ]
   },
-  "ThePrismatic:Reality Box": {
+  "${modID}:Reality Box": {
     "NAME": "现实之箱",
     "FLAVOR": "箱子中的现实蕴含着巨大的力量。",
     "DESCRIPTIONS": [
       "所有在战斗中临时增加的牌将被 升级 。"
     ]
   },
-  "ThePrismatic:Golden Eye": {
+  "${modID}:Golden Eye": {
     "NAME": "黄金眼",
     "FLAVOR": "预见未来的自己，预测自己的命运。",
     "DESCRIPTIONS": [
@@ -83,14 +81,14 @@
       " 。"
     ]
   },
-  "ThePrismatic:Establishing Seal": {
+  "${modID}:Establishing Seal": {
     "NAME": "确立之章",
     "FLAVOR": "封印你的命运，揭示你的未来之路。",
     "DESCRIPTIONS": [
-      "每当有卡牌被 #y保留 时，将其在本场战斗的耗能减少 1 。"
+      "每当有牌被 #y保留 时，其在本场战斗中的耗能减少 1 。"
     ]
   },
-  "ThePrismatic:Dark Core": {
+  "${modID}:Dark Core": {
     "NAME": "暗黑核心",
     "FLAVOR": "你会感觉到一股巨大的能量在核心部位涌动。",
     "DESCRIPTIONS": [
@@ -99,40 +97,40 @@
       " 个 #y黑暗 #y充能球 。"
     ]
   },
-  "ThePrismatic:Specimen Funnel": {
+  "${modID}:Specimen Funnel": {
     "NAME": "漏斗样本",
-    "FLAVOR": "我不会喝掉他。",
+    "FLAVOR": "如果我是你，我绝不会喝。",
     "DESCRIPTIONS": [
       "每场战斗开始时，对所有敌人施加 #b",
       " 层 #y中毒 和 #b",
       " 层 #y印记 。 每当有敌人死去时，将其身上的 #y中毒 和 #y印记 层数移到一名随机敌人身上。"
     ]
   },
-  "ThePrismatic:Hovering Kite": {
+  "${modID}:Hovering Kite": {
     "NAME": "悬浮风筝",
     "FLAVOR": "风筝在战斗中飘浮在你的身旁，不知是何种神秘的力量让它能浮在空中。",
     "DESCRIPTIONS": [
-      "你在每回合第一次从预见中丢弃牌时，获得 [E] 。"
+      "你在每回合第一次 #y${modID}:铣削 时，获得 [E] 。"
     ]
   },
-  "ThePrismatic:Tough Bandages": {
+  "${modID}:Tough Bandages": {
     "NAME": "结实绷带",
-    "FLAVOR": "失去给人带来力量。",
+    "FLAVOR": "失之俞多，其志弥坚。",
     "DESCRIPTIONS": [
-      "你每在你的回合中从预见中丢弃牌时，获得 #b",
+      "在你的回合中，每当你 #y${modID}:铣削 时，获得 #b",
       " 点 #y格挡 。"
     ]
   },
-  "ThePrismatic:Tingsha": {
+  "${modID}:Tingsha": {
     "NAME": "铜钹",
     "FLAVOR": "这件乐器发出的响声似乎能回荡到让人耳朵发痛。",
     "DESCRIPTIONS": [
-      "你每在你的回合中从预见中丢弃牌时，对随机敌人造成 #b",
+      "在你的回合中，每当你 #y${modID}:铣削 时，对随机敌人造成 #b",
       " 点伤害。"
     ]
   },
-  "ThePrismatic:Darkstone Doll": {
-    "NAME": "黑石巫娃",
+  "${modID}:Darkstone Doll": {
+    "NAME": "黑石巫偶",
     "FLAVOR": "这个护身符从神秘玩偶身上汲取到能量，将其黑暗能量转化为佩戴者的力量和活力。",
     "DESCRIPTIONS": [
       "每当你获得一张 #y诅咒 ，将你的最大生命值提高 #b",
@@ -141,35 +139,28 @@
       " 点 #y力量 。"
     ]
   },
-  "ThePrismatic:Shovel": {
-    "NAME": "铲子",
-    "FLAVOR": "高塔中有着无数过去文明遗留下的遗物和强大的冒险者们遗失的宝物，现在你可以把它们挖出来了！",
-    "DESCRIPTIONS": [
-      "现在你可以在休息处 #y挖掘 遗物。"
-    ]
-  },
-  "ThePrismatic:Teardrop Locket": {
+  "${modID}:Teardrop Locket": {
     "NAME": "泪滴吊坠盒",
     "FLAVOR": "盒子的主人双目失明，其中的东西无人知晓。",
     "DESCRIPTIONS": [
       "每场战斗开始时处于 #y平静 。"
     ]
   },
-  "ThePrismatic:Unceasing Top": {
+  "${modID}:Unceasing Top": {
     "NAME": "不休陀螺",
     "FLAVOR": "这个陀螺始终轻松地旋转着，让你觉得自己仿佛是在梦中。",
     "DESCRIPTIONS": [
-      "在你的回合，当你没有手牌时，抽一张牌。"
+      "在你的回合中，当你没有手牌时，抽一张牌。"
     ]
   },
-  "ThePrismatic:Mummified Hand": {
+  "${modID}:Mummified Hand": {
     "NAME": "干瘪之手",
     "FLAVOR": "这只手经常都在抽动，尤其是在你心跳很快的时候。",
     "DESCRIPTIONS": [
-      "你每打出一张 #y能力牌 ，手牌中就有一张随机牌在这个回合耗能变为 #b0 。"
+      "每回合第一次打出 #能力牌 时，抽一张牌。 NL 你每打出一张 #y能力牌 ，手牌中一张随机牌在本回合耗能变为 #b0 。"
     ]
   },
-  "ThePrismatic:Small House": {
+  "${modID}:Small House": {
     "NAME": "小屋子",
     "FLAVOR": "“一项近乎完美的微缩化工程。这是我至今最优秀的作品，但仍然远远不够。”——建筑师",
     "DESCRIPTIONS": [
@@ -179,32 +170,33 @@
       "小小的屋子！"
     ]
   },
-  "ThePrismatic:Brimstone": {
+  "${modID}:Brimstone": {
     "NAME": "硫磺",
     "FLAVOR": "散发出地狱般的高热。",
     "DESCRIPTIONS": [
       "在你的每个回合开始时，你获得 #b",
-      " 点 #y力量 ，所有敌人也获得 #b",
-      " #y力量。"
+      " 点 #y力量 ，以及 #b",
+      " 层 #y集中 ，所有敌人获得 #b",
+      " 点 #y力量 。"
     ]
   },
-  "ThePrismatic:Champion Belt": {
+  "${modID}:Champion Belt": {
     "NAME": "冠军腰带",
     "FLAVOR": "只有最强者才配佩戴这条腰带。",
     "DESCRIPTIONS": [
       "每当你给予 #y易伤 时，同时给予 #b",
       " 层 #y虚弱 和 #b",
-      " 层 #y目标化 。"
+      " 层 #y${modID}:目标 。"
     ]
   },
-  "ThePrismatic:Orb Slot": {
-    "NAME": "充能球栏位",
-    "FLAVOR": "瓶装潜能。",
+  "${modID}:Orb Slot": {
+    "NAME": "轨道",
+    "FLAVOR": "瓶子装不下的强大力量。",
     "DESCRIPTIONS": [
-      "每场战斗开始时获得额外的充能球栏位。"
+      "在每场战斗开始时，获得额外的充能球栏位。"
     ]
   },
-  "ThePrismatic:Ceramic Fish": {
+  "${modID}:Ceramic Fish": {
     "NAME": "陶瓷小鱼",
     "FLAVOR": "这些被精心上色的鱼儿被认为可以带来滚滚财源。",
     "DESCRIPTIONS": [
@@ -212,11 +204,18 @@
       " #y金币 。当你跳过卡牌奖励时失效。"
     ]
   },
-  "ThePrismatic:Snecko Skull": {
+  "${modID}:Snecko Skull": {
     "NAME": "异蛇头骨",
     "FLAVOR": "保存完好的异蛇头骨，十分离奇地非常干净和光滑，任何灰尘和污垢都无法沾上它，这是为什么呢。",
     "DESCRIPTIONS": [
-      "每当你给敌人施加一个负面状态时， 额外给予 #b1 层。"
+      "每当你给敌人施加负面状态时， 额外给予 #b1 层。"
+    ]
+  },
+  "${modID}:The Boot": {
+    "NAME": "发条靴",
+    "FLAVOR": "拧动发条会让这只靴子变得更大。",
+    "DESCRIPTIONS": [
+      "每当你造成小于 #b5 点未被格挡的攻击伤害时, 施加伤害值与 #b5 的差距 层的 #y中毒 。"
     ]
   }
 }

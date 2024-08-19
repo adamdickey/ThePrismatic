@@ -7,7 +7,9 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.EquilibriumPower;
+import com.megacrit.cardcrawl.powers.RetainCardPower;
 import com.megacrit.cardcrawl.relics.RunicPyramid;
+import prismaticmod.powers.RetainThisTurn;
 import prismaticmod.util.CardStats;
 import theprismatic.ThePrismatic;
 
@@ -46,23 +48,28 @@ public class WindmillStrike2 extends BaseCard {
     }
     public void triggerOnEndOfTurnForPlayingCard() {
         retained = true;
-        cardsRetained = 0;
-        if(player.hasRelic(RunicPyramid.ID)){
-            for(AbstractCard c : player.hand.group){
-                if((c.retain || c.selfRetain) || (player.hasPower(EquilibriumPower.POWER_ID) && !c.isEthereal)){
+        if((player.hasPower(RetainCardPower.POWER_ID) || player.hasPower(RetainThisTurn.ID)) &&
+                !player.hasRelic(RunicPyramid.ID) && !player.hasPower(EquilibriumPower.POWER_ID)){
+            cardsRetained = 0;
+            for(AbstractCard c : player.hand.group) {
+                if ((c.selfRetain || c.retain) || (player.hasPower(EquilibriumPower.POWER_ID) && !c.isEthereal)) {
+                    upgradeDamage(magicNumber);
                     cardsRetained++;
+                }
+            }
+        } else {
+            for(AbstractCard c : player.hand.group){
+                if((c.selfRetain || c.retain) || (player.hasPower(EquilibriumPower.POWER_ID) && !c.isEthereal)){
+                    upgradeDamage(magicNumber);
                 }
             }
         }
     }
     public void atTurnStart(){
-        if(retained){
-            if(cardsRetained != 0){
-                upgradeDamage(magicNumber*cardsRetained);
-            } else {
-                upgradeDamage(magicNumber*player.hand.group.size());
-            }
-            retained = false;
+        if(cardsRetained > 0 && retained){
+            upgradeDamage(magicNumber*(player.hand.group.size()-cardsRetained));
+            cardsRetained = 0;
         }
+        retained = false;
     }
 }

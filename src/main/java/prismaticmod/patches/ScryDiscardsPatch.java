@@ -16,14 +16,19 @@ import javassist.CannotCompileException;
 import javassist.CtBehavior;
 import prismaticmod.cards.*;
 
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
+import static theprismatic.ThePrismatic.Enums.Prismatic;
+
 @SpirePatch2(clz = ScryAction.class, method = "update")
 public class ScryDiscardsPatch {
     @SpireInsertPatch(locator = Locator.class)
     public static void Insert() {
-        for(AbstractCard c : AbstractDungeon.gridSelectScreen.selectedCards){
-            GameActionManager.incrementDiscard(false);
-            if(c instanceof DeadlyPoison2 || c instanceof Reflex2 || c instanceof Tactician2 || c instanceof Weave2 || c instanceof Vigilance2 || c instanceof Eruption2 || c instanceof Sentinel2 || c instanceof Consume2 || c instanceof DodgeAndRoll2){
-                c.triggerOnManualDiscard();
+        if(player.chosenClass == Prismatic){
+            for(AbstractCard c : AbstractDungeon.gridSelectScreen.selectedCards){
+                GameActionManager.incrementDiscard(false);
+                if(c instanceof DeadlyPoison2 || c instanceof Reflex2 || c instanceof Tactician2 || c instanceof Weave2 || c instanceof Vigilance2 || c instanceof Eruption2 || c instanceof Sentinel2 || c instanceof Consume2 || c instanceof DodgeAndRoll2) {
+                    c.triggerOnManualDiscard();
+                }
             }
         }
     }

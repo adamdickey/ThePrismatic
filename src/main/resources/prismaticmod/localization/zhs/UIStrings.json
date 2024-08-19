@@ -1,5 +1,5 @@
 {
-  "ThePrismatic:Lock-on": {
+  "${modID}:Lock-on": {
     "TEXT": [
       "This is",
       "an array of Strings."

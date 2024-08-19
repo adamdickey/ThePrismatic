@@ -1,5 +1,5 @@
 {
-  "ThePrismatic:0ch0 F0rm": {
+  "${modID}:0ch0 F0rm": {
     "NAME": "零号形态",
     "DESCRIPTIONS": [
       "每回合第一张耗能为 0 的牌会打出两次。",
@@ -7,17 +7,17 @@
       " 张耗能为 0 的牌会打出两次。"
     ]
   },
-  "ThePrismatic:Targeted": {
-    "NAME": "目标化",
+  "${modID}:Targeted": {
+    "NAME": "目标",
     "DESCRIPTIONS": [
-      "受到的 #y间接伤害 增加 #b",
+      "受到的 #y非攻击伤害 增加 #b",
       "% 。持续 #b",
       " 回合。",
       " 回合。"
     ]
   },
-  "ThePrismatic:Chimera Form": {
-    "NAME": "嵌合形态",
+  "${modID}:Chimera Form": {
+    "NAME": "奇美拉形态",
     "DESCRIPTIONS": [
       "在你的回合开始时， 获得 #b",
       " 点 #y力量 ， #b",
@@ -27,15 +27,7 @@
       " 层 #y真言 。"
     ]
   },
-  "ThePrismatic:On a Roll": {
-    "NAME": "生生不息",
-    "DESCRIPTIONS": [
-      "每当你打出一张 #y攻击牌，获得 #b",
-      " 点 临时 #y力量 和 #b",
-      " 点 临时 #y敏捷 。"
-    ]
-  },
-  "ThePrismatic:Static Discharge": {
+  "${modID}:Static Discharge": {
     "NAME": "静电干扰",
     "DESCRIPTIONS": [
       "每回合第一次给敌人施加负面状态时， #y生成 #b1 #y闪电 #y充能球。",
@@ -43,7 +35,7 @@
       " 次给敌人施加负面状态时， #y生成 #b1 #y闪电 #y充能球。"
     ]
   },
-  "ThePrismatic:Rushdown": {
+  "${modID}:Rushdown": {
     "NAME": "猛虎下山",
     "DESCRIPTIONS": [
       "每回合首次转换 #y姿态 时，抽 #b",
@@ -52,14 +44,14 @@
       " 次转换 #y姿态 时，抽 #b"
     ]
   },
-  "ThePrismatic:Accuracy": {
+  "${modID}:Accuracy": {
     "NAME": "精准",
     "DESCRIPTIONS": [
       "费用为0的 #y攻击牌 额外造成 #b",
       " 点伤害。"
     ]
   },
-  "ThePrismatic:Combustive Fumes": {
+  "${modID}:Combustive Fumes": {
     "NAME": "易燃毒烟",
     "DESCRIPTIONS": [
       "在你的回合开始时，你失去 #b",
@@ -67,21 +59,21 @@
       " 层 #y中毒。"
     ]
   },
-  "ThePrismatic:Like Water": {
+  "${modID}:Like Water": {
     "NAME": "如水",
     "DESCRIPTIONS": [
       "在你的回合结束时，如果你处于 #y平静 or 或拥有 #y冰霜 #y充能球，则获得 #b",
       " 点 #y格挡 。"
     ]
   },
-  "ThePrismatic:Nirvana": {
+  "${modID}:Nirvana": {
     "NAME": "涅槃",
     "DESCRIPTIONS": [
-      "你每次通过预见丢弃牌时，获得 #b",
+      "你每次 #y铣削 时，获得 #b",
       " 点 #y格挡 。"
     ]
   },
-  "ThePrismatic:Empowered": {
+  "${modID}:Empowered": {
     "NAME": "赋能",
     "DESCRIPTIONS": [
       "你打出的下一张 #y能力牌 费用减少 #b1 。",
@@ -89,7 +81,7 @@
       " 张 #y能力牌 费用减少 #b1 。"
     ]
   },
-  "ThePrismatic:Echo Form": {
+  "${modID}:Echo Form": {
     "NAME": "回响形态",
     "DESCRIPTIONS": [
       "你每回合打出的第一张牌会打出两次。",
@@ -97,14 +89,14 @@
       " 张牌会打出两次。"
     ]
   },
-  "ThePrismatic:Focus Down": {
+  "${modID}:Focus Down": {
     "NAME": "集中下降",
     "DESCRIPTIONS": [
       "在你的回合结束时，失去 #b",
       " 点 #y集中 。"
     ]
   },
-  "ThePrismatic:Bias": {
+  "${modID}:Bias": {
     "NAME": "偏差",
     "DESCRIPTIONS": [
       "在你的回合开始时，失去 #b",
@@ -112,7 +104,7 @@
       " 点 #y力量 。"
     ]
   },
-  "ThePrismatic:Evolve": {
+  "${modID}:Evolve": {
     "NAME": "进化",
     "DESCRIPTIONS": [
       "每当你抽到一张 #y状态牌 或 #y诅咒牌，抽 #b1 张牌。",
@@ -120,25 +112,90 @@
       " 张牌。"
     ]
   },
-  "ThePrismatic:Mental Fortress": {
+  "${modID}:Mental Fortress": {
     "NAME": "心灵堡垒",
     "DESCRIPTIONS": [
       "每当你转换 #y姿态 或临时增添牌到手牌中时，获得 #b",
       " 点 #y格挡。"
     ]
   },
-  "ThePrismatic:Caltrops": {
+  "${modID}:Caltrops": {
     "NAME": "铁蒺藜",
     "DESCRIPTIONS": [
       "每当你被攻击时，对攻击者施加 #b",
-      " 层 #y目标化 。"
+      " 层 #y目标 。"
     ]
   },
-  "ThePrismatic:Deflection": {
+  "${modID}:Deflection": {
     "NAME": "偏折",
     "DESCRIPTIONS": [
       "从费用为0的牌中额外获得 #b",
       " 点 #y格挡。 "
+    ]
+  },
+  "${modID}:Metallic Faith": {
+    "NAME": "金属意志",
+    "DESCRIPTIONS": [
+      "在你的回合结束时，获得等同于 #y真言 层数的 #y格挡",
+      "在你的回合结束时，获得等同于 #y真言 层数 #b",
+      " 倍的 #y格挡 。"
+    ]
+  },
+  "${modID}:Rupture": {
+    "NAME": "撕裂",
+    "DESCRIPTIONS": [
+      "当你因卡牌失去生命值，或打出 #y能力牌 时，获得 #b",
+      " 点 #y力量 。"
+    ]
+  },
+  "${modID}:Next Turn Scry": {
+    "NAME": "下回合预见",
+    "DESCRIPTIONS": [
+      "在你的下个回合开始时， #y预见 #b",
+      " 。"
+    ]
+  },
+  "${modID}:Infinite Blades": {
+    "NAME": "无限刀刃",
+    "DESCRIPTIONS": [
+      "在你的回合开始，或打出 #y能力牌 时，将 #b",
+      " 张 #y小刀 加入你的手牌。",
+      " 张 #y小刀 加入你的手牌。"
+    ]
+  },
+  "${modID}:Brutality": {
+    "NAME": "残暴",
+    "DESCRIPTIONS": [
+      "在你的回合开始时，失去 #b",
+      " 点生命值，然后场上每有一个受负面状态影响的敌人，抽 #b",
+      " 张牌。",
+      "在你的回合开始时，失去 #b",
+      " 点生命值，然后场上每有一个受负面状态影响的敌人，抽 #b",
+      " 张牌。"
+    ]
+  },
+  "${modID}:Wave of the Hand": {
+    "NAME": "摆手",
+    "DESCRIPTIONS": [
+      "本回合内，每当你获得格挡，对所有敌人施加 #b",
+      " 层 #y虚弱 和 #b",
+      " 层 #y目标 。"
+    ]
+  },
+  "${modID}:Hello World": {
+    "NAME": "你好世界",
+    "DESCRIPTIONS": [
+      "在你的回合开始时，将 #b",
+      " 张随机稀有度的牌加入到你的手牌。",
+      " 张随机稀有度的牌加入到你的手牌。"
+    ]
+  },
+  "${modID}:Retain This Turn": {
+    "NAME": "本回合保留",
+    "DESCRIPTIONS": [
+      "本回合结束时，保留 #b",
+      " 张牌。",
+      " 张牌。"
     ]
   }
 }
